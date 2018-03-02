@@ -559,7 +559,6 @@ C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\bin\
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\System.Xml.XDocument.dll
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\System.Xml.XmlDocument.dll
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\System.Xml.XmlSerializer.dll
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MantaNecromante.csprojResolveAssemblyReference.cache
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\App.g.i.cs
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\App.g.cs
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\ClassMenu\ClassMenu.g.i.cs
