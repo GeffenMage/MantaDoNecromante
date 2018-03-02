@@ -45,6 +45,9 @@ public sealed partial class MainPage : Page {
 
             //Alinhando as Malditas imagens dinamicamente, já que o xaml é indecifrável.
 
+            myPage.Width = Window.Current.Bounds.Width;
+            myPage.Height = Window.Current.Bounds.Height;
+
             Background.Height = Window.Current.Bounds.Height;
             Background.Width = Window.Current.Bounds.Width;
 
@@ -65,13 +68,17 @@ public sealed partial class MainPage : Page {
 
         private void Sair(object sender, RoutedEventArgs e) {
 
+         //   song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Songs/buttons/button.mp3"));
+         //   song.Play();
+
             CoreApplication.Exit();
         }
 
         private void Iniciar(object sender, RoutedEventArgs e) {
 
-            song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Songs/buttons/button.mp3"));
-            song.Play();
+          //  song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Songs/buttons/button.mp3"));
+          //  song.Play();
+
             this.Frame.Navigate(typeof(ClassMenu));
         }
 

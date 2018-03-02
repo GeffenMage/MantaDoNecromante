@@ -8,8 +8,6 @@ using System.Threading.Tasks;
 namespace RPG {
     class Warrior : Player {
 
-
-
         //Construtor setando os valores base do warrior
         public Warrior(String nome) {
 
@@ -23,23 +21,8 @@ namespace RPG {
             //Cria e inicializa as skills da classe do personagem
             Skills = new List<Skill>();
             Skills.Add(new Skill("Stomp", 30, 0, 1, 0, 0, 0, 0, 250));
+            Skills.Add(new Skill("WarCry", 40, 0, 5, 0, 0, 20, 20, 0));
+            Skills.Add(new Skill("Berserk", 30, 80, 10, 0, 0, 100, -40, 400));
         }
-
-        
-
-        //Skill de teste
-        public int Skill_Stomp() {
-            int custo_skill = 30;
-            int dano_skill = 250;
-
-            if (IsManaAvaliable(custo_skill) == true) {
-                Mp_atual -= custo_skill;
-                return dano_skill;
-            }
-            else {
-                return -1;
-            }
-        }
-        
     }
 }
