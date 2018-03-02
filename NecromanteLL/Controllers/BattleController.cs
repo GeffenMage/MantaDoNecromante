@@ -27,9 +27,9 @@ namespace RPG {
                 Set_initialStatus(jogador);
             }
             if (jogador.IsAlive() == true && inimigo.IsAlive() == true) {
-                if (Turno_player == true) {
+                if (turno_player == true) {
                     Skill_select(jogador, opSkill, inimigo);
-                    Turno_player = false;
+                    turno_player = false;
                     Turno_atual++;
                 }
                 else {
@@ -37,12 +37,12 @@ namespace RPG {
                     switch (inimigo.Nome) {
                         case "Goblin":
                             jogador.Take_dmg(inimigo.Atk_base());
-                            Turno_player = true;
+                            turno_player = true;
                             Turno_atual++;
                             break;
                         default:
                             jogador.Take_dmg(inimigo.Atk_base());
-                            Turno_player = true;
+                            turno_player = true;
                             Turno_atual++;
                             break;
                     }
@@ -69,9 +69,9 @@ namespace RPG {
                 Set_initialStatus(jogador);
             }
             if (jogador.IsAlive() == true && inimigo.IsAlive() == true) {
-                if (Turno_player == true) { 
+                if (turno_player == true) { 
                     inimigo.Take_dmg(jogador.Atk_base());
-                    Turno_player = false;
+                    turno_player = false;
                     Turno_atual++;
                 }
                 else {
@@ -79,12 +79,12 @@ namespace RPG {
                     switch (inimigo.Nome) {
                         case "Goblin":
                             jogador.Take_dmg(inimigo.Atk_base());
-                            Turno_player = true;
+                            turno_player = true;
                             Turno_atual++;
                             break;
                         default:
                             jogador.Take_dmg(inimigo.Atk_base());
-                            Turno_player = true;
+                            turno_player = true;
                             Turno_atual++;
                             break;
                     }
