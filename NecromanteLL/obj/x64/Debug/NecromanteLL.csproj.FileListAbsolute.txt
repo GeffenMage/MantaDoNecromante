@@ -1,2 +1,4 @@
 C:\Users\Daniel Sousa Duplat\Source\Repos\MantaDoNecromante\NecromanteLL\obj\x64\Debug\NecromanteLL.csprojResolveAssemblyReference.cache
 C:\Users\Daniel Sousa Duplat\Source\Repos\MantaDoNecromante\NecromanteLL\obj\x64\Debug\NecromanteLL.csproj.CoreCompileInputs.cache
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\NecromanteLL\obj\x64\Debug\NecromanteLL.csprojResolveAssemblyReference.cache
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\NecromanteLL\obj\x64\Debug\NecromanteLL.csproj.CoreCompileInputs.cache
