@@ -38,8 +38,8 @@ namespace RPG
                 return false;
             }
         }
-
-        public void LvUp() {
+        // Virtula para poder realizar override
+        public virtual void LvUp() {
             Lvl++;
             Xp_total *= 2;
         }

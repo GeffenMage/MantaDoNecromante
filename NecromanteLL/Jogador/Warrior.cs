@@ -24,5 +24,16 @@ namespace RPG {
             Skills.Add(new Skill("WarCry", 40, 0, 5, 0, 0, 20, 20, 0));
             Skills.Add(new Skill("Berserk", 30, 80, 10, 0, 0, 100, -40, 400));
         }
+            // Tentativa de override
+            public override void LvUp() {
+                Lvl++;
+                Xp_total *= 2;
+                Xp_atual = 0;
+                Hp_total += 50;
+                Mp_total += 10;
+                Base_def += 20;
+                Base_dmg += 40;
+            }
     }
 }
+

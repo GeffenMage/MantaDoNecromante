@@ -22,5 +22,15 @@ namespace RPG {
             Skills.Add(new Skill("IceArmor", 100, 0, 5, 0, 0, 0, 40, 0));
             Skills.Add(new Skill("Meteor", 300, 0, 10, 0, 0, 0, 0, 800));
         }
+
+        public override void LvUp() {
+            Lvl++;
+            Xp_total *= 2;
+            Xp_atual = 0;
+            Hp_total += 20;
+            Mp_total += 40;
+            Base_def += 30;
+            Base_dmg += 40;
+        }
     }
 }
