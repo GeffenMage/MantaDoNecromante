@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace RPG {
-    class Itens {
-        String nome,descricao;
-        int 
+    abstract class Itens {
+        protected String nome,descricao;
+        int def, dmg, hp_up, mp_up;
     }
 }
