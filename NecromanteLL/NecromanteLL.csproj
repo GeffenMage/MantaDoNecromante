@@ -114,7 +114,6 @@
     <Compile Include="Enemys\Mob.cs" />
     <Compile Include="Enemys\Ogro.cs" />
     <Compile Include="Jogador\Player.cs" />
-    <Compile Include="Controllers\Program.cs" />
     <Compile Include="Jogador\Rogue.cs" />
     <Compile Include="Jogador\Wizard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
