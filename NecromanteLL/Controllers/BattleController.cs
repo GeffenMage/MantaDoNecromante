@@ -9,51 +9,103 @@ using RPG.Personagens.Inimigos;
 namespace RPG {
     class BattleController {
         int player_initalHP, player_initialMP, player_initialDmg, player_initialDef;
-        public void Battle(Player jogador, Mob inimigo) {
-            Set_initialStatus(jogador);
-            int turno_atual = 1;
-            String option = "2";
-            bool turno_player = true;
-            while (jogador.IsAlive() == true && inimigo.IsAlive() == true) {
-                if (turno_player == true) {
-                    if (option == "2") {
-                        Skill_select(jogador, option, inimigo);
-                        turno_player = false;
-                        turno_atual++;
-                    }
-                    else {
-                        inimigo.Take_dmg(jogador.Atk_base());
-                        turno_player = false;
-                        turno_atual++;
-                        //
-                    }
+        int turno_atual = 1;
+        bool turno_player = true;
+
+        public int Turno_atual { get => turno_atual; set => turno_atual = value; }
+
+        /// <summary>
+        /// Método de batalha para quando for usar skills 
+        /// </summary>
+        /// <param name="jogador"></param>
+        /// <param name="inimigo"></param>
+        /// <param name="option"></param>
+        /// <param name="opSkill"></param>
+        /// <returns></returns>
+        public bool Battle(Player jogador, Mob inimigo, string option, string opSkill) {
+            if (Turno_atual == 1) {
+                Set_initialStatus(jogador);
+            }
+            if (jogador.IsAlive() == true && inimigo.IsAlive() == true) {
+                if (Turno_player == true) {
+                    Skill_select(jogador, opSkill, inimigo);
+                    Turno_player = false;
+                    Turno_atual++;
                 }
                 else {
                     //Cada caso é um comportamento de mob
                     switch (inimigo.Nome) {
                         case "Goblin":
                             jogador.Take_dmg(inimigo.Atk_base());
-                            turno_player = true;
-                            turno_atual++;
+                            Turno_player = true;
+                            Turno_atual++;
                             break;
                         default:
                             jogador.Take_dmg(inimigo.Atk_base());
-                            turno_player = true;
-                            turno_atual++;
+                            Turno_player = true;
+                            Turno_atual++;
                             break;
                     }
                 }
             }
             if (jogador.IsAlive() == false) {
-                Debug.WriteLine("GAME OVER\nVOCE MORREU");
-                return;
+                Reset_Status(jogador);
+                return false;
             }
             else {
-                //Victory(jogador, inimigo);
-                return;
+                Reset_Status(jogador);
+                return true;
             }
         }
-
+        /// <summary>
+        /// Método de batalha para quando não for usar skills
+        /// </summary>
+        /// <param name="jogador"></param>
+        /// <param name="inimigo"></param>
+        /// <param name="option"></param>
+        /// <returns></returns>
+        public bool Battle(Player jogador, Mob inimigo,string option) {
+            if (Turno_atual == 1) {
+                Set_initialStatus(jogador);
+            }
+            if (jogador.IsAlive() == true && inimigo.IsAlive() == true) {
+                if (Turno_player == true) { 
+                    inimigo.Take_dmg(jogador.Atk_base());
+                    Turno_player = false;
+                    Turno_atual++;
+                }
+                else {
+                    //Cada caso é um comportamento de mob
+                    switch (inimigo.Nome) {
+                        case "Goblin":
+                            jogador.Take_dmg(inimigo.Atk_base());
+                            Turno_player = true;
+                            Turno_atual++;
+                            break;
+                        default:
+                            jogador.Take_dmg(inimigo.Atk_base());
+                            Turno_player = true;
+                            Turno_atual++;
+                            break;
+                    }
+                }
+            }
+            if (jogador.IsAlive() == false) {
+                Reset_Status(jogador);
+                return false; 
+            }
+            else {
+                Reset_Status(jogador);
+                return true;
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="jogador"></param>
+        /// <param name="skill_num"></param>
+        /// <param name="inimigo"></param>
+        /// <returns></returns>
         public int Skill_select(Player jogador, String skill_num, Mob inimigo) {
             int dmg_skill;
             int index = Int32.Parse(skill_num);
