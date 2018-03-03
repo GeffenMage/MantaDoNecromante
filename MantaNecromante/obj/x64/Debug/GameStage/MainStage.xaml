@@ -8,16 +8,16 @@
    VerticalAlignment="Top" HorizontalAlignment="Left" Height="900" Width="1440">
 
     <Canvas x:ConnectionId='1' Name="Floor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1440" Height="900">
-        <Image x:ConnectionId='2' Name ="Fall" Source="ms-appx:///GameAssets/Maps/mansion.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="1600" Width="1440" Stretch="Uniform" Canvas.Top="-700"/>
+        <Image x:ConnectionId='2' Name ="Mansion" Source="ms-appx:///GameAssets/Maps/mansion.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="1600" Width="1440" Stretch="Uniform" Canvas.Top="-700"/>
         <Grid Height="50" Canvas.Left="605" Canvas.Top="425" Width="235">
             <Image Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button x:ConnectionId='5' BorderThickness="0" x:Name="Start" Content="Iniciar" Height="40" Width="180" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-5,0,0,0"/>
+            <Button x:ConnectionId='5' BorderThickness="0" x:Name="Start" Content="Iniciar" Height="40" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"/>
         </Grid>
         <Grid Height="50" Canvas.Left="605" Canvas.Top="510" Width="235">
             <Image  Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button x:ConnectionId='4' BorderThickness="0" x:Name="Exit" Content="Sair" Height="40" Width="180" FontSize="30" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-5,0,0,0"/>
+            <Button x:ConnectionId='4' BorderThickness="0" x:Name="Exit" Content="Sair" Height="40" Width="183" FontSize="30" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"/>
         </Grid>
-        <Image x:ConnectionId='3' Name="quick_menu" Height="80" Canvas.Top="820" Width="1440" Source="ms-appx:///GameAssets/Menu/equip_menu.png"/>
+        <Image x:ConnectionId='3' Name="quick_menu" Height="55" Canvas.Top="845" Width="1405" Source="ms-appx:///GameAssets/Menu/equip_menu.png"/>
     </Canvas>
 </Page>
 

@@ -11,11 +11,11 @@
         <Image Name ="Fall" Source="ms-appx:///GameAssets/Menu/main_background.gif" HorizontalAlignment="Left" VerticalAlignment="Top" Height="900" Width="1440" Stretch="Fill"/>
         <Grid Height="50" Canvas.Left="605" Canvas.Top="425" Width="235">
             <Image Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button BorderThickness="0" x:Name="Start" Click="Iniciar" Content="Iniciar" Height="40" Width="180" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-5,0,0,0"/>
+            <Button BorderThickness="0" x:Name="Start" Click="Iniciar" Content="Iniciar" Height="40" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"/>
         </Grid>
         <Grid Height="50" Canvas.Left="605" Canvas.Top="510" Width="235">
             <Image  Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button BorderThickness="0" Click="Sair" x:Name="Exit" Content="Sair" Height="40" Width="180" FontSize="30" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-5,0,0,0"/>
+            <Button BorderThickness="0" Click="Sair" x:Name="Exit" Content="Sair" Height="40" Width="184" FontSize="30" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,26,5"/>
         </Grid>
         <Image Name="Title" Height="101" Canvas.Left="45" Canvas.Top="189" Width="1360" Source="ms-appx:///GameAssets/Menu/mainTitle.png"/>
     </Canvas>
