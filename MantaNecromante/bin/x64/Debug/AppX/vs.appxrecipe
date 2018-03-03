@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-03T18:13:42.103</Modified>
+      <Modified>2018-03-03T20:42:25.255</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MantaNecromante.exe">
       <PackagePath>entrypoint\MantaNecromante.exe</PackagePath>
-      <Modified>2018-03-03T18:13:40.807</Modified>
+      <Modified>2018-03-03T20:42:24.957</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lucas\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -773,9 +773,17 @@
       <PackagePath>GameAssets\Menu\nudePanel.png</PackagePath>
       <Modified>2018-03-03T14:08:57.869</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\optionMenu.png">
+      <PackagePath>GameAssets\Menu\optionMenu.png</PackagePath>
+      <Modified>2018-03-03T20:18:31.069</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\panel.png">
       <PackagePath>GameAssets\Menu\panel.png</PackagePath>
       <Modified>2018-03-03T13:56:45.777</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\pauseMenu.png">
+      <PackagePath>pauseMenu.png</PackagePath>
+      <Modified>2018-03-03T19:22:20.030</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\knight_idle.gif">
       <PackagePath>GameAssets\Characters\exhibit\knight_idle.gif</PackagePath>
@@ -827,7 +835,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MantaNecromante.xr.xml">
       <PackagePath>MantaNecromante.xr.xml</PackagePath>
-      <Modified>2018-03-03T16:36:02.067</Modified>
+      <Modified>2018-03-03T20:35:17.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -836,11 +844,11 @@
     <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-03T18:13:41.682</Modified>
+      <Modified>2018-03-03T20:41:47.501</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Core\MantaNecromante.exe">
       <PackagePath>MantaNecromante.exe</PackagePath>
-      <Modified>2018-03-03T18:13:42.097</Modified>
+      <Modified>2018-03-03T20:42:25.251</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

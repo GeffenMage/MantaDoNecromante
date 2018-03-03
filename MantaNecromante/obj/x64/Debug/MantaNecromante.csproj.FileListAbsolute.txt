@@ -868,9 +868,9 @@ C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\qual
 C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\ProjectArchitectures.txt
-C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MantaNecromante.csprojResolveAssemblyReference.cache
 C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\GameStage\MainStage.xbf
 C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.g.i.cs
 C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.g.cs
 C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.xaml
 C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.xbf
+C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MantaNecromante.csprojResolveAssemblyReference.cache

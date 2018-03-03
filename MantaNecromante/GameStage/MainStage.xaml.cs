@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -27,6 +28,16 @@ namespace MantaNecromante.GameStage
         {
             this.InitializeComponent();
             Adjuster.AdjustWindow(Floor);
+        }
+
+        private void Exit(object sender, RoutedEventArgs e) {
+
+            CoreApplication.Exit();
+        }
+
+        private void Continue(object sender, RoutedEventArgs e) {
+
+            OptionsMenu.Opacity = 0;
         }
     }
 }

@@ -200,7 +200,9 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="GameAssets\Menu\mainTitle.png" />
     <Content Include="GameAssets\Menu\nudePanel.png" />
+    <Content Include="GameAssets\Menu\optionMenu.png" />
     <Content Include="GameAssets\Menu\panel.png" />
+    <Content Include="pauseMenu.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
