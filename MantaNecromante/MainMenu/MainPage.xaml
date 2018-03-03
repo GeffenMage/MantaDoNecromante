@@ -5,13 +5,18 @@
     xmlns:local="using:FrontEnd"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" VerticalAlignment="Center" HorizontalAlignment="Center">
+    mc:Ignorable="d" VerticalAlignment="Top" HorizontalAlignment="Left" Height="900" Width="1440">
 
-    <Canvas Name="Background" HorizontalAlignment="Left" VerticalAlignment="Top">
-        <Image Name ="Fall" Source="ms-appx:///Assets/Menu/menu.gif" HorizontalAlignment="Left" VerticalAlignment="Top" Height="992" Width="1491" Stretch="Fill"/>
-        <Button Name="Start" Content="Iniciar" Click="Iniciar" Canvas.Left="797" Canvas.Top="571" HorizontalAlignment="Center"  Height="125" Width="235"  FontSize="36" FontFamily="Algerian"/>
-        <Button Name="Exit" Content="Sair" Click ="Sair" Canvas.Left="535" Canvas.Top="575" Height="125" Width="235" FontSize="36" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <Image Height="100" Width="100"/>
-        <Image Name="Title" Height="101" Canvas.Left="29" Canvas.Top="189" Width="1421" Source="ms-appx:///Assets/Menu/Manta-do-Necromante.png"/>
+    <Canvas Name="Floor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1440" Height="900">
+        <Image Name ="Fall" Source="ms-appx:///GameAssets/Menu/main_background.gif" HorizontalAlignment="Left" VerticalAlignment="Top" Height="900" Width="1440" Stretch="Fill"/>
+        <Grid Height="50" Canvas.Left="605" Canvas.Top="425" Width="235">
+            <Image Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button BorderThickness="0" x:Name="Start" Click="Iniciar" Content="Iniciar" Height="40" Width="180" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-5,0,0,0"/>
+        </Grid>
+        <Grid Height="50" Canvas.Left="605" Canvas.Top="510" Width="235">
+            <Image  Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button BorderThickness="0" Click="Sair" x:Name="Exit" Content="Sair" Height="40" Width="180" FontSize="30" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-5,0,0,0"/>
+        </Grid>
+        <Image Name="Title" Height="101" Canvas.Left="45" Canvas.Top="189" Width="1360" Source="ms-appx:///GameAssets/Menu/mainTitle.png"/>
     </Canvas>
 </Page>

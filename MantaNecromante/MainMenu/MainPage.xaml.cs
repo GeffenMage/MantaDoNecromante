@@ -21,7 +21,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
-
+using Extension;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -39,37 +39,24 @@ public sealed partial class MainPage : Page {
 
         public MainPage() {
 
+            
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.FullScreen;
 
+            //Teste de tamanho ajustável:
+            //......................................................................................................
+            ApplicationView.PreferredLaunchViewSize = new Size(1138, 711.25);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            //......................................................................................................
             this.InitializeComponent();
 
-            //Alinhando as Malditas imagens dinamicamente, já que o xaml é indecifrável.
-
-            myPage.Width = Window.Current.Bounds.Width;
-            myPage.Height = Window.Current.Bounds.Height;
-
-            Background.Height = Window.Current.Bounds.Height;
-            Background.Width = Window.Current.Bounds.Width;
-
-            Fall.Height = Window.Current.Bounds.Height + 20;
-            Fall.Width = Window.Current.Bounds.Width + 30;
-
-            Canvas.SetTop(Fall, -10);
-
-            Canvas.SetTop(Start, Background.Height / 2 - Start.Height / 2);
-            Canvas.SetLeft(Start, Background.Width / 2 - Start.Width / 2);
-
-            Canvas.SetLeft(Exit, Canvas.GetLeft(Start));
-            Canvas.SetTop(Exit, Canvas.GetTop(Start) + Exit.Height);
-
-            Canvas.SetLeft(Title, Background.Width / 2 - Title.Width / 2);
-            Canvas.SetTop(Title, Canvas.GetTop(Start) - Title.Height - Start.Height);
+            //Classe de extensão para ajustar todas os xalm:
+            Adjuster.AdjustWindow(Floor);
         }
 
         private void Sair(object sender, RoutedEventArgs e) {
 
-         //   song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Songs/buttons/button.mp3"));
-         //   song.Play();
+            //   song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Songs/buttons/button.mp3"));
+            //   song.Play();
 
             CoreApplication.Exit();
         }
@@ -81,6 +68,5 @@ public sealed partial class MainPage : Page {
 
             this.Frame.Navigate(typeof(ClassMenu));
         }
-
     }
 }

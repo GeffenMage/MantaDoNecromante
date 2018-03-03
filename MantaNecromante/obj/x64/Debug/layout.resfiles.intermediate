@@ -1,19 +1,5 @@
 WinMetadata\Windows.winmd
-Assets\default\back\0.gif
-Assets\default\back\1.gif
-Assets\default\back\-1.gif
-Assets\default\front\0.gif
-Assets\default\front\1.gif
-Assets\default\front\-1.gif
-Assets\default\left\0.gif
-Assets\default\left\1.gif
-Assets\default\left\-1.gif
-Assets\default\right\0.gif
-Assets\default\right\1.gif
-Assets\default\right\-1.gif
 Assets\LockScreenLogo.scale-200.png
-Assets\Menu\Manta-do-Necromante.png
-Assets\Menu\menu.gif
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png
@@ -21,4 +7,77 @@ Assets\Square44x44Logo.targetsize-24_altform-unplated.png
 Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 MantaNecromante.xr.xml
+GameAssets\Buttons\clicked_button.png
+GameAssets\Buttons\idle_button.png
+GameAssets\Characters\exhibit\knight_idle.gif
+GameAssets\Characters\heroes\knight\atk\1.gif
+GameAssets\Characters\heroes\knight\atk\-1.gif
+GameAssets\Characters\heroes\knight\def\1.gif
+GameAssets\Characters\heroes\knight\def\-1.gif
+GameAssets\Characters\heroes\knight\idle\1.gif
+GameAssets\Characters\heroes\knight\idle\-1.gif
+GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_01.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_02.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_03.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_04.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_05.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_06.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_07.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_01.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_02.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_03.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_04.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_05.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_06.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_07.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_08.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_09.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_10.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_01.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_02.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_03.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_04.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_05.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_06.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_07.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_08.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_09.png
+GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_10.png
+GameAssets\Characters\heroes\knight\images\knight 3 idle.png
+GameAssets\Characters\heroes\knight\images\knight 3 improved slash animation.png
+GameAssets\Characters\heroes\knight\images\knight death animation.png
+GameAssets\Characters\heroes\knight\images\knight idle.gif
+GameAssets\Characters\heroes\knight\images\knight walk animation.png
+GameAssets\Characters\heroes\knight\images\knight-3-block_01.png
+GameAssets\Characters\heroes\knight\images\knight-3-block_02.png
+GameAssets\Characters\heroes\knight\images\knight-3-block_03.png
+GameAssets\Characters\heroes\knight\images\knight-3-block_04.png
+GameAssets\Characters\heroes\knight\images\knight-3-block_05.png
+GameAssets\Characters\heroes\knight\images\knight-3-block_06.png
+GameAssets\Characters\heroes\knight\images\knight-3-block_07.png
+GameAssets\Characters\heroes\knight\images\knight-walk-animation_01.png
+GameAssets\Characters\heroes\knight\images\knight-walk-animation_02.png
+GameAssets\Characters\heroes\knight\images\knight-walk-animation_03.png
+GameAssets\Characters\heroes\knight\images\knight-walk-animation_04.png
+GameAssets\Characters\heroes\knight\images\knight-walk-animation_05.png
+GameAssets\Characters\heroes\knight\images\knight-walk-animation_06.png
+GameAssets\Characters\heroes\knight\images\knight-walk-animation_07.png
+GameAssets\Characters\heroes\knight\images\knight-walk-animation_08.png
+GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_01.png
+GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_02.png
+GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_03.png
+GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_04.png
+GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_05.png
+GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_06.png
+GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_07.png
+GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_08.png
+GameAssets\Characters\heroes\knight\run\1.gif
+GameAssets\Characters\heroes\knight\run\-1.gif
+GameAssets\Maps\mansion.png
+GameAssets\Menu\chooseClassTitle.png
+GameAssets\Menu\equip_menu.png
+GameAssets\Menu\main_background.gif
+GameAssets\Menu\mainTitle.png
+GameAssets\Menu\nudePanel.png
+GameAssets\Menu\panel.png
 Properties\Default.rd.xml

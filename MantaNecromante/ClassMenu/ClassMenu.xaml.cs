@@ -12,6 +12,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Extension;
+using System.Diagnostics;
+using MantaNecromante.GameStage;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -23,6 +26,12 @@ namespace MantaNecromante.ClassMenu {
         public ClassMenu() {
 
             this.InitializeComponent();
+            Adjuster.AdjustWindow(Floor);
+        }
+
+        private void Iniciar(object sender, RoutedEventArgs e) {
+
+            this.Frame.Navigate(typeof(MainStage));
         }
     }
 }
