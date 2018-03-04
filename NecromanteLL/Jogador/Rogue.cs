@@ -22,5 +22,15 @@ namespace RPG {
             Skills.Add(new Skill("BloodVision", 70, 30, 5, 0, 0, 30, 10, 200));
             Skills.Add(new Skill("Shadow", 120, 0, 1, 0, 0, 0, 0, 600));
         }
+
+        public override void LvUp() {
+            Lvl++;
+            Xp_total *= 2;
+            Xp_atual = 0;
+            Hp_total += 30;
+            Mp_total += 30;
+            Base_def += 30;
+            Base_dmg += 30;
+        }
     }
 }

@@ -92,11 +92,15 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Adjuster.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="ClassMenu\ClassMenu.xaml.cs">
       <DependentUpon>ClassMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameStage\MainStage.xaml.cs">
+      <DependentUpon>MainStage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainMenu\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -107,31 +111,32 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="Assets\default\Thumbs.db" />
     <None Include="MantaNecromante_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\default\back\-1.gif" />
-    <Content Include="Assets\default\back\0.gif" />
-    <Content Include="Assets\default\back\1.gif" />
-    <Content Include="Assets\default\front\-1.gif" />
-    <Content Include="Assets\default\front\0.gif" />
-    <Content Include="Assets\default\front\1.gif" />
-    <Content Include="Assets\default\left\-1.gif" />
-    <Content Include="Assets\default\left\0.gif" />
-    <Content Include="Assets\default\left\1.gif" />
-    <Content Include="Assets\default\right\-1.gif" />
-    <Content Include="Assets\default\right\0.gif" />
-    <Content Include="Assets\default\right\1.gif" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
-    <Content Include="Assets\Menu\Manta-do-Necromante.png" />
-    <Content Include="Assets\Menu\menu.gif" />
+    <Content Include="GameAssets\Buttons\clicked_button.png" />
+    <Content Include="GameAssets\Buttons\idle_button.png" />
+    <Content Include="GameAssets\Characters\exhibit\knight_idle.gif" />
+    <Content Include="GameAssets\Characters\heroes\knight\idleLeft.gif" />
+    <Content Include="GameAssets\Characters\heroes\knight\idleRight.gif" />
+    <Content Include="GameAssets\Characters\heroes\knight\walkLeft.gif" />
+    <Content Include="GameAssets\Characters\heroes\knight\walkRight.gif" />
+    <Content Include="GameAssets\Maps\mansion.png" />
+    <Content Include="GameAssets\Menu\chooseClassTitle.png" />
+    <Content Include="GameAssets\Menu\equip_menu.png" />
+    <Content Include="GameAssets\Menu\main_background.gif" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="GameAssets\Menu\mainTitle.png" />
+    <Content Include="GameAssets\Menu\nudePanel.png" />
+    <Content Include="GameAssets\Menu\optionMenu.png" />
+    <Content Include="GameAssets\Menu\panel.png" />
+    <Content Include="pauseMenu.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +145,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="ClassMenu\ClassMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameStage\MainStage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -154,7 +163,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\Songs\" />
+    <Folder Include="GameAssets\Characters\heroes\mage\" />
+    <Folder Include="GameAssets\Songs\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

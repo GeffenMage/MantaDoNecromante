@@ -5,10 +5,31 @@
     xmlns:local="using:MantaNecromante.ClassMenu"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"  VerticalAlignment="Top" HorizontalAlignment="Left" Height="900" Width="1440">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Canvas x:ConnectionId='2' Name="Floor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1440" Height="900">
+        <Image x:ConnectionId='3' Name ="Fall" Source="ms-appx:///GameAssets/Menu/main_background.gif" HorizontalAlignment="Left" VerticalAlignment="Top" Height="900" Width="1440" Stretch="Fill"/>
+        <Grid Height="50" Canvas.Left="122.5" Canvas.Top="700" Width="235">
+            <Image Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button x:ConnectionId='7' BorderThickness="0" x:Name="Start"                 Content="Gladiador" Height="40" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"/>
+        </Grid>
+        <Grid Height="50" Canvas.Left="1082.5" Canvas.Top="700" Width="235">
+            <Image  Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button x:ConnectionId='6' BorderThickness="0" x:Name="Exit" Content="" Height="40" Width="183" FontSize="30" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"/>
+        </Grid>
+        <Image x:ConnectionId='4' Name="Title" Height="101" Canvas.Left="40" Canvas.Top="189" Width="1360" Source="ms-appx:///GameAssets/Menu/chooseClassTitle.png"/>
+        <Grid Height="50" Canvas.Left="602.5" Canvas.Top="700" Width="235">
+            <Image  Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button x:ConnectionId='5' BorderThickness="0" x:Name="Exit1" Content="Mago" Height="40" Width="183" FontSize="30" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"/>
+        </Grid>
+        <Image Height="365" Canvas.Left="122.5" Canvas.Top="295" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
+        <Image Height="310" Canvas.Left="130" Canvas.Top="340" Width="220" Source="ms-appx:///GameAssets/Characters/exhibit/knight_idle.gif"/>
 
-    </Grid>
+        <Image Height="365" Canvas.Left="602.5" Canvas.Top="295" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
+        <Image Height="365" Canvas.Left="1082.5" Canvas.Top="295" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
+
+
+
+    </Canvas>
 </Page>
 
