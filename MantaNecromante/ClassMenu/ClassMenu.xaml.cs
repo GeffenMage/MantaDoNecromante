@@ -22,7 +22,9 @@ namespace MantaNecromante.ClassMenu {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    /// 
     public sealed partial class ClassMenu : Page {
+
         public ClassMenu() {
 
             this.InitializeComponent();
@@ -31,7 +33,8 @@ namespace MantaNecromante.ClassMenu {
 
         private void Iniciar(object sender, RoutedEventArgs e) {
 
-            this.Frame.Navigate(typeof(MainStage));
+            
+            this.Frame.Navigate(typeof(MainStage), "knight");
         }
     }
 }

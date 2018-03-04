@@ -25575,11 +25575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas\\Source\\Repos\\MantaDoNecromante\\NecromanteLL\\NecromanteLL.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas\\source\\repos\\MantaDoNecromante\\NecromanteLL\\NecromanteLL.csproj",
       "projectName": "NecromanteLL",
-      "projectPath": "C:\\Users\\Lucas\\Source\\Repos\\MantaDoNecromante\\NecromanteLL\\NecromanteLL.csproj",
+      "projectPath": "C:\\Users\\Lucas\\source\\repos\\MantaDoNecromante\\NecromanteLL\\NecromanteLL.csproj",
       "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucas\\Source\\Repos\\MantaDoNecromante\\NecromanteLL\\obj\\",
+      "outputPath": "C:\\Users\\Lucas\\source\\repos\\MantaDoNecromante\\NecromanteLL\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

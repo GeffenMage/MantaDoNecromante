@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>5b684eb0-42c8-48ab-9f60-5613a1841a81</PackageIdentityName>
     <PackageIdentityPublisher>CN=Lucas</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>43845A31060BFCD105B26A1CE78DC03A889B420BD7CC3E6E3B3E2D3ED7208D58</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>5b684eb0-42c8-48ab-9f60-5613a1841a81_1.0.0.0_x64__m0we3rjtmsxmt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>5b684eb0-42c8-48ab-9f60-5613a1841a81_m0we3rjtmsxmt!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-03T20:42:25.255</Modified>
+      <Modified>2018-03-04T21:09:20.714</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MantaNecromante.exe">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MantaNecromante.exe">
       <PackagePath>entrypoint\MantaNecromante.exe</PackagePath>
-      <Modified>2018-03-03T20:42:24.957</Modified>
+      <Modified>2018-03-04T21:09:20.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lucas\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,360 +495,124 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-12T02:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2018-03-02T19:03:26.368</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\clicked_button.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\clicked_button.png">
       <PackagePath>GameAssets\Buttons\clicked_button.png</PackagePath>
       <Modified>2018-03-02T22:02:46.523</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\idle_button.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\idle_button.png">
       <PackagePath>GameAssets\Buttons\idle_button.png</PackagePath>
       <Modified>2018-03-02T22:02:46.535</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_01.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_01.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.580</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_02.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_02.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.581</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_03.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_03.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.593</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_04.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_04.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.626</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_05.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_05.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.668</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_06.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_06.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.734</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_07.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-block_02_07.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.776</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_01.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_01.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.825</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_02.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_02.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.831</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_03.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_03.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.835</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_04.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_04.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.886</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_05.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_05.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.927</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_06.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_06.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.966</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_07.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_07.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.974</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_08.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_08.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.976</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_09.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_09.png</PackagePath>
-      <Modified>2018-03-03T05:08:50.978</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_10.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation2_10.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.064</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_01.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_01.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.095</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_02.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_02.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.115</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_03.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_03.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.123</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_04.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_04.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.131</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_05.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_05.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.145</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_06.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_06.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.153</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_07.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_07.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.155</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_08.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_08.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.183</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_09.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_09.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.191</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_10.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\images\knight-3-improved-slash-animation_10.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.193</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight 3 idle.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight 3 idle.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.224</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight 3 improved slash animation.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight 3 improved slash animation.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.227</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight death animation.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight death animation.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.246</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight walk animation.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight walk animation.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.252</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-3-block_01.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-3-block_01.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.253</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-3-block_02.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-3-block_02.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.255</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-3-block_03.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-3-block_03.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.257</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-3-block_04.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-3-block_04.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.259</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-3-block_05.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-3-block_05.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.261</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-3-block_06.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-3-block_06.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.263</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-3-block_07.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-3-block_07.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.265</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-walk-animation_01.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-walk-animation_01.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.267</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-walk-animation_02.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-walk-animation_02.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.269</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-walk-animation_03.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-walk-animation_03.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.271</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-walk-animation_04.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-walk-animation_04.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.273</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-walk-animation_05.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-walk-animation_05.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.275</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-walk-animation_06.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-walk-animation_06.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.278</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-walk-animation_07.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-walk-animation_07.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.280</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight-walk-animation_08.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight-walk-animation_08.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.282</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_01.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_01.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.284</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_02.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_02.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.286</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_03.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_03.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.288</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_04.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_04.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.290</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_05.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_05.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.292</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_06.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_06.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.294</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_07.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_07.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.297</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_08.png">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\Nova pasta\knight-walk-animation1_08.png</PackagePath>
-      <Modified>2018-03-03T05:08:51.299</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Maps\mansion.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Maps\mansion.png">
       <PackagePath>GameAssets\Maps\mansion.png</PackagePath>
-      <Modified>2018-03-03T16:35:34.753</Modified>
+      <Modified>2018-03-04T20:50:39.118</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\chooseClassTitle.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\chooseClassTitle.png">
       <PackagePath>GameAssets\Menu\chooseClassTitle.png</PackagePath>
       <Modified>2018-03-03T14:19:51.923</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\equip_menu.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\equip_menu.png">
       <PackagePath>GameAssets\Menu\equip_menu.png</PackagePath>
       <Modified>2018-03-03T17:33:02.437</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-02T19:03:26.453</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-02T19:03:26.453</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-02T19:03:26.453</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-02T19:03:26.454</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-02T19:03:26.454</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-03-02T19:03:26.455</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\mainTitle.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\mainTitle.png">
       <PackagePath>GameAssets\Menu\mainTitle.png</PackagePath>
       <Modified>2018-03-03T14:23:16.821</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\nudePanel.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\nudePanel.png">
       <PackagePath>GameAssets\Menu\nudePanel.png</PackagePath>
       <Modified>2018-03-03T14:08:57.869</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\optionMenu.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\optionMenu.png">
       <PackagePath>GameAssets\Menu\optionMenu.png</PackagePath>
       <Modified>2018-03-03T20:18:31.069</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\panel.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\panel.png">
       <PackagePath>GameAssets\Menu\panel.png</PackagePath>
       <Modified>2018-03-03T13:56:45.777</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\pauseMenu.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\pauseMenu.png">
       <PackagePath>pauseMenu.png</PackagePath>
       <Modified>2018-03-03T19:22:20.030</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\knight_idle.gif">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\knight_idle.gif">
       <PackagePath>GameAssets\Characters\exhibit\knight_idle.gif</PackagePath>
       <Modified>2018-03-03T14:02:18.976</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\atk\-1.gif">
-      <PackagePath>GameAssets\Characters\heroes\knight\atk\-1.gif</PackagePath>
-      <Modified>2018-03-03T05:08:50.497</Modified>
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\idleLeft.gif">
+      <PackagePath>GameAssets\Characters\heroes\knight\idleLeft.gif</PackagePath>
+      <Modified>2018-03-04T15:37:16.617</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\atk\1.gif">
-      <PackagePath>GameAssets\Characters\heroes\knight\atk\1.gif</PackagePath>
-      <Modified>2018-03-03T05:08:50.503</Modified>
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\idleRight.gif">
+      <PackagePath>GameAssets\Characters\heroes\knight\idleRight.gif</PackagePath>
+      <Modified>2018-03-04T15:37:16.621</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\def\-1.gif">
-      <PackagePath>GameAssets\Characters\heroes\knight\def\-1.gif</PackagePath>
-      <Modified>2018-03-03T05:08:50.511</Modified>
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\walkLeft.gif">
+      <PackagePath>GameAssets\Characters\heroes\knight\walkLeft.gif</PackagePath>
+      <Modified>2018-03-04T15:36:43.848</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\def\1.gif">
-      <PackagePath>GameAssets\Characters\heroes\knight\def\1.gif</PackagePath>
-      <Modified>2018-03-03T05:08:50.515</Modified>
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\walkRight.gif">
+      <PackagePath>GameAssets\Characters\heroes\knight\walkRight.gif</PackagePath>
+      <Modified>2018-03-04T15:36:43.849</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\idle\-1.gif">
-      <PackagePath>GameAssets\Characters\heroes\knight\idle\-1.gif</PackagePath>
-      <Modified>2018-03-03T05:08:50.523</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\idle\1.gif">
-      <PackagePath>GameAssets\Characters\heroes\knight\idle\1.gif</PackagePath>
-      <Modified>2018-03-03T05:08:50.526</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\images\knight idle.gif">
-      <PackagePath>GameAssets\Characters\heroes\knight\images\knight idle.gif</PackagePath>
-      <Modified>2018-03-03T05:08:51.249</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\run\-1.gif">
-      <PackagePath>GameAssets\Characters\heroes\knight\run\-1.gif</PackagePath>
-      <Modified>2018-03-03T05:08:51.349</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\run\1.gif">
-      <PackagePath>GameAssets\Characters\heroes\knight\run\1.gif</PackagePath>
-      <Modified>2018-03-03T05:08:51.356</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\main_background.gif">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\main_background.gif">
       <PackagePath>GameAssets\Menu\main_background.gif</PackagePath>
       <Modified>2018-03-02T19:03:26.386</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2018-03-02T19:03:26.471</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MantaNecromante.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MantaNecromante.xr.xml">
       <PackagePath>MantaNecromante.xr.xml</PackagePath>
-      <Modified>2018-03-03T20:35:17.005</Modified>
+      <Modified>2018-03-04T20:17:49.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-28T19:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-03T20:41:47.501</Modified>
+      <Modified>2018-03-04T21:09:20.560</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Core\MantaNecromante.exe">
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Core\MantaNecromante.exe">
       <PackagePath>MantaNecromante.exe</PackagePath>
-      <Modified>2018-03-03T20:42:25.251</Modified>
+      <Modified>2018-03-04T21:09:20.711</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -62,6 +62,10 @@ namespace Extension {
                             childImg = (Image)VisualTreeHelper.GetChild(item, i);
                         }
                     }
+                } else {
+
+                    Canvas.SetLeft(item, Floor.Width * relative_X);
+                    Canvas.SetTop(item, Floor.Height * relative_Y);
                 }
 
                 itemRatio = oldWidth / oldHeight;
@@ -78,8 +82,8 @@ namespace Extension {
                         ((Image)item).Height = (Floor.Height * oldHeight) / defaultHeight;
                         ((Image)item).Width = ((Image)item).Height * itemRatio;
 
-                        Debug.WriteLine("Previous: " + oldWidth + "," + oldHeight);
-                        Debug.WriteLine("New: " + ((Image)item).Width + "," + ((Image)item).Height);
+                      //Debug.WriteLine("Previous: " + oldWidth + "," + oldHeight);
+                      //Debug.WriteLine("New: " + ((Image)item).Width + "," + ((Image)item).Height);
                     }
                 }
                 else if (item is Grid) {
