@@ -44,13 +44,15 @@ public sealed partial class MainPage : Page {
 
             //Teste de tamanho ajustável:
             //......................................................................................................
-            ApplicationView.PreferredLaunchViewSize = new Size(1138, 711.25);
-            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            //ApplicationView.PreferredLaunchViewSize = new Size(1138, 711.25);
+            //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             //......................................................................................................
             this.InitializeComponent();
 
             //Classe de extensão para ajustar todas os xalm:
             Adjuster.AdjustWindow(Floor);
+
+            Debug.WriteLine(Start.Height + "," + Start.Width);
         }
 
         private void Sair(object sender, RoutedEventArgs e) {

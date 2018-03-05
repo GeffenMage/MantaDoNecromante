@@ -38,8 +38,6 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Children" />
-      <RootProperty Name="Name" />
-      <RootProperty Name="Opacity" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="BorderThickness" />
@@ -55,6 +53,15 @@
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="MantaNecromante.ClassMenu.ClassMenu" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Children" />
+    </RootType>
     <RootType FullName="MantaNecromante.GameStage.MainStage" />
     <RootType FullName="FrontEnd.MainPage" />
   </Roots.RootTypes>
