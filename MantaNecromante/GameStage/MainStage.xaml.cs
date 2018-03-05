@@ -39,7 +39,9 @@ namespace MantaNecromante.GameStage {
         public MainStage() {
 
             this.InitializeComponent();
+
             Adjuster.AdjustWindow(Floor);
+            Adjuster.adjustForCamera(Mansion, Hero);
 
             Debug.WriteLine(Start.Height + "," + Start.Width);
 

@@ -13,102 +13,107 @@ using Windows.UI.Xaml.Media.Imaging;
 namespace Extension {
 
     public static class Adjuster {
-       
+
+        static double defaultWidth = 1440;
+        static double defaultHeight = 900;
+
+        public static void adjustForCamera(Image Map, Image Hero) {
+
+            int x_adjust = (int)Canvas.GetLeft(Map) % 10;
+            x_adjust = (int)Canvas.GetLeft(Map) - x_adjust;
+
+            int y_adjust = (int)Canvas.GetTop(Map) % 10;
+            y_adjust = (int)Canvas.GetTop(Map) - y_adjust;
+
+            int widthAjust = (int)Map.Width % 10;
+            widthAjust = (int)Map.Width - widthAjust;
+
+            int heightAjust = (int)Map.Height % 10;
+            heightAjust = (int)Map.Height - heightAjust;
+
+            Canvas.SetLeft(Map, x_adjust);
+            Canvas.SetTop(Map,y_adjust);
+
+            Map.Width = widthAjust;
+            Map.Height = heightAjust;
+
+            x_adjust = (int)Canvas.GetLeft(Hero) % 10;
+            x_adjust = (int)Canvas.GetLeft(Hero) - x_adjust;
+
+            y_adjust = (int)Canvas.GetTop(Hero) % 10;
+            y_adjust = (int)Canvas.GetTop(Hero) - y_adjust;
+
+            widthAjust = (int)Hero.Width % 10;
+            widthAjust = (int)Hero.Width - widthAjust;
+
+            heightAjust = (int)Hero.Height % 10;
+            heightAjust = (int)Hero.Height - heightAjust;
+
+            Canvas.SetLeft(Hero, x_adjust);
+            Canvas.SetTop(Hero, y_adjust);
+
+            Hero.Width = widthAjust;
+            Hero.Height = heightAjust;
+        }
+
         //Classe para Ajustar todas as telas para qualquer tamanho.
         public static void AdjustWindow(Canvas Floor) {
 
-            double defaultWidth = 1440;
-            double defaultHeight = 900;
+            double x_ratio, y_ratio;
 
-            Floor.Height = Window.Current.Bounds.Height;
-            Floor.Width = Window.Current.Bounds.Width;
+            Button childBtn;
+
+            Image childImg;
 
             List<UIElement> Images = Floor.Children.ToList();
 
-            //Variáveis de meus botões personalizados:
-            Button childBtn = null;
-            Image childImg = null;
+            Floor.Width = Window.Current.Bounds.Width;
+            Floor.Height = Window.Current.Bounds.Height;
 
-            double oldHeight = 0, oldWidth = 0, itemRatio, oldFont = 0;
-            double relative_X, relative_Y;
+            x_ratio = Floor.Width / defaultWidth;
+            y_ratio = Floor.Height / defaultHeight;
 
             foreach (UIElement item in Images) {
 
-                relative_X = Canvas.GetLeft(item) / defaultWidth;
-                relative_Y = Canvas.GetTop(item) / defaultHeight;
-
-                Canvas.SetLeft(item, Floor.Width * relative_X);
-                Canvas.SetTop(item, Floor.Height * relative_Y);
+                Canvas.SetLeft(item, Canvas.GetLeft(item) * x_ratio);
+                Canvas.SetTop(item, Canvas.GetTop(item) * y_ratio);
 
                 if (item is Image) {
 
-                    oldWidth = ((Image)item).Width;
-                    oldHeight = ((Image)item).Height;
+                    ((Image)item).Width = ((Image)item).Width * x_ratio;
+                    ((Image)item).Height = ((Image)item).Height * y_ratio;
                 }
                 else if (item is Grid) {
 
-                    oldWidth = ((Grid)item).Width;
-                    oldHeight = ((Grid)item).Height;
+                    ((Grid)item).Width = ((Grid)item).Width * x_ratio;
+                    ((Grid)item).Height = ((Grid)item).Height * y_ratio;
 
-                    for (int i = 0; i< VisualTreeHelper.GetChildrenCount(item); i++) {
+                    for (int i = 0; i < VisualTreeHelper.GetChildrenCount(item); i++) {
 
                         if (VisualTreeHelper.GetChild(item, i) is Button) {
 
                             childBtn = (Button)VisualTreeHelper.GetChild(item, i);
-                            oldFont = childBtn.FontSize;
 
-                        } else {
+                            childBtn.Width = childBtn.Width * x_ratio;
+                            childBtn.Height = childBtn.Height * y_ratio;
+                            childBtn.FontSize = childBtn.FontSize * x_ratio;
+
+                        }
+                        else {
 
                             childImg = (Image)VisualTreeHelper.GetChild(item, i);
+
+                            childImg.Width = childImg.Width * x_ratio;
+                            childImg.Height = childImg.Height * y_ratio;
                         }
                     }
-                } else {
-
-                    Canvas.SetLeft(item, Floor.Width * relative_X);
-                    Canvas.SetTop(item, Floor.Height * relative_Y);
                 }
+                else {
 
-                itemRatio = oldWidth / oldHeight;
-
-                if (item is Image) {
-
-                    if (oldWidth > oldHeight) {
-
-                        ((Image)item).Width = (Floor.Width * oldWidth) / defaultWidth;
-                        ((Image)item).Height = ((Image)item).Width * (1 / itemRatio);
-                    }
-                    else {
-
-                        ((Image)item).Height = (Floor.Height * oldHeight) / defaultHeight;
-                        ((Image)item).Width = ((Image)item).Height * itemRatio;
-
-                      //Debug.WriteLine("Previous: " + oldWidth + "," + oldHeight);
-                      //Debug.WriteLine("New: " + ((Image)item).Width + "," + ((Image)item).Height);
-                    }
+                    Canvas.SetLeft(item, Canvas.GetLeft(item) * x_ratio);
+                    Canvas.SetTop(item, Canvas.GetTop(item) * y_ratio);
                 }
-                else if (item is Grid) {
-
-                    if (oldWidth > oldHeight) {
-
-                        ((Grid)item).Width = (Floor.Width * oldWidth) / defaultWidth;
-                        ((Grid)item).Height = ((Grid)item).Width * (1 / itemRatio);
-                    }
-                    else {
-
-                        ((Grid)item).Height = (Floor.Height * oldHeight) / defaultHeight;
-                        ((Grid)item).Width = ((Grid)item).Height * itemRatio;
-
-                    }
-
-                    childImg.Width = ((Grid)item).Width;
-                    childImg.Height = ((Grid)item).Height;
-
-                    childBtn.Width = (childBtn.Width * childImg.Width) / oldWidth;
-                    childBtn.Height = (childBtn.Height * childImg.Height) / oldHeight;
-
-                    childBtn.FontSize = oldFont * childBtn.Height / oldHeight - 1;
-                }
-            }
+            }    
         }
     }
 }
