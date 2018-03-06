@@ -59,7 +59,7 @@ namespace MantaNecromante.GameStage {
 
         private void walk(object sender, object e) {
 
-            if (Canvas.GetLeft(Hero) + (Hero.Width / 2) == Window.Current.Bounds.Width / 2) {
+            if (Canvas.GetLeft(Hero) + (Hero.Width / 2) >= Window.Current.Bounds.Width / 2) {
 
                 if ((x < 0 && Canvas.GetLeft(Mansion) < 0) || (x > 0 && Canvas.GetLeft(Mansion) > Window.Current.Bounds.Width - Mansion.Width)) {
 
@@ -75,7 +75,7 @@ namespace MantaNecromante.GameStage {
                 Canvas.SetLeft(Hero, Canvas.GetLeft(Hero) + x);
             }
 
-            if (Canvas.GetTop(Hero) + (Hero.Height / 2) == Window.Current.Bounds.Height / 2) {
+            if (Canvas.GetTop(Hero) + (Hero.Height / 2) >= Window.Current.Bounds.Height / 2) {
 
                 if ((y < 0 && Canvas.GetTop(Mansion) < 0) || (y > 0 && Canvas.GetTop(Mansion) > Window.Current.Bounds.Height - Mansion.Height)) {
 

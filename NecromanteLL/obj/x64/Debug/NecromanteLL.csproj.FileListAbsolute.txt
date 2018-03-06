@@ -17,4 +17,3 @@ C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\NecromanteLL\obj\x64
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\NecromanteLL\obj\x64\Debug\qualifiers.txt
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\NecromanteLL\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\NecromanteLL\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\NecromanteLL\obj\x64\Debug\NecromanteLL.csprojResolveAssemblyReference.cache

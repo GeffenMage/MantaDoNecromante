@@ -19,16 +19,16 @@ namespace Extension {
 
         public static void adjustForCamera(Image Map, Image Hero) {
 
-            int x_adjust = (int)Canvas.GetLeft(Map) % 10;
+            int x_adjust = (int)Canvas.GetLeft(Map) % 5;
             x_adjust = (int)Canvas.GetLeft(Map) - x_adjust;
 
-            int y_adjust = (int)Canvas.GetTop(Map) % 10;
+            int y_adjust = (int)Canvas.GetTop(Map) % 5;
             y_adjust = (int)Canvas.GetTop(Map) - y_adjust;
 
-            int widthAjust = (int)Map.Width % 10;
+            int widthAjust = (int)Map.Width % 5;
             widthAjust = (int)Map.Width - widthAjust;
 
-            int heightAjust = (int)Map.Height % 10;
+            int heightAjust = (int)Map.Height % 5;
             heightAjust = (int)Map.Height - heightAjust;
 
             Canvas.SetLeft(Map, x_adjust);
@@ -37,16 +37,16 @@ namespace Extension {
             Map.Width = widthAjust;
             Map.Height = heightAjust;
 
-            x_adjust = (int)Canvas.GetLeft(Hero) % 10;
+            x_adjust = (int)Canvas.GetLeft(Hero) % 5;
             x_adjust = (int)Canvas.GetLeft(Hero) - x_adjust;
 
-            y_adjust = (int)Canvas.GetTop(Hero) % 10;
+            y_adjust = (int)Canvas.GetTop(Hero) % 5;
             y_adjust = (int)Canvas.GetTop(Hero) - y_adjust;
 
-            widthAjust = (int)Hero.Width % 10;
+            widthAjust = (int)Hero.Width % 5;
             widthAjust = (int)Hero.Width - widthAjust;
 
-            heightAjust = (int)Hero.Height % 10;
+            heightAjust = (int)Hero.Height % 5;
             heightAjust = (int)Hero.Height - heightAjust;
 
             Canvas.SetLeft(Hero, x_adjust);
