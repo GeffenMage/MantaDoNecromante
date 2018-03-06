@@ -33,15 +33,29 @@ namespace MantaNecromante.GameStage {
         private BitmapImage runtoLeft, runtoRight;
         private BitmapImage idletoLeft, idletoRight;
 
-        private string choice;
+
         private double x, y;
+        private string choice;
+        private int ScreenHeight, ScreenWidth;
 
         public MainStage() {
 
             this.InitializeComponent();
 
+            ScreenWidth = (int)Window.Current.Bounds.Width;
+            ScreenHeight = (int)Window.Current.Bounds.Height;
+
+            int x_adjust = ScreenWidth % 10;
+            int y_adjust = ScreenHeight % 10;
+
+            ScreenWidth -= x_adjust;
+            ScreenHeight -= y_adjust;
+
+
             Adjuster.AdjustWindow(Floor);
             Adjuster.adjustForCamera(Mansion, Hero);
+                
+
 
             Debug.WriteLine(Start.Height + "," + Start.Width);
 
@@ -53,15 +67,15 @@ namespace MantaNecromante.GameStage {
 
             walkTimer.Start();
 
-            Debug.WriteLine(Window.Current.Bounds.Width);
+            Debug.WriteLine(ScreenWidth);
 
         }
 
         private void walk(object sender, object e) {
 
-            if (Canvas.GetLeft(Hero) + (Hero.Width / 2) == Window.Current.Bounds.Width / 2) {
+            if (Canvas.GetLeft(Hero) + (Hero.Width / 2) == ScreenWidth / 2) {
 
-                if ((x < 0 && Canvas.GetLeft(Mansion) < 0) || (x > 0 && Canvas.GetLeft(Mansion) > Window.Current.Bounds.Width - Mansion.Width)) {
+                if ((x < 0 && Canvas.GetLeft(Mansion) < 0) || (x > 0 && Canvas.GetLeft(Mansion) > ScreenWidth - Mansion.Width)) {
 
                     Canvas.SetLeft(Mansion, Canvas.GetLeft(Mansion) - x);
                 }
@@ -75,9 +89,9 @@ namespace MantaNecromante.GameStage {
                 Canvas.SetLeft(Hero, Canvas.GetLeft(Hero) + x);
             }
 
-            if (Canvas.GetTop(Hero) + (Hero.Height / 2) == Window.Current.Bounds.Height / 2) {
+            if (Canvas.GetTop(Hero) + (Hero.Height / 2) == ScreenHeight / 2) {
 
-                if ((y < 0 && Canvas.GetTop(Mansion) < 0) || (y > 0 && Canvas.GetTop(Mansion) > Window.Current.Bounds.Height - Mansion.Height)) {
+                if ((y < 0 && Canvas.GetTop(Mansion) < 0) || (y > 0 && Canvas.GetTop(Mansion) > ScreenHeight - Mansion.Height)) {
 
                     Canvas.SetTop(Mansion, Canvas.GetTop(Mansion) - y);
                 }
@@ -166,6 +180,7 @@ namespace MantaNecromante.GameStage {
             else if (direction == runtoRight) stand = idletoRight;
 
             if (isMovementKey) {
+
                 Hero.Source = stand;
             }
         }

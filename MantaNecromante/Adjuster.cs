@@ -19,41 +19,30 @@ namespace Extension {
 
         public static void adjustForCamera(Image Map, Image Hero) {
 
-            int x_adjust = (int)Canvas.GetLeft(Map) % 10;
-            x_adjust = (int)Canvas.GetLeft(Map) - x_adjust;
+            ScaleUp(Map);
+            ScaleUp(Hero);
+        }
 
-            int y_adjust = (int)Canvas.GetTop(Map) % 10;
-            y_adjust = (int)Canvas.GetTop(Map) - y_adjust;
+        private static void ScaleUp(Image item) {
 
-            int widthAjust = (int)Map.Width % 10;
-            widthAjust = (int)Map.Width - widthAjust;
+            int x_adjust = (int)Canvas.GetLeft(item) % 10;
+            x_adjust = (int)Canvas.GetLeft(item) - x_adjust;
 
-            int heightAjust = (int)Map.Height % 10;
-            heightAjust = (int)Map.Height - heightAjust;
+            int y_adjust = (int)Canvas.GetTop(item) % 10;
+            y_adjust = (int)Canvas.GetTop(item) - y_adjust;
 
-            Canvas.SetLeft(Map, x_adjust);
-            Canvas.SetTop(Map,y_adjust);
+            int widthAjust = (int)item.Width % 10;
+            widthAjust = (int)item.Width - widthAjust;
 
-            Map.Width = widthAjust;
-            Map.Height = heightAjust;
+            int heightAjust = (int)item.Height % 10;
+            heightAjust = (int)item.Height - heightAjust;
 
-            x_adjust = (int)Canvas.GetLeft(Hero) % 10;
-            x_adjust = (int)Canvas.GetLeft(Hero) - x_adjust;
+            Canvas.SetLeft(item, x_adjust);
+            Canvas.SetTop(item, y_adjust);
 
-            y_adjust = (int)Canvas.GetTop(Hero) % 10;
-            y_adjust = (int)Canvas.GetTop(Hero) - y_adjust;
+            item.Width = widthAjust;
+            item.Height = heightAjust;
 
-            widthAjust = (int)Hero.Width % 10;
-            widthAjust = (int)Hero.Width - widthAjust;
-
-            heightAjust = (int)Hero.Height % 10;
-            heightAjust = (int)Hero.Height - heightAjust;
-
-            Canvas.SetLeft(Hero, x_adjust);
-            Canvas.SetTop(Hero, y_adjust);
-
-            Hero.Width = widthAjust;
-            Hero.Height = heightAjust;
         }
 
         //Classe para Ajustar todas as telas para qualquer tamanho.
@@ -96,7 +85,7 @@ namespace Extension {
 
                             childBtn.Width = childBtn.Width * x_ratio;
                             childBtn.Height = childBtn.Height * y_ratio;
-                            childBtn.FontSize = childBtn.FontSize * x_ratio;
+                            childBtn.FontSize = childBtn.FontSize * x_ratio - 3;
 
                         }
                         else {
