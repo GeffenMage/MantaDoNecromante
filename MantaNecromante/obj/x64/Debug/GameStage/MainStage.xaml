@@ -9,7 +9,7 @@
 
     <Canvas x:ConnectionId='1' Name="Floor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1440" Height="900">
         <Image x:ConnectionId='2' Name ="Mansion" Source="ms-appx:///GameAssets/Maps/mansion.png" HorizontalAlignment="Left" Stretch="UniformToFill" VerticalAlignment="Top" Height="3995" Width="3595" Canvas.Top="-3090" Canvas.Left="-5"/>
-        <Image x:ConnectionId='3' Stretch="UniformToFill" Name="Hero" Height="190" Canvas.Left="125" Canvas.Top="430" Width="130"/>
+        <Image x:ConnectionId='3' Stretch="UniformToFill" Name="Hero" Height="150" Canvas.Left="125" Canvas.Top="470" Width="95"/>
         <RelativePanel x:ConnectionId='4' Opacity="0" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/optionMenu.png" Margin="0,0,-10,0" Width="360" HorizontalAlignment="Left"/>
             <Button x:ConnectionId='6'  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="35" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,177,80,275"                  Canvas.Top="172"/>

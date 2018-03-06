@@ -22,11 +22,11 @@
             <Image  Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
             <Button Background="Transparent" BorderThickness="0" x:Name="Exit1" Content="Mago" Height="40" Width="183" FontSize="30" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"/>
         </Grid>
-        <Image Height="365" Canvas.Left="122.5" Canvas.Top="295" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
-        <Image Height="310" Canvas.Left="130" Canvas.Top="340" Width="220" Source="ms-appx:///GameAssets/Characters/exhibit/knight_idle.gif"/>
+        <Image Stretch="Fill" Height="365" Canvas.Left="122.5" Canvas.Top="295" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
+        <Image Stretch="UniformToFill" Height="309" Canvas.Left="130" Canvas.Top="340" Width="220" Source="ms-appx:///GameAssets/Characters/exhibit/knight_idle.gif"/>
 
-        <Image Height="365" Canvas.Left="602.5" Canvas.Top="295" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
-        <Image Height="365" Canvas.Left="1082.5" Canvas.Top="295" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
+        <Image Stretch="Fill"  Height="365" Canvas.Left="602.5" Canvas.Top="295" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
+        <Image Stretch="Fill" Height="365" Canvas.Left="1082.5" Canvas.Top="295" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
 
 
 
