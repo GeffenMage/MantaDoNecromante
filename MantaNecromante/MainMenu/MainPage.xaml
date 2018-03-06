@@ -15,7 +15,7 @@
         </Grid>
         <Grid Height="50" Canvas.Left="605" Canvas.Top="510" Width="235">
             <Image  Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button Background="Transparent" BorderThickness="0" Click="Sair" x:Name="Exit" Content="Sair" Height="40" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"/>
+            <Button Background="Transparent" BorderThickness="0" Click="Sair" x:Name="Exit" Content="Sair" Height="35" Width="181" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="26,5,28,10"/>
         </Grid>
         <Image Name="Title" Height="101" Canvas.Left="45" Canvas.Top="100" Width="1360" Source="ms-appx:///GameAssets/Menu/mainTitle.png"/>
     </Canvas>
