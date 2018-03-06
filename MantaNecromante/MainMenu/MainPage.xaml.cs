@@ -44,8 +44,8 @@ public sealed partial class MainPage : Page {
 
             //Teste de tamanho ajustável:
             //......................................................................................................
-            //ApplicationView.PreferredLaunchViewSize = new Size(1366, 768);
-            //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+           // ApplicationView.PreferredLaunchViewSize = new Size(800, 500);
+          //  ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             //......................................................................................................
             this.InitializeComponent();
 
