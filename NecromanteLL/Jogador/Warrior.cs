@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Media.Imaging;
 
-namespace RPG {
-    class Warrior : Player {
+namespace NecromanteLL {
+    public class Warrior : Player {
 
         //Construtor setando os valores base do warrior
         public Warrior(String nome) {
@@ -18,6 +19,11 @@ namespace RPG {
             Mp_total = 250; Mp_atual = Mp_total;
             Base_def = 30; Base_dmg = 80;
             Nome_classe = "Warrior";
+            //Inicializa os sprites do personagem
+            Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
+            Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleLeft.gif"));
+            Sprite_walking_left = new  BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkLeft.gif"));
+            Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkRight.gif"));
             //Cria e inicializa as skills da classe do personagem
             Skills = new List<Skill>();
             Skills.Add(new Skill("Stomp", 30, 0, 1, 0, 0, 0, 0, 250));

@@ -4,10 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RPG.Personagens.Inimigos;
 
-namespace RPG {
-    class BattleController {
+namespace NecromanteLL {
+    public class BattleController {
         int player_initalHP, player_initialMP, player_initialDmg, player_initialDef;
         int turno_atual = 1;
         bool turno_player = true;

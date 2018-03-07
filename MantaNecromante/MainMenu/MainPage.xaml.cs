@@ -22,6 +22,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using Extension;
+using NecromanteLL;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -39,13 +40,13 @@ public sealed partial class MainPage : Page {
 
         public MainPage() {
 
-            
+             
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.FullScreen;
 
             //Teste de tamanho ajustável:
             //......................................................................................................
-            ApplicationView.PreferredLaunchViewSize = new Size(1366, 768);
-            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            //ApplicationView.PreferredLaunchViewSize = new Size(500, 600);
+            //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             //......................................................................................................
             this.InitializeComponent();
 

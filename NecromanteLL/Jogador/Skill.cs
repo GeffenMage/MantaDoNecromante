@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPG {
-    class Skill {
+namespace NecromanteLL {
+    public class Skill {
 
         private String skill_name;
         private int custo_mp, custo_hp, lv_requerido;

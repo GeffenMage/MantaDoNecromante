@@ -18,7 +18,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
-using Windows.UI.Xaml.Shapes;
+using NecromanteLL;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -56,7 +56,7 @@ namespace MantaNecromante.GameStage {
 
             Adjuster.AdjustWindow(Floor);
             Adjuster.adjustForCamera(Mansion, Hero);
-
+                
 
 
             Debug.WriteLine(Start.Height + "," + Start.Width);
@@ -69,104 +69,53 @@ namespace MantaNecromante.GameStage {
 
             walkTimer.Start();
 
+            CreateGrid();
             Debug.WriteLine(ScreenWidth);
-
-            //DrawGrid();
 
         }
 
-        //private void DrawGrid() {
+        private Grid Colliders = new Grid();
+         
+        private void CreateGrid() {
+            
+            int x, y;
 
+            x = (int)Mansion.Width / 51;
+            y = (int)Mansion.Height / 51;
 
-        //    for (int i = 0; i < 71; i++) {
+            for (int i = 0; i < 51; i++) {
 
-        //        ColumnDefinition cd = new ColumnDefinition();
-        //        cd.Width = new GridLength(10, GridUnitType.Pixel);
-        //        test.ColumnDefinitions.Add(cd);
-        //    }
+                RowDefinition rc = new RowDefinition();
+                rc.Height = new GridLength(y, GridUnitType.Pixel);
+                Colliders.RowDefinitions.Add(rc);
+            }
 
-        //    for (int i = 0; i < 79; i++) {
+            for (int i = 0; i < 51; i++) {
 
-        //        RowDefinition cd = new RowDefinition();
-        //        cd.Height = new GridLength(10, GridUnitType.Pixel);
-        //        test.RowDefinitions.Add(cd);
-        //    }
+                ColumnDefinition rc = new ColumnDefinition();
+                rc.Width = new GridLength(x, GridUnitType.Pixel);
+                Colliders.ColumnDefinitions.Add(rc);
+            }
 
-        //    for (int i = 0; i < 80; i++) {
+            for (int j = 0; j < 51; j++) {
 
-        //        Line line = new Line();
-        //        line.Stroke = new SolidColorBrush(Windows.UI.Colors.SeaGreen);
-        //        line.StrokeThickness = 0.5;
+                for (int k = 0; k < 51; k++) {
 
-        //        line.X1 = 0;
-        //        line.X2 = 710;
+                    Border border = new Border();
+                    border.BorderThickness = new Thickness(1);
+                    border.BorderBrush = new SolidColorBrush(Colors.Red);
+                    border.HorizontalAlignment = HorizontalAlignment.Stretch;
+                    border.VerticalAlignment = VerticalAlignment.Stretch;
+                    Grid.SetColumn(border, j);
+                    Grid.SetRow(border, k);
+                    Colliders.Children.Add(border);
+                }
+            }
 
-        //        line.Y1 = 0;
-        //        line.Y2 = 0;
+            Floor.Children.Add(Colliders);
+            Canvas.SetTop(Colliders, Canvas.GetTop(Mansion));
 
-        //        Canvas.SetTop(line, i * 10);
-        //        Canvas.SetLeft(line, 0);
-
-        //        Floor.Children.Add(line);
-        //    }
-
-        //    for (int i = 0; i < 72; i++) {
-
-        //        Line line = new Line();
-        //        line.Stroke = new SolidColorBrush(Windows.UI.Colors.SeaGreen);
-        //        line.StrokeThickness = 0.5;
-
-        //        line.X1 = 0;
-        //        line.X2 = 0;
-
-        //        line.Y1 = 0;
-        //        line.Y2 = 791;
-
-        //        Canvas.SetTop(line, 0);
-        //        Canvas.SetLeft(line, i * 10);
-
-        //        Floor.Children.Add(line);
-        //    }
-
-        //    for (int i = 0; i < 72; i++) {
-
-        //        for (int j = 0; j < 80; j++) {
-
-        //            Border border = new Border();
-
-        //            border.Opacity = 0.3;
-        //            border.BorderThickness = new Thickness(0.5);
-        //            border.BorderBrush = new SolidColorBrush(Colors.Gray);
-
-        //            border.HorizontalAlignment = HorizontalAlignment.Stretch;
-        //            border.VerticalAlignment = VerticalAlignment.Stretch;
-
-        //            Grid.SetColumn(border, i);
-        //            Grid.SetRow(border, j);
-
-        //            border.Background = new SolidColorBrush(Colors.Transparent);
-        //            border.Tapped += Test_Tapped;
-
-        //            test.Children.Add(border);
-        //        }
-        //    }
-        //}
-
-        //private void Test_Tapped(object sender, TappedRoutedEventArgs e) {
-
-        //    // First way:
-        //    var border = (Border)sender;
-        //    var column = Grid.GetColumn(border);
-        //    var row = Grid.GetRow(border);
-
-        //    // Second way
-        //    var point = e.GetPosition(Window.Current.Content);
-
-        //    border.Opacity = 1;
-        //    border.BorderBrush = new SolidColorBrush(Colors.Red);
-
-        //    Debug.Write("CollisionGrid[" + row + "][" + column + "]; ");
-        //}
+        }
 
         private void walk(object sender, object e) {
 
@@ -175,14 +124,14 @@ namespace MantaNecromante.GameStage {
                 if ((x < 0 && Canvas.GetLeft(Mansion) < 0) || (x > 0 && Canvas.GetLeft(Mansion) > ScreenWidth - Mansion.Width)) {
 
                     Canvas.SetLeft(Mansion, Canvas.GetLeft(Mansion) - x);
+                    Canvas.SetLeft(Colliders, Canvas.GetLeft(Colliders) - x);
                 }
                 else {
 
                     Canvas.SetLeft(Hero, Canvas.GetLeft(Hero) + x);
                 }
 
-            }
-            else {
+            } else {
 
                 Canvas.SetLeft(Hero, Canvas.GetLeft(Hero) + x);
             }
@@ -192,14 +141,14 @@ namespace MantaNecromante.GameStage {
                 if ((y < 0 && Canvas.GetTop(Mansion) < 0) || (y > 0 && Canvas.GetTop(Mansion) > ScreenHeight - Mansion.Height)) {
 
                     Canvas.SetTop(Mansion, Canvas.GetTop(Mansion) - y);
+                    Canvas.SetTop(Colliders, Canvas.GetTop(Colliders) - y);
                 }
                 else {
 
                     Canvas.SetTop(Hero, Canvas.GetTop(Hero) + y);
                 }
 
-            }
-            else {
+            } else {
 
                 Canvas.SetTop(Hero, Canvas.GetTop(Hero) + y);
             }
@@ -207,14 +156,14 @@ namespace MantaNecromante.GameStage {
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
 
-            string var = (string)e.Parameter;
-            choice = var;
+            Player va = (Player)e.Parameter;
 
-            idletoLeft = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/" + choice + "/idleLeft.gif"));
-            idletoRight = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/" + choice + "/idleRight.gif"));
 
-            runtoLeft = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/" + choice + "/walkLeft.gif"));
-            runtoRight = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/" + choice + "/walkRight.gif"));
+            idletoLeft = va.Sprite_idle_left;
+            idletoRight = va.Sprite_idle_right;
+
+            runtoLeft = va.Sprite_walking_left;
+            runtoRight = va.Sprite_walking_right;
 
             direction = runtoRight;
             Hero.Source = idletoRight;
@@ -276,7 +225,7 @@ namespace MantaNecromante.GameStage {
             }
 
             if (direction == runtoLeft) stand = idletoLeft;
-            else stand = idletoRight;
+            else if (direction == runtoRight) stand = idletoRight;
 
             if (isMovementKey) {
 
@@ -284,7 +233,7 @@ namespace MantaNecromante.GameStage {
             }
         }
 
-        private void Exit(object sender, RoutedEventArgs e) {
+            private void Exit(object sender, RoutedEventArgs e) {
 
             CoreApplication.Exit();
         }

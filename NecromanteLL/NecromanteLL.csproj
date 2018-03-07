@@ -109,10 +109,21 @@
     <Compile Include="Controllers\BattleController.cs" />
     <Compile Include="Enemys\Fantasma.cs" />
     <Compile Include="Enemys\Goblin.cs" />
-    <Compile Include="Items\Itens.cs" />
+    <Compile Include="Items\Concretos\Armas\Arco.cs" />
+    <Compile Include="Items\Abstratos\Armaduras.cs" />
+    <Compile Include="Items\Abstratos\Armas.cs" />
+    <Compile Include="Items\Concretos\Armaduras\Bota.cs" />
+    <Compile Include="Items\Concretos\Armas\Cajado.cs" />
+    <Compile Include="Items\Concretos\Armaduras\Capacete.cs" />
+    <Compile Include="Items\Concretos\Armaduras\Calca.cs" />
+    <Compile Include="Items\Concretos\Armaduras\Cota.cs" />
+    <Compile Include="Items\Concretos\Armaduras\Escudo.cs" />
+    <Compile Include="Items\Concretos\Armas\Espada.cs" />
+    <Compile Include="Items\Abstratos\Itens.cs" />
     <Compile Include="Enemys\Laposo.cs" />
     <Compile Include="Enemys\Mob.cs" />
     <Compile Include="Enemys\Ogro.cs" />
+    <Compile Include="Items\Concretos\Armaduras\Luva.cs" />
     <Compile Include="Jogador\Player.cs" />
     <Compile Include="Jogador\Rogue.cs" />
     <Compile Include="Jogador\Wizard.cs" />
@@ -126,6 +137,7 @@
       <Version>6.0.7</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

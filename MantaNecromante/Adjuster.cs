@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NecromanteLL;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -20,13 +21,12 @@ namespace Extension {
         static double defaultHeight = 900;
 
         public static void adjustForCamera(Image Map, Image Hero) {
-
             ScaleUp(Map);
             ScaleUp(Hero);
         }
 
         private static void ScaleUp(Image item) {
-
+           
             int x_adjust = (int)Canvas.GetLeft(item) % 10;
             x_adjust = (int)Canvas.GetLeft(item) - x_adjust;
 

@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Navigation;
 using Extension;
 using System.Diagnostics;
 using MantaNecromante.GameStage;
+using NecromanteLL;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -32,9 +33,8 @@ namespace MantaNecromante.ClassMenu {
         }
 
         private void Iniciar(object sender, RoutedEventArgs e) {
-
-            
-            this.Frame.Navigate(typeof(MainStage), "knight");
+            Warrior w = new Warrior("Jogador");
+            this.Frame.Navigate(typeof(MainStage),w);
         }
     }
 }
