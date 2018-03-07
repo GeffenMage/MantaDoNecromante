@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPG.Personagens.Inimigos {
+namespace NecromanteLL {
     class Goblin : Mob {
 
         public Goblin(int lvl) {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPG {
+namespace NecromanteLL {
     class Fantasma : Mob {
 
         public Fantasma(int lvl) {
