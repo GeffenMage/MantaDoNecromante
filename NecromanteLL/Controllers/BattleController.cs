@@ -4,9 +4,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RPG.Personagens.Inimigos;
 
-namespace RPG {
+namespace NecromanteLL {
     class BattleController {
         int player_initalHP, player_initialMP, player_initialDmg, player_initialDef;
         int turno_atual = 1;
@@ -23,6 +22,7 @@ namespace RPG {
         /// <param name="opSkill"></param>
         /// <returns></returns>
         public bool Battle(Player jogador, Mob inimigo, string option, string opSkill) {
+            
             if (Turno_atual == 1) {
                 Set_initialStatus(jogador);
             }

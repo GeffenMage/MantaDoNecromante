@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPG {
+namespace NecromanteLL {
     class Rogue : Player {
         //Construtor setando os valores base do warrior
         public Rogue(String nome) {

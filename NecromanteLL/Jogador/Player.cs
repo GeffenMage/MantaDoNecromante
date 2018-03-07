@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPG
-{
+namespace NecromanteLL {
     abstract class Player 
     {
        private String nome;
@@ -15,6 +14,14 @@ namespace RPG
        private int base_dmg, base_def;
        private String nome_classe;
        private List<Skill> skills;
+       private List<Itens> inventario;
+       private Itens cabeca;
+       private Itens maos;
+       private Itens pes;
+       private Itens inferior;
+       private Itens torso;
+       private Itens mao_esq;
+       private Itens mao_dir;
 
         public string Nome { get => nome; set => nome = value; }
         public int Hp_atual { get => hp_atual; set => hp_atual = value; }
@@ -28,6 +35,14 @@ namespace RPG
         public int Base_def { get => base_def; set => base_def = value; }
         public string Nome_classe { get => nome_classe; set => nome_classe = value; }
         internal List<Skill> Skills { get => skills; set => skills = value; }
+        internal List<Itens> Inventario { get => inventario; set => inventario = value; }
+        internal Itens Cabeca { get => cabeca;}
+        internal Itens Maos { get => maos;}
+        internal Itens Pes { get => pes;}
+        internal Itens Inferior { get => inferior;}
+        internal Itens Torso { get => torso;}
+        internal Itens Mao_esq { get => mao_esq; }
+        internal Itens Mao_dir { get => mao_dir;}
 
         //Implementar interface gráfica de movimento para o personagem
         public bool IsLvUP() {
@@ -83,6 +98,193 @@ namespace RPG
                 return false;
             }
         }
+
+        public bool Equipar(Itens item) {
+            if(item is Espada && Mao_dir == null) {
+                mao_dir = item;
+                Mao_dir.Equipado = true;
+                Base_def += Mao_dir.Def;
+                Base_dmg += Mao_dir.Dmg;
+                Mp_total += Mao_dir.Mp_up;
+                Hp_total += Mao_dir.Hp_up;
+                return true;
+            }
+            else if(item is Escudo && Mao_esq == null) {
+                mao_esq = item;
+                Mao_esq.Equipado = true;
+                Base_def += Mao_esq.Def;
+                Base_dmg += Mao_esq.Dmg;
+                Mp_total += Mao_esq.Mp_up;
+                Hp_total += Mao_esq.Hp_up;
+                return true;
+            }
+            else if(item is Luva && Maos == null) {
+                maos = item;
+                Maos.Equipado = true;
+                Base_def += Maos.Def;
+                Base_dmg += Maos.Dmg;
+                Mp_total += Maos.Mp_up;
+                Hp_total += Maos.Hp_up;
+                return true;
+            }
+            else if (item is Calca && Inferior == null) {
+                inferior = item;
+                Inferior.Equipado = true;
+                Base_def += Inferior.Def;
+                Base_dmg += Inferior.Dmg;
+                Mp_total += Inferior.Mp_up;
+                Hp_total += Inferior.Hp_up;
+                return true;
+            }
+            else if (item is Capacete && Cabeca == null) {
+                cabeca = item;
+                Cabeca.Equipado = true;
+                Base_def += Cabeca.Def;
+                Base_dmg += Cabeca.Dmg;
+                Mp_total += Cabeca.Mp_up;
+                Hp_total += Cabeca.Hp_up;
+                return true;
+            }
+            else if (item is Bota && Pes == null) {
+                pes = item;
+                Pes.Equipado = true;
+                Base_def += Pes.Def;
+                Base_dmg += Pes.Dmg;
+                Mp_total += Pes.Mp_up;
+                Hp_total += Pes.Hp_up;
+                return true;
+            }
+            else if (item is Cajado && Mao_dir == null) {
+                mao_dir = item;
+                Mao_dir.Equipado = true;
+                Base_def += Mao_dir.Def;
+                Base_dmg += Mao_dir.Dmg;
+                Mp_total += Mao_dir.Mp_up;
+                Hp_total += Mao_dir.Hp_up;
+                return true;
+            }
+            else if (item is Arco && Mao_dir == null) {
+                mao_dir = item;
+                Mao_dir.Equipado = true;
+                Base_def += Mao_dir.Def;
+                Base_dmg += Mao_dir.Dmg;
+                Mp_total += Mao_dir.Mp_up;
+                Hp_total += Mao_dir.Hp_up;
+                return true;
+            }
+            else if (item is Cota && Torso == null) {
+                torso = item;
+                Torso.Equipado = true;
+                Base_def += Torso.Def;
+                Base_dmg += Torso.Dmg;
+                Mp_total += Torso.Mp_up;
+                Hp_total += Torso.Hp_up;
+                return true;
+            }
+            else {
+                return false;
+            }
+
+        }
+        
+        public bool Desequipar(String slot) {
+            switch (slot) {
+                case "Maos":
+                    if (maos != null) {
+                        Maos.Equipado = false;
+                        Base_def -= Maos.Def;
+                        Base_dmg -= Maos.Dmg;
+                        Mp_total -= Maos.Mp_up;
+                        Hp_total -= Maos.Hp_up;
+                        maos = null;
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                case "Pes":
+                    if (Pes != null) {
+                        Pes.Equipado = false;
+                        Base_def -= Pes.Def;
+                        Base_dmg -= Pes.Dmg;
+                        Mp_total -= Pes.Mp_up;
+                        Hp_total -= Pes.Hp_up;
+                        pes = null;
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                case "Torso":
+                    if (Torso != null) {
+                        Torso.Equipado = false;
+                        Base_def -= Torso.Def;
+                        Base_dmg -= Torso.Dmg;
+                        Mp_total -= Torso.Mp_up;
+                        Hp_total -= Torso.Hp_up;
+                        torso = null;
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                case "Inferior":
+                    if (Inferior != null) {
+                        Inferior.Equipado = false;
+                        Base_def -= Inferior.Def;
+                        Base_dmg -= Inferior.Dmg;
+                        Mp_total -= Inferior.Mp_up;
+                        Hp_total -= Inferior.Hp_up;
+                        inferior = null;
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                case "Cabeca":
+                    if (Cabeca != null) {
+                        Cabeca.Equipado = false;
+                        Base_def -= Cabeca.Def;
+                        Base_dmg -= Cabeca.Dmg;
+                        Mp_total -= Cabeca.Mp_up;
+                        Hp_total -= Cabeca.Hp_up;
+                        cabeca = null;
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                case "Mao Esquerda":
+                    if (Mao_esq != null) {
+                        Mao_esq.Equipado = false;
+                        Base_def -= Mao_esq.Def;
+                        Base_dmg -= Mao_esq.Dmg;
+                        Mp_total -= Mao_esq.Mp_up;
+                        Hp_total -= Mao_esq.Hp_up;
+                        mao_esq = null;
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                case "Mao Direita":
+                    if (Mao_dir != null) {
+                        Mao_dir.Equipado = false;
+                        Base_def -= Mao_dir.Def;
+                        Base_dmg -= Mao_dir.Dmg;
+                        Mp_total -= Mao_dir.Mp_up;
+                        Hp_total -= Mao_dir.Hp_up;
+                        mao_dir = null;
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                default:
+                    return false;
+            }
+        }
+
 
     }
 }
