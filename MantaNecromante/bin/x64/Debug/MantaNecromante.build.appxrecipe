@@ -370,6 +370,9 @@
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\NecromanteLL\bin\x64\Debug\NecromanteLL.dll">
+      <PackagePath>NecromanteLL.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>

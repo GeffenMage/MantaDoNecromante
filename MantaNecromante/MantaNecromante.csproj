@@ -166,6 +166,12 @@
     <Folder Include="GameAssets\Characters\heroes\mage\" />
     <Folder Include="GameAssets\Songs\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NecromanteLL\NecromanteLL.csproj">
+      <Project>{9ef34566-f4c8-46c5-b70f-2102d7401968}</Project>
+      <Name>NecromanteLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

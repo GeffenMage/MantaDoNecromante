@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace NecromanteLL {
-    class Skill {
+    public class Skill {
 
         private String skill_name;
         private int custo_mp, custo_hp, lv_requerido;

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace NecromanteLL {
-    abstract class Player 
+    public abstract class Player 
     {
        private String nome;
        private int hp_atual, hp_total;
@@ -22,6 +23,10 @@ namespace NecromanteLL {
        private Itens torso;
        private Itens mao_esq;
        private Itens mao_dir;
+       private BitmapImage sprite_idle_left;
+       private BitmapImage sprite_idle_right;
+       private BitmapImage sprite_walking_left;
+       private BitmapImage sprite_walking_right;
 
         public string Nome { get => nome; set => nome = value; }
         public int Hp_atual { get => hp_atual; set => hp_atual = value; }
@@ -43,6 +48,10 @@ namespace NecromanteLL {
         internal Itens Torso { get => torso;}
         internal Itens Mao_esq { get => mao_esq; }
         internal Itens Mao_dir { get => mao_dir;}
+        public BitmapImage Sprite_idle_left { get => sprite_idle_left; set => sprite_idle_left = value; }
+        public BitmapImage Sprite_idle_right { get => sprite_idle_right; set => sprite_idle_right = value; }
+        public BitmapImage Sprite_walking_left { get => sprite_walking_left; set => sprite_walking_left = value; }
+        public BitmapImage Sprite_walking_right { get => sprite_walking_right; set => sprite_walking_right = value; }
 
         //Implementar interface gráfica de movimento para o personagem
         public bool IsLvUP() {

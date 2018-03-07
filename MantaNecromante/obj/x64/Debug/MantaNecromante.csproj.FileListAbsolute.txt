@@ -880,3 +880,7 @@ C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.g.cs
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.xaml
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.xbf
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.dll
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.pdb
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.pri
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MantaNecromante.csproj.GenerateResource.Cache

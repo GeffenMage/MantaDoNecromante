@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace NecromanteLL {
-    class BattleController {
+    public class BattleController {
         int player_initalHP, player_initialMP, player_initialDmg, player_initialDef;
         int turno_atual = 1;
         bool turno_player = true;
@@ -22,7 +22,6 @@ namespace NecromanteLL {
         /// <param name="opSkill"></param>
         /// <returns></returns>
         public bool Battle(Player jogador, Mob inimigo, string option, string opSkill) {
-            
             if (Turno_atual == 1) {
                 Set_initialStatus(jogador);
             }
