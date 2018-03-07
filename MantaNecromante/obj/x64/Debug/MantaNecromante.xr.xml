@@ -63,6 +63,10 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Children" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+    </RootType>
     <RootType FullName="MantaNecromante.GameStage.MainStage" />
     <RootType FullName="FrontEnd.MainPage" />
   </Roots.RootTypes>

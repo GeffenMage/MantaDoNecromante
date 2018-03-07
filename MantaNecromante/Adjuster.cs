@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Extension {
 
+   
+
     public static class Adjuster {
 
         static double defaultWidth = 1440;
