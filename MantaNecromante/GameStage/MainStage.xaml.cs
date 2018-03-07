@@ -18,6 +18,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
+using NecromanteLL;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -155,14 +156,14 @@ namespace MantaNecromante.GameStage {
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
 
-            string var = (string)e.Parameter;
-            choice = var;
+            Player va = (Player)e.Parameter;
 
-            idletoLeft = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/" + choice + "/idleLeft.gif"));
-            idletoRight = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/" + choice + "/idleRight.gif"));
 
-            runtoLeft = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/" + choice + "/walkLeft.gif"));
-            runtoRight = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/" + choice + "/walkRight.gif"));
+            idletoLeft = va.Sprite_idle_left;
+            idletoRight = va.Sprite_idle_right;
+
+            runtoLeft = va.Sprite_walking_left;
+            runtoRight = va.Sprite_walking_right;
 
             direction = runtoRight;
             Hero.Source = idletoRight;
