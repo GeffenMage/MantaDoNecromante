@@ -880,3 +880,8 @@ C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.g.cs
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.xaml
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.xbf
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x64\Debug\GameStage\MainStage.xbf
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.g.i.cs
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.g.cs
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.xaml
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.xbf

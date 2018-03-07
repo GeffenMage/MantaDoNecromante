@@ -8,6 +8,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -67,7 +68,51 @@ namespace MantaNecromante.GameStage {
 
             walkTimer.Start();
 
+            CreateGrid();
             Debug.WriteLine(ScreenWidth);
+
+        }
+
+        private Grid Colliders = new Grid();
+         
+        private void CreateGrid() {
+            
+            int x, y;
+
+            x = (int)Mansion.Width / 51;
+            y = (int)Mansion.Height / 51;
+
+            for (int i = 0; i < 51; i++) {
+
+                RowDefinition rc = new RowDefinition();
+                rc.Height = new GridLength(y, GridUnitType.Pixel);
+                Colliders.RowDefinitions.Add(rc);
+            }
+
+            for (int i = 0; i < 51; i++) {
+
+                ColumnDefinition rc = new ColumnDefinition();
+                rc.Width = new GridLength(x, GridUnitType.Pixel);
+                Colliders.ColumnDefinitions.Add(rc);
+            }
+
+            for (int j = 0; j < 51; j++) {
+
+                for (int k = 0; k < 51; k++) {
+
+                    Border border = new Border();
+                    border.BorderThickness = new Thickness(1);
+                    border.BorderBrush = new SolidColorBrush(Colors.Red);
+                    border.HorizontalAlignment = HorizontalAlignment.Stretch;
+                    border.VerticalAlignment = VerticalAlignment.Stretch;
+                    Grid.SetColumn(border, j);
+                    Grid.SetRow(border, k);
+                    Colliders.Children.Add(border);
+                }
+            }
+
+            Floor.Children.Add(Colliders);
+            Canvas.SetTop(Colliders, Canvas.GetTop(Mansion));
 
         }
 
@@ -78,6 +123,7 @@ namespace MantaNecromante.GameStage {
                 if ((x < 0 && Canvas.GetLeft(Mansion) < 0) || (x > 0 && Canvas.GetLeft(Mansion) > ScreenWidth - Mansion.Width)) {
 
                     Canvas.SetLeft(Mansion, Canvas.GetLeft(Mansion) - x);
+                    Canvas.SetLeft(Colliders, Canvas.GetLeft(Colliders) - x);
                 }
                 else {
 
@@ -94,6 +140,7 @@ namespace MantaNecromante.GameStage {
                 if ((y < 0 && Canvas.GetTop(Mansion) < 0) || (y > 0 && Canvas.GetTop(Mansion) > ScreenHeight - Mansion.Height)) {
 
                     Canvas.SetTop(Mansion, Canvas.GetTop(Mansion) - y);
+                    Canvas.SetTop(Colliders, Canvas.GetTop(Colliders) - y);
                 }
                 else {
 
