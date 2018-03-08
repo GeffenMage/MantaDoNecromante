@@ -19,6 +19,7 @@
        
 
         <Image Name="quick_menu" Height="55" Canvas.Top="845" Width="1405" Source="ms-appx:///GameAssets/Menu/equip_menu.png"/>
+        <TextBlock FontSize="30" Foreground="Red" Name="teste" Canvas.Left="475" Canvas.Top="355" Text="" TextWrapping="Wrap" Height="125" Width="185"/>
     </Canvas>
 </Page>
 
