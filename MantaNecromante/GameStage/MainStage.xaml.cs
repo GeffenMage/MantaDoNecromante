@@ -80,7 +80,7 @@ namespace MantaNecromante.GameStage {
 
             walkTimer.Start();
             Debug.WriteLine("Local: " + Canvas.GetLeft(Hero) + ", " + Canvas.GetTop(Hero));
-            CreateGrid();
+            //CreateGrid();
             Debug.WriteLine(ScreenWidth);
 
             setBlocks();
