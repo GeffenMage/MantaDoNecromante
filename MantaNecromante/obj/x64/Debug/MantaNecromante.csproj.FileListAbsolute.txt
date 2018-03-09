@@ -889,3 +889,7 @@ C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Necr
 C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.pdb
 C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.pri
 C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MantaNecromante.csproj.GenerateResource.Cache
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.dll
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.pdb
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.pri
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MantaNecromante.csproj.GenerateResource.Cache
