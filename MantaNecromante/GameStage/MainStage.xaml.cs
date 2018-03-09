@@ -469,7 +469,7 @@ namespace MantaNecromante.GameStage {
             int y_upper = (int)((Canvas.GetTop(Hero) + (3 * Hero.Height / 4) - Canvas.GetTop(Mansion)) / GridY_mult);
             int y_bottom = y_upper + (int)(Hero.Height / 4) / GridY_mult;
 
-            int x_left = (int)((Canvas.GetLeft(Hero) + Canvas.GetLeft(Mansion)) / GridX_mult);
+            int x_left = (int)((Canvas.GetLeft(Hero) - Canvas.GetLeft(Mansion)) / GridX_mult);
             int x_right = x_left + (int)Hero.Width / GridX_mult;
 
             //Colisão com objetos:
