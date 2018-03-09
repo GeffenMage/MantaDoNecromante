@@ -63,6 +63,15 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Children" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Name" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+    </RootType>
     <RootType FullName="MantaNecromante.GameStage.MainStage" />
     <RootType FullName="FrontEnd.MainPage" />
   </Roots.RootTypes>

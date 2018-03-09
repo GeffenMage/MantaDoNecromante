@@ -880,7 +880,16 @@ C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.g.cs
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.xaml
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.xbf
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.dll
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.pdb
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.pri
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MantaNecromante.csproj.GenerateResource.Cache
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x64\Debug\GameStage\MainStage.xbf
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.g.i.cs
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.g.cs
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.xaml
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\GameStage\MainStage.xbf
+C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.dll
+C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.pdb
+C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.pri
+C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MantaNecromante.csproj.GenerateResource.Cache
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.dll
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.pdb
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x64\Debug\NecromanteLL.pri
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MantaNecromante.csproj.GenerateResource.Cache

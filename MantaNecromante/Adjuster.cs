@@ -13,28 +13,41 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Extension {
 
+   
+
     public static class Adjuster {
 
         static double defaultWidth = 1440;
         static double defaultHeight = 900;
 
-        public static void adjustForCamera(Image Map, Image Hero) {
+        public static void adjustForCamera(Image Map, Image Hero, ref int ScreenWidth,  ref int ScreenHeight) {
             ScaleUp(Map);
             ScaleUp(Hero);
+
+            ScreenWidth = (int)Window.Current.Bounds.Width;
+            ScreenHeight = (int)Window.Current.Bounds.Height;
+
+            int x_adjust = ScreenWidth % 10;
+            int y_adjust = ScreenHeight % 10;
+
+            ScreenWidth -= x_adjust;
+            ScreenHeight -= y_adjust;
         }
 
         private static void ScaleUp(Image item) {
            
-            int x_adjust = (int)Canvas.GetLeft(item) % 10;
+            int fill = 10;
+
+            int x_adjust = (int)Canvas.GetLeft(item) % fill;
             x_adjust = (int)Canvas.GetLeft(item) - x_adjust;
 
-            int y_adjust = (int)Canvas.GetTop(item) % 10;
+            int y_adjust = (int)Canvas.GetTop(item) % fill;
             y_adjust = (int)Canvas.GetTop(item) - y_adjust;
 
-            int widthAjust = (int)item.Width % 10;
+            int widthAjust = (int)item.Width % fill;
             widthAjust = (int)item.Width - widthAjust;
 
-            int heightAjust = (int)item.Height % 10;
+            int heightAjust = (int)item.Height % fill;
             heightAjust = (int)item.Height - heightAjust;
 
             Canvas.SetLeft(item, x_adjust);
