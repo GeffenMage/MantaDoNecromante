@@ -539,7 +539,6 @@ namespace MantaNecromante.GameStage {
             Floor.Children.Add(Colliderss);
             Canvas.SetTop(Colliderss, Canvas.GetTop(Mansion));
             Canvas.SetLeft(Colliderss, Canvas.GetLeft(Mansion));
-
         }
 
         private void gettingCell(object sender, TappedRoutedEventArgs e) {
