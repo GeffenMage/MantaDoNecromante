@@ -95,7 +95,13 @@ namespace NecromanteLL {
 
         //Necessario modificar esse método caso quiser adicionar modificadores para ataque
         public int Atk_base() {
-            return Base_dmg;
+            int damage_add=0;
+            foreach (Itens i in Inventario){
+                if (i.Equipado==true) {
+                    damage_add += i.Dmg;
+                }
+            }
+            return Base_dmg+damage_add;
         }
 
         public bool Take_dmg(int dmg) {
@@ -113,7 +119,6 @@ namespace NecromanteLL {
                 mao_dir = item;
                 Mao_dir.Equipado = true;
                 Base_def += Mao_dir.Def;
-                Base_dmg += Mao_dir.Dmg;
                 Mp_total += Mao_dir.Mp_up;
                 Hp_total += Mao_dir.Hp_up;
                 return true;
@@ -122,7 +127,6 @@ namespace NecromanteLL {
                 mao_esq = item;
                 Mao_esq.Equipado = true;
                 Base_def += Mao_esq.Def;
-                Base_dmg += Mao_esq.Dmg;
                 Mp_total += Mao_esq.Mp_up;
                 Hp_total += Mao_esq.Hp_up;
                 return true;
@@ -131,7 +135,6 @@ namespace NecromanteLL {
                 maos = item;
                 Maos.Equipado = true;
                 Base_def += Maos.Def;
-                Base_dmg += Maos.Dmg;
                 Mp_total += Maos.Mp_up;
                 Hp_total += Maos.Hp_up;
                 return true;
@@ -140,7 +143,6 @@ namespace NecromanteLL {
                 inferior = item;
                 Inferior.Equipado = true;
                 Base_def += Inferior.Def;
-                Base_dmg += Inferior.Dmg;
                 Mp_total += Inferior.Mp_up;
                 Hp_total += Inferior.Hp_up;
                 return true;
@@ -149,7 +151,6 @@ namespace NecromanteLL {
                 cabeca = item;
                 Cabeca.Equipado = true;
                 Base_def += Cabeca.Def;
-                Base_dmg += Cabeca.Dmg;
                 Mp_total += Cabeca.Mp_up;
                 Hp_total += Cabeca.Hp_up;
                 return true;
@@ -158,7 +159,6 @@ namespace NecromanteLL {
                 pes = item;
                 Pes.Equipado = true;
                 Base_def += Pes.Def;
-                Base_dmg += Pes.Dmg;
                 Mp_total += Pes.Mp_up;
                 Hp_total += Pes.Hp_up;
                 return true;
@@ -167,7 +167,6 @@ namespace NecromanteLL {
                 mao_dir = item;
                 Mao_dir.Equipado = true;
                 Base_def += Mao_dir.Def;
-                Base_dmg += Mao_dir.Dmg;
                 Mp_total += Mao_dir.Mp_up;
                 Hp_total += Mao_dir.Hp_up;
                 return true;
@@ -176,7 +175,6 @@ namespace NecromanteLL {
                 mao_dir = item;
                 Mao_dir.Equipado = true;
                 Base_def += Mao_dir.Def;
-                Base_dmg += Mao_dir.Dmg;
                 Mp_total += Mao_dir.Mp_up;
                 Hp_total += Mao_dir.Hp_up;
                 return true;
@@ -185,7 +183,6 @@ namespace NecromanteLL {
                 torso = item;
                 Torso.Equipado = true;
                 Base_def += Torso.Def;
-                Base_dmg += Torso.Dmg;
                 Mp_total += Torso.Mp_up;
                 Hp_total += Torso.Hp_up;
                 return true;
@@ -202,7 +199,6 @@ namespace NecromanteLL {
                     if (maos != null) {
                         Maos.Equipado = false;
                         Base_def -= Maos.Def;
-                        Base_dmg -= Maos.Dmg;
                         Mp_total -= Maos.Mp_up;
                         Hp_total -= Maos.Hp_up;
                         maos = null;
@@ -215,7 +211,6 @@ namespace NecromanteLL {
                     if (Pes != null) {
                         Pes.Equipado = false;
                         Base_def -= Pes.Def;
-                        Base_dmg -= Pes.Dmg;
                         Mp_total -= Pes.Mp_up;
                         Hp_total -= Pes.Hp_up;
                         pes = null;
@@ -228,7 +223,6 @@ namespace NecromanteLL {
                     if (Torso != null) {
                         Torso.Equipado = false;
                         Base_def -= Torso.Def;
-                        Base_dmg -= Torso.Dmg;
                         Mp_total -= Torso.Mp_up;
                         Hp_total -= Torso.Hp_up;
                         torso = null;
@@ -241,7 +235,6 @@ namespace NecromanteLL {
                     if (Inferior != null) {
                         Inferior.Equipado = false;
                         Base_def -= Inferior.Def;
-                        Base_dmg -= Inferior.Dmg;
                         Mp_total -= Inferior.Mp_up;
                         Hp_total -= Inferior.Hp_up;
                         inferior = null;
@@ -254,7 +247,6 @@ namespace NecromanteLL {
                     if (Cabeca != null) {
                         Cabeca.Equipado = false;
                         Base_def -= Cabeca.Def;
-                        Base_dmg -= Cabeca.Dmg;
                         Mp_total -= Cabeca.Mp_up;
                         Hp_total -= Cabeca.Hp_up;
                         cabeca = null;
@@ -267,7 +259,6 @@ namespace NecromanteLL {
                     if (Mao_esq != null) {
                         Mao_esq.Equipado = false;
                         Base_def -= Mao_esq.Def;
-                        Base_dmg -= Mao_esq.Dmg;
                         Mp_total -= Mao_esq.Mp_up;
                         Hp_total -= Mao_esq.Hp_up;
                         mao_esq = null;
@@ -280,7 +271,6 @@ namespace NecromanteLL {
                     if (Mao_dir != null) {
                         Mao_dir.Equipado = false;
                         Base_def -= Mao_dir.Def;
-                        Base_dmg -= Mao_dir.Dmg;
                         Mp_total -= Mao_dir.Mp_up;
                         Hp_total -= Mao_dir.Hp_up;
                         mao_dir = null;
