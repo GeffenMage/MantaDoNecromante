@@ -102,6 +102,9 @@
     <Compile Include="GameStage\MainStage.xaml.cs">
       <DependentUpon>MainStage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainBattle\BattleStage.xaml.cs">
+      <DependentUpon>BattleStage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -151,6 +154,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GameStage\MainStage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainBattle\BattleStage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

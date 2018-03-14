@@ -9,7 +9,7 @@ namespace NecromanteLL.Controllers {
         private List<Itens> itens;
         internal List<Itens> Itens { get => Itens; set => Itens = value; }
 
-        Itens = new List<Itens>();
+       // Itens = new List<Itens>();
 
         Escudo a = new Escudo("Escudo de madeira", 0, 20, 10, 0);
     }
