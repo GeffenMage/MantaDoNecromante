@@ -20,10 +20,10 @@ namespace NecromanteLL {
             Base_def = 30; Base_dmg = 80;
             Nome_classe = "Warrior";
             //Inicializa os sprites do personagem
-            Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
-            Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleLeft.gif"));
-            Sprite_walking_left = new  BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkLeft.gif"));
-            Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkRight.gif"));
+            Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/knight/idleRight.gif"));
+            Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/knight/idleLeft.gif"));
+            Sprite_walking_left = new  BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/knight/walkLeft.gif"));
+            Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/knight/walkRight.gif"));
             //Cria e inicializa as skills da classe do personagem
             Skills = new List<Skill>();
             Skills.Add(new Skill("Stomp", 30, 0, 1, 0, 0, 0, 0, 250));

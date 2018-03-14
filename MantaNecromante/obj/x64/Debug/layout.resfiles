@@ -1,4 +1,5 @@
 WinMetadata\Windows.winmd
+Assets\dots.png
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -15,6 +16,7 @@ GameAssets\Characters\heroes\knight\idleRight.gif
 GameAssets\Characters\heroes\knight\walkLeft.gif
 GameAssets\Characters\heroes\knight\walkRight.gif
 GameAssets\Maps\mansion.png
+GameAssets\Maps\mansion_03.gif
 GameAssets\Menu\chooseClassTitle.png
 GameAssets\Menu\equip_menu.png
 GameAssets\Menu\main_background.gif
