@@ -107,6 +107,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Controllers\BattleController.cs" />
+    <Compile Include="Controllers\Map_controller.cs" />
     <Compile Include="Enemys\Fantasma.cs" />
     <Compile Include="Enemys\Goblin.cs" />
     <Compile Include="Items\Concretos\Armas\Arco.cs" />
@@ -134,7 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.0.7</Version>
+      <Version>6.0.8</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup />
