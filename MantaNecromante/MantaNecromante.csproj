@@ -114,6 +114,7 @@
     <None Include="MantaNecromante_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\dots.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="GameAssets\Buttons\clicked_button.png" />
     <Content Include="GameAssets\Buttons\idle_button.png" />
@@ -123,6 +124,7 @@
     <Content Include="GameAssets\Characters\heroes\knight\walkLeft.gif" />
     <Content Include="GameAssets\Characters\heroes\knight\walkRight.gif" />
     <Content Include="GameAssets\Maps\mansion.png" />
+    <Content Include="GameAssets\Maps\mansion_03.gif" />
     <Content Include="GameAssets\Menu\chooseClassTitle.png" />
     <Content Include="GameAssets\Menu\equip_menu.png" />
     <Content Include="GameAssets\Menu\main_background.gif" />
