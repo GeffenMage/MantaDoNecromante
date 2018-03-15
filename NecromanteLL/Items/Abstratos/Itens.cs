@@ -22,5 +22,6 @@ namespace NecromanteLL {
         public bool Equipado { get => equipado; set => equipado = value; }
         public string Tipo { get => tipo; set => tipo = value; }
         public BitmapImage Sprite { get => sprite; set => sprite = value; }
+  
     }
 }

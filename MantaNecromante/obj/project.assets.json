@@ -2210,7 +2210,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10586",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.7"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
         },
         "compile": {
           "bin/placeholder/NecromanteLL.dll": {}
@@ -4519,7 +4519,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10586",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.7"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
         },
         "compile": {
           "bin/placeholder/NecromanteLL.dll": {}
@@ -6864,7 +6864,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10586",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.7"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
         },
         "compile": {
           "bin/placeholder/NecromanteLL.dll": {}
@@ -9182,7 +9182,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10586",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.7"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
         },
         "compile": {
           "bin/placeholder/NecromanteLL.dll": {}
@@ -11536,7 +11536,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10586",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.7"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
         },
         "compile": {
           "bin/placeholder/NecromanteLL.dll": {}
@@ -13854,7 +13854,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10586",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.7"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
         },
         "compile": {
           "bin/placeholder/NecromanteLL.dll": {}
@@ -16208,7 +16208,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10586",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.7"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
         },
         "compile": {
           "bin/placeholder/NecromanteLL.dll": {}

@@ -132,19 +132,21 @@ namespace MantaNecromante.MantaNecromante_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
+            _typeNameTable = new string[6];
             _typeNameTable[0] = "MantaNecromante.ClassMenu.ClassMenu";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "MantaNecromante.GameStage.MainStage";
-            _typeNameTable[4] = "FrontEnd.MainPage";
+            _typeNameTable[4] = "MantaNecromante.MainBattle.BattleStage";
+            _typeNameTable[5] = "FrontEnd.MainPage";
 
-            _typeTable = new global::System.Type[5];
+            _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::MantaNecromante.ClassMenu.ClassMenu);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::MantaNecromante.GameStage.MainStage);
-            _typeTable[4] = typeof(global::FrontEnd.MainPage);
+            _typeTable[4] = typeof(global::MantaNecromante.MainBattle.BattleStage);
+            _typeTable[5] = typeof(global::FrontEnd.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -181,7 +183,8 @@ namespace MantaNecromante.MantaNecromante_XamlTypeInfo
 
         private object Activate_0_ClassMenu() { return new global::MantaNecromante.ClassMenu.ClassMenu(); }
         private object Activate_3_MainStage() { return new global::MantaNecromante.GameStage.MainStage(); }
-        private object Activate_4_MainPage() { return new global::FrontEnd.MainPage(); }
+        private object Activate_4_BattleStage() { return new global::MantaNecromante.MainBattle.BattleStage(); }
+        private object Activate_5_MainPage() { return new global::FrontEnd.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -215,9 +218,16 @@ namespace MantaNecromante.MantaNecromante_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  FrontEnd.MainPage
+            case 4:   //  MantaNecromante.MainBattle.BattleStage
                 userType = new global::MantaNecromante.MantaNecromante_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
+                userType.Activator = Activate_4_BattleStage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  FrontEnd.MainPage
+                userType = new global::MantaNecromante.MantaNecromante_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
