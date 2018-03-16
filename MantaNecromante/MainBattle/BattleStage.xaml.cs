@@ -26,9 +26,5 @@ namespace MantaNecromante.MainBattle {
 
             Adjuster.AdjustWindow(Floor);
         }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e) {
-            base.OnNavigatedTo(e);
-        }
     }
 }

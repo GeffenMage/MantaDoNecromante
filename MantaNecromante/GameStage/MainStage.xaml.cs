@@ -679,8 +679,10 @@ namespace MantaNecromante.GameStage {
 
                 Image foe = getEnemy(y, x);
 
+
+
                     isInteractive = false;
-                        this.Frame.Navigate(typeof(BattleStage), Hero,);
+                        this.Frame.Navigate(typeof(BattleStage));
                  } else {
 
                 isInteractive = false;
