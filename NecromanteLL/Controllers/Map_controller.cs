@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Windows.UI.Xaml.Media.Imaging;
 
 namespace NecromanteLL {
-    class Map_controller {
+    public class Map_controller {
 
             
         private List<Itens> itens;
