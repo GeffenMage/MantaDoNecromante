@@ -23,8 +23,18 @@ namespace NecromanteLL {
             mobs = new List<Mob>();
             Mobs_do_mapa = new Mob[100, 100];
             itens_do_mapa = new Itens[100, 100];
+            mobs.Add(new Goblin(1));
             mobs.Add(new Goblin(2));
-
+            mobs.Add(new Goblin(3));
+            mobs.Add(new Ogro(1));
+            mobs.Add(new Ogro(2));
+            mobs.Add(new Ogro(3));
+            mobs.Add(new Fantasma(1));
+            mobs.Add(new Fantasma(2));
+            mobs.Add(new Fantasma(3));
+            mobs.Add(new Laposo(1));
+            mobs.Add(new Laposo(2));
+            mobs.Add(new Laposo(3));
 
             itens.Add(new Escudo("Escudo de madeira", 0, 20, 10, 0));
             itens.Add(new Escudo("Escudo de metal", 0, 40, 10, 0));
