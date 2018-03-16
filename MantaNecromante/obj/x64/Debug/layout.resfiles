@@ -15,10 +15,12 @@ GameAssets\Characters\heroes\knight\idleLeft.gif
 GameAssets\Characters\heroes\knight\idleRight.gif
 GameAssets\Characters\heroes\knight\walkLeft.gif
 GameAssets\Characters\heroes\knight\walkRight.gif
+GameAssets\Maps\chest.gif
+GameAssets\Maps\chest_idle.png
 GameAssets\Maps\mansion.png
-GameAssets\Maps\mansion_03.gif
 GameAssets\Menu\chooseClassTitle.png
 GameAssets\Menu\equip_menu.png
+GameAssets\Menu\inventory.png
 GameAssets\Menu\main_background.gif
 GameAssets\Menu\mainTitle.png
 GameAssets\Menu\nudePanel.png

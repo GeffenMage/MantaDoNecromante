@@ -897,3 +897,8 @@ C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\qual
 C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\ProjectArchitectures.txt
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MainBattle\BattleStage.xbf
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MainBattle\BattleStage.g.i.cs
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MainBattle\BattleStage.g.cs
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MainBattle\BattleStage.xaml
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MainBattle\BattleStage.xbf

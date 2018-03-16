@@ -19,6 +19,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using NecromanteLL;
+using MantaNecromante.MainBattle;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -63,6 +64,8 @@ namespace MantaNecromante.GameStage {
 
             // CreateGrid();
             setBlocks();
+            setEnemies();
+            setAnItem();
 
         }
 
@@ -514,6 +517,16 @@ namespace MantaNecromante.GameStage {
             Colliders[40, 40] = 1;
         }
 
+        private void setAnItem() {
+
+            Colliders[79, 30] = 2;
+        }
+
+        private void setEnemies() {
+
+            Colliders[72, 24] = 3;
+        }
+
         private string wow;
 
         private void CheckCollision() {
@@ -543,8 +556,13 @@ namespace MantaNecromante.GameStage {
                 else
                     Canvas.SetTop(Hero, Canvas.GetTop(Hero) - y);
             }
+            else if (Colliders[y_upper, x_left] == 3 || Colliders[y_upper, x_right] == 3 ||
+                     Colliders[y_bottom, x_left] == 3 || Colliders[y_bottom, x_right] == 3) {
 
-            wow = Canvas.GetTop(extend) + ", " + Canvas.GetLeft(extend) + "\n[" + (x_left) + ", " + y_upper + "]\n" + "[" + (x_right) + ", " + y_upper + "]\n" + "[" + (x_left) + ", " + y_bottom + "]\n" + "[" + x_right + ", " + y_bottom + "]\n" + Canvas.GetTop(Hero) + "..\n" + column + ", " + row;
+                        this.Frame.Navigate(typeof(BattleStage));
+                 }
+
+            wow = Colliders[y_upper, x_left].ToString();//Canvas.GetTop(extend) + ", " + Canvas.GetLeft(extend) + "\n[" + (x_left) + ", " + y_upper + "]\n" + "[" + (x_right) + ", " + y_upper + "]\n" + "[" + (x_left) + ", " + y_bottom + "]\n" + "[" + x_right + ", " + y_bottom + "]\n" + Canvas.GetTop(Hero) + "..\n" + column + ", " + row;
             teste.Text = wow;
         }
 
@@ -612,8 +630,8 @@ namespace MantaNecromante.GameStage {
             var cell = (Border)sender;
             cell.Background = new SolidColorBrush(Colors.Red);
 
-             column = Grid.GetColumn(cell);
-             row = Grid.GetRow(cell);
+            column = Grid.GetColumn(cell);
+            row = Grid.GetRow(cell);
 
             Debug.WriteLine("Colliders[" + row + ", " + column + "] = 1");
 
@@ -694,19 +712,23 @@ namespace MantaNecromante.GameStage {
                     OptionsMenu.Opacity = (OptionsMenu.Opacity == 1) ? 0 : 1;
                     break;
                 case Windows.System.VirtualKey.W:
+                case Windows.System.VirtualKey.Up:
                     y = -speed;
                     x = 0;
                     break;
                 case Windows.System.VirtualKey.S:
+                case Windows.System.VirtualKey.Down:
                     y = speed;
                     x = 0;
                     break;
                 case Windows.System.VirtualKey.D:
+                case Windows.System.VirtualKey.Right:
                     direction = runtoRight;
                     x = speed;
                     y = 0;
                     break;
                 case Windows.System.VirtualKey.A:
+                case Windows.System.VirtualKey.Left:
                     direction = runtoLeft;
                     x = -speed;
                     y = 0;
@@ -733,11 +755,15 @@ namespace MantaNecromante.GameStage {
                     isMovementKey = false;
                     break;
                 case Windows.System.VirtualKey.W:
+                case Windows.System.VirtualKey.Up:
                 case Windows.System.VirtualKey.S:
+                case Windows.System.VirtualKey.Down:
                     y = 0;
                     break;
                 case Windows.System.VirtualKey.A:
+                case Windows.System.VirtualKey.Left:
                 case Windows.System.VirtualKey.D:
+                case Windows.System.VirtualKey.Right:
                     x = 0;
                     break;
             }
