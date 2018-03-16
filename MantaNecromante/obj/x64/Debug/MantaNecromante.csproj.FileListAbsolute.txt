@@ -907,3 +907,8 @@ C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\Main
 C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MainBattle\BattleStage.g.cs
 C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MainBattle\BattleStage.xaml
 C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MainBattle\BattleStage.xbf
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MainBattle\BattleStage.g.i.cs
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MainBattle\BattleStage.g.cs
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MainBattle\BattleStage.xaml
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x64\Debug\MainBattle\BattleStage.xbf
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MainBattle\BattleStage.xbf
