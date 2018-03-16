@@ -109,6 +109,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomPlacer.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -121,15 +122,19 @@
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="GameAssets\Buttons\clicked_button.png" />
     <Content Include="GameAssets\Buttons\idle_button.png" />
+    <Content Include="GameAssets\Characters\enemies\exqueleton\attack.gif" />
+    <Content Include="GameAssets\Characters\enemies\exqueleton\skeleton-Idle.gif" />
     <Content Include="GameAssets\Characters\exhibit\knight_idle.gif" />
     <Content Include="GameAssets\Characters\heroes\knight\idleLeft.gif" />
     <Content Include="GameAssets\Characters\heroes\knight\idleRight.gif" />
     <Content Include="GameAssets\Characters\heroes\knight\walkLeft.gif" />
     <Content Include="GameAssets\Characters\heroes\knight\walkRight.gif" />
+    <Content Include="GameAssets\Maps\chest.gif" />
+    <Content Include="GameAssets\Maps\chest_idle.png" />
     <Content Include="GameAssets\Maps\mansion.png" />
-    <Content Include="GameAssets\Maps\mansion_03.gif" />
     <Content Include="GameAssets\Menu\chooseClassTitle.png" />
     <Content Include="GameAssets\Menu\equip_menu.png" />
+    <Content Include="GameAssets\Menu\inventory.png" />
     <Content Include="GameAssets\Menu\main_background.gif" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
