@@ -17,10 +17,7 @@ namespace NecromanteLL {
                     Given_xp = 100; Lvl = 5;
                     Base_def = 20; Base_dmg = 50;
                     //Inicializa os sprites do inimigo
-                    //Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
-                    //Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleLeft.gif"));
-                    //Sprite_walking_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkLeft.gif"));
-                    //Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkRight.gif"));
+                    //Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
                     break;
                 case 2:
                     Nome = "Goblin";
@@ -29,10 +26,7 @@ namespace NecromanteLL {
                     Given_xp = 300; Lvl = 10;
                     Base_def = 30; Base_dmg = 70;
                     //Inicializa os sprites do inimigo
-                    //Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
-                    //Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleLeft.gif"));
-                    //Sprite_walking_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkLeft.gif"));
-                    //Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkRight.gif"));
+                    //Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
                     break;
                 case 3:
                     Nome = "Goblin";
@@ -41,11 +35,8 @@ namespace NecromanteLL {
                     Given_xp = 700; Lvl = 15;
                     Base_def = 40; Base_dmg = 90;
                     //Inicializa os sprites do inimigo
-                    //Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
-                    //Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleLeft.gif"));
-                    //Sprite_walking_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkLeft.gif"));
-                    //Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkRight.gif"));
-                    break;
+                    //Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
+                     break;
             }
             
         }
