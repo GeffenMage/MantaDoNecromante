@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Extension;
+using Windows.UI.Core;
 
 // O modelo de item de Página em Branco está documentado em https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,10 +26,19 @@ namespace MantaNecromante.MainBattle {
             this.InitializeComponent();
 
             Adjuster.AdjustWindow(Floor);
+
+            //Window.Current.CoreWindow.KeyDown += keySentinel;
+            this.KeyDown += BattleStage_KeyDown; ;
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e) {
-            base.OnNavigatedTo(e);
+        private void BattleStage_KeyDown(object sender, KeyRoutedEventArgs e) {
+            if (e.Key == Windows.System.VirtualKey.X) this.Frame.GoBack();
+        }
+
+        private void keySentinel(CoreWindow sender, KeyEventArgs e) {
+
+            if (e.VirtualKey == Windows.System.VirtualKey.E)
+                this.Frame.GoBack();
         }
     }
 }
