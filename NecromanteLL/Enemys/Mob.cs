@@ -13,10 +13,7 @@ namespace NecromanteLL {
         private int mp_atual, mp_total;
         private int lvl,given_xp;
         private int base_dmg, base_def;
-        private BitmapImage sprite_idle_left;
-        private BitmapImage sprite_idle_right;
-        private BitmapImage sprite_walking_left;
-        private BitmapImage sprite_walking_right;
+        private BitmapImage sprite;
 
         public string Nome { get => nome; set => nome = value; }
         public int Hp_atual { get => hp_atual; set => hp_atual = value; }
@@ -31,6 +28,7 @@ namespace NecromanteLL {
         public BitmapImage Sprite_idle_right { get => sprite_idle_right; set => sprite_idle_right = value; }
         public BitmapImage Sprite_walking_left { get => sprite_walking_left; set => sprite_walking_left = value; }
         public BitmapImage Sprite_walking_right { get => sprite_walking_right; set => sprite_walking_right = value; }
+        public BitmapImage Sprite { get => sprite; set => sprite = value; }
 
         public int Give_xp() {
             return Given_xp;
