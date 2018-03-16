@@ -41,12 +41,12 @@ public sealed partial class MainPage : Page {
         public MainPage() {
 
              
-            //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.FullScreen;
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.FullScreen;
 
             //Teste de tamanho ajustável:
             //......................................................................................................
-            ApplicationView.PreferredLaunchViewSize = new Size(1366, 768);
-            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            //ApplicationView.PreferredLaunchViewSize = new Size(1366, 768);
+            //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             //......................................................................................................
             this.InitializeComponent();
 

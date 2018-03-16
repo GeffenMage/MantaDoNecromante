@@ -46,6 +46,8 @@ namespace MantaNecromante.GameStage {
         private BitmapImage runtoLeft, runtoRight;
         private BitmapImage idletoLeft, idletoRight;
 
+
+        private Map_controller controller;
         private int GridX_mult, GridY_mult;
         private int[,] Colliders = new int[102, 102];
 
@@ -538,12 +540,22 @@ namespace MantaNecromante.GameStage {
             MovableProps.Add(chest);
         }
 
-        public void getItem(int row, int column) {
+        public Image getItem(int row, int column) {
 
-            //Canvas.SetLeft(item, row * GridY_mult + Canvas.GetLeft(Mansion) + GridY_mult/2 - item.Width / 2);
-            //Canvas.SetTop(item, column * GridX_mult + Canvas.GetTop(Mansion) + GridX_mult / 2 - item.Height / 2);
+            Image foe = new Image();
 
-            //return item;
+            double x = column * GridX_mult + Canvas.GetLeft(Mansion) + GridX_mult / 2 - 80 / 2;
+            double y = row * GridY_mult + Canvas.GetTop(Mansion) + GridY_mult / 2 - 48 / 2;
+
+            foreach (Image item in MovableProps) {
+
+                if (Canvas.GetTop(item) == y || Canvas.GetLeft(item) == x) {
+
+                    return item;
+                }
+            }
+
+            return null;
         }
 
         /// <summary>
@@ -588,14 +600,16 @@ namespace MantaNecromante.GameStage {
 
             Colliders[72, 24] = 3;
 
-            Image foe = new Image();
+            controller.setMob(72, 24);
 
-            foe.Height = Hero.Height;
-            foe.Width = Hero.Width;
+            Mob foe = controller.FindMob(72, 24);
 
-            foe.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeleton-idle.gif"));
+            foe.Sprite.DecodePixelHeight = (int)Hero.Height;
+            foe.Sprite.DecodePixelWidth = (int)Hero.Width;
 
-            Floor.Children.Add(foe);
+            
+
+            Floor.Children.Add(foe.Sprite.);
 
             Canvas.SetLeft(foe, 24 * GridX_mult + Canvas.GetLeft(Mansion) + GridX_mult / 2 - foe.Width / 2);
             Canvas.SetTop(foe, 72 * GridY_mult + Canvas.GetTop(Mansion) + GridY_mult / 2 - foe.Height / 2);
@@ -608,13 +622,15 @@ namespace MantaNecromante.GameStage {
         /// </summary>
         private string wow;
 
+        private int x_left, x_right, y_upper, y_bottom;
+
         private void CheckCollision() {
 
-            int y_upper = (int)(((Canvas.GetTop(Hero) - Canvas.GetTop(Mansion)) / GridY_mult) + topSide);
-            int y_bottom = (int)((y_upper / GridY_mult) + botSide);
+             y_upper = (int)(((Canvas.GetTop(Hero) - Canvas.GetTop(Mansion)) / GridY_mult) + topSide);
+             y_bottom = (int)((y_upper / GridY_mult) + botSide);
 
-            int x_left = (int)((((Canvas.GetLeft(Hero)) - Canvas.GetLeft(Mansion)) / GridX_mult) + leftSide);
-            int x_right = x_left + (int)(rightSide);
+             x_left = (int)((((Canvas.GetLeft(Hero)) - Canvas.GetLeft(Mansion)) / GridX_mult) + leftSide);
+             x_right = x_left + (int)(rightSide);
 
             //Colisão com objetos:
             if (Colliders[y_upper, x_left] == 1 || Colliders[y_upper, x_right] == 1 ||
@@ -659,14 +675,14 @@ namespace MantaNecromante.GameStage {
 
                     int x = 0, y = 0;
 
-                if (Colliders[y_upper, x_left] == 3) {
+                    if (Colliders[y_upper, x_left] == 3) {
 
                     x = x_left;
                     y = y_upper;
-                } else if (Colliders[y_upper, x_right] == 3) {
+                    } else if (Colliders[y_upper, x_right] == 3) {
 
-                    x = x_right;
-                    y = y_upper;
+                        x = x_right;
+                         y = y_upper;
                 } else if (Colliders[y_bottom, x_left] == 3) {
 
                     x = x_left;
@@ -679,21 +695,47 @@ namespace MantaNecromante.GameStage {
 
                 Image foe = getEnemy(y, x);
 
+
+
                     isInteractive = false;
-                        this.Frame.Navigate(typeof(BattleStage), Hero,);
+                        this.Frame.Navigate(typeof(BattleStage));
                  } else {
 
                 isInteractive = false;
                 infoBox.Opacity = 0;
             }
-            
-
-                wow = Canvas.GetTop(infoBox) + ", " + Canvas.GetLeft(infoBox) + ", " + Canvas.GetLeft(Hero)  + ", " + Canvas.GetTop(Hero);
-            teste.Text = wow;
         }
 
         private void interact() {
-               
+
+
+            Image item = new Image();
+            int x = 0, y = 0;
+
+            if (Colliders[y_upper, x_left] == 2) {
+
+                x = x_left;
+                y = y_upper;
+            }
+            else if (Colliders[y_upper, x_right] == 2) {
+
+                x = x_right;
+                y = y_upper;
+            }
+            else if (Colliders[y_bottom, x_left] == 2) {
+
+                x = x_left;
+                y = y_bottom;
+            }
+            else if (Colliders[y_bottom, x_right] == 2) {
+
+                x = x_right;
+                y = y_bottom;
+            }
+
+            item = getItem(y, x);
+
+            item.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Maps/chest.gif"));
         }
 
         private Grid Colliderss = new Grid();
