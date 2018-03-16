@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace NecromanteLL {
     class Map_controller {
+
         private List<Itens> itens;
         internal List<Itens> Itens { get => Itens; set => Itens = value; }
+
+
         public Map_controller() {
             itens = new List<Itens>();
             itens.Add(new Escudo("Escudo de madeira", 0, 20, 10, 0));
