@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Extension;
 
 // O modelo de item de Página em Branco está documentado em https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,6 +23,12 @@ namespace MantaNecromante.MainBattle {
     public sealed partial class BattleStage : Page {
         public BattleStage() {
             this.InitializeComponent();
+
+            Adjuster.AdjustWindow(Floor);
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e) {
+            base.OnNavigatedTo(e);
         }
     }
 }
