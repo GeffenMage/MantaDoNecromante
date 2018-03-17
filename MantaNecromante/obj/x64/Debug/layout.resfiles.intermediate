@@ -17,8 +17,8 @@ GameAssets\Characters\heroes\knight\idleLeft.gif
 GameAssets\Characters\heroes\knight\idleRight.gif
 GameAssets\Characters\heroes\knight\walkLeft.gif
 GameAssets\Characters\heroes\knight\walkRight.gif
-GameAssets\Maps\chest.gif
 GameAssets\Maps\chest_idle.png
+GameAssets\Maps\chest_open.gif
 GameAssets\Maps\mansion.png
 GameAssets\Menu\chooseClassTitle.png
 GameAssets\Menu\equip_menu.png

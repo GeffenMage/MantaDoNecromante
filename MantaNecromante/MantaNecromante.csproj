@@ -129,8 +129,8 @@
     <Content Include="GameAssets\Characters\heroes\knight\idleRight.gif" />
     <Content Include="GameAssets\Characters\heroes\knight\walkLeft.gif" />
     <Content Include="GameAssets\Characters\heroes\knight\walkRight.gif" />
-    <Content Include="GameAssets\Maps\chest.gif" />
     <Content Include="GameAssets\Maps\chest_idle.png" />
+    <Content Include="GameAssets\Maps\chest_open.gif" />
     <Content Include="GameAssets\Maps\mansion.png" />
     <Content Include="GameAssets\Menu\chooseClassTitle.png" />
     <Content Include="GameAssets\Menu\equip_menu.png" />
