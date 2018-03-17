@@ -123,7 +123,7 @@
     <Content Include="GameAssets\Buttons\clicked_button.png" />
     <Content Include="GameAssets\Buttons\idle_button.png" />
     <Content Include="GameAssets\Characters\enemies\exqueleton\attack.gif" />
-    <Content Include="GameAssets\Characters\enemies\exqueleton\skeleton-Idle.gif" />
+    <Content Include="GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif" />
     <Content Include="GameAssets\Characters\exhibit\knight_idle.gif" />
     <Content Include="GameAssets\Characters\heroes\knight\idleLeft.gif" />
     <Content Include="GameAssets\Characters\heroes\knight\idleRight.gif" />

@@ -37,8 +37,6 @@
         <Image x:ConnectionId='7' Name="quick_menu" Height="55" Canvas.Top="845" Width="1405" Source="ms-appx:///GameAssets/Menu/equip_menu.png"/>
         <TextBlock x:ConnectionId='8' FontSize="30" Foreground="Red" Name="teste" Canvas.Left="475" Canvas.Top="355" Text="" TextWrapping="Wrap" Height="260" Width="195"/>
         <Image x:ConnectionId='9' Name="extend" Stretch="fill" Height="30" Canvas.Left="430" Canvas.Top="-125" Width="601" Source="ms-appx:///GameAssets/Maps/mansion_03.gif"/>
-        <Button Height="34" Margin="0,0,0,0" Width="34" Canvas.Left="28" Canvas.Top="75"/>
-
 
     </Canvas>
 </Page>

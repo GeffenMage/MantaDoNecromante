@@ -59,6 +59,11 @@ namespace MantaNecromante.GameStage {
         private int upper_row, bottom_row;              // Idem ao que está acima.
         //..................................//
 
+        //A classe que o usuário escolheu e inimigo com o qual ele batalhará:
+        //..................................//
+        private Player chosen;
+        private Mob foe;
+        //..................................//
 
         //Doubles para determinar os vértices efetivos da herói nos quais será checado a colisão (utilizados nos int's acima):
         //..................................//
@@ -92,7 +97,10 @@ namespace MantaNecromante.GameStage {
         public MainStage() {
 
             this.InitializeComponent();
-            
+
+            Window.Current.CoreWindow.KeyDown += keySentinel;
+            Window.Current.CoreWindow.KeyUp += keyDropped;
+
             //Fazendo os ajustes para para tudo rodar "perfeitamente":
             //..................................//
             Adjuster.AdjustWindow(Floor);
@@ -105,9 +113,6 @@ namespace MantaNecromante.GameStage {
             SetItem();
 
             setAllMenusReady();
-
-            this.KeyDown += keySentinel;
-            this.KeyUp += keyDropped;
 
             walkTimer.Interval = System.TimeSpan.FromMilliseconds(1);
             walkTimer.Tick += walk;
@@ -580,7 +585,7 @@ namespace MantaNecromante.GameStage {
 
             chest.Width = chestWidth;
             chest.Height = chestHeight;
-
+            
             chest.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Maps/chest_idle.png"));
 
             Floor.Children.Add(chest);
@@ -635,12 +640,12 @@ namespace MantaNecromante.GameStage {
 
             controller.setMob(72, 24);
 
-            Mob foe = controller.FindMob(72, 24);
+            foe = controller.FindMob(72, 24);
 
             Image enemy = new Image();
 
-            enemy.Height = Hero.Height;
-            enemy.Width = enemy.Width;
+            enemy.Height = Hero.Height * 4 / 3;
+            enemy.Width = Hero.Width * 4 / 3;
 
             enemy.Source = foe.Sprite;
 
@@ -919,8 +924,7 @@ namespace MantaNecromante.GameStage {
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
 
-            Player chosen = (Player)e.Parameter;
-
+             chosen = (Player)e.Parameter;
 
             idletoLeft = chosen.Sprite_idle_left;
             idletoRight = chosen.Sprite_idle_right;
@@ -932,13 +936,13 @@ namespace MantaNecromante.GameStage {
             Hero.Source = idletoRight;
         }
 
-        private void keySentinel(object sender, KeyRoutedEventArgs e) {
+        private void keySentinel(CoreWindow sender, KeyEventArgs e) {
 
             isMovementKey = true;
 
             int speed = 5;
 
-            switch (e.Key) {
+            switch (e.VirtualKey) {
 
                 case Windows.System.VirtualKey.Escape:
 
@@ -1003,11 +1007,11 @@ namespace MantaNecromante.GameStage {
             if (Hero.Source != direction && isMovementKey) Hero.Source = direction;
         }
 
-        private void keyDropped(object sender, KeyRoutedEventArgs e) {
+        private void keyDropped(CoreWindow sender, KeyEventArgs e) {
 
             BitmapImage stand = null;
 
-            switch (e.Key) {
+            switch (e.VirtualKey) {
 
                 case Windows.System.VirtualKey.Escape:
 

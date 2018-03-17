@@ -442,8 +442,8 @@
     <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\attack.gif">
       <PackagePath>GameAssets\Characters\enemies\exqueleton\attack.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\skeleton-Idle.gif">
-      <PackagePath>GameAssets\Characters\enemies\exqueleton\skeleton-Idle.gif</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif">
+      <PackagePath>GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\knight_idle.gif">
       <PackagePath>GameAssets\Characters\exhibit\knight_idle.gif</PackagePath>
