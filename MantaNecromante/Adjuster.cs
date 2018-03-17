@@ -20,7 +20,8 @@ namespace Extension {
         static double defaultWidth = 1440;
         static double defaultHeight = 900;
 
-        public static void adjustForCamera(Image Map, Image Hero, ref int ScreenWidth,  ref int ScreenHeight) {
+        public static void adjustForCamera(Image Map, Image Hero, ref int ScreenWidth, ref int ScreenHeight, ref int GridX_mult, ref int GridY_mult, ref double topSide, ref double botSide, ref double leftSide, ref double rightSide) {
+   
             ScaleUp(Map);
             ScaleUp(Hero);
 
@@ -32,11 +33,15 @@ namespace Extension {
 
             ScreenWidth -= x_adjust;
             ScreenHeight -= y_adjust;
-        }
 
-        public static void adjustUnit(Image prop) {
+            GridX_mult = (int)Map.Width / 100;
+            GridY_mult = (int)Map.Height / 100;
 
+            topSide = (3 * Hero.Height / 4) / GridY_mult;
+            botSide = (1 * Hero.Height / 4) / GridY_mult;
 
+            leftSide = 0;
+            rightSide = Hero.Width / GridX_mult;
         }
 
         private static void ScaleUp(Image item) {
@@ -96,7 +101,7 @@ namespace Extension {
                     ((Grid)item).Height = ((Grid)item).Height * y_ratio;
 
                     for (int i = 0; i < VisualTreeHelper.GetChildrenCount(item); i++) {
-
+                         
                         if (VisualTreeHelper.GetChild(item, i) is Button) {
 
                             childBtn = (Button)VisualTreeHelper.GetChild(item, i);
