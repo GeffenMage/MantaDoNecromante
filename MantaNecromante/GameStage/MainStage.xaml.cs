@@ -1,4 +1,4 @@
-﻿using Extension;
+﻿ using Extension;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -40,16 +40,17 @@ namespace MantaNecromante.GameStage {
         private bool isMovementKey;
         private bool isOptionsMenuOpen;
         private bool isInventoryOpen;
+        private bool isInteractive;
         //..................................//
 
-        //BitmapImages para salvar os gifs de movimento das classes que o herói pode ser:
+        //BitmapImages para salvar os gifs de movimento das classes que o variam conforme a escolhe do usuário no menu de classes:
         //..................................//
         private BitmapImage direction;
         private BitmapImage runtoLeft, runtoRight;
         private BitmapImage idletoLeft, idletoRight;
         //..................................//
 
-        //Variáveis relacionados à matriz interna que controla as interações do herói com o mapa:
+        //Variáveis relacionadas à matriz interna que controla as interações do herói com o mapa:
         //..................................//
         private Map_controller controller = new Map_controller();              //Conexão com a back end, que entrega à front end os itens, inimigos, etc... 
         private int GridX_mult, GridY_mult;             //Tamanho de cada célula da matriz (largura e altura), relativo ao tamanho do mapa (ajustável).
@@ -59,22 +60,22 @@ namespace MantaNecromante.GameStage {
         private int upper_row, bottom_row;              // Idem ao que está acima.
         //..................................//
 
-        //A classe que o usuário escolheu e inimigo com o qual ele batalhará:
-        //..................................//
-        private Player chosen;
-        private Mob foe;
-        //..................................//
-
         //Doubles para determinar os vértices efetivos da herói nos quais será checado a colisão (utilizados nos int's acima):
         //..................................//
         private double topSide, botSide;
         private double leftSide, rightSide;
         //.................................//
 
+        //A classe que o usuário escolheu e inimigo com o qual ele batalhará:
+        //..................................//
+        private Player chosen;
+        private Mob foe;
+        //..................................//
+
         //x e y que determinam o quanto para a horizontal e vertical o herói vai se deslocar:
         //..................................//
         private double x = 0, y = 0;
-        private int ScreenHeight, ScreenWidth;
+        private int ScreenHeight, ScreenWidth;      //Tamanho da tela usado para cálculos de ajuste
         //..................................//
 
         //Valores estáticos, pois não se conseguiu fazer a matriz de colisão ajustável:
@@ -89,6 +90,11 @@ namespace MantaNecromante.GameStage {
         private string testBox;
         //..................................//
 
+        //Constantes para células que contem colisão, item ou inimigo:
+        //.....................................................//
+        private static int COLLISION = 1, ITEM = 2, ENEMY = 3;
+        //.....................................................//
+
         //Lista de Imagens dos inimigos e itens que precisam se mover junto com o mapa para criar a ilusão de movimento de câmera:
         //..........................................................//
         private List<Image> MovableProps = new List<Image>();
@@ -102,16 +108,17 @@ namespace MantaNecromante.GameStage {
             Window.Current.CoreWindow.KeyUp += keyDropped;
 
             //Fazendo os ajustes para para tudo rodar "perfeitamente":
-            //..................................//
+            //....................................................................................................//
             Adjuster.AdjustWindow(Floor);
             Adjuster.adjustForCamera(Mansion, Hero, ref ScreenWidth, ref ScreenHeight, ref GridX_mult, ref GridY_mult, ref topSide, ref botSide, ref leftSide, ref rightSide);
-            //..................................//
+            //....................................................................................................//
 
-           //CreateGrid();
+            //CreateGrid();
             setBlocks();
-            setEnemies();
+            SetEnemies();
             SetItem();
 
+            //Os menus são feitos no xalm, mas antes de o jogo começar, são retirados.
             setAllMenusReady();
 
             walkTimer.Interval = System.TimeSpan.FromMilliseconds(1);
@@ -165,408 +172,409 @@ namespace MantaNecromante.GameStage {
         }
 
         private void setBlocks() {
-            Colliders[93, 20] = 1;
-            Colliders[92, 20] = 1;
-            Colliders[91, 20] = 1;
-            Colliders[91, 21] = 1;
-            Colliders[91, 22] = 1;
-            Colliders[91, 23] = 1;
-            Colliders[91, 24] = 1;
-            Colliders[91, 25] = 1;
-            Colliders[91, 26] = 1;
-            Colliders[91, 27] = 1;
-            Colliders[91, 28] = 1;
-            Colliders[91, 29] = 1;
-            Colliders[91, 30] = 1;
-            Colliders[91, 31] = 1;
-            Colliders[91, 32] = 1;
-            Colliders[91, 33] = 1;
-            Colliders[91, 34] = 1;
-            Colliders[90, 34] = 1;
-            Colliders[89, 34] = 1;
-            Colliders[88, 34] = 1;
-            Colliders[87, 34] = 1;
-            Colliders[87, 33] = 1;
-            Colliders[87, 32] = 1;
-            Colliders[87, 31] = 1;
-            Colliders[87, 30] = 1;
-            Colliders[87, 29] = 1;
-            Colliders[87, 28] = 1;
-            Colliders[87, 27] = 1;
-            Colliders[87, 26] = 1;
-            Colliders[87, 25] = 1;
-            Colliders[87, 24] = 1;
-            Colliders[87, 23] = 1;
-            Colliders[87, 22] = 1;
-            Colliders[87, 21] = 1;
-            Colliders[87, 20] = 1;
-            Colliders[86, 20] = 1;
-            Colliders[85, 20] = 1;
-            Colliders[84, 20] = 1;
-            Colliders[83, 20] = 1;
-            Colliders[82, 20] = 1;
-            Colliders[81, 20] = 1;
-            Colliders[81, 19] = 1;
-            Colliders[81, 18] = 1;
-            Colliders[81, 17] = 1;
-            Colliders[82, 17] = 1;
-            Colliders[83, 17] = 1;
-            Colliders[83, 16] = 1;
-            Colliders[83, 15] = 1;
-            Colliders[83, 14] = 1;
-            Colliders[83, 13] = 1;
-            Colliders[82, 13] = 1;
-            Colliders[81, 13] = 1;
-            Colliders[81, 12] = 1;
-            Colliders[81, 11] = 1;
-            Colliders[81, 10] = 1;
-            Colliders[90, 17] = 1;
-            Colliders[90, 16] = 1;
-            Colliders[90, 15] = 1;
-            Colliders[90, 14] = 1;
-            Colliders[90, 13] = 1;
-            Colliders[90, 13] = 1;
-            Colliders[90, 12] = 1;
-            Colliders[90, 11] = 1;
-            Colliders[90, 10] = 1;
-            Colliders[90, 9] = 1;
-            Colliders[90, 8] = 1;
-            Colliders[90, 7] = 1;
-            Colliders[90, 6] = 1;
-            Colliders[90, 5] = 1;
-            Colliders[90, 4] = 1;
-            Colliders[89, 4] = 1;
-            Colliders[88, 4] = 1;
-            Colliders[87, 4] = 1;
-            Colliders[86, 5] = 1;
-            Colliders[87, 6] = 1;
-            Colliders[86, 7] = 1;
-            Colliders[87, 8] = 1;
-            Colliders[86, 8] = 1;
-            Colliders[87, 9] = 1;
-            Colliders[88, 9] = 1;
-            Colliders[89, 10] = 1;
-            Colliders[89, 11] = 1;
-            Colliders[89, 12] = 1;
-            Colliders[88, 12] = 1;
-            Colliders[87, 13] = 1;
-            Colliders[86, 13] = 1;
-            Colliders[86, 15] = 1;
-            Colliders[87, 15] = 1;
-            Colliders[87, 14] = 1;
-            Colliders[87, 16] = 1;
-            Colliders[86, 17] = 1;
-            Colliders[87, 17] = 1;
-            Colliders[88, 17] = 1;
-            Colliders[89, 17] = 1;
-            Colliders[93, 19] = 1;
-            Colliders[93, 18] = 1;
-            Colliders[93, 17] = 1;
-            Colliders[93, 16] = 1;
-            Colliders[93, 15] = 1;
-            Colliders[93, 14] = 1;
-            Colliders[93, 13] = 1;
-            Colliders[93, 12] = 1;
-            Colliders[93, 11] = 1;
-            Colliders[93, 10] = 1;
-            Colliders[93, 9] = 1;
-            Colliders[93, 8] = 1;
-            Colliders[93, 7] = 1;
-            Colliders[93, 6] = 1;
-            Colliders[93, 5] = 1;
-            Colliders[93, 4] = 1;
-            Colliders[93, 3] = 1;
-            Colliders[93, 2] = 1;
-            Colliders[93, 1] = 1;
-            Colliders[92, 1] = 1;
-            Colliders[91, 1] = 1;
-            Colliders[90, 1] = 1;
-            Colliders[89, 1] = 1;
-            Colliders[88, 1] = 1;
-            Colliders[87, 1] = 1;
-            Colliders[86, 1] = 1;
-            Colliders[85, 1] = 1;
-            Colliders[84, 1] = 1;
-            Colliders[83, 1] = 1;
-            Colliders[83, 2] = 1;
-            Colliders[83, 3] = 1;
-            Colliders[83, 4] = 1;
-            Colliders[82, 4] = 1;
-            Colliders[81, 4] = 1;
-            Colliders[81, 5] = 1;
-            Colliders[81, 6] = 1;
-            Colliders[81, 7] = 1;
-            Colliders[80, 7] = 1;
-            Colliders[79, 7] = 1;
-            Colliders[78, 7] = 1;
-            Colliders[81, 10] = 1;
-            Colliders[80, 10] = 1;
-            Colliders[79, 10] = 1;
-            Colliders[78, 10] = 1;
-            Colliders[77, 10] = 1;
-            Colliders[76, 10] = 1;
-            Colliders[77, 7] = 1;
-            Colliders[76, 7] = 1;
-            Colliders[75, 7] = 1;
-            Colliders[74, 7] = 1;
-            Colliders[73, 7] = 1;
-            Colliders[75, 10] = 1;
-            Colliders[74, 10] = 1;
-            Colliders[72, 10] = 1;
-            Colliders[73, 10] = 1;
-            Colliders[71, 10] = 1;
-            Colliders[70, 10] = 1;
-            Colliders[69, 10] = 1;
-            Colliders[68, 10] = 1;
-            Colliders[67, 10] = 1;
-            Colliders[66, 10] = 1;
-            Colliders[65, 10] = 1;
-            Colliders[64, 10] = 1;
-            Colliders[63, 10] = 1;
-            Colliders[62, 10] = 1;
-            Colliders[72, 7] = 1;
-            Colliders[71, 7] = 1;
-            Colliders[70, 7] = 1;
-            Colliders[69, 7] = 1;
-            Colliders[68, 7] = 1;
-            Colliders[67, 7] = 1;
-            Colliders[66, 7] = 1;
-            Colliders[65, 7] = 1;
-            Colliders[64, 7] = 1;
-            Colliders[63, 7] = 1;
-            Colliders[62, 7] = 1;
-            Colliders[61, 10] = 1;
-            Colliders[61, 7] = 1;
-            Colliders[61, 6] = 1;
-            Colliders[61, 5] = 1;
-            Colliders[61, 4] = 1;
-            Colliders[61, 3] = 1;
-            Colliders[61, 2] = 1;
-            Colliders[61, 1] = 1;
-            Colliders[60, 1] = 1;
-            Colliders[59, 1] = 1;
-            Colliders[61, 11] = 1;
-            Colliders[61, 12] = 1;
-            Colliders[61, 15] = 1;
-            Colliders[61, 16] = 1;
-            Colliders[61, 17] = 1;
-            Colliders[61, 18] = 1;
-            Colliders[61, 19] = 1;
-            Colliders[61, 20] = 1;
-            Colliders[62, 15] = 1;
-            Colliders[63, 15] = 1;
-            Colliders[64, 15] = 1;
-            Colliders[65, 15] = 1;
-            Colliders[66, 15] = 1;
-            Colliders[67, 15] = 1;
-            Colliders[68, 15] = 1;
-            Colliders[69, 15] = 1;
-            Colliders[69, 16] = 1;
-            Colliders[69, 17] = 1;
-            Colliders[69, 18] = 1;
-            Colliders[70, 19] = 1;
-            Colliders[70, 18] = 1;
-            Colliders[69, 20] = 1;
-            Colliders[69, 21] = 1;
-            Colliders[69, 22] = 1;
-            Colliders[69, 23] = 1;
-            Colliders[69, 24] = 1;
-            Colliders[69, 25] = 1;
-            Colliders[69, 26] = 1;
-            Colliders[70, 26] = 1;
-            Colliders[70, 27] = 1;
-            Colliders[70, 28] = 1;
-            Colliders[69, 28] = 1;
-            Colliders[69, 29] = 1;
-            Colliders[69, 30] = 1;
-            Colliders[69, 31] = 1;
-            Colliders[69, 32] = 1;
-            Colliders[70, 32] = 1;
-            Colliders[60, 20] = 1;
-            Colliders[59, 20] = 1;
-            Colliders[58, 20] = 1;
-            Colliders[57, 20] = 1;
-            Colliders[59, 2] = 1;
-            Colliders[59, 3] = 1;
-            Colliders[59, 4] = 1;
-            Colliders[59, 5] = 1;
-            Colliders[59, 6] = 1;
-            Colliders[58, 6] = 1;
-            Colliders[57, 6] = 1;
-            Colliders[56, 6] = 1;
-            Colliders[55, 6] = 1;
-            Colliders[55, 5] = 1;
-            Colliders[55, 4] = 1;
-            Colliders[55, 3] = 1;
-            Colliders[54, 4] = 1;
-            Colliders[53, 4] = 1;
-            Colliders[52, 4] = 1;
-            Colliders[51, 4] = 1;
-            Colliders[50, 5] = 1;
-            Colliders[50, 7] = 1;
-            Colliders[50, 8] = 1;
-            Colliders[50, 9] = 1;
-            Colliders[51, 9] = 1;
-            Colliders[52, 9] = 1;
-            Colliders[53, 9] = 1;
-            Colliders[52, 10] = 1;
-            Colliders[52, 11] = 1;
-            Colliders[52, 12] = 1;
-            Colliders[52, 13] = 1;
-            Colliders[51, 13] = 1;
-            Colliders[50, 13] = 1;
-            Colliders[51, 14] = 1;
-            Colliders[51, 15] = 1;
-            Colliders[51, 12] = 1;
-            Colliders[50, 15] = 1;
-            Colliders[51, 16] = 1;
-            Colliders[50, 17] = 1;
-            Colliders[51, 17] = 1;
-            Colliders[52, 17] = 1;
-            Colliders[53, 17] = 1;
-            Colliders[54, 17] = 1;
-            Colliders[54, 16] = 1;
-            Colliders[54, 15] = 1;
-            Colliders[54, 14] = 1;
-            Colliders[54, 12] = 1;
-            Colliders[54, 13] = 1;
-            Colliders[54, 11] = 1;
-            Colliders[54, 10] = 1;
-            Colliders[54, 9] = 1;
-            Colliders[54, 8] = 1;
-            Colliders[54, 7] = 1;
-            Colliders[54, 6] = 1;
-            Colliders[62, 12] = 1;
-            Colliders[63, 12] = 1;
-            Colliders[64, 12] = 1;
-            Colliders[65, 12] = 1;
-            Colliders[66, 12] = 1;
-            Colliders[67, 12] = 1;
-            Colliders[68, 12] = 1;
-            Colliders[69, 12] = 1;
-            Colliders[70, 12] = 1;
-            Colliders[71, 12] = 1;
-            Colliders[72, 12] = 1;
-            Colliders[74, 12] = 1;
-            Colliders[73, 12] = 1;
-            Colliders[74, 13] = 1;
-            Colliders[74, 14] = 1;
-            Colliders[74, 15] = 1;
-            Colliders[74, 16] = 1;
-            Colliders[74, 17] = 1;
-            Colliders[74, 18] = 1;
-            Colliders[74, 19] = 1;
-            Colliders[74, 20] = 1;
-            Colliders[74, 21] = 1;
-            Colliders[74, 22] = 1;
-            Colliders[74, 23] = 1;
-            Colliders[74, 24] = 1;
-            Colliders[74, 25] = 1;
-            Colliders[74, 26] = 1;
-            Colliders[74, 27] = 1;
-            Colliders[74, 28] = 1;
-            Colliders[75, 28] = 1;
-            Colliders[76, 28] = 1;
-            Colliders[77, 28] = 1;
-            Colliders[78, 28] = 1;
-            Colliders[71, 32] = 1;
-            Colliders[72, 32] = 1;
-            Colliders[73, 32] = 1;
-            Colliders[74, 32] = 1;
-            Colliders[75, 32] = 1;
-            Colliders[76, 32] = 1;
-            Colliders[77, 32] = 1;
-            Colliders[78, 32] = 1;
-            Colliders[79, 32] = 1;
-            Colliders[80, 32] = 1;
-            Colliders[80, 30] = 1;
-            Colliders[80, 31] = 1;
-            Colliders[80, 29] = 1;
-            Colliders[80, 28] = 1;
-            Colliders[79, 28] = 1;
-            Colliders[56, 20] = 1;
-            Colliders[55, 20] = 1;
-            Colliders[54, 20] = 1;
-            Colliders[53, 20] = 1;
-            Colliders[52, 20] = 1;
-            Colliders[51, 20] = 1;
-            Colliders[50, 20] = 1;
-            Colliders[49, 20] = 1;
-            Colliders[48, 20] = 1;
-            Colliders[47, 20] = 1;
-            Colliders[47, 21] = 1;
-            Colliders[47, 22] = 1;
-            Colliders[47, 23] = 1;
-            Colliders[48, 23] = 1;
-            Colliders[49, 23] = 1;
-            Colliders[50, 23] = 1;
-            Colliders[47, 26] = 1;
-            Colliders[48, 26] = 1;
-            Colliders[49, 26] = 1;
-            Colliders[50, 26] = 1;
-            Colliders[51, 26] = 1;
-            Colliders[52, 26] = 1;
-            Colliders[53, 26] = 1;
-            Colliders[54, 26] = 1;
-            Colliders[44, 17] = 1;
-            Colliders[44, 18] = 1;
-            Colliders[44, 19] = 1;
-            Colliders[44, 20] = 1;
-            Colliders[44, 21] = 1;
-            Colliders[44, 22] = 1;
-            Colliders[44, 23] = 1;
-            Colliders[44, 24] = 1;
-            Colliders[44, 25] = 1;
-            Colliders[45, 17] = 1;
-            Colliders[46, 17] = 1;
-            Colliders[47, 17] = 1;
-            Colliders[47, 16] = 1;
-            Colliders[47, 15] = 1;
-            Colliders[47, 14] = 1;
-            Colliders[46, 13] = 1;
-            Colliders[45, 13] = 1;
-            Colliders[44, 13] = 1;
-            Colliders[44, 12] = 1;
-            Colliders[44, 11] = 1;
-            Colliders[44, 10] = 1;
-            Colliders[43, 10] = 1;
-            Colliders[44, 6] = 1;
-            Colliders[44, 7] = 1;
-            Colliders[43, 7] = 1;
-            Colliders[42, 7] = 1;
-            Colliders[44, 5] = 1;
-            Colliders[44, 4] = 1;
-            Colliders[44, 3] = 1;
-            Colliders[44, 2] = 1;
-            Colliders[44, 1] = 1;
-            Colliders[45, 1] = 1;
-            Colliders[46, 1] = 1;
-            Colliders[47, 1] = 1;
-            Colliders[48, 1] = 1;
-            Colliders[49, 1] = 1;
-            Colliders[50, 1] = 1;
-            Colliders[51, 1] = 1;
-            Colliders[52, 1] = 1;
-            Colliders[53, 1] = 1;
-            Colliders[54, 1] = 1;
-            Colliders[55, 1] = 1;
-            Colliders[55, 2] = 1;
-            Colliders[73, 13] = 1;
-            Colliders[73, 14] = 1;
-            Colliders[73, 15] = 1;
-            Colliders[73, 16] = 1;
-            Colliders[73, 17] = 1;
-            Colliders[73, 18] = 1;
-            Colliders[73, 19] = 1;
-            Colliders[73, 20] = 1;
-            Colliders[73, 21] = 1;
-            Colliders[73, 22] = 1;
-            Colliders[73, 23] = 1;
-            Colliders[73, 24] = 1;
-            Colliders[73, 25] = 1;
-            Colliders[73, 26] = 1;
-            Colliders[73, 27] = 1;
-            Colliders[73, 28] = 1;
+
+            Colliders[93, 20] = COLLISION;
+            Colliders[92, 20] = COLLISION;
+            Colliders[91, 20] = COLLISION;
+            Colliders[91, 21] = COLLISION;
+            Colliders[91, 22] = COLLISION;
+            Colliders[91, 23] = COLLISION;
+            Colliders[91, 24] = COLLISION;
+            Colliders[91, 25] = COLLISION;
+            Colliders[91, 26] = COLLISION;
+            Colliders[91, 27] = COLLISION;
+            Colliders[91, 28] = COLLISION;
+            Colliders[91, 29] = COLLISION;
+            Colliders[91, 30] = COLLISION;
+            Colliders[91, 31] = COLLISION;
+            Colliders[91, 32] = COLLISION;
+            Colliders[91, 33] = COLLISION;
+            Colliders[91, 34] = COLLISION;
+            Colliders[90, 34] = COLLISION;
+            Colliders[89, 34] = COLLISION;
+            Colliders[88, 34] = COLLISION;
+            Colliders[87, 34] = COLLISION;
+            Colliders[87, 33] = COLLISION;
+            Colliders[87, 32] = COLLISION;
+            Colliders[87, 31] = COLLISION;
+            Colliders[87, 30] = COLLISION;
+            Colliders[87, 29] = COLLISION;
+            Colliders[87, 28] = COLLISION;
+            Colliders[87, 27] = COLLISION;
+            Colliders[87, 26] = COLLISION;
+            Colliders[87, 25] = COLLISION;
+            Colliders[87, 24] = COLLISION;
+            Colliders[87, 23] = COLLISION;
+            Colliders[87, 22] = COLLISION;
+            Colliders[87, 21] = COLLISION;
+            Colliders[87, 20] = COLLISION;
+            Colliders[86, 20] = COLLISION;
+            Colliders[85, 20] = COLLISION;
+            Colliders[84, 20] = COLLISION;
+            Colliders[83, 20] = COLLISION;
+            Colliders[82, 20] = COLLISION;
+            Colliders[81, 20] = COLLISION;
+            Colliders[81, 19] = COLLISION;
+            Colliders[81, 18] = COLLISION;
+            Colliders[81, 17] = COLLISION;
+            Colliders[82, 17] = COLLISION;
+            Colliders[83, 17] = COLLISION;
+            Colliders[83, 16] = COLLISION;
+            Colliders[83, 15] = COLLISION;
+            Colliders[83, 14] = COLLISION;
+            Colliders[83, 13] = COLLISION;
+            Colliders[82, 13] = COLLISION;
+            Colliders[81, 13] = COLLISION;
+            Colliders[81, 12] = COLLISION;
+            Colliders[81, 11] = COLLISION;
+            Colliders[81, 10] = COLLISION;
+            Colliders[90, 17] = COLLISION;
+            Colliders[90, 16] = COLLISION;
+            Colliders[90, 15] = COLLISION;
+            Colliders[90, 14] = COLLISION;
+            Colliders[90, 13] = COLLISION;
+            Colliders[90, 13] = COLLISION;
+            Colliders[90, 12] = COLLISION;
+            Colliders[90, 11] = COLLISION;
+            Colliders[90, 10] = COLLISION;
+            Colliders[90, 9] = COLLISION;
+            Colliders[90, 8] = COLLISION;
+            Colliders[90, 7] = COLLISION;
+            Colliders[90, 6] = COLLISION;
+            Colliders[90, 5] = COLLISION;
+            Colliders[90, 4] = COLLISION;
+            Colliders[89, 4] = COLLISION;
+            Colliders[88, 4] = COLLISION;
+            Colliders[87, 4] = COLLISION;
+            Colliders[86, 5] = COLLISION;
+            Colliders[87, 6] = COLLISION;
+            Colliders[86, 7] = COLLISION;
+            Colliders[87, 8] = COLLISION;
+            Colliders[86, 8] = COLLISION;
+            Colliders[87, 9] = COLLISION;
+            Colliders[88, 9] = COLLISION;
+            Colliders[89, 10] = COLLISION;
+            Colliders[89, 11] = COLLISION;
+            Colliders[89, 12] = COLLISION;
+            Colliders[88, 12] = COLLISION;
+            Colliders[87, 13] = COLLISION;
+            Colliders[86, 13] = COLLISION;
+            Colliders[86, 15] = COLLISION;
+            Colliders[87, 15] = COLLISION;
+            Colliders[87, 14] = COLLISION;
+            Colliders[87, 16] = COLLISION;
+            Colliders[86, 17] = COLLISION;
+            Colliders[87, 17] = COLLISION;
+            Colliders[88, 17] = COLLISION;
+            Colliders[89, 17] = COLLISION;
+            Colliders[93, 19] = COLLISION;
+            Colliders[93, 18] = COLLISION;
+            Colliders[93, 17] = COLLISION;
+            Colliders[93, 16] = COLLISION;
+            Colliders[93, 15] = COLLISION;
+            Colliders[93, 14] = COLLISION;
+            Colliders[93, 13] = COLLISION;
+            Colliders[93, 12] = COLLISION;
+            Colliders[93, 11] = COLLISION;
+            Colliders[93, 10] = COLLISION;
+            Colliders[93, 9] = COLLISION;
+            Colliders[93, 8] = COLLISION;
+            Colliders[93, 7] = COLLISION;
+            Colliders[93, 6] = COLLISION;
+            Colliders[93, 5] = COLLISION;
+            Colliders[93, 4] = COLLISION;
+            Colliders[93, 3] = COLLISION;
+            Colliders[93, 2] = COLLISION;
+            Colliders[93, 1] = COLLISION;
+            Colliders[92, 1] = COLLISION;
+            Colliders[91, 1] = COLLISION;
+            Colliders[90, 1] = COLLISION;
+            Colliders[89, 1] = COLLISION;
+            Colliders[88, 1] = COLLISION;
+            Colliders[87, 1] = COLLISION;
+            Colliders[86, 1] = COLLISION;
+            Colliders[85, 1] = COLLISION;
+            Colliders[84, 1] = COLLISION;
+            Colliders[83, 1] = COLLISION;
+            Colliders[83, 2] = COLLISION;
+            Colliders[83, 3] = COLLISION;
+            Colliders[83, 4] = COLLISION;
+            Colliders[82, 4] = COLLISION;
+            Colliders[81, 4] = COLLISION;
+            Colliders[81, 5] = COLLISION;
+            Colliders[81, 6] = COLLISION;
+            Colliders[81, 7] = COLLISION;
+            Colliders[80, 7] = COLLISION;
+            Colliders[79, 7] = COLLISION;
+            Colliders[78, 7] = COLLISION;
+            Colliders[81, 10] = COLLISION;
+            Colliders[80, 10] = COLLISION;
+            Colliders[79, 10] = COLLISION;
+            Colliders[78, 10] = COLLISION;
+            Colliders[77, 10] = COLLISION;
+            Colliders[76, 10] = COLLISION;
+            Colliders[77, 7] = COLLISION;
+            Colliders[76, 7] = COLLISION;
+            Colliders[75, 7] = COLLISION;
+            Colliders[74, 7] = COLLISION;
+            Colliders[73, 7] = COLLISION;
+            Colliders[75, 10] = COLLISION;
+            Colliders[74, 10] = COLLISION;
+            Colliders[72, 10] = COLLISION;
+            Colliders[73, 10] = COLLISION;
+            Colliders[71, 10] = COLLISION;
+            Colliders[70, 10] = COLLISION;
+            Colliders[69, 10] = COLLISION;
+            Colliders[68, 10] = COLLISION;
+            Colliders[67, 10] = COLLISION;
+            Colliders[66, 10] = COLLISION;
+            Colliders[65, 10] = COLLISION;
+            Colliders[64, 10] = COLLISION;
+            Colliders[63, 10] = COLLISION;
+            Colliders[62, 10] = COLLISION;
+            Colliders[72, 7] = COLLISION;
+            Colliders[71, 7] = COLLISION;
+            Colliders[70, 7] = COLLISION;
+            Colliders[69, 7] = COLLISION;
+            Colliders[68, 7] = COLLISION;
+            Colliders[67, 7] = COLLISION;
+            Colliders[66, 7] = COLLISION;
+            Colliders[65, 7] = COLLISION;
+            Colliders[64, 7] = COLLISION;
+            Colliders[63, 7] = COLLISION;
+            Colliders[62, 7] = COLLISION;
+            Colliders[61, 10] = COLLISION;
+            Colliders[61, 7] = COLLISION;
+            Colliders[61, 6] = COLLISION;
+            Colliders[61, 5] = COLLISION;
+            Colliders[61, 4] = COLLISION;
+            Colliders[61, 3] = COLLISION;
+            Colliders[61, 2] = COLLISION;
+            Colliders[61, 1] = COLLISION;
+            Colliders[60, 1] = COLLISION;
+            Colliders[59, 1] = COLLISION;
+            Colliders[61, 11] = COLLISION;
+            Colliders[61, 12] = COLLISION;
+            Colliders[61, 15] = COLLISION;
+            Colliders[61, 16] = COLLISION;
+            Colliders[61, 17] = COLLISION;
+            Colliders[61, 18] = COLLISION;
+            Colliders[61, 19] = COLLISION;
+            Colliders[61, 20] = COLLISION;
+            Colliders[62, 15] = COLLISION;
+            Colliders[63, 15] = COLLISION;
+            Colliders[64, 15] = COLLISION;
+            Colliders[65, 15] = COLLISION;
+            Colliders[66, 15] = COLLISION;
+            Colliders[67, 15] = COLLISION;
+            Colliders[68, 15] = COLLISION;
+            Colliders[69, 15] = COLLISION;
+            Colliders[69, 16] = COLLISION;
+            Colliders[69, 17] = COLLISION;
+            Colliders[69, 18] = COLLISION;
+            Colliders[70, 19] = COLLISION;
+            Colliders[70, 18] = COLLISION;
+            Colliders[69, 20] = COLLISION;
+            Colliders[69, 21] = COLLISION;
+            Colliders[69, 22] = COLLISION;
+            Colliders[69, 23] = COLLISION;
+            Colliders[69, 24] = COLLISION;
+            Colliders[69, 25] = COLLISION;
+            Colliders[69, 26] = COLLISION;
+            Colliders[70, 26] = COLLISION;
+            Colliders[70, 27] = COLLISION;
+            Colliders[70, 28] = COLLISION;
+            Colliders[69, 28] = COLLISION;
+            Colliders[69, 29] = COLLISION;
+            Colliders[69, 30] = COLLISION;
+            Colliders[69, 31] = COLLISION;
+            Colliders[69, 32] = COLLISION;
+            Colliders[70, 32] = COLLISION;
+            Colliders[60, 20] = COLLISION;
+            Colliders[59, 20] = COLLISION;
+            Colliders[58, 20] = COLLISION;
+            Colliders[57, 20] = COLLISION;
+            Colliders[59, 2] = COLLISION;
+            Colliders[59, 3] = COLLISION;
+            Colliders[59, 4] = COLLISION;
+            Colliders[59, 5] = COLLISION;
+            Colliders[59, 6] = COLLISION;
+            Colliders[58, 6] = COLLISION;
+            Colliders[57, 6] = COLLISION;
+            Colliders[56, 6] = COLLISION;
+            Colliders[55, 6] = COLLISION;
+            Colliders[55, 5] = COLLISION;
+            Colliders[55, 4] = COLLISION;
+            Colliders[55, 3] = COLLISION;
+            Colliders[54, 4] = COLLISION;
+            Colliders[53, 4] = COLLISION;
+            Colliders[52, 4] = COLLISION;
+            Colliders[51, 4] = COLLISION;
+            Colliders[50, 5] = COLLISION;
+            Colliders[50, 7] = COLLISION;
+            Colliders[50, 8] = COLLISION;
+            Colliders[50, 9] = COLLISION;
+            Colliders[51, 9] = COLLISION;
+            Colliders[52, 9] = COLLISION;
+            Colliders[53, 9] = COLLISION;
+            Colliders[52, 10] = COLLISION;
+            Colliders[52, 11] = COLLISION;
+            Colliders[52, 12] = COLLISION;
+            Colliders[52, 13] = COLLISION;
+            Colliders[51, 13] = COLLISION;
+            Colliders[50, 13] = COLLISION;
+            Colliders[51, 14] = COLLISION;
+            Colliders[51, 15] = COLLISION;
+            Colliders[51, 12] = COLLISION;
+            Colliders[50, 15] = COLLISION;
+            Colliders[51, 16] = COLLISION;
+            Colliders[50, 17] = COLLISION;
+            Colliders[51, 17] = COLLISION;
+            Colliders[52, 17] = COLLISION;
+            Colliders[53, 17] = COLLISION;
+            Colliders[54, 17] = COLLISION;
+            Colliders[54, 16] = COLLISION;
+            Colliders[54, 15] = COLLISION;
+            Colliders[54, 14] = COLLISION;
+            Colliders[54, 12] = COLLISION;
+            Colliders[54, 13] = COLLISION;
+            Colliders[54, 11] = COLLISION;
+            Colliders[54, 10] = COLLISION;
+            Colliders[54, 9] = COLLISION;
+            Colliders[54, 8] = COLLISION;
+            Colliders[54, 7] = COLLISION;
+            Colliders[54, 6] = COLLISION;
+            Colliders[62, 12] = COLLISION;
+            Colliders[63, 12] = COLLISION;
+            Colliders[64, 12] = COLLISION;
+            Colliders[65, 12] = COLLISION;
+            Colliders[66, 12] = COLLISION;
+            Colliders[67, 12] = COLLISION;
+            Colliders[68, 12] = COLLISION;
+            Colliders[69, 12] = COLLISION;
+            Colliders[70, 12] = COLLISION;
+            Colliders[71, 12] = COLLISION;
+            Colliders[72, 12] = COLLISION;
+            Colliders[74, 12] = COLLISION;
+            Colliders[73, 12] = COLLISION;
+            Colliders[74, 13] = COLLISION;
+            Colliders[74, 14] = COLLISION;
+            Colliders[74, 15] = COLLISION;
+            Colliders[74, 16] = COLLISION;
+            Colliders[74, 17] = COLLISION;
+            Colliders[74, 18] = COLLISION;
+            Colliders[74, 19] = COLLISION;
+            Colliders[74, 20] = COLLISION;
+            Colliders[74, 21] = COLLISION;
+            Colliders[74, 22] = COLLISION;
+            Colliders[74, 23] = COLLISION;
+            Colliders[74, 24] = COLLISION;
+            Colliders[74, 25] = COLLISION;
+            Colliders[74, 26] = COLLISION;
+            Colliders[74, 27] = COLLISION;
+            Colliders[74, 28] = COLLISION;
+            Colliders[75, 28] = COLLISION;
+            Colliders[76, 28] = COLLISION;
+            Colliders[77, 28] = COLLISION;
+            Colliders[78, 28] = COLLISION;
+            Colliders[71, 32] = COLLISION;
+            Colliders[72, 32] = COLLISION;
+            Colliders[73, 32] = COLLISION;
+            Colliders[74, 32] = COLLISION;
+            Colliders[75, 32] = COLLISION;
+            Colliders[76, 32] = COLLISION;
+            Colliders[77, 32] = COLLISION;
+            Colliders[78, 32] = COLLISION;
+            Colliders[79, 32] = COLLISION;
+            Colliders[80, 32] = COLLISION;
+            Colliders[80, 30] = COLLISION;
+            Colliders[80, 31] = COLLISION;
+            Colliders[80, 29] = COLLISION;
+            Colliders[80, 28] = COLLISION;
+            Colliders[79, 28] = COLLISION;
+            Colliders[56, 20] = COLLISION;
+            Colliders[55, 20] = COLLISION;
+            Colliders[54, 20] = COLLISION;
+            Colliders[53, 20] = COLLISION;
+            Colliders[52, 20] = COLLISION;
+            Colliders[51, 20] = COLLISION;
+            Colliders[50, 20] = COLLISION;
+            Colliders[49, 20] = COLLISION;
+            Colliders[48, 20] = COLLISION;
+            Colliders[47, 20] = COLLISION;
+            Colliders[47, 21] = COLLISION;
+            Colliders[47, 22] = COLLISION;
+            Colliders[47, 23] = COLLISION;
+            Colliders[48, 23] = COLLISION;
+            Colliders[49, 23] = COLLISION;
+            Colliders[50, 23] = COLLISION;
+            Colliders[47, 26] = COLLISION;
+            Colliders[48, 26] = COLLISION;
+            Colliders[49, 26] = COLLISION;
+            Colliders[50, 26] = COLLISION;
+            Colliders[51, 26] = COLLISION;
+            Colliders[52, 26] = COLLISION;
+            Colliders[53, 26] = COLLISION;
+            Colliders[54, 26] = COLLISION;
+            Colliders[44, 17] = COLLISION;
+            Colliders[44, 18] = COLLISION;
+            Colliders[44, 19] = COLLISION;
+            Colliders[44, 20] = COLLISION;
+            Colliders[44, 21] = COLLISION;
+            Colliders[44, 22] = COLLISION;
+            Colliders[44, 23] = COLLISION;
+            Colliders[44, 24] = COLLISION;
+            Colliders[44, 25] = COLLISION;
+            Colliders[45, 17] = COLLISION;
+            Colliders[46, 17] = COLLISION;
+            Colliders[47, 17] = COLLISION;
+            Colliders[47, 16] = COLLISION;
+            Colliders[47, 15] = COLLISION;
+            Colliders[47, 14] = COLLISION;
+            Colliders[46, 13] = COLLISION;
+            Colliders[45, 13] = COLLISION;
+            Colliders[44, 13] = COLLISION;
+            Colliders[44, 12] = COLLISION;
+            Colliders[44, 11] = COLLISION;
+            Colliders[44, 10] = COLLISION;
+            Colliders[43, 10] = COLLISION;
+            Colliders[44, 6] = COLLISION;
+            Colliders[44, 7] = COLLISION;
+            Colliders[43, 7] = COLLISION;
+            Colliders[42, 7] = COLLISION;
+            Colliders[44, 5] = COLLISION;
+            Colliders[44, 4] = COLLISION;
+            Colliders[44, 3] = COLLISION;
+            Colliders[44, 2] = COLLISION;
+            Colliders[44, 1] = COLLISION;
+            Colliders[45, 1] = COLLISION;
+            Colliders[46, 1] = COLLISION;
+            Colliders[47, 1] = COLLISION;
+            Colliders[48, 1] = COLLISION;
+            Colliders[49, 1] = COLLISION;
+            Colliders[50, 1] = COLLISION;
+            Colliders[51, 1] = COLLISION;
+            Colliders[52, 1] = COLLISION;
+            Colliders[53, 1] = COLLISION;
+            Colliders[54, 1] = COLLISION;
+            Colliders[55, 1] = COLLISION;
+            Colliders[55, 2] = COLLISION;
+            Colliders[73, 13] = COLLISION;
+            Colliders[73, 14] = COLLISION;
+            Colliders[73, 15] = COLLISION;
+            Colliders[73, 16] = COLLISION;
+            Colliders[73, 17] = COLLISION;
+            Colliders[73, 18] = COLLISION;
+            Colliders[73, 19] = COLLISION;
+            Colliders[73, 20] = COLLISION;
+            Colliders[73, 21] = COLLISION;
+            Colliders[73, 22] = COLLISION;
+            Colliders[73, 23] = COLLISION;
+            Colliders[73, 24] = COLLISION;
+            Colliders[73, 25] = COLLISION;
+            Colliders[73, 26] = COLLISION;
+            Colliders[73, 27] = COLLISION;
+            Colliders[73, 28] = COLLISION;
 
         }
 
@@ -575,11 +583,11 @@ namespace MantaNecromante.GameStage {
         /// </summary>
         /// 
 
-
         //BACK END
         private void SetItem() {
 
-            Colliders[79, 30] = 2;
+            Colliders[79, 30] = COLLISION;
+            Colliders[78, 30] = ITEM;
 
             Image chest = new Image();
 
@@ -596,7 +604,7 @@ namespace MantaNecromante.GameStage {
             MovableProps.Add(chest);
         }
 
-        public Image getItem(int row, int column) {
+        private Image getItem(int row, int column) {
 
             Image foe = new Image();
 
@@ -613,7 +621,6 @@ namespace MantaNecromante.GameStage {
 
             return null;
         }
-
 
         //private Image getEnemy(int row, int column) {
 
@@ -634,10 +641,10 @@ namespace MantaNecromante.GameStage {
 
         //}
 
-        private void setEnemies() {
+        private void SetEnemies() {
 
-            Colliders[72, 24] = 3;
-
+            Colliders[72, 24] = ENEMY;
+        
             controller.setMob(72, 24);
 
             foe = controller.FindMob(72, 24);
@@ -663,7 +670,7 @@ namespace MantaNecromante.GameStage {
         ///
 
         //Aqui é feito o retorno do herói/Mapa a sua posição anterior à atual, em que ele colide com o cenário:
-        //Caso seja o mapa se movendo, ele é quem retorna a coordenada de canvas anterior.
+        //Caso seja o mapa se movendo, ele é quem retorna à coordenada de canvas anterior.
         //..........................................................//
         private void bumpWithScenario() {
 
@@ -701,47 +708,49 @@ namespace MantaNecromante.GameStage {
             //Aqui há o cálculo para determinar em quais células da matriz os vértices do herói estão:
             //....................................................................................................\\
             upper_row = (int)(((Canvas.GetTop(Hero) - Canvas.GetTop(Mansion)) / GridY_mult) + topSide);
-            bottom_row = (int)((upper_row / GridY_mult) + botSide);
+            bottom_row = (int)((upper_row) + botSide);
 
             left_column = (int)((((Canvas.GetLeft(Hero)) - Canvas.GetLeft(Mansion)) / GridX_mult) + leftSide);
             right_column = left_column + (int)(rightSide);
             //....................................................................................................\\
 
+            isInteractive = false;
 
             //Aqui procuro saber se as 4 células da matriz em que se situam os vértices do herói estão em células de colisão (1),
             //células de inimigos (3) ou células de itens (2) ou em nenhuma das três (0).
             //..............................................................................................................................................................................................................\\
-            if (Colliders[upper_row, left_column] == 1 || Colliders[upper_row, right_column] == 1 || Colliders[bottom_row, left_column] == 1 || Colliders[bottom_row, right_column] == 1) {
+            if (Colliders[upper_row, left_column] == COLLISION || Colliders[upper_row, right_column] == COLLISION || Colliders[bottom_row, left_column] == COLLISION || Colliders[bottom_row, right_column] == COLLISION) {
 
                 bumpWithScenario();
             }
-            else if (Colliders[upper_row, left_column] == 2 || Colliders[upper_row, right_column] == 2 || Colliders[bottom_row, left_column] == 2 || Colliders[bottom_row, right_column] == 2) {
+            else if (Colliders[upper_row, left_column] == ITEM || Colliders[upper_row, right_column] == ITEM || Colliders[bottom_row, left_column] == ITEM || Colliders[bottom_row, right_column] == ITEM) {
 
                 Canvas.SetTop(infoBox, Canvas.GetTop(Hero) - Hero.Height / 2);
                 Canvas.SetLeft(infoBox, Canvas.GetLeft(Hero) + Hero.Width / 2 - infoBox.Width / 2);
 
+                isInteractive = true;
                 infoBox.Opacity = 1;
             }
-            else if (Colliders[upper_row, left_column] == 3 || Colliders[upper_row, right_column] == 3 || Colliders[bottom_row, left_column] == 3 || Colliders[bottom_row, right_column] == 3) {
+            else if (Colliders[upper_row, left_column] == ENEMY || Colliders[upper_row, right_column] == ENEMY || Colliders[bottom_row, left_column] == ENEMY || Colliders[bottom_row, right_column] == ENEMY) {
 
                 int x = 0, y = 0;
 
-                if (Colliders[upper_row, left_column] == 3) {
+                if (Colliders[upper_row, left_column] == ENEMY) {
 
                     x = left_column;
                     y = upper_row;
                 }
-                else if (Colliders[upper_row, right_column] == 3) {
+                else if (Colliders[upper_row, right_column] == ENEMY) {
 
                     x = right_column;
                     y = upper_row;
                 }
-                else if (Colliders[bottom_row, left_column] == 3) {
+                else if (Colliders[bottom_row, left_column] == ENEMY) {
 
                     x = left_column;
                     y = bottom_row;
                 }
-                else if (Colliders[bottom_row, right_column] == 3) {
+                else if (Colliders[bottom_row, right_column] == ENEMY) {
 
                     x = right_column;
                     y = bottom_row;
@@ -765,30 +774,30 @@ namespace MantaNecromante.GameStage {
             Image item = new Image();
             int x = 0, y = 0;
 
-            if (Colliders[upper_row, left_column] == 2) {
+            if (!isInteractive) return;
+
+            if (Colliders[upper_row + 1, left_column] == COLLISION) {
 
                 x = left_column;
-                y = upper_row;
+                y = upper_row + 1;
             }
-            else if (Colliders[upper_row, right_column] == 2) {
+            else if (Colliders[upper_row + 1, right_column] == COLLISION) {
 
                 x = right_column;
-                y = upper_row;
+                y = upper_row + 1;
             }
-            else if (Colliders[bottom_row, left_column] == 2) {
+            else if (Colliders[bottom_row + 1, left_column] == COLLISION) {
 
                 x = left_column;
-                y = bottom_row;
+                y = bottom_row + 1;
             }
-            else if (Colliders[bottom_row, right_column] == 2) {
+            else if (Colliders[bottom_row + 1, right_column] == COLLISION) {
 
                 x = right_column;
-                y = bottom_row;
+                y = bottom_row + 1;
             }
 
             item = getItem(y, x);
-            Colliders[y, x] = 1;
-
             item.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Maps/chest_open.gif"));
         }
         //..............................................................................................//
@@ -862,7 +871,7 @@ namespace MantaNecromante.GameStage {
             column = Grid.GetColumn(cell);
             row = Grid.GetRow(cell);
 
-            Debug.WriteLine("Colliders[" + row + ", " + column + "] = 1;");
+            Debug.WriteLine("Colliders[" + row + ", " + column + "] = COLLISION;");
 
         }
 
@@ -936,6 +945,8 @@ namespace MantaNecromante.GameStage {
             Hero.Source = idletoRight;
         }
 
+
+        //A sentinela que vigia as teclas atentamente:
         private void keySentinel(CoreWindow sender, KeyEventArgs e) {
 
             isMovementKey = true;
@@ -992,11 +1003,13 @@ namespace MantaNecromante.GameStage {
                     break;
                 case Windows.System.VirtualKey.G:
 
+                    //Teste com a grid:
                     Colliderss.Opacity = (Colliderss.Opacity == 1) ? 0 : 1;
                     isMovementKey = false;
                     break;
                 case Windows.System.VirtualKey.E:
 
+                    isMovementKey = false;
                     interact();
                     break;
                 default:
