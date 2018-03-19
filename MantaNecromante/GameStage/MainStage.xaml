@@ -25,7 +25,7 @@
 
         <RelativePanel Opacity="1" Name="Inventory" Height="497" Canvas.Left="545" Canvas.Top="208" Width="320" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/inventory.png" Margin="0,0,0,0" Width="305" HorizontalAlignment="Left"/>
-            <Button Height="17" Margin="270,7,-275,-12" Width="25" Click="exitInventory"></Button>
+            <Button Height="17" Margin="270,7,-275,-12" Width="25" Click="ExitInventory"></Button>
             <Button Height="34" Margin="71,75,-85,-97" Width="34"></Button>
             <Button Height="34" Margin="28,75,-42,-97" Width="34"/>
             <Button Height="34" Margin="115,75,-129,-97" Width="34"/>

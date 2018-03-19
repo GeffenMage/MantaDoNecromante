@@ -6,27 +6,26 @@ using System.Threading.Tasks;
 using Windows.UI.Xaml.Media.Imaging;
 
 namespace NecromanteLL {
-    public abstract class Player 
-    {
-       private String nome;
-       private int hp_atual, hp_total;
-       private int mp_atual, mp_total;
-       private int xp_atual, xp_total,lvl;
-       private int base_dmg, base_def;
-       private String nome_classe;
-       private List<Skill> skills;
-       private List<Itens> inventario;
-       private Itens cabeca;
-       private Itens maos;
-       private Itens pes;
-       private Itens inferior;
-       private Itens torso;
-       private Itens mao_esq;
-       private Itens mao_dir;
-       private BitmapImage sprite_idle_left;
-       private BitmapImage sprite_idle_right;
-       private BitmapImage sprite_walking_left;
-       private BitmapImage sprite_walking_right;
+    public abstract class Player {
+        private String nome;
+        private int hp_atual, hp_total;
+        private int mp_atual, mp_total;
+        private int xp_atual, xp_total, lvl;
+        private int base_dmg, base_def;
+        private String nome_classe;
+        private List<Skill> skills;
+        private List<Itens> inventario;
+        private Itens cabeca;
+        private Itens maos;
+        private Itens pes;
+        private Itens inferior;
+        private Itens torso;
+        private Itens mao_esq;
+        private Itens mao_dir;
+        private BitmapImage sprite_idle_left;
+        private BitmapImage sprite_idle_right;
+        private BitmapImage sprite_walking_left;
+        private BitmapImage sprite_walking_right;
 
         public string Nome { get => nome; set => nome = value; }
         public int Hp_atual { get => hp_atual; set => hp_atual = value; }
@@ -41,13 +40,13 @@ namespace NecromanteLL {
         public string Nome_classe { get => nome_classe; set => nome_classe = value; }
         internal List<Skill> Skills { get => skills; set => skills = value; }
         internal List<Itens> Inventario { get => inventario; set => inventario = value; }
-        internal Itens Cabeca { get => cabeca;}
-        internal Itens Maos { get => maos;}
-        internal Itens Pes { get => pes;}
-        internal Itens Inferior { get => inferior;}
-        internal Itens Torso { get => torso;}
+        internal Itens Cabeca { get => cabeca; }
+        internal Itens Maos { get => maos; }
+        internal Itens Pes { get => pes; }
+        internal Itens Inferior { get => inferior; }
+        internal Itens Torso { get => torso; }
         internal Itens Mao_esq { get => mao_esq; }
-        internal Itens Mao_dir { get => mao_dir;}
+        internal Itens Mao_dir { get => mao_dir; }
         public BitmapImage Sprite_idle_left { get => sprite_idle_left; set => sprite_idle_left = value; }
         public BitmapImage Sprite_idle_right { get => sprite_idle_right; set => sprite_idle_right = value; }
         public BitmapImage Sprite_walking_left { get => sprite_walking_left; set => sprite_walking_left = value; }
@@ -81,7 +80,7 @@ namespace NecromanteLL {
                 return false;
             }
 
-            
+
         }
 
         public bool IsAlive() {
@@ -95,13 +94,13 @@ namespace NecromanteLL {
 
         //Necessario modificar esse método caso quiser adicionar modificadores para ataque
         public int Atk_base() {
-            int damage_add=0;
-            foreach (Itens i in Inventario){
-                if (i.Equipado==true) {
+            int damage_add = 0;
+            foreach (Itens i in Inventario) {
+                if (i.Equipado == true) {
                     damage_add += i.Dmg;
                 }
             }
-            return Base_dmg+damage_add;
+            return Base_dmg + damage_add;
         }
 
         public bool Take_dmg(int dmg) {
@@ -115,7 +114,7 @@ namespace NecromanteLL {
         }
 
         public bool Equipar(Itens item) {
-            if(item is Espada && Mao_dir == null) {
+            if (item is Espada && Mao_dir == null) {
                 mao_dir = item;
                 Mao_dir.Equipado = true;
                 Base_def += Mao_dir.Def;
@@ -123,7 +122,7 @@ namespace NecromanteLL {
                 Hp_total += Mao_dir.Hp_up;
                 return true;
             }
-            else if(item is Escudo && Mao_esq == null) {
+            else if (item is Escudo && Mao_esq == null) {
                 mao_esq = item;
                 Mao_esq.Equipado = true;
                 Base_def += Mao_esq.Def;
@@ -131,7 +130,7 @@ namespace NecromanteLL {
                 Hp_total += Mao_esq.Hp_up;
                 return true;
             }
-            else if(item is Luva && Maos == null) {
+            else if (item is Luva && Maos == null) {
                 maos = item;
                 Maos.Equipado = true;
                 Base_def += Maos.Def;
@@ -192,7 +191,7 @@ namespace NecromanteLL {
             }
 
         }
-        
+
         public bool Desequipar(String slot) {
             switch (slot) {
                 case "Maos":

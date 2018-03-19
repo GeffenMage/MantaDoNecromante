@@ -32,6 +32,7 @@ namespace MantaNecromante.MainBattle {
         }
 
         private void BattleStage_KeyDown(object sender, KeyRoutedEventArgs e) {
+
             if (e.Key == Windows.System.VirtualKey.X) this.Frame.GoBack();
         }
 
