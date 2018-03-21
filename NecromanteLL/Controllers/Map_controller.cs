@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.Xaml.Controls;
 
 namespace NecromanteLL {
     public class Map_controller {
@@ -61,7 +62,7 @@ namespace NecromanteLL {
             item_num = new Random();
             Itens[] vet = itens.ToArray();
             vet[0].Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Maps/chest_idle.png"));
-            //itens_do_mapa[pos_x, pos_y] = vet[item_num.Next(18)];
+            //itens_do_mapa[pos_x, pos_y] = vet[item_num.Next(0,18)];
             itens_do_mapa[pos_x, pos_y] = vet[0];
 
         }
@@ -80,7 +81,7 @@ namespace NecromanteLL {
             mob_num = new Random();
             Mob[] vet = mobs.ToArray();
             vet[0].Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
-            //Mobs_do_mapa[pos_x, pos_y] = vet[mob_num.Next(12)];
+            //Mobs_do_mapa[pos_x, pos_y] = vet[mob_num.Next(0,12)];
             Mobs_do_mapa[pos_x, pos_y] = vet[0];
         }
 

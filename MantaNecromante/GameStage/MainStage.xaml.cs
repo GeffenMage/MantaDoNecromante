@@ -92,7 +92,7 @@ namespace MantaNecromante.GameStage {
 
         //Constantes para células que contem colisão, item ou inimigo:
         //.....................................................//
-        private static int GROUND = 0, COLLISION = 1, ITEM = 2, ENEMY = 3;
+        private const int GROUND = 0, COLLISION = 1, ITEM = 2, ENEMY = 3;
         //.....................................................//
 
         //Lista de Imagens dos inimigos e itens que precisam se mover junto com o mapa para criar a ilusão de movimento de câmera:

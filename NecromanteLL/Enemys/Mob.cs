@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.Xaml.Controls;
 
 namespace NecromanteLL {
     public abstract class Mob {
@@ -13,7 +14,7 @@ namespace NecromanteLL {
         private int mp_atual, mp_total;
         private int lvl,given_xp;
         private int base_dmg, base_def;
-        private BitmapImage sprite;
+        private Image sprite;
 
         public string Nome { get => nome; set => nome = value; }
         public int Hp_atual { get => hp_atual; set => hp_atual = value; }
@@ -24,7 +25,7 @@ namespace NecromanteLL {
         public int Given_xp { get => given_xp; set => given_xp = value; }
         public int Base_dmg { get => base_dmg; set => base_dmg = value; }
         public int Base_def { get => base_def; set => base_def = value; }
-        public BitmapImage Sprite { get => sprite; set => sprite = value; }
+        public Image Sprite { get => sprite; set => sprite = value; }
 
         public int Give_xp() {
             return Given_xp;
