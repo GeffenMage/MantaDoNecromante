@@ -15,7 +15,7 @@ namespace NecromanteLL {
         private int base_dmg, base_def;
         private String nome_classe;
         private List<Skill> skills;
-        private List<Itens> inventario;
+        private List<Itens> inventario = new List<Itens>();
         private Itens cabeca;
         private Itens maos;
         private Itens pes;

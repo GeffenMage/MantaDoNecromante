@@ -20,7 +20,7 @@ namespace Extension {
         static double defaultWidth = 1440;
         static double defaultHeight = 900;
 
-        public static void adjustForCamera(Image Map, Image Hero, ref int ScreenWidth, ref int ScreenHeight, ref int GridX_mult, ref int GridY_mult, ref double topSide, ref double botSide, ref double leftSide, ref double rightSide) {
+        public static void adjustForCamera(Image Map, Image Hero, ref int ScreenWidth, ref int ScreenHeight, ref int Cell_Width, ref int Cell_Height, ref double topSide, ref double botSide, ref double leftSide, ref double rightSide) {
    
             ScaleUp(Map);
             ScaleUp(Hero);
@@ -34,14 +34,14 @@ namespace Extension {
             ScreenWidth -= x_adjust;
             ScreenHeight -= y_adjust;
 
-            GridX_mult = (int)Map.Width / 100;
-            GridY_mult = (int)Map.Height / 100;
+            Cell_Width = (int)Map.Width / 100;
+            Cell_Height = (int)Map.Height / 100;
 
-            topSide = (3 * Hero.Height / 4) / GridY_mult;
-            botSide = (1 * Hero.Height / 4) / GridY_mult;
+            topSide = (3 * Hero.Height / 4) / Cell_Height;
+            botSide = (1 * Hero.Height / 4) / Cell_Height;
 
             leftSide = 0;
-            rightSide = Hero.Width / GridX_mult;
+            rightSide = Hero.Width / Cell_Width;
         }
 
         private static void ScaleUp(Image item) {
