@@ -7,11 +7,30 @@ using System.Threading.Tasks;
 
 namespace NecromanteLL {
     public class BattleController {
-        int player_initalHP, player_initialMP, player_initialDmg, player_initialDef;
-        int turno_atual = 1;
-        bool turno_player = true;
 
-        public int Turno_atual { get => turno_atual; set => turno_atual = value; }
+        private int player_initalHP, player_initialMP, player_initialDmg, player_initialDef;
+        private int turno_atual = 1;
+        private bool turno_player = true;
+        private Player jogador;
+        private Mob inimigo;
+
+
+        public int Turno_atual { get => Turno_atual1; set => Turno_atual1 = value; }
+        public int Player_initalHP { get => player_initalHP; set => player_initalHP = value; }
+        public int Player_initialMP { get => player_initialMP; set => player_initialMP = value; }
+        public int Player_initialDmg { get => player_initialDmg; set => player_initialDmg = value; }
+        public int Player_initialDef { get => player_initialDef; set => player_initialDef = value; }
+        public int Turno_atual1 { get => turno_atual; set => turno_atual = value; }
+        public bool Turno_player { get => turno_player; set => turno_player = value; }
+        public Player Jogador { get => jogador; set => jogador = value; }
+        public Mob Inimigo { get => inimigo; set => inimigo = value; }
+
+        public BattleController(Player jogador,Mob inimigo) {
+            this.Jogador = jogador;
+            this.Inimigo = inimigo;
+        }
+
+
 
         /// <summary>
         /// Método de batalha para quando for usar skills 
@@ -21,38 +40,38 @@ namespace NecromanteLL {
         /// <param name="option"></param>
         /// <param name="opSkill"></param>
         /// <returns></returns>
-        public bool Battle(Player jogador, Mob inimigo, string option, string opSkill) {
+        public bool Battle(string option, string opSkill) {
             if (Turno_atual == 1) {
-                Set_initialStatus(jogador);
+                Set_initialStatus(Jogador);
             }
-            if (jogador.IsAlive() == true && inimigo.IsAlive() == true) {
-                if (turno_player == true) {
-                    Skill_select(jogador, opSkill, inimigo);
-                    turno_player = false;
+            if (Jogador.IsAlive() == true && Inimigo.IsAlive() == true) {
+                if (Turno_player == true) {
+                    Skill_select(Jogador, opSkill, Inimigo);
+                    Turno_player = false;
                     Turno_atual++;
                 }
                 else {
                     //Cada caso é um comportamento de mob
-                    switch (inimigo.Nome) {
+                    switch (Inimigo.Nome) {
                         case "Goblin":
-                            jogador.Take_dmg(inimigo.Atk_base());
-                            turno_player = true;
+                            Jogador.Take_dmg(Inimigo.Atk_base());
+                            Turno_player = true;
                             Turno_atual++;
                             break;
                         default:
-                            jogador.Take_dmg(inimigo.Atk_base());
-                            turno_player = true;
+                            Jogador.Take_dmg(Inimigo.Atk_base());
+                            Turno_player = true;
                             Turno_atual++;
                             break;
                     }
                 }
             }
-            if (jogador.IsAlive() == false) {
-                Reset_Status(jogador);
+            if (Jogador.IsAlive() == false) {
+                Reset_Status(Jogador);
                 return false;
             }
             else {
-                Reset_Status(jogador);
+                Reset_Status(Jogador);
                 return true;
             }
         }
@@ -68,9 +87,9 @@ namespace NecromanteLL {
                 Set_initialStatus(jogador);
             }
             if (jogador.IsAlive() == true && inimigo.IsAlive() == true) {
-                if (turno_player == true) { 
+                if (Turno_player == true) { 
                     inimigo.Take_dmg(jogador.Atk_base());
-                    turno_player = false;
+                    Turno_player = false;
                     Turno_atual++;
                 }
                 else {
@@ -78,12 +97,12 @@ namespace NecromanteLL {
                     switch (inimigo.Nome) {
                         case "Goblin":
                             jogador.Take_dmg(inimigo.Atk_base());
-                            turno_player = true;
+                            Turno_player = true;
                             Turno_atual++;
                             break;
                         default:
                             jogador.Take_dmg(inimigo.Atk_base());
-                            turno_player = true;
+                            Turno_player = true;
                             Turno_atual++;
                             break;
                     }
@@ -138,17 +157,17 @@ namespace NecromanteLL {
         }
 
         public void Set_initialStatus(Player jogador) {
-            player_initalHP = jogador.Hp_total;
-            player_initialMP = jogador.Mp_total;
-            player_initialDmg = jogador.Base_dmg;
-            player_initialDef = jogador.Base_def;
+            Player_initalHP = jogador.Hp_total;
+            Player_initialMP = jogador.Mp_total;
+            Player_initialDmg = jogador.Base_dmg;
+            Player_initialDef = jogador.Base_def;
         }
 
         public void Reset_Status(Player jogador) {
-            jogador.Base_def = player_initialDef;
-            jogador.Base_dmg = player_initialDmg;
-            jogador.Hp_total = player_initalHP;
-            jogador.Mp_total = player_initialMP;
+            jogador.Base_def = Player_initialDef;
+            jogador.Base_dmg = Player_initialDmg;
+            jogador.Hp_total = Player_initalHP;
+            jogador.Mp_total = Player_initialMP;
 
         }
     }
