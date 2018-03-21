@@ -442,8 +442,8 @@
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\attack.gif">
       <PackagePath>GameAssets\Characters\enemies\exqueleton\attack.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\skeleton-Idle.gif">
-      <PackagePath>GameAssets\Characters\enemies\exqueleton\skeleton-Idle.gif</PackagePath>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif">
+      <PackagePath>GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\knight_idle.gif">
       <PackagePath>GameAssets\Characters\exhibit\knight_idle.gif</PackagePath>
@@ -460,8 +460,8 @@
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\walkRight.gif">
       <PackagePath>GameAssets\Characters\heroes\knight\walkRight.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Maps\chest.gif">
-      <PackagePath>GameAssets\Maps\chest.gif</PackagePath>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Maps\chest_open.gif">
+      <PackagePath>GameAssets\Maps\chest_open.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\main_background.gif">
       <PackagePath>GameAssets\Menu\main_background.gif</PackagePath>

@@ -24,10 +24,6 @@ namespace NecromanteLL {
         public int Given_xp { get => given_xp; set => given_xp = value; }
         public int Base_dmg { get => base_dmg; set => base_dmg = value; }
         public int Base_def { get => base_def; set => base_def = value; }
-        public BitmapImage Sprite_idle_left { get => sprite_idle_left; set => sprite_idle_left = value; }
-        public BitmapImage Sprite_idle_right { get => sprite_idle_right; set => sprite_idle_right = value; }
-        public BitmapImage Sprite_walking_left { get => sprite_walking_left; set => sprite_walking_left = value; }
-        public BitmapImage Sprite_walking_right { get => sprite_walking_right; set => sprite_walking_right = value; }
         public BitmapImage Sprite { get => sprite; set => sprite = value; }
 
         public int Give_xp() {

@@ -17,7 +17,7 @@ namespace NecromanteLL {
                     Given_xp = 100; Lvl = 5;
                     Base_def = 20; Base_dmg = 50;
                     //Inicializa os sprites do inimigo
-                    //Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
+                    Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
                     break;
                 case 2:
                     Nome = "Goblin";

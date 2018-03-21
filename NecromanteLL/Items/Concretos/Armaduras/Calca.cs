@@ -13,8 +13,8 @@ namespace NecromanteLL {
             this.Def = def;
             this.Hp_up = hp_up;
             this.Mp_up = mp_up;
-            
-            //this.Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkRight.gif"));
+
+            this.Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/itens/pant_t.png"));
         }
     }
 }
