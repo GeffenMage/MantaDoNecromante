@@ -70,6 +70,7 @@ namespace MantaNecromante.GameStage {
         //..................................//
         private Player chosen;
         private Mob foe;
+        private BattleController Controlador_de_batalha;
         //..................................//
 
         //x e y que determinam o quanto para a horizontal e vertical o herói vai se deslocar:
@@ -596,6 +597,8 @@ namespace MantaNecromante.GameStage {
             CollisionMatrix[row, column] = COLLISION;
             CollisionMatrix[row - 1, column] = ITEM;
 
+            controller.setItem(row, column);
+
             Image chest = new Image();
 
             chest.Width = chestWidth;
@@ -611,7 +614,7 @@ namespace MantaNecromante.GameStage {
             MovableProps.Add(chest);
         }
 
-        private Image GetItem(int row, int column) {
+        private Image GetChest(int row, int column) {
 
             Image foe = new Image();
 
@@ -629,24 +632,16 @@ namespace MantaNecromante.GameStage {
             return null;
         }
 
-        //private Image getEnemy(int row, int column) {
+        private void GetItem(int row,int column) {
 
-        //    Image foe = new Image();
+            chosen.Inventario.Add(controller.FindIten(row, column));
 
-        //    double x = column * Cell_Width + Canvas.GetLeft(Mansion) + Cell_Width / 2 - foe.Width / 2;
-        //    double y = row * Cell_Height + Canvas.GetTop(Mansion) + Cell_Height / 2 - foe.Height / 2;
+        }
 
-        //    foreach (Image item in MovableProps) {
+        private Mob getEnemy(int row, int column) {
 
-        //        if (Canvas.GetTop(item) == y || Canvas.GetLeft(item) == x) {
-
-        //            return item;
-        //        }
-        //    }
-
-        //    return null;
-
-        //}
+            return controller.FindMob(row, column);
+        }
 
         private void CreateEnemy(int row, int column) {
 
@@ -656,19 +651,15 @@ namespace MantaNecromante.GameStage {
 
             foe = controller.FindMob(row, column);
 
-            Image enemy = new Image();
+            foe.Sprite.Height = Hero.Height * 4 / 3;
+            foe.Sprite.Width = Hero.Width * 4 / 3;
 
-            enemy.Height = Hero.Height * 4 / 3;
-            enemy.Width = Hero.Width * 4 / 3;
+            Floor.Children.Add(foe.Sprite);
 
-            //enemy.Source = foe.Sprite;
+            Canvas.SetLeft(foe.Sprite, column * Cell_Width + Canvas.GetLeft(Mansion) + Cell_Width / 2 - foe.Sprite.Width / 2);
+            Canvas.SetTop(foe.Sprite, row * Cell_Height + Canvas.GetTop(Mansion) + Cell_Height / 2 - foe.Sprite.Height / 2);
 
-            Floor.Children.Add(enemy);
-
-            Canvas.SetLeft(enemy, column * Cell_Width + Canvas.GetLeft(Mansion) + Cell_Width / 2 - enemy.Width / 2);
-            Canvas.SetTop(enemy, row * Cell_Height + Canvas.GetTop(Mansion) + Cell_Height / 2 - enemy.Height / 2);
-
-            MovableProps.Add(enemy);
+            MovableProps.Add(foe.Sprite);
         }
 
         private void SetEnemies() {
@@ -768,10 +759,14 @@ namespace MantaNecromante.GameStage {
                     y = bottom_row;
                 }
 
-                //Image foe = getEnemy(y, x);
+                
                 CollisionMatrix[y, x] = GROUND;
 
-                this.Frame.Navigate(typeof(BattleStage));
+                foe = getEnemy(y, x);
+
+                Controlador_de_batalha = new BattleController(chosen, foe);
+
+                this.Frame.Navigate(typeof(BattleStage),Controlador_de_batalha);
             }
             else {
 
@@ -809,7 +804,7 @@ namespace MantaNecromante.GameStage {
                 y = bottom_row + 1;
             }
 
-            item = GetItem(y, x);
+            item = GetChest(y, x);
             item.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Maps/chest_open.gif"));
         }
         //..............................................................................................//
