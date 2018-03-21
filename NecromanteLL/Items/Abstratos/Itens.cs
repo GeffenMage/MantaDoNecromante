@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 
 namespace NecromanteLL {
@@ -11,7 +12,7 @@ namespace NecromanteLL {
         private int def, dmg, hp_up, mp_up;
         private bool equipado;
         private String tipo;//O tipo sera onde o item será equipado no personagem
-        private BitmapImage sprite;
+        private Image sprite;
 
         public string Nome { get => nome; set => nome = value; }
         public string Descricao { get => descricao; set => descricao = value; }
@@ -21,7 +22,7 @@ namespace NecromanteLL {
         public int Mp_up { get => mp_up; set => mp_up = value; }
         public bool Equipado { get => equipado; set => equipado = value; }
         public string Tipo { get => tipo; set => tipo = value; }
-        public BitmapImage Sprite { get => sprite; set => sprite = value; }
+        public Image Sprite { get => sprite; set => sprite = value; }
   
     }
 }
