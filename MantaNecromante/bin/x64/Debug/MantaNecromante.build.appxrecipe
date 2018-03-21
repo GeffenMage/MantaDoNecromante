@@ -10,22 +10,22 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>5b684eb0-42c8-48ab-9f60-5613a1841a81</PackageIdentityName>
     <PackageIdentityPublisher>CN=Lucas</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MantaNecromante.exe">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MantaNecromante.exe">
       <PackagePath>entrypoint\MantaNecromante.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lucas\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -370,116 +370,116 @@
     <AppxPackagedFile Include="C:\Users\Lucas\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\NecromanteLL\bin\x64\Debug\NecromanteLL.dll">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\NecromanteLL\bin\x64\Debug\NecromanteLL.dll">
       <PackagePath>NecromanteLL.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\dots.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\dots.png">
       <PackagePath>Assets\dots.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\clicked_button.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\clicked_button.png">
       <PackagePath>GameAssets\Buttons\clicked_button.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\idle_button.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\idle_button.png">
       <PackagePath>GameAssets\Buttons\idle_button.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Maps\chest_idle.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Maps\chest_idle.png">
       <PackagePath>GameAssets\Maps\chest_idle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Maps\mansion.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Maps\mansion.png">
       <PackagePath>GameAssets\Maps\mansion.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\chooseClassTitle.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\chooseClassTitle.png">
       <PackagePath>GameAssets\Menu\chooseClassTitle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\equip_menu.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\equip_menu.png">
       <PackagePath>GameAssets\Menu\equip_menu.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\inventory.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\inventory.png">
       <PackagePath>GameAssets\Menu\inventory.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\mainTitle.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\mainTitle.png">
       <PackagePath>GameAssets\Menu\mainTitle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\nudePanel.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\nudePanel.png">
       <PackagePath>GameAssets\Menu\nudePanel.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\optionMenu.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\optionMenu.png">
       <PackagePath>GameAssets\Menu\optionMenu.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\panel.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\panel.png">
       <PackagePath>GameAssets\Menu\panel.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\pauseMenu.png">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\pauseMenu.png">
       <PackagePath>pauseMenu.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\attack.gif">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\attack.gif">
       <PackagePath>GameAssets\Characters\enemies\exqueleton\attack.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif">
       <PackagePath>GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\knight_idle.gif">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\knight_idle.gif">
       <PackagePath>GameAssets\Characters\exhibit\knight_idle.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\idleLeft.gif">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\idleLeft.gif">
       <PackagePath>GameAssets\Characters\heroes\knight\idleLeft.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\idleRight.gif">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\idleRight.gif">
       <PackagePath>GameAssets\Characters\heroes\knight\idleRight.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\walkLeft.gif">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\walkLeft.gif">
       <PackagePath>GameAssets\Characters\heroes\knight\walkLeft.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\walkRight.gif">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\walkRight.gif">
       <PackagePath>GameAssets\Characters\heroes\knight\walkRight.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Maps\chest_open.gif">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Maps\chest_open.gif">
       <PackagePath>GameAssets\Maps\chest_open.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\main_background.gif">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\main_background.gif">
       <PackagePath>GameAssets\Menu\main_background.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MantaNecromante.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MantaNecromante.xr.xml">
       <PackagePath>MantaNecromante.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lucas\source\repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Core\MantaNecromante.exe">
+    <AppxPackagedFile Include="C:\Users\Lucas\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Core\MantaNecromante.exe">
       <PackagePath>MantaNecromante.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

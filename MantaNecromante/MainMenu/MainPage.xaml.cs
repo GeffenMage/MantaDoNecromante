@@ -40,7 +40,6 @@ public sealed partial class MainPage : Page {
 
         public MainPage() {
 
-
             //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.FullScreen;
 
             //Teste de tamanho ajustável:
