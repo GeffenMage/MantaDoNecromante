@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.Xaml.Controls;
 
 namespace NecromanteLL {
     public class Arco:Armas {
@@ -13,6 +14,7 @@ namespace NecromanteLL {
             this.Def = def;
             this.Hp_up = hp_up;
             this.Mp_up = mp_up;
+            this.Sprite = new Image();
 
             this.Sprite.Source = new BitmapImage(new Uri(figura));
         }
