@@ -385,6 +385,57 @@
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\idle_button.png">
       <PackagePath>GameAssets\Buttons\idle_button.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\arco_1.png">
+      <PackagePath>GameAssets\Characters\itens\arco_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\arco_2.png">
+      <PackagePath>GameAssets\Characters\itens\arco_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\bota_1.png">
+      <PackagePath>GameAssets\Characters\itens\bota_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\bota_2.png">
+      <PackagePath>GameAssets\Characters\itens\bota_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\cajado_1.png">
+      <PackagePath>GameAssets\Characters\itens\cajado_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\cajado_2.png">
+      <PackagePath>GameAssets\Characters\itens\cajado_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\capacete_1.png">
+      <PackagePath>GameAssets\Characters\itens\capacete_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\capacete_2.png">
+      <PackagePath>GameAssets\Characters\itens\capacete_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\cota_1.png">
+      <PackagePath>GameAssets\Characters\itens\cota_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\cota_2.png">
+      <PackagePath>GameAssets\Characters\itens\cota_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\escudo_1.png">
+      <PackagePath>GameAssets\Characters\itens\escudo_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\escudo_2.png">
+      <PackagePath>GameAssets\Characters\itens\escudo_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\espada_1.png">
+      <PackagePath>GameAssets\Characters\itens\espada_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\espada_2.png">
+      <PackagePath>GameAssets\Characters\itens\espada_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\luva_1.png">
+      <PackagePath>GameAssets\Characters\itens\luva_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\luva_2.png">
+      <PackagePath>GameAssets\Characters\itens\luva_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\pant_t.png">
+      <PackagePath>GameAssets\Characters\itens\pant_t.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Maps\chest_idle.png">
       <PackagePath>GameAssets\Maps\chest_idle.png</PackagePath>
     </AppxPackagedFile>

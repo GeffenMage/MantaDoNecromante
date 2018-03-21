@@ -661,7 +661,7 @@ namespace MantaNecromante.GameStage {
             enemy.Height = Hero.Height * 4 / 3;
             enemy.Width = Hero.Width * 4 / 3;
 
-            enemy.Source = foe.Sprite;
+            //enemy.Source = foe.Sprite;
 
             Floor.Children.Add(enemy);
 

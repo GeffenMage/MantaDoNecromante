@@ -15,6 +15,7 @@ namespace NecromanteLL {
             this.Def = def;
             this.Hp_up = hp_up;
             this.Mp_up = mp_up;
+            this.Sprite = new Image();
 
             this.Sprite.Source = new BitmapImage(new Uri(figura));
         }
