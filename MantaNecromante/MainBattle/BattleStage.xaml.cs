@@ -42,7 +42,7 @@ namespace MantaNecromante.MainBattle {
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
-            controlador_de_batalha = (BattleController) e.Content;
+            controlador_de_batalha = (BattleController) e.Parameter;
 
             Hero.Source = controlador_de_batalha.Jogador.Sprite_idle_right;
             Foe = controlador_de_batalha.Inimigo.Sprite;
