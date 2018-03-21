@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.Xaml.Controls;
 
 namespace NecromanteLL {
     public class Fantasma : Mob {
@@ -17,7 +18,8 @@ namespace NecromanteLL {
                     Given_xp = 1200; Lvl = 30;
                     Base_def = 60; Base_dmg = 200;
                     //Inicializa os sprites do inimigo
-                    //Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
+                    Sprite = new Image();
+                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
                     break;
                 case 2:
                     Nome = "Espirito Vingativo";
@@ -26,7 +28,8 @@ namespace NecromanteLL {
                     Given_xp = 1500; Lvl = 40;
                     Base_def = 70; Base_dmg = 240;
                     //Inicializa os sprites do inimigo
-                    //Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
+                    Sprite = new Image();
+                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
                     break;
                 case 3:
                     Nome = "Ceifador";
@@ -35,7 +38,8 @@ namespace NecromanteLL {
                     Given_xp = 2000; Lvl = 60;
                     Base_def = 80; Base_dmg = 260;
                     //Inicializa os sprites do inimigo
-                    //Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
+                    Sprite = new Image();
+                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
                     break;
             }
 

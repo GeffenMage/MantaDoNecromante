@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.Xaml.Controls;
 
 namespace NecromanteLL {
     public class Laposo : Mob {
@@ -17,7 +18,8 @@ namespace NecromanteLL {
                     Given_xp = 100; Lvl = 5;
                     Base_def = 20; Base_dmg = 50;
                     //Inicializa os sprites do inimigo
-                    //Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
+                    Sprite = new Image();
+                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
                     break;
                 case 2:
                     Nome = "Laposo World";
@@ -26,7 +28,8 @@ namespace NecromanteLL {
                     Given_xp = 300; Lvl = 10;
                     Base_def = 30; Base_dmg = 70;
                     //Inicializa os sprites do inimigo
-                    //Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
+                    Sprite = new Image();
+                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
                     break;
                 case 3:
                     Nome = "Laposo HelloWorld";
@@ -35,7 +38,8 @@ namespace NecromanteLL {
                     Given_xp = 700; Lvl = 15;
                     Base_def = 40; Base_dmg = 90;
                     //Inicializa os sprites do inimigo
-                    //Sprite = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
+                    Sprite = new Image();
+                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
                     break;
             }
 

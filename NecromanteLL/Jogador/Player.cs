@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.Xaml.Controls;
 
 namespace NecromanteLL {
     public abstract class Player {
@@ -38,15 +39,15 @@ namespace NecromanteLL {
         public int Base_dmg { get => base_dmg; set => base_dmg = value; }
         public int Base_def { get => base_def; set => base_def = value; }
         public string Nome_classe { get => nome_classe; set => nome_classe = value; }
-        internal List<Skill> Skills { get => skills; set => skills = value; }
-        internal List<Itens> Inventario { get => inventario; set => inventario = value; }
-        internal Itens Cabeca { get => cabeca; }
-        internal Itens Maos { get => maos; }
-        internal Itens Pes { get => pes; }
-        internal Itens Inferior { get => inferior; }
-        internal Itens Torso { get => torso; }
-        internal Itens Mao_esq { get => mao_esq; }
-        internal Itens Mao_dir { get => mao_dir; }
+        public List<Skill> Skills { get => skills; set => skills = value; }
+        public List<Itens> Inventario { get => inventario; set => inventario = value; }
+        public Itens Cabeca { get => cabeca; }
+        public Itens Maos { get => maos; }
+        public Itens Pes { get => pes; }
+        public Itens Inferior { get => inferior; }
+        public Itens Torso { get => torso; }
+        public Itens Mao_esq { get => mao_esq; }
+        public Itens Mao_dir { get => mao_dir; }
         public BitmapImage Sprite_idle_left { get => sprite_idle_left; set => sprite_idle_left = value; }
         public BitmapImage Sprite_idle_right { get => sprite_idle_right; set => sprite_idle_right = value; }
         public BitmapImage Sprite_walking_left { get => sprite_walking_left; set => sprite_walking_left = value; }
