@@ -25,9 +25,10 @@ namespace MantaNecromante.MainBattle {
     /// </summary>
     public sealed partial class BattleStage : Page {
 
-        BattleController controlador_de_batalha;
+        BattleController battleController;
 
         public BattleStage() {
+
             this.InitializeComponent();
 
             Adjuster.AdjustWindow(Floor);
@@ -42,10 +43,10 @@ namespace MantaNecromante.MainBattle {
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
-            controlador_de_batalha = (BattleController) e.Parameter;
+            battleController = (BattleController) e.Parameter;
 
-            Hero.Source = controlador_de_batalha.Jogador.Sprite_idle_right;
-            Foe = controlador_de_batalha.Inimigo.Sprite;
+            Hero.Source = battleController.Jogador.Sprite_idle_right;
+            Foe.Source = battleController.Inimigo.Sprite.Source;
         }
     }
 }

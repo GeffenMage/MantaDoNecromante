@@ -70,7 +70,7 @@ namespace MantaNecromante.GameStage {
         //..................................//
         private Player chosen;
         private Mob foe;
-        private BattleController Controlador_de_batalha;
+        private BattleController battleController;
         //..................................//
 
         //x e y que determinam o quanto para a horizontal e vertical o herói vai se deslocar:
@@ -115,13 +115,13 @@ namespace MantaNecromante.GameStage {
             //....................................................................................................//
 
             //CreateGrid();
-            setBlocks();
+            SetBlocks();
             SetEnemies();
             SetItems();
 
             //Os menus são feitos no xalm, mas antes de o jogo começar, são retirados, exceto o quickmenu, que é retirado e posto de volta,
             //para ficar a frente de todas as outras imagens.
-            setAllMenusReady();
+            SetAllMenusReady();
 
             walkTimer.Interval = System.TimeSpan.FromMilliseconds(1);
             walkTimer.Tick += Walk;
@@ -129,7 +129,7 @@ namespace MantaNecromante.GameStage {
             walkTimer.Start();
         }
 
-        private void setAllMenusReady() {
+        private void SetAllMenusReady() {
 
             Floor.Children.Remove(quick_menu);
             Floor.Children.Add(quick_menu);
@@ -141,7 +141,7 @@ namespace MantaNecromante.GameStage {
             isOptionsMenuOpen = false;
         } 
 
-        private void x_movePropsAlongWithCamera() {
+        private void X_movePropsAlongWithCamera() {
 
             foreach (Image prop in MovableProps) {
 
@@ -149,7 +149,7 @@ namespace MantaNecromante.GameStage {
             }
         }
 
-        private void y_movePropsAlongWithCamera() {
+        private void Y_movePropsAlongWithCamera() {
 
             foreach (Image prop in MovableProps) {
 
@@ -157,7 +157,7 @@ namespace MantaNecromante.GameStage {
             }
         }
 
-        private void x_RetrievePropsPosition() {
+        private void X_RetrievePropsPosition() {
 
             foreach (Image prop in MovableProps) {
 
@@ -165,7 +165,7 @@ namespace MantaNecromante.GameStage {
             }
         }
 
-        private void y_RetrievePropsPosition() {
+        private void Y_RetrievePropsPosition() {
 
             foreach (Image prop in MovableProps) {
 
@@ -174,7 +174,7 @@ namespace MantaNecromante.GameStage {
         }
 
         //Blocos de colisão: paredes, mesas, etc...
-        private void setBlocks() {
+        private void SetBlocks() {
 
             CollisionMatrix[93, 20] = COLLISION;
             CollisionMatrix[92, 20] = COLLISION;
@@ -632,13 +632,12 @@ namespace MantaNecromante.GameStage {
             return null;
         }
 
-        private void GetItem(int row,int column) {
+        private void GetItem(int row, int column) {
 
             chosen.Inventario.Add(controller.FindIten(row, column));
-
         }
 
-        private Mob getEnemy(int row, int column) {
+        private Mob GetEnemy(int row, int column) {
 
             return controller.FindMob(row, column);
         }
@@ -680,7 +679,7 @@ namespace MantaNecromante.GameStage {
             if (isCameraHorizontal) {
                 Canvas.SetLeft(Mansion, Canvas.GetLeft(Mansion) + x);
 
-                x_RetrievePropsPosition();
+                X_RetrievePropsPosition();
 
                 //Apenas para testes//
                 Canvas.SetLeft(CollisionGrid, Canvas.GetLeft(CollisionGrid) + x);
@@ -694,7 +693,7 @@ namespace MantaNecromante.GameStage {
             if (isCameraVertical) {
                 Canvas.SetTop(Mansion, Canvas.GetTop(Mansion) + y);
 
-                y_RetrievePropsPosition();
+                Y_RetrievePropsPosition();
 
                 //Apenas para testes//
                 Canvas.SetTop(CollisionGrid, Canvas.GetTop(CollisionGrid) + y);
@@ -759,14 +758,13 @@ namespace MantaNecromante.GameStage {
                     y = bottom_row;
                 }
 
-                
                 CollisionMatrix[y, x] = GROUND;
 
-                foe = getEnemy(y, x);
+                foe = GetEnemy(y, x);
 
-                Controlador_de_batalha = new BattleController(chosen, foe);
+                battleController = new BattleController(chosen, foe);
 
-                this.Frame.Navigate(typeof(BattleStage),Controlador_de_batalha);
+                this.Frame.Navigate(typeof(BattleStage), battleController);
             }
             else {
 
@@ -805,6 +803,7 @@ namespace MantaNecromante.GameStage {
             }
 
             item = GetChest(y, x);
+            GetItem(y, x);
             item.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Maps/chest_open.gif"));
         }
         //..............................................................................................//
@@ -892,7 +891,7 @@ namespace MantaNecromante.GameStage {
                     isCameraHorizontal = true;
                     Canvas.SetLeft(Mansion, Canvas.GetLeft(Mansion) - x);
 
-                    x_movePropsAlongWithCamera();
+                    X_movePropsAlongWithCamera();
 
                     //Apenas Teste//
                     Canvas.SetLeft(CollisionGrid, Canvas.GetLeft(CollisionGrid) - x);
@@ -916,7 +915,7 @@ namespace MantaNecromante.GameStage {
                     isCameraVertical = true;
                     Canvas.SetTop(Mansion, Canvas.GetTop(Mansion) - y);
 
-                    y_movePropsAlongWithCamera();
+                    Y_movePropsAlongWithCamera();
 
                     //Apenas Teste//
                     Canvas.SetTop(CollisionGrid, Canvas.GetTop(CollisionGrid) - y);
@@ -939,7 +938,7 @@ namespace MantaNecromante.GameStage {
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
 
-             chosen = (Player)e.Parameter;
+            chosen = (Player)e.Parameter;
 
             idletoLeft = chosen.Sprite_idle_left;
             idletoRight = chosen.Sprite_idle_right;
@@ -1018,6 +1017,7 @@ namespace MantaNecromante.GameStage {
                     Interact();
                     break;
                 default:
+
                     isMovementKey = false;
                     break;
             }
