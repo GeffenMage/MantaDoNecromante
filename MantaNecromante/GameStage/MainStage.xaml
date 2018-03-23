@@ -31,6 +31,7 @@
                 <Image Name="Slot1" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
             <Button Height="34" Margin="71,75,-85,-97" Width="34">
+                <Image Name="Slot2" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
            
             <Button Height="34" Margin="115,75,-129,-97" Width="34"/>

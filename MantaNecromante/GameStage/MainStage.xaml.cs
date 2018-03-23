@@ -20,6 +20,8 @@ using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using NecromanteLL;
 using MantaNecromante.MainBattle;
+using Windows.Media.Playback;
+using Windows.Media.Core;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -100,7 +102,7 @@ namespace MantaNecromante.GameStage {
         //..........................................................//
         private List<Image> MovableProps = new List<Image>();
         //..........................................................//
-
+        private MediaPlayer song = new MediaPlayer();
         public MainStage() {
 
             this.InitializeComponent();
@@ -114,8 +116,11 @@ namespace MantaNecromante.GameStage {
             Adjuster.adjustForCamera(Mansion, Hero, ref ScreenWidth, ref ScreenHeight, ref Cell_Width, ref Cell_Height, ref topSide, ref botSide, ref leftSide, ref rightSide);
             //....................................................................................................//
 
+            song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Castelo.mp3"));
+            song.Play();
+
             //CreateGrid();
-            //SetBlocks();
+            SetBlocks();
             SetEnemies();
             SetItems();
 
@@ -590,6 +595,8 @@ namespace MantaNecromante.GameStage {
         private void SetItems() {
 
             CreateItem(79, 30);
+            CreateItem(48, 10);
+
         }
 
         private void CreateItem(int row, int column) {
@@ -636,9 +643,18 @@ namespace MantaNecromante.GameStage {
 
             Itens found = controller.FindIten(row, column);
 
-            Slot1.Source = found.Sprite.Source;
-            chosen.Inventario.Add(found);
+            if(Slot1.Source == null) {
 
+                Slot1.Source = found.Sprite.Source;
+                chosen.Inventario.Add(found);
+                     
+            }
+            else {
+
+                Slot2.Source = found.Sprite.Source;
+                chosen.Inventario.Add(found);
+            }
+            
         }
 
         private Mob GetEnemy(int row, int column) {
@@ -806,9 +822,13 @@ namespace MantaNecromante.GameStage {
                 y = bottom_row + 1;
             }
 
+            CollisionMatrix[y - 1, x] = GROUND;
+
             item = GetChest(y, x);
             GetItem(y, x);
             item.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Maps/chest_open.gif"));
+            song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Bau.mp3"));
+            song.Play();
         }
         //..............................................................................................//
 
