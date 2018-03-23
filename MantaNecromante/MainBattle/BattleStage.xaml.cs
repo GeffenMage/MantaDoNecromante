@@ -25,21 +25,50 @@ namespace MantaNecromante.MainBattle {
     /// </summary>
     public sealed partial class BattleStage : Page {
 
-        BattleController battleController;
+        private bool isOptionsMenuOpen;
+        private BattleController battleController;
 
         public BattleStage() {
 
             this.InitializeComponent();
 
             Adjuster.AdjustWindow(Floor);
-
+            SetAllMenusReady();
             
-            this.KeyDown += BattleStage_KeyDown; ;
+            this.KeyDown += BattleStage_KeyDown;
+        }
+
+        private void SetAllMenusReady() {
+
+            Floor.Children.Remove(OptionsMenu);
+            isOptionsMenuOpen = false;
         }
 
         private void BattleStage_KeyDown(object sender, KeyRoutedEventArgs e) {
 
-            if (e.Key == Windows.System.VirtualKey.X) this.Frame.GoBack();
+            if (e.Key == Windows.System.VirtualKey.Escape) {
+
+                if (!isOptionsMenuOpen) {
+
+                    Floor.Children.Add(OptionsMenu);
+                } else {
+
+                    Floor.Children.Remove(OptionsMenu);
+                }
+
+                isOptionsMenuOpen ^= false;
+            } 
+        }
+
+        private void Exit(object sender, RoutedEventArgs e) {
+
+            //
+        }
+
+        private void Continue(object sender, RoutedEventArgs e) {
+
+            Floor.Children.Remove(OptionsMenu);
+            isOptionsMenuOpen = false;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {

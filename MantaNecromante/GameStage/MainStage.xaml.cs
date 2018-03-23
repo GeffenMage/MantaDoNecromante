@@ -115,7 +115,7 @@ namespace MantaNecromante.GameStage {
             //....................................................................................................//
 
             //CreateGrid();
-            SetBlocks();
+            //SetBlocks();
             SetEnemies();
             SetItems();
 
@@ -634,7 +634,11 @@ namespace MantaNecromante.GameStage {
 
         private void GetItem(int row, int column) {
 
-            chosen.Inventario.Add(controller.FindIten(row, column));
+            Itens found = controller.FindIten(row, column);
+
+            Slot1.Source = found.Sprite.Source;
+            chosen.Inventario.Add(found);
+
         }
 
         private Mob GetEnemy(int row, int column) {
