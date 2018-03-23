@@ -8,6 +8,7 @@
    VerticalAlignment="Top" HorizontalAlignment="Left" Height="900" Width="1440">
 
     <Canvas Name="Floor" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="1440" Height="900">
+
         <Image Name ="Mansion" Source="ms-appx:///GameAssets/Maps/mansion.png" HorizontalAlignment="Left" Stretch="Fill" VerticalAlignment="Top" Height="3995" Width="3595" Canvas.Top="-3090" Canvas.Left="0"/>
         <Image Stretch="Fill" Name="Hero" Height="118" Canvas.Left="106" Canvas.Top="530" Width="54.18" RenderTransformOrigin="0.5,0.507"/>
 
@@ -25,9 +26,13 @@
 
         <RelativePanel Opacity="1" Name="Inventory" Height="497" Canvas.Left="545" Canvas.Top="208" Width="320" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/inventory.png" Margin="0,0,0,0" Width="305" HorizontalAlignment="Left"/>
-            <Button Height="17" Margin="270,7,-275,-12" Width="25" Click="ExitInventory"></Button>
-            <Button Height="34" Margin="71,75,-85,-97" Width="34"></Button>
-            <Button Height="34" Margin="28,75,-42,-97" Width="34"/>
+            <Button Height="17" Margin="270,7,-275,-12" Width="25" Click="ExitInventory"/>
+            <Button Height="34" Margin="28,75,-42,-97" Width="34">
+                <Image Name="Slot1" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
+            <Button Height="34" Margin="71,75,-85,-97" Width="34">
+            </Button>
+           
             <Button Height="34" Margin="115,75,-129,-97" Width="34"/>
             <Button Height="34" Margin="158,75,-85,-97" Width="34"/>
             <Button Height="34" Margin="201,75,-85,-97" Width="34"/>
@@ -35,9 +40,16 @@
         </RelativePanel>
 
         <Image Name="quick_menu" Height="55" Canvas.Top="845" Width="1405" Source="ms-appx:///GameAssets/Menu/equip_menu.png"/>
+
+        <RelativePanel Width="780" Canvas.Left="310" Canvas.Top="845" Height="55">
+
+            <Button Name="quick1" Height="34" Opacity="0" Margin="171,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
+        </RelativePanel>
+
+
+
         <TextBlock FontSize="30" Foreground="Red" Name="teste" Canvas.Left="475" Canvas.Top="355" Text="" TextWrapping="Wrap" Height="260" Width="195"/>
         <Image Name="extend" Stretch="fill" Height="30" Canvas.Left="430" Canvas.Top="-125" Width="601" Source="ms-appx:///GameAssets/Maps/mansion_03.gif"/>
-
     </Canvas>
 </Page>
 

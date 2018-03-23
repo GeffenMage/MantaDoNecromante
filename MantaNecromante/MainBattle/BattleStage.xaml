@@ -14,14 +14,10 @@
         <Image Stretch="Fill" Name="Hero" Height="303" Canvas.Left="336" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
         <Image Stretch="Fill" Name="Foe" Height="303" Canvas.Left="781" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
 
-
-
-        <RelativePanel Opacity="0" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <RelativePanel Opacity="1" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/optionMenu.png" Margin="0,0,-10,0" Width="360" HorizontalAlignment="Left"/>
-            <Button  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start"  Height="35" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,177,80,275" Canvas.Top="172"/>
-            <Button Background="Transparent" BorderThickness="0" x:Name="ExitGame" Height="36" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,274,80,177" Canvas.Left="82" Canvas.Top="267"/>
+            <Button  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="35" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,177,80,275" Click="Continue" Canvas.Top="172"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="36" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,274,80,177" Click="Exit" Canvas.Left="82" Canvas.Top="267"/>
         </RelativePanel>
-
-
     </Canvas>
 </Page>
