@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Navigation;
 using Extension;
 using Windows.UI.Core;
 using NecromanteLL;
+using Windows.Media.Playback;
+using Windows.Media.Core;
 
 // O modelo de item de Página em Branco está documentado em https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -27,14 +29,15 @@ namespace MantaNecromante.MainBattle {
 
         private bool isOptionsMenuOpen;
         private BattleController battleController;
-
+        private MediaPlayer song = new MediaPlayer();
         public BattleStage() {
 
             this.InitializeComponent();
 
             Adjuster.AdjustWindow(Floor);
             SetAllMenusReady();
-            
+            song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Battle.mp3"));
+            song.Play();
             this.KeyDown += BattleStage_KeyDown;
         }
 

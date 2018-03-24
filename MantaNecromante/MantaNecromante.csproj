@@ -163,6 +163,13 @@
     <Content Include="GameAssets\Menu\nudePanel.png" />
     <Content Include="GameAssets\Menu\optionMenu.png" />
     <Content Include="GameAssets\Menu\panel.png" />
+    <Content Include="GameAssets\Songs\Battle.mp3" />
+    <Content Include="GameAssets\Songs\Bau.mp3" />
+    <Content Include="GameAssets\Songs\Castelo.mp3" />
+    <Content Include="GameAssets\Songs\Castelo2.mp3" />
+    <Content Include="GameAssets\Songs\ClickSound.mp3" />
+    <Content Include="GameAssets\Songs\Ossos.mp3" />
+    <Content Include="GameAssets\Songs\Waterfall.mp3" />
     <Content Include="pauseMenu.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
@@ -195,7 +202,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GameAssets\Characters\heroes\mage\" />
-    <Folder Include="GameAssets\Songs\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NecromanteLL\NecromanteLL.csproj">

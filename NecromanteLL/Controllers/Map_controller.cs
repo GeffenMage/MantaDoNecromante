@@ -15,6 +15,7 @@ namespace NecromanteLL {
         private Itens[,] itens_do_mapa;
         private Mob[,] Mobs_do_mapa;
         private Player jogador;
+        Random item_num;
 
         internal List<Itens> Itens { get => Itens; set => Itens = value; }
 
@@ -24,6 +25,7 @@ namespace NecromanteLL {
             mobs = new List<Mob>();
             Mobs_do_mapa = new Mob[100, 100];
             itens_do_mapa = new Itens[100, 100];
+            item_num = new Random();
             mobs.Add(new Goblin(1));
             mobs.Add(new Goblin(2));
             mobs.Add(new Goblin(3));
@@ -58,10 +60,10 @@ namespace NecromanteLL {
         }
         
         public void setItem(int pos_x,int pos_y) {
-            Random item_num;
-            item_num = new Random();
+            
             Itens[] vet = itens.ToArray();
             //vet[0].Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Maps/chest_idle.png"));
+           
             itens_do_mapa[pos_x, pos_y] = vet[item_num.Next(0,18)];
             //itens_do_mapa[pos_x, pos_y] = vet[0];
 
