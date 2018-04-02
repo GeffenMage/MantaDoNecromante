@@ -595,7 +595,7 @@ namespace MantaNecromante.GameStage {
         private void SetItems() {
 
             CreateItem(79, 30);
-            CreateItem(48, 10);
+            CreateItem(88, 11);
 
         }
 

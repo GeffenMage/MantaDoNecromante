@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-23T12:53:20.675</Modified>
+      <Modified>2018-04-02T14:16:44.377</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x64\Debug\MantaNecromante.exe">
       <PackagePath>entrypoint\MantaNecromante.exe</PackagePath>
-      <Modified>2018-03-23T12:53:19.967</Modified>
+      <Modified>2018-04-02T14:16:39.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -497,7 +497,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\NecromanteLL\bin\x64\Debug\NecromanteLL.dll">
       <PackagePath>NecromanteLL.dll</PackagePath>
-      <Modified>2018-03-23T12:51:11.742</Modified>
+      <Modified>2018-04-02T14:16:35.242</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\Assets\dots.png">
       <PackagePath>Assets\dots.png</PackagePath>
@@ -736,7 +736,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x64\Debug\Core\MantaNecromante.exe">
       <PackagePath>MantaNecromante.exe</PackagePath>
-      <Modified>2018-03-23T12:53:20.671</Modified>
+      <Modified>2018-04-02T14:16:44.362</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
