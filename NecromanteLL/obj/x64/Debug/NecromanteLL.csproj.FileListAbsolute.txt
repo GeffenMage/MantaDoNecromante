@@ -70,3 +70,21 @@ C:\Users\Daniel Sousa Duplat\Source\Repos\MantaDoNecromante2\NecromanteLL\obj\x6
 C:\Users\Daniel Sousa Duplat\Source\Repos\MantaDoNecromante2\NecromanteLL\obj\x64\Debug\qualifiers.txt
 C:\Users\Daniel Sousa Duplat\Source\Repos\MantaDoNecromante2\NecromanteLL\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\Daniel Sousa Duplat\Source\Repos\MantaDoNecromante2\NecromanteLL\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\bin\x64\Debug\NecromanteLL.dll
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\bin\x64\Debug\NecromanteLL.pdb
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\bin\x64\Debug\NecromanteLL.pri
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\NecromanteLL.csprojResolveAssemblyReference.cache
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\NecromanteLL.csproj.CoreCompileInputs.cache
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\NecromanteLL.dll
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\NecromanteLL.pdb
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\priconfig.xml
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\priconfig.xml.intermediate
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\layout.resfiles
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\layout.resfiles.intermediate
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\resources.resfiles
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\resources.resfiles.intermediate
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\pri.resfiles
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\pri.resfiles.intermediate
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\qualifiers.txt
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\qualifiers.txt.intermediate
+C:\Users\'''\Source\Repos\MantaDoNecromante3\NecromanteLL\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt

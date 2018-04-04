@@ -145,7 +145,7 @@
     <Content Include="GameAssets\Characters\itens\espada_2.png" />
     <Content Include="GameAssets\Characters\itens\luva_1.png" />
     <Content Include="GameAssets\Characters\itens\luva_2.png" />
-    <Content Include="GameAssets\Characters\itens\pant_t.png" />
+    <Content Include="GameAssets\Characters\itens\pant.png" />
     <Content Include="GameAssets\Maps\chest_idle.png" />
     <Content Include="GameAssets\Maps\chest_open.gif" />
     <Content Include="GameAssets\Maps\mansion.png" />
