@@ -121,8 +121,8 @@ namespace MantaNecromante.GameStage {
 
             //CreateGrid();
             SetBlocks();
-            //SetEnemies();
-            //SetItems();
+            SetEnemies();
+            SetItems();
 
             //Os menus são feitos no xalm, mas antes de o jogo começar, são retirados, exceto o quickmenu, que é retirado e posto de volta,
             //para ficar a frente de todas as outras imagens.
