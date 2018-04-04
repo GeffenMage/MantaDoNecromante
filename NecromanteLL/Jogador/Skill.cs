@@ -31,6 +31,12 @@ namespace NecromanteLL {
         public int Base_def_up { get => base_def_up; set => base_def_up = value; }
         public int Skill_dmg { get => skill_dmg; set => skill_dmg = value; }
 
+
+        /// <summary>
+        /// Executa a skill do player
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <returns>Dano da skill ou caso o mob não tenha mana, retorna -1</returns>
         public int executar(Player p1) {
             if(p1.IsManaAvaliable(Custo_mp)==false) {
                 return -1; //Código para quando o jogador não tiver mana para a skill
@@ -49,5 +55,28 @@ namespace NecromanteLL {
                 return Skill_dmg;
             }
         }
+
+        /// <summary>
+        /// Executa skill do mob
+        /// </summary>
+        /// <param name="m"></param>
+        /// <returns>Dano da skill ou caso o mob não tenha mana, retorna -1</returns>
+        public int executar(Mob m) {
+            if (m.IsManaAvaliable(Custo_mp) == false) {
+                return -1; //Código para quando o mob não tiver mana para a skill
+            }
+            else {
+                m.Mp_atual += Mp_up;
+                m.Mp_total += Mp_up;
+                m.Hp_atual += Hp_up;
+                m.Hp_total += Hp_up;
+                m.Base_dmg += Base_dmg_up;
+                m.Base_def += Base_def_up;
+                m.Mp_atual -= Custo_mp;
+                return Skill_dmg;
+            }
+        }
+
+
     }
 }

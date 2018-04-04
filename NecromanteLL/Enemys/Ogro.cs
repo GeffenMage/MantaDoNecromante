@@ -10,6 +10,8 @@ namespace NecromanteLL {
     public class Ogro : Mob {
 
         public Ogro(int lvl) {
+            Skills = new List<Skill>();
+            Sprite = new Image();
             switch (lvl) {
                 case 1:
                     Nome = "Ogro Verde";
@@ -18,8 +20,11 @@ namespace NecromanteLL {
                     Given_xp = 1000; Lvl = 20;
                     Base_def = 60; Base_dmg = 110;
                     //Inicializa os sprites do inimigo
-                    Sprite = new Image();
+
                     //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    
+                    //Inicializa as skills do inimigo
+
                     break;
                 case 2:
                     Nome = "Ogro Negro";
@@ -28,8 +33,11 @@ namespace NecromanteLL {
                     Given_xp = 1300; Lvl = 25;
                     Base_def = 70; Base_dmg = 130;
                     //Inicializa os sprites do inimigo
-                    Sprite = new Image();
+
                     //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+
+                    //Inicializa as skills do inimigo
+
                     break;
                 case 3:
                     Nome = "Ogro Chefe";
@@ -38,8 +46,11 @@ namespace NecromanteLL {
                     Given_xp = 1700; Lvl = 30;
                     Base_def = 80; Base_dmg = 150;
                     //Inicializa os sprites do inimigo
-                    Sprite = new Image();
+
                     //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+
+                    //Inicializa as skills do inimigo
+
                     break;
             }
 

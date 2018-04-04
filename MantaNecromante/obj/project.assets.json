@@ -25666,18 +25666,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\'''\\.nuget\\packages\\": {},
+    "C:\\Users\\Daniel Sousa Duplat\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante2\\MantaNecromante\\MantaNecromante.csproj",
+      "projectUniqueName": "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\MantaNecromante\\MantaNecromante.csproj",
       "projectName": "MantaNecromante",
-      "projectPath": "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante2\\MantaNecromante\\MantaNecromante.csproj",
-      "packagesPath": "C:\\Users\\'''\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante2\\MantaNecromante\\obj\\",
+      "projectPath": "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\MantaNecromante\\MantaNecromante.csproj",
+      "packagesPath": "C:\\Users\\Daniel Sousa Duplat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\MantaNecromante\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -25685,7 +25685,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\'''\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Daniel Sousa Duplat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -25699,8 +25699,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante2\\NecromanteLL\\NecromanteLL.csproj": {
-              "projectPath": "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante2\\NecromanteLL\\NecromanteLL.csproj"
+            "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\NecromanteLL\\NecromanteLL.csproj": {
+              "projectPath": "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\NecromanteLL\\NecromanteLL.csproj"
             }
           }
         }

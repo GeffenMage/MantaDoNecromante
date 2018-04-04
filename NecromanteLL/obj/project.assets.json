@@ -25569,18 +25569,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\'''\\.nuget\\packages\\": {},
+    "C:\\Users\\Daniel Sousa Duplat\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante2\\NecromanteLL\\NecromanteLL.csproj",
+      "projectUniqueName": "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\NecromanteLL\\NecromanteLL.csproj",
       "projectName": "NecromanteLL",
-      "projectPath": "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante2\\NecromanteLL\\NecromanteLL.csproj",
-      "packagesPath": "C:\\Users\\'''\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante2\\NecromanteLL\\obj\\",
+      "projectPath": "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\NecromanteLL\\NecromanteLL.csproj",
+      "packagesPath": "C:\\Users\\Daniel Sousa Duplat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\NecromanteLL\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -25588,7 +25588,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\'''\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Daniel Sousa Duplat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],

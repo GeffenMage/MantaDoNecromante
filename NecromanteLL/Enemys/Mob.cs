@@ -15,6 +15,7 @@ namespace NecromanteLL {
         private int lvl,given_xp;
         private int base_dmg, base_def;
         private Image sprite;
+        private List<Skill> skills;
 
         public string Nome { get => nome; set => nome = value; }
         public int Hp_atual { get => hp_atual; set => hp_atual = value; }
@@ -22,6 +23,7 @@ namespace NecromanteLL {
         public int Mp_atual { get => mp_atual; set => mp_atual = value; }
         public int Mp_total { get => mp_total; set => mp_total = value; }
         public int Lvl { get => lvl; set => lvl = value; }
+        public List<Skill> Skills { get => skills; set => skills = value; }
         public int Given_xp { get => given_xp; set => given_xp = value; }
         public int Base_dmg { get => base_dmg; set => base_dmg = value; }
         public int Base_def { get => base_def; set => base_def = value; }
@@ -52,6 +54,17 @@ namespace NecromanteLL {
             else {
                 return false;
             }
+        }
+
+        public bool IsManaAvaliable(int custo_de_mana) {
+            if (Mp_atual >= custo_de_mana) {
+                return true;
+            }
+            else {
+                return false;
+            }
+
+
         }
     }
 }
