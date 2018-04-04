@@ -433,8 +433,8 @@
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\luva_2.png">
       <PackagePath>GameAssets\Characters\itens\luva_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\pant_t.png">
-      <PackagePath>GameAssets\Characters\itens\pant_t.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\pant.png">
+      <PackagePath>GameAssets\Characters\itens\pant.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Maps\chest_idle.png">
       <PackagePath>GameAssets\Maps\chest_idle.png</PackagePath>
