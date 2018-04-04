@@ -28,133 +28,90 @@ namespace NecromanteLL {
         public BattleController(Player jogador,Mob inimigo) {
             this.Jogador = jogador;
             this.Inimigo = inimigo;
+            Set_initialStatus(Jogador);
         }
 
 
-
-        /// <summary>
-        /// Método de batalha para quando for usar skills 
-        /// </summary>
-        /// <param name="jogador"></param>
-        /// <param name="inimigo"></param>
-        /// <param name="option"></param>
-        /// <param name="opSkill"></param>
-        /// <returns></returns>
-        public bool Battle(string option, string opSkill) {
-            if (Turno_atual == 1) {
-                Set_initialStatus(Jogador);
+        public int IsAlive() {
+            if(Jogador.IsAlive()==true && Inimigo.IsAlive() == true) {
+                return 0;//Código para ambos vivos
             }
-            if (Jogador.IsAlive() == true && Inimigo.IsAlive() == true) {
-                if (Turno_player == true) {
-                    Skill_select(Jogador, opSkill, Inimigo);
-                    Turno_player = false;
-                    Turno_atual++;
-                }
-                else {
-                    //Cada caso é um comportamento de mob
-                    switch (Inimigo.Nome) {
-                        case "Goblin":
-                            Jogador.Take_dmg(Inimigo.Atk_base());
-                            Turno_player = true;
-                            Turno_atual++;
-                            break;
-                        default:
-                            Jogador.Take_dmg(Inimigo.Atk_base());
-                            Turno_player = true;
-                            Turno_atual++;
-                            break;
-                    }
-                }
-            }
-            if (Jogador.IsAlive() == false) {
+            else if(Jogador.IsAlive()==true && Inimigo.IsAlive() == false) {
                 Reset_Status(Jogador);
-                return false;
+                return 1;//Código para vitória do jogador
+            }
+            else if (Jogador.IsAlive() == false) {
+                return 2;//Código para derrota do jogador
             }
             else {
-                Reset_Status(Jogador);
-                return true;
+                return IsAlive();
             }
         }
+
+
         /// <summary>
-        /// Método de batalha para quando não for usar skills
+        /// Ataca o inimigo ou o jogador dependendo de quem for o turno
         /// </summary>
-        /// <param name="jogador"></param>
-        /// <param name="inimigo"></param>
-        /// <param name="option"></param>
         /// <returns></returns>
-        public bool Battle(Player jogador, Mob inimigo,string option) {
-            if (Turno_atual == 1) {
-                Set_initialStatus(jogador);
-            }
-            if (jogador.IsAlive() == true && inimigo.IsAlive() == true) {
-                if (Turno_player == true) { 
-                    inimigo.Take_dmg(jogador.Atk_base());
-                    Turno_player = false;
-                    Turno_atual++;
-                }
-                else {
-                    //Cada caso é um comportamento de mob
-                    switch (inimigo.Nome) {
-                        case "Goblin":
-                            jogador.Take_dmg(inimigo.Atk_base());
-                            Turno_player = true;
-                            Turno_atual++;
-                            break;
-                        default:
-                            jogador.Take_dmg(inimigo.Atk_base());
-                            Turno_player = true;
-                            Turno_atual++;
-                            break;
-                    }
-                }
-            }
-            if (jogador.IsAlive() == false) {
-                Reset_Status(jogador);
-                return false; 
+        public int Atacar() {
+            if (turno_player == true) {
+                inimigo.Take_dmg(jogador.Atk_base());
+                Turno_player = false;
+                Turno_atual++;
             }
             else {
-                Reset_Status(jogador);
-                return true;
+                Jogador.Take_dmg(Inimigo.Atk_base());
+                Turno_player = true;
+                Turno_atual++;
             }
+            return IsAlive();
         }
+
         /// <summary>
-        /// 
+        /// Casta Skill do Player recebendo o objeto skill que deseja castar como parâmetro
         /// </summary>
-        /// <param name="jogador"></param>
-        /// <param name="skill_num"></param>
-        /// <param name="inimigo"></param>
+        /// <param name="skill"></param>
         /// <returns></returns>
-        public int Skill_select(Player jogador, String skill_num, Mob inimigo) {
-            int dmg_skill;
-            int index = Int32.Parse(skill_num);
-            dmg_skill = jogador.Skills[index - 1].executar(jogador);
-            inimigo.Take_dmg(dmg_skill);
-            return dmg_skill;
-            /*
-            switch (jogador.Nome_classe) {
-                case "Warrior":
-                    Warrior w = jogador as Warrior;
-                    switch(skill_num) {
-                        case "1":
-                            dmg_skill = w.Skills[0].executar(jogador);
-                            inimigo.Take_dmg(dmg_skill);
-                            return dmg_skill;
-                        default:
-                            Debug.WriteLine("Skill Inválida, tente novamente.");
-                            break;
-                    }
-                    break;
-                //Casos adicionais devem ser colocados para cada classe do jogador
-                case "Mago"://Criar um switch case para cada skill da classe
-                    break;
-                case "Arqueiro"://Criar um switch case para cada skill da classe
-                    break;
-                default:
-                    return 0;
+        public int CastSkill(Skill skill) {
+            if (Turno_player == true) {
+                Skill s = (from sk in Jogador.Skills where sk.Skill_name == skill.Skill_name select sk).FirstOrDefault<Skill>();
+                int dmg = s.executar(Jogador);
+                if (dmg == -2) {
+                    return -2;//Código para quando o jogador não tiver lvl para usar a skill
+                }
+                else if (dmg == -1) {
+                    return -1;//Código para quando o jogador não tiver mana para usar a skill
+                }
+                else {
+                    inimigo.Take_dmg(dmg);
+                    return IsAlive();
+                }
             }
-            return 0;
-            */
+            else {
+                return IsAlive();
+            }
+            
         }
+
+        /// <summary>
+        /// Casta skill aleatória do inimigo
+        /// </summary>
+        /// <returns></returns>
+        public int CastSkill() {
+            Random num = new Random();
+            Skill[] vet = Inimigo.Skills.ToArray();
+            int dmg = vet[num.Next(0,3)].executar(Inimigo);
+            if (dmg == -1) {
+                return CastSkill();//Quando o inimigo não tiver mana para usar a skill
+            }
+            else {
+                Jogador.Take_dmg(dmg);
+                Turno_player = true;
+                Turno_atual++;
+                return IsAlive();
+            }
+        }
+
 
         public void Set_initialStatus(Player jogador) {
             Player_initalHP = jogador.Hp_total;
