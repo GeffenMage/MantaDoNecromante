@@ -1,1 +1,2 @@
-D:\MantaNecromante\MantaNecromante\MantaNecromante.csproj;x86
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\MantaNecromante.csproj;x86
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\NecromanteLL\NecromanteLL.csproj;neutral

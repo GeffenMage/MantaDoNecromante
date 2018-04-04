@@ -1,3 +1,5 @@
 App.xbf
 ClassMenu\ClassMenu.xbf
+GameStage\MainStage.xbf
+MainBattle\BattleStage.xbf
 MainMenu\MainPage.xbf
