@@ -78,6 +78,7 @@ namespace NecromanteLL {
             }
         }
 
+
         public void setMob(int pos_x,int pos_y) {
             Random mob_num;
             mob_num = new Random();
