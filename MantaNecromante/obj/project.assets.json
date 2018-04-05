@@ -25673,11 +25673,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\MantaNecromante\\MantaNecromante.csproj",
+      "projectUniqueName": "C:\\Users\\Daniel Sousa Duplat\\source\\repos\\MantaDoNecromante2\\MantaNecromante\\MantaNecromante.csproj",
       "projectName": "MantaNecromante",
-      "projectPath": "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\MantaNecromante\\MantaNecromante.csproj",
+      "projectPath": "C:\\Users\\Daniel Sousa Duplat\\source\\repos\\MantaDoNecromante2\\MantaNecromante\\MantaNecromante.csproj",
       "packagesPath": "C:\\Users\\Daniel Sousa Duplat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\MantaNecromante\\obj\\",
+      "outputPath": "C:\\Users\\Daniel Sousa Duplat\\source\\repos\\MantaDoNecromante2\\MantaNecromante\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -25699,8 +25699,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\NecromanteLL\\NecromanteLL.csproj": {
-              "projectPath": "C:\\Users\\Daniel Sousa Duplat\\Source\\Repos\\MantaDoNecromante2\\NecromanteLL\\NecromanteLL.csproj"
+            "C:\\Users\\Daniel Sousa Duplat\\source\\repos\\MantaDoNecromante2\\NecromanteLL\\NecromanteLL.csproj": {
+              "projectPath": "C:\\Users\\Daniel Sousa Duplat\\source\\repos\\MantaDoNecromante2\\NecromanteLL\\NecromanteLL.csproj"
             }
           }
         }
