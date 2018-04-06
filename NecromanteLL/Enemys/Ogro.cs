@@ -22,8 +22,11 @@ namespace NecromanteLL {
                     //Inicializa os sprites do inimigo
 
                     //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
-                    
+
                     //Inicializa as skills do inimigo
+                    Skills.Add(new Skill("Blast I", 30, 0, 1, 0, 0, 0, 0, 200));
+                    Skills.Add(new Skill("Regem Hp I", 40, 0, 1, 150, 0, 0, 10, 0));
+                    Skills.Add(new Skill("Bloodlust I", 30, 100, 1, 0, 0, 60, -40, 120));
 
                     break;
                 case 2:
@@ -37,12 +40,15 @@ namespace NecromanteLL {
                     //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
 
                     //Inicializa as skills do inimigo
+                    Skills.Add(new Skill("Blast II", 50, 0, 1, 0, 0, 0, 0, 400));
+                    Skills.Add(new Skill("Regem Hp II", 60, 0, 1, 300, 0, 0, 20, 0));
+                    Skills.Add(new Skill("Bloodlust II", 50, 130, 1, 0, 0, 80, -35, 200));
 
                     break;
                 case 3:
                     Nome = "Ogro Chefe";
                     Hp_total = 1200; Hp_atual = Hp_total;
-                    Mp_total = 150; Mp_atual = Mp_total;
+                    Mp_total = 230; Mp_atual = Mp_total;
                     Given_xp = 1700; Lvl = 30;
                     Base_def = 80; Base_dmg = 150;
                     //Inicializa os sprites do inimigo
@@ -50,6 +56,9 @@ namespace NecromanteLL {
                     //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
 
                     //Inicializa as skills do inimigo
+                    Skills.Add(new Skill("Blast III", 70, 0, 1, 0, 0, 0, 0, 600));
+                    Skills.Add(new Skill("Regem Hp III", 80, 0, 1, 450, 0, 0, 30, 0));
+                    Skills.Add(new Skill("Bloodlust III", 80, 160, 1, 0, 0, 110, -30, 260));
 
                     break;
             }

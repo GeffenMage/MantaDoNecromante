@@ -10,6 +10,8 @@ namespace NecromanteLL {
     public class Laposo : Mob {
 
         public Laposo(int lvl) {
+            Skills = new List<Skill>();
+            Sprite = new Image();
             switch (lvl) {
                 case 1:
                     Nome = "Laposo Hello";
