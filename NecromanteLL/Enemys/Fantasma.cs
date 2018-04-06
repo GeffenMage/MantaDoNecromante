@@ -10,6 +10,8 @@ namespace NecromanteLL {
     public class Fantasma : Mob {
 
         public Fantasma(int lvl) {
+            Skills = new List<Skill>();
+            Sprite = new Image();
             switch (lvl) {
                 case 1:
                     Nome = "Espirito";
@@ -20,6 +22,12 @@ namespace NecromanteLL {
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
                     //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+
+                    //Inicializa as skills do inimigo
+                    Skills.Add(new Skill("Atk Up I", 0, 20, 1, 0, 0, 40, 0, 0));
+                    Skills.Add(new Skill("Regem MP I", 60, 0, 1, 0, 180, 0, 0, 0));
+                    Skills.Add(new Skill("Drain Life I", 80, 0, 1, 100, 0, 0, 0, 100));
+
                     break;
                 case 2:
                     Nome = "Espirito Vingativo";
@@ -30,6 +38,12 @@ namespace NecromanteLL {
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
                     //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+
+                    //Inicializa as skills do inimigo
+                    Skills.Add(new Skill("Fall II", 0, 20, 1, 0, 0, 0, 0, 70));
+                    Skills.Add(new Skill("RegemMp II", 80, 0, 1, 0, 240, 0, 0, 0));
+                    Skills.Add(new Skill("Drain Life II", 120, 0, 1, 250, 0, 0, 0, 250));
+
                     break;
                 case 3:
                     Nome = "Ceifador";
@@ -40,6 +54,12 @@ namespace NecromanteLL {
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
                     //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+
+                    //Inicializa as skills do inimigo
+                    Skills.Add(new Skill("Fall III", 0, 20, 1, 0, 0, 0, 0, 70));
+                    Skills.Add(new Skill("RegemMp III", 120, 0, 1, 0, 360, 0, 0, 0));
+                    Skills.Add(new Skill("Unique III", 190, 0, 1, 500, 0, 0, 0, 500));
+
                     break;
             }
 
