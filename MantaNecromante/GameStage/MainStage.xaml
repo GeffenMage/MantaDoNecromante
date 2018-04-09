@@ -26,7 +26,9 @@
 
         <RelativePanel Opacity="1" Name="Inventory" Height="497" Canvas.Left="545" Canvas.Top="208" Width="320" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/inventory.png" Margin="0,0,0,0" Width="305" HorizontalAlignment="Left"/>
+            
             <Button Height="17" Margin="270,7,-275,-12" Width="25" Click="ExitInventory"/>
+            
             <Button Height="34" Margin="28,75,-42,-97" Width="34">
                 <Image Name="Slot1" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
@@ -35,10 +37,9 @@
                 <Image Name="Slot2" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="115,75,-129,-97" Width="34"/>
-            <Image Name="Slot3" Stretch="Fill" Margin="115,75,-144,-104"/>
-
-            <Button></Button>
+            <Button Height="34" Margin="115,75,-129,-97" Width="34">
+                <Image Name="Slot3" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
             <Button Height="34" Margin="158,75,-85,-97" Width="34"/>
             <Image Name="Slot4" Stretch="Fill" Width="34" Height="34" Margin="158,75,-187,-104"></Image>
@@ -173,17 +174,17 @@
                 <Image Name="Slot38" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
             
-            <Button Height="34" Margin="115,336,-129,-97" Width="34"/>
-            <Image Name="Slot39" Stretch="Fill" Width="34" Height="34" Margin="115,332,-144,-361"></Image>
+            <Button Height="34" Margin="115,337,-129,-98" Width="34"/>
+            <Image Name="Slot39" Stretch="Fill" Width="34" Height="34" Margin="115,337,-129,-98"></Image>
 
             <Button Height="34" Margin="158,336,-85,-97" Width="34"/>
-            <Image Name="Slot40" Stretch="Fill" Width="34" Height="34" Margin="158,332,-187,-361"></Image>
+            <Image Name="Slot40" Stretch="Fill" Width="34" Height="34" Margin="158,336,-85,-97"></Image>
 
             <Button Height="34" Margin="201,336,-85,-97" Width="34"/>
-            <Image Name="Slot41" Stretch="Fill" Width="34" Height="34" Margin="201,332,-230,-361"></Image>
+            <Image Name="Slot41" Stretch="Fill" Width="34" Height="34" Margin="201,336,-85,-97"></Image>
 
             <Button Height="34" Margin="245,336,-85,-97" Width="34"/>
-            <Image Name="Slot42" Stretch="Fill" Width="34" Height="34" Margin="245,332,-274,-361"></Image>
+            <Image Name="Slot42" Stretch="Fill" Width="34" Height="34" Margin="245,336,-85,-97"></Image>
 
             <Button Height="34" Margin="28,378,-42,-97" Width="34">
                 <Image Name="Slot43" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
