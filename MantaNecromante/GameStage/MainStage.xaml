@@ -41,171 +41,186 @@
                 <Image Name="Slot3" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="158,75,-85,-97" Width="34"/>
-            <Image Name="Slot4" Stretch="Fill" Width="34" Height="34" Margin="158,75,-187,-104"></Image>
+            <Button Height="34" Margin="157,76,-171,-98" Width="34">
+                <Image Name="Slot4" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button></Button>
+            <Button Height="34" Margin="201,75,-215,-97" Width="34">
+                <Image Name="Slot5" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="201,75,-85,-97" Width="34"/>
-            <Image Name="Slot5" Stretch="Fill" Width="34" Height="34" Margin="201,75,-230,-104"></Image>
+            <Button Height="34" Margin="245,75,-259,-97" Width="34">
+                <Image Name="Slot6" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button></Button>
-
-            <Button Height="34" Margin="245,75,-85,-97" Width="34"/>
-            <Image Name="Slot6" Stretch="Fill" Width="34" Height="34" Margin="245,75,-274,-104"></Image>
-
-            <Button></Button>
-
-            <Button Height="34" Margin="28,120,-42,-97" Width="34">
+            <Button Height="34" Margin="28,119,-42,-141" Width="34">
                 <Image Name="Slot7" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="71,120,-85,-97" Width="34">
+            <Button Height="34" Margin="71,119,-85,-141" Width="34">
                 <Image Name="Slot8" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="115,120,-129,-97" Width="34"/>
-            <Image Name="Slot9" Stretch="Fill" Width="34" Height="34" Margin="115,120,-144,-149"></Image>
+            <Button Height="34" Margin="114,119,-128,-141" Width="34">
+                <Image Name="Slot9" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button></Button>
+            <Button Height="34" Margin="158,119,-172,-141" Width="34">
+                <Image Name="Slot10" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="158,120,-85,-97" Width="34"/>
-            <Image Name="Slot10" Stretch="Fill" Width="34" Height="34" Margin="158,120,-187,-149"></Image>
+            <Button Height="34" Margin="201,119,-215,-141" Width="34">
+                <Image Name="Slot11" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
+            <Button Height="34" Margin="244,119,-258,-141" Width="34">
+                <Image Name="Slot12" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button></Button>
-
-            <Button Height="34" Margin="201,120,-85,-97" Width="34"/>
-            <Image Name="Slot11" Stretch="Fill" Width="34" Height="34" Margin="201,120,-230,-149"></Image>
-
-            <Button></Button>
-            <Button Height="34" Margin="245,120,-85,-97" Width="34"/>
-            <Image Name="Slot12" Stretch="Fill" Width="34" Height="34" Margin="245,120,-274,-149"></Image>
-
-            <Button></Button>
-
-            <Button Height="34" Margin="27,162,-42,-97" Width="34">
+            <Button Height="34" Margin="28,162,-42,-184" Width="34">
                 <Image Name="Slot13" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="71,162,-85,-97" Width="34">
+            <Button Height="34" Margin="71,162,-85,-184" Width="34">
                 <Image Name="Slot14" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="115,162,-129,-97" Width="34"/>
-            <Image Name="Slot15" Stretch="Fill" Width="34" Height="34" Margin="115,162,-144,-191"></Image>
+            <Button Height="34" Margin="114,162,-128,-184" Width="34">
+                <Image Name="Slot15" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button></Button>
+            <Button Height="34" Margin="158,163,-172,-185" Width="34">
+                <Image Name="Slot16" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="158,162,-85,-97" Width="34"/>
-            <Image Name="Slot16" Stretch="Fill" Width="34" Height="34" Margin="158,162,-187,-191"></Image>
+            <Button Height="34" Margin="201,162,-215,-184" Width="34">
+                <Image Name="Slot17" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="201,162,-85,-97" Width="34"/>
-            <Image Name="Slot17" Stretch="Fill" Width="34" Height="34" Margin="201,162,-230,-191"></Image>
+            <Button Height="34" Margin="244,162,-258,-184" Width="34">
+                <Image Name="Slot18" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="245,75,-85,-109" Width="34" VerticalAlignment="Top"/>
-            <Image Name="Slot18" Stretch="Fill" Height="34" Margin="245,162,-279,-191" HorizontalAlignment="Left" Width="34"/>
-
-            <Button Height="34" Margin="28,206,-42,-97" Width="34">
+            <Button Height="34" Margin="28,206,-42,-228" Width="34">
                 <Image Name="Slot19" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="71,206,-85,-97" Width="34">
+            <Button Height="34" Margin="71,206,-85,-228" Width="34">
                 <Image Name="Slot20" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="115,206,-129,-97" Width="34"/>
-            <Image Name="Slot21" Stretch="Fill" Width="34" Height="34" Margin="115,206,-144,-235"></Image>
-
-            <Button Height="34" Margin="158,206,-85,-97" Width="34"/>
-            <Image Name="Slot22" Stretch="Fill" Width="34" Height="34" Margin="158,206,-187,-235"></Image>
-
-            <Button Height="34" Margin="201,206,-85,-97" Width="34"/>
-            <Image Name="Slot23" Stretch="Fill" Width="34" Height="34" Margin="201,206,-230,-235"></Image>
-
-            <Button Height="34" Margin="245,206,-85,-97" Width="34"/>
-            <Image Name="Slot24" Stretch="Fill" Width="34" Height="34" Margin="245,206,-274,-235"></Image>
-
-            <Button Height="34" Margin="28,248,-42,-97" Width="34">
-            <Image Name="Slot25" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            <Button Height="34" Margin="114,206,-128,-228" Width="34">
+                <Image Name="Slot21" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="71,248,-85,-97" Width="34">
-            <Image Name="Slot26" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            <Button Height="34" Margin="158,206,-172,-228" Width="34">
+                <Image Name="Slot22" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
-            
-            <Button Height="34" Margin="115,248,-129,-97" Width="34"/>
-            <Image Name="Slot27" Stretch="Fill" Width="34" Height="34" Margin="115,248,-144,-277"></Image>
-            
-            <Button Height="34" Margin="158,248,-85,-97" Width="34"/>
-            <Image Name="Slot28" Stretch="Fill" Width="34" Height="34" Margin="158,248,-187,-277"></Image>
 
-            <Button Height="34" Margin="201,248,-85,-97" Width="34"/>
-            <Image Name="Slot29" Stretch="Fill" Width="34" Height="34" Margin="201,248,-230,-277"></Image>
+            <Button Height="34" Margin="201,206,-215,-228" Width="34">
+                <Image Name="Slot23" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="245,248,-85,-97" Width="34"/>
-            <Image Name="Slot30" Stretch="Fill" Width="34" Height="34" Margin="245,248,-274,-277"></Image>
+            <Button Height="34" Margin="244,206,-258,-228" Width="34">
+                <Image Name="Slot24" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
+            </Button>
 
-            <Button Height="34" Margin="28,292,-42,-97" Width="34">
+            <Button Height="34" Margin="28,249,-42,-271" Width="34">
+                <Image Name="Slot25" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
+
+            <Button Height="34" Margin="71,249,-85,-271" Width="34">
+                <Image Name="Slot26" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
+
+            <Button Height="34" Margin="114,249,-128,-271" Width="34">
+                <Image Name="Slot27" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
+
+            <Button Height="34" Margin="158,249,-172,-271" Width="34">
+                <Image Name="Slot28" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
+
+            <Button Height="34" Margin="201,249,-215,-271" Width="34">
+                <Image Name="Slot29" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
+
+            <Button Height="34" Margin="244,249,-258,-271" Width="34">
+                <Image Name="Slot30" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
+            </Button>
+
+            <Button Height="34" Margin="28,293,-42,-315" Width="34">
                 <Image Name="Slot31" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="71,292,-85,-97" Width="34">
+            <Button Height="34" Margin="71,292,-85,-314" Width="34">
                 <Image Name="Slot32" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="115,292,-129,-97" Width="34"/>
-            <Image Name="Slot33" Stretch="Fill" Width="34" Height="34" Margin="115,292,-144,-321"></Image>
+            <Button Height="34" Margin="114,292,-128,-314" Width="34">
+                <Image Name="Slot33" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="158,292,-85,-97" Width="34"/>
-            <Image Name="Slot34" Stretch="Fill" Width="34" Height="34" Margin="158,292,-187,-321"></Image>
-            
-            <Button Height="34" Margin="201,292,-85,-97" Width="34"/>
-            <Image Name="Slot35" Stretch="Fill" Width="34" Height="34" Margin="201,292,-230,-321"></Image>
-            
-            <Button Height="34" Margin="245,292,-85,-97" Width="34"/>
-            <Image Name="Slot36" Stretch="Fill" Width="34" Height="34" Margin="245,292,-274,-321"></Image>
+            <Button Height="34" Margin="158,292,-172,-314" Width="34">
+                <Image Name="Slot34" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="28,336,-42,-97" Width="34">
+            <Button Height="34" Margin="201,293,-215,-315" Width="34">
+                <Image Name="Slot35" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
+
+            <Button Height="34" Margin="244,293,-258,-315" Width="34">
+                <Image Name="Slot36" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
+            </Button>
+
+            <Button Height="34" Margin="28,335,-42,-357" Width="34">
                 <Image Name="Slot37" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="71,336,-85,-97" Width="34">
+            <Button Height="34" Margin="71,336,-85,-358" Width="34">
                 <Image Name="Slot38" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
-            
-            <Button Height="34" Margin="115,337,-129,-98" Width="34"/>
-            <Image Name="Slot39" Stretch="Fill" Width="34" Height="34" Margin="115,337,-129,-98"></Image>
 
-            <Button Height="34" Margin="158,336,-85,-97" Width="34"/>
-            <Image Name="Slot40" Stretch="Fill" Width="34" Height="34" Margin="158,336,-85,-97"></Image>
+            <Button Height="34" Margin="114,336,-128,-358" Width="34">
+                <Image Name="Slot39" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="201,336,-85,-97" Width="34"/>
-            <Image Name="Slot41" Stretch="Fill" Width="34" Height="34" Margin="201,336,-85,-97"></Image>
+            <Button Height="34" Margin="158,336,-172,-358" Width="34">
+                <Image Name="Slot40" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="245,336,-85,-97" Width="34"/>
-            <Image Name="Slot42" Stretch="Fill" Width="34" Height="34" Margin="245,336,-85,-97"></Image>
+            <Button Height="34" Margin="201,336,-215,-358" Width="34">
+                <Image Name="Slot41" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="28,378,-42,-97" Width="34">
+            <Button Height="34" Margin="244,336,-258,-358" Width="34">
+                <Image Name="Slot42" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
+            </Button>
+
+            <Button Height="34" Margin="28,379,-42,-401" Width="34">
                 <Image Name="Slot43" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="71,378,-85,-97" Width="34">
+            <Button Height="34" Margin="71,379,-85,-401" Width="34">
                 <Image Name="Slot44" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
-            <Button Height="34" Margin="115,378,-129,-97" Width="34"/>
-            <Image Name="Slot45" Stretch="Fill" Width="34" Height="34" Margin="115,378,-144,-407"></Image>
+            <Button Height="34" Margin="114,379,-128,-401" Width="34">
+                <Image Name="Slot45" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="158,378,-85,-97" Width="34"/>
-            <Image Name="Slot46" Stretch="Fill" Width="34" Height="34" Margin="158,378,-187,-407"></Image>
+            <Button Height="34" Margin="158,379,-172,-401" Width="34">
+                <Image Name="Slot46" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="201,378,-85,-97" Width="34"/>
-            <Image Name="Slot47" Stretch="Fill" Width="34" Height="34" Margin="201,378,-230,-407"></Image>
+            <Button Height="34" Margin="201,379,-215,-401" Width="34">
+                <Image Name="Slot47" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            </Button>
 
-            <Button Height="34" Margin="245,378,-85,-97" Width="34"/>
-            <Image Name="Slot48" Stretch="Fill" Width="34" Height="34" Margin="245,378,-274,-407"></Image>
-            <Image x:Name="Slot39_Copy" Stretch="Fill" Width="34" Height="34" Margin="115,332,-144,-361"/>
+            <Button Height="34" Margin="244,379,-258,-401" Width="34">
+                <Image Name="Slot48" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
+            </Button>
+
 
         </RelativePanel>
 

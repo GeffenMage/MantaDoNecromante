@@ -977,7 +977,7 @@ namespace MantaNecromante.GameStage {
             SlotMatrix[7, 3] = Slot46;
             SlotMatrix[7, 4] = Slot47;
             SlotMatrix[7, 5] = Slot48;
-
+            
         }
 
 
@@ -998,14 +998,6 @@ namespace MantaNecromante.GameStage {
                     }
                 }
             }
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e) {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e) {
-
         }
 
         private Mob GetEnemy(int row, int column) {
