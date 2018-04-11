@@ -54,3 +54,45 @@ GameAssets\Songs\Ossos.mp3
 GameAssets\Songs\Waterfall.mp3
 pauseMenu.png
 Properties\Default.rd.xml
+RawImages\Cursor\atack.gif
+RawImages\Cursor\hand.png
+RawImages\Cursor\pointer.gif
+RawImages\Cursor\talk.gif
+RawImages\Cursor\wand.gif
+RawImages\images\mansion_01.png
+RawImages\images\mansion_02.png
+RawImages\images\mansion_03.png
+RawImages\images\mansion_04.png
+RawImages\images\mansion_05.png
+RawImages\Mage\images\images\idle_mage_01.png
+RawImages\Mage\images\images\idle_mage_02.png
+RawImages\Mage\images\images\idle_mage_03.gif
+RawImages\Mage\images\images\idle_mage_04.png
+RawImages\Mage\images\images\idle_mage_05.png
+RawImages\Mage\images\wizard-idle_01.png
+RawImages\Mage\images\wizard-idle_02.png
+RawImages\Mage\images\wizard-idle_03.png
+RawImages\Mage\images\wizard-idle_04.png
+RawImages\Mage\images\wizard-idle_05.png
+RawImages\Mage\images\wizard-idle_06.png
+RawImages\Mage\images\wizard-idle_07.png
+RawImages\Mage\images\wizard-idle_08.png
+RawImages\Mage\images\wizard-idle_09.png
+RawImages\Mage\images\wizard-idle_10.png
+RawImages\Mage\wizard attack.png
+RawImages\Mage\wizard death (1).png
+RawImages\Mage\wizard fly forward (1).png
+RawImages\Mage\wizard idle.png
+RawImages\map.png
+RawImages\Skeleton\GIFS\Skeleton Attack.gif
+RawImages\Skeleton\GIFS\Skeleton Dead.gif
+RawImages\Skeleton\GIFS\Skeleton Hit.gif
+RawImages\Skeleton\GIFS\Skeleton Idle.gif
+RawImages\Skeleton\GIFS\Skeleton React.gif
+RawImages\Skeleton\GIFS\Skeleton Walk.gif
+RawImages\Skeleton\Sprite Sheets\Skeleton Attack.png
+RawImages\Skeleton\Sprite Sheets\Skeleton Dead.png
+RawImages\Skeleton\Sprite Sheets\Skeleton Hit.png
+RawImages\Skeleton\Sprite Sheets\Skeleton Idle.png
+RawImages\Skeleton\Sprite Sheets\Skeleton React.png
+RawImages\Skeleton\Sprite Sheets\Skeleton Walk.png
