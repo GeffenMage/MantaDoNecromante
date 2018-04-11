@@ -25,7 +25,7 @@ namespace NecromanteLL {
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Atk Up I", 0, 20, 1, 0, 0, 40, 0, 0));
-                    Skills.Add(new Skill("Regem MP I", 60, 0, 1, 0, 180, 0, 0, 0));
+                    Skills.Add(new Skill("Regen MP I", 60, 0, 1, 0, 180, 0, 0, 0));
                     Skills.Add(new Skill("Drain Life I", 80, 0, 1, 100, 0, 0, 0, 100));
 
                     break;
@@ -41,7 +41,7 @@ namespace NecromanteLL {
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall II", 0, 20, 1, 0, 0, 0, 0, 70));
-                    Skills.Add(new Skill("RegemMp II", 80, 0, 1, 0, 240, 0, 0, 0));
+                    Skills.Add(new Skill("Regen Mp II", 80, 0, 1, 0, 240, 0, 0, 0));
                     Skills.Add(new Skill("Drain Life II", 120, 0, 1, 250, 0, 0, 0, 250));
 
                     break;
@@ -57,8 +57,8 @@ namespace NecromanteLL {
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall III", 0, 20, 1, 0, 0, 0, 0, 70));
-                    Skills.Add(new Skill("RegemMp III", 120, 0, 1, 0, 360, 0, 0, 0));
-                    Skills.Add(new Skill("Unique III", 190, 0, 1, 500, 0, 0, 0, 500));
+                    Skills.Add(new Skill("Regen Mp III", 120, 0, 1, 0, 360, 0, 0, 0));
+                    Skills.Add(new Skill("Drain Life III", 190, 0, 1, 500, 0, 0, 0, 500));
 
                     break;
             }

@@ -116,6 +116,18 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="MantaNecromante_TemporaryKey.pfx" />
+    <None Include="RawImages\640x480_0.psd" />
+    <None Include="RawImages\Cursor\Thumbs.db" />
+    <None Include="RawImages\images\Thumbs.db" />
+    <None Include="RawImages\Mage\images\Thumbs.db" />
+    <None Include="RawImages\Skeleton\Files\Skeleton Attack.ase" />
+    <None Include="RawImages\Skeleton\Files\Skeleton Dead.ase" />
+    <None Include="RawImages\Skeleton\Files\Skeleton Hit.ase" />
+    <None Include="RawImages\Skeleton\Files\Skeleton Idle.ase" />
+    <None Include="RawImages\Skeleton\Files\Skeleton React.ase" />
+    <None Include="RawImages\Skeleton\Files\Skeleton Walk.ase" />
+    <None Include="RawImages\Skeleton\GIFS\Thumbs.db" />
+    <None Include="RawImages\Skeleton\Sprite Sheets\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\dots.png" />
@@ -172,6 +184,48 @@
     <Content Include="GameAssets\Songs\Waterfall.mp3" />
     <Content Include="pauseMenu.png" />
     <Content Include="Properties\Default.rd.xml" />
+    <Content Include="RawImages\Cursor\atack.gif" />
+    <Content Include="RawImages\Cursor\hand.png" />
+    <Content Include="RawImages\Cursor\pointer.gif" />
+    <Content Include="RawImages\Cursor\talk.gif" />
+    <Content Include="RawImages\Cursor\wand.gif" />
+    <Content Include="RawImages\images\mansion_01.png" />
+    <Content Include="RawImages\images\mansion_02.png" />
+    <Content Include="RawImages\images\mansion_03.png" />
+    <Content Include="RawImages\images\mansion_04.png" />
+    <Content Include="RawImages\images\mansion_05.png" />
+    <Content Include="RawImages\Mage\images\images\idle_mage_01.png" />
+    <Content Include="RawImages\Mage\images\images\idle_mage_02.png" />
+    <Content Include="RawImages\Mage\images\images\idle_mage_03.gif" />
+    <Content Include="RawImages\Mage\images\images\idle_mage_04.png" />
+    <Content Include="RawImages\Mage\images\images\idle_mage_05.png" />
+    <Content Include="RawImages\Mage\images\wizard-idle_01.png" />
+    <Content Include="RawImages\Mage\images\wizard-idle_02.png" />
+    <Content Include="RawImages\Mage\images\wizard-idle_03.png" />
+    <Content Include="RawImages\Mage\images\wizard-idle_04.png" />
+    <Content Include="RawImages\Mage\images\wizard-idle_05.png" />
+    <Content Include="RawImages\Mage\images\wizard-idle_06.png" />
+    <Content Include="RawImages\Mage\images\wizard-idle_07.png" />
+    <Content Include="RawImages\Mage\images\wizard-idle_08.png" />
+    <Content Include="RawImages\Mage\images\wizard-idle_09.png" />
+    <Content Include="RawImages\Mage\images\wizard-idle_10.png" />
+    <Content Include="RawImages\Mage\wizard attack.png" />
+    <Content Include="RawImages\Mage\wizard death %281%29.png" />
+    <Content Include="RawImages\Mage\wizard fly forward %281%29.png" />
+    <Content Include="RawImages\Mage\wizard idle.png" />
+    <Content Include="RawImages\map.png" />
+    <Content Include="RawImages\Skeleton\GIFS\Skeleton Attack.gif" />
+    <Content Include="RawImages\Skeleton\GIFS\Skeleton Dead.gif" />
+    <Content Include="RawImages\Skeleton\GIFS\Skeleton Hit.gif" />
+    <Content Include="RawImages\Skeleton\GIFS\Skeleton Idle.gif" />
+    <Content Include="RawImages\Skeleton\GIFS\Skeleton React.gif" />
+    <Content Include="RawImages\Skeleton\GIFS\Skeleton Walk.gif" />
+    <Content Include="RawImages\Skeleton\Sprite Sheets\Skeleton Attack.png" />
+    <Content Include="RawImages\Skeleton\Sprite Sheets\Skeleton Dead.png" />
+    <Content Include="RawImages\Skeleton\Sprite Sheets\Skeleton Hit.png" />
+    <Content Include="RawImages\Skeleton\Sprite Sheets\Skeleton Idle.png" />
+    <Content Include="RawImages\Skeleton\Sprite Sheets\Skeleton React.png" />
+    <Content Include="RawImages\Skeleton\Sprite Sheets\Skeleton Walk.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -201,6 +255,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets\NewFolder1\" />
     <Folder Include="GameAssets\Characters\heroes\mage\" />
   </ItemGroup>
   <ItemGroup>
