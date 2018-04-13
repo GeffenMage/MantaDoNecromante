@@ -25672,11 +25672,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\'''\\source\\repos\\MantaDoNecromante5\\MantaNecromante\\MantaNecromante.csproj",
+      "projectUniqueName": "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante5\\MantaNecromante\\MantaNecromante.csproj",
       "projectName": "MantaNecromante",
-      "projectPath": "C:\\Users\\'''\\source\\repos\\MantaDoNecromante5\\MantaNecromante\\MantaNecromante.csproj",
+      "projectPath": "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante5\\MantaNecromante\\MantaNecromante.csproj",
       "packagesPath": "C:\\Users\\'''\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\'''\\source\\repos\\MantaDoNecromante5\\MantaNecromante\\obj\\",
+      "outputPath": "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante5\\MantaNecromante\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -25697,8 +25697,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\'''\\source\\repos\\MantaDoNecromante5\\NecromanteLL\\NecromanteLL.csproj": {
-              "projectPath": "C:\\Users\\'''\\source\\repos\\MantaDoNecromante5\\NecromanteLL\\NecromanteLL.csproj"
+            "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante5\\NecromanteLL\\NecromanteLL.csproj": {
+              "projectPath": "C:\\Users\\'''\\Source\\Repos\\MantaDoNecromante5\\NecromanteLL\\NecromanteLL.csproj"
             }
           }
         }
