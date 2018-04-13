@@ -57,6 +57,8 @@ namespace NecromanteLL {
             itens.Add(new Cota("Cota de Bronze", 20, 20, 10, 10, "ms-appx:///GameAssets/Characters/itens/v2/Armor 2.png"));
             itens.Add(new Luva("Luva de Couro", 10, 20, 0, 10, "ms-appx:///GameAssets/Characters/itens/luva_1.png"));
             itens.Add(new Luva("Luva de Bronze", 20, 30, 20, 10, "ms-appx:///GameAssets/Characters/itens/luva_2.png"));
+            itens.Add(new Luva("Porção de HP", 0, 0, 300, 0, "ms-appx:///GameAssets/Characters/itens/Hp_menor.png"));
+            itens.Add(new Luva("Porção de MP", 0, 0, 0, 300, "ms-appx:///GameAssets/Characters/itens/Mp_memor.png"));
         }
        
 
@@ -65,7 +67,7 @@ namespace NecromanteLL {
             Itens[] vet = itens.ToArray();
             //vet[0].Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Maps/chest_idle.png"));
            
-            itens_do_mapa[pos_x, pos_y] = vet[item_num.Next(0,18)];
+            itens_do_mapa[pos_x, pos_y] = vet[item_num.Next(0,20)];
             //itens_do_mapa[pos_x, pos_y] = vet[0];
 
         }
