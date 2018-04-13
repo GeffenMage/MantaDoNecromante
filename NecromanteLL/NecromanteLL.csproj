@@ -110,6 +110,7 @@
     <Compile Include="Controllers\Map_controller.cs" />
     <Compile Include="Enemys\Fantasma.cs" />
     <Compile Include="Enemys\Goblin.cs" />
+    <Compile Include="Items\Abstratos\Consumiveis.cs" />
     <Compile Include="Items\Concretos\Armas\Arco.cs" />
     <Compile Include="Items\Abstratos\Armaduras.cs" />
     <Compile Include="Items\Abstratos\Armas.cs" />
@@ -125,6 +126,8 @@
     <Compile Include="Enemys\Mob.cs" />
     <Compile Include="Enemys\Ogro.cs" />
     <Compile Include="Items\Concretos\Armaduras\Luva.cs" />
+    <Compile Include="Items\Concretos\Consumiveis\PorcaoMP.cs" />
+    <Compile Include="Items\Concretos\Consumiveis\PorcaoHP.cs" />
     <Compile Include="Jogador\Player.cs" />
     <Compile Include="Jogador\Rogue.cs" />
     <Compile Include="Jogador\Wizard.cs" />

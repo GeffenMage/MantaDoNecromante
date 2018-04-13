@@ -490,6 +490,99 @@
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\pauseMenu.png">
       <PackagePath>pauseMenu.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\hand.png">
+      <PackagePath>RawImages\Cursor\hand.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_01.png">
+      <PackagePath>RawImages\images\mansion_01.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_02.png">
+      <PackagePath>RawImages\images\mansion_02.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_03.png">
+      <PackagePath>RawImages\images\mansion_03.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_04.png">
+      <PackagePath>RawImages\images\mansion_04.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_05.png">
+      <PackagePath>RawImages\images\mansion_05.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_01.png">
+      <PackagePath>RawImages\Mage\images\images\idle_mage_01.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_02.png">
+      <PackagePath>RawImages\Mage\images\images\idle_mage_02.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_04.png">
+      <PackagePath>RawImages\Mage\images\images\idle_mage_04.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_05.png">
+      <PackagePath>RawImages\Mage\images\images\idle_mage_05.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_01.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_01.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_02.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_02.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_03.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_03.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_04.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_04.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_05.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_05.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_06.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_06.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_07.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_07.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_08.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_08.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_09.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_09.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_10.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_10.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\wizard attack.png">
+      <PackagePath>RawImages\Mage\wizard attack.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\wizard death %281%29.png">
+      <PackagePath>RawImages\Mage\wizard death %281%29.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\wizard fly forward %281%29.png">
+      <PackagePath>RawImages\Mage\wizard fly forward %281%29.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\wizard idle.png">
+      <PackagePath>RawImages\Mage\wizard idle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\map.png">
+      <PackagePath>RawImages\map.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Attack.png">
+      <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Attack.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Dead.png">
+      <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Dead.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Hit.png">
+      <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Hit.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Idle.png">
+      <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Idle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton React.png">
+      <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton React.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Walk.png">
+      <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Walk.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\attack.gif">
       <PackagePath>GameAssets\Characters\enemies\exqueleton\attack.gif</PackagePath>
     </AppxPackagedFile>
@@ -516,6 +609,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\main_background.gif">
       <PackagePath>GameAssets\Menu\main_background.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\atack.gif">
+      <PackagePath>RawImages\Cursor\atack.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\pointer.gif">
+      <PackagePath>RawImages\Cursor\pointer.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\talk.gif">
+      <PackagePath>RawImages\Cursor\talk.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\wand.gif">
+      <PackagePath>RawImages\Cursor\wand.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_03.gif">
+      <PackagePath>RawImages\Mage\images\images\idle_mage_03.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Attack.gif">
+      <PackagePath>RawImages\Skeleton\GIFS\Skeleton Attack.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Dead.gif">
+      <PackagePath>RawImages\Skeleton\GIFS\Skeleton Dead.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Hit.gif">
+      <PackagePath>RawImages\Skeleton\GIFS\Skeleton Hit.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Idle.gif">
+      <PackagePath>RawImages\Skeleton\GIFS\Skeleton Idle.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton React.gif">
+      <PackagePath>RawImages\Skeleton\GIFS\Skeleton React.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Walk.gif">
+      <PackagePath>RawImages\Skeleton\GIFS\Skeleton Walk.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Songs\Battle.mp3">
       <PackagePath>GameAssets\Songs\Battle.mp3</PackagePath>

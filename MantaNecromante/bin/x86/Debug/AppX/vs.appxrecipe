@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-10T14:08:54.959</Modified>
+      <Modified>2018-04-13T13:33:49.208</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\MantaNecromante.exe">
       <PackagePath>entrypoint\MantaNecromante.exe</PackagePath>
-      <Modified>2018-04-10T14:08:53.192</Modified>
+      <Modified>2018-04-13T13:33:48.449</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -497,7 +497,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\NecromanteLL\bin\x86\Debug\NecromanteLL.dll">
       <PackagePath>NecromanteLL.dll</PackagePath>
-      <Modified>2018-04-10T12:48:26.241</Modified>
+      <Modified>2018-04-13T13:26:32.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\Assets\dots.png">
       <PackagePath>Assets\dots.png</PackagePath>
@@ -653,6 +653,130 @@
       <PackagePath>pauseMenu.png</PackagePath>
       <Modified>2018-03-04T14:44:48.131</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\hand.png">
+      <PackagePath>RawImages\Cursor\hand.png</PackagePath>
+      <Modified>2018-04-11T12:45:40.954</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_01.png">
+      <PackagePath>RawImages\images\mansion_01.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.282</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_02.png">
+      <PackagePath>RawImages\images\mansion_02.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.282</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_03.png">
+      <PackagePath>RawImages\images\mansion_03.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.313</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_04.png">
+      <PackagePath>RawImages\images\mansion_04.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.313</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_05.png">
+      <PackagePath>RawImages\images\mansion_05.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.313</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_01.png">
+      <PackagePath>RawImages\Mage\images\images\idle_mage_01.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.048</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_02.png">
+      <PackagePath>RawImages\Mage\images\images\idle_mage_02.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.048</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_04.png">
+      <PackagePath>RawImages\Mage\images\images\idle_mage_04.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.079</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_05.png">
+      <PackagePath>RawImages\Mage\images\images\idle_mage_05.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.079</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_01.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_01.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.094</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_02.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_02.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.094</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_03.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_03.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.094</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_04.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_04.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.094</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_05.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_05.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.110</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_06.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_06.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.110</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_07.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_07.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.110</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_08.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_08.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.126</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_09.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_09.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.126</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_10.png">
+      <PackagePath>RawImages\Mage\images\wizard-idle_10.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.126</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\wizard attack.png">
+      <PackagePath>RawImages\Mage\wizard attack.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.126</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\wizard death %281%29.png">
+      <PackagePath>RawImages\Mage\wizard death %281%29.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.141</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\wizard fly forward %281%29.png">
+      <PackagePath>RawImages\Mage\wizard fly forward %281%29.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.141</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\wizard idle.png">
+      <PackagePath>RawImages\Mage\wizard idle.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.141</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\map.png">
+      <PackagePath>RawImages\map.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.360</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Attack.png">
+      <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Attack.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.251</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Dead.png">
+      <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Dead.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.251</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Hit.png">
+      <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Hit.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.251</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Idle.png">
+      <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Idle.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.266</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton React.png">
+      <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton React.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.266</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Walk.png">
+      <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Walk.png</PackagePath>
+      <Modified>2018-04-11T12:45:41.266</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\attack.gif">
       <PackagePath>GameAssets\Characters\enemies\exqueleton\attack.gif</PackagePath>
       <Modified>2018-03-16T12:39:42.243</Modified>
@@ -688,6 +812,50 @@
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\main_background.gif">
       <PackagePath>GameAssets\Menu\main_background.gif</PackagePath>
       <Modified>2018-03-04T14:44:47.542</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\atack.gif">
+      <PackagePath>RawImages\Cursor\atack.gif</PackagePath>
+      <Modified>2018-04-11T12:45:40.954</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\pointer.gif">
+      <PackagePath>RawImages\Cursor\pointer.gif</PackagePath>
+      <Modified>2018-04-11T12:45:41.016</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\talk.gif">
+      <PackagePath>RawImages\Cursor\talk.gif</PackagePath>
+      <Modified>2018-04-11T12:45:41.032</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\wand.gif">
+      <PackagePath>RawImages\Cursor\wand.gif</PackagePath>
+      <Modified>2018-04-11T12:45:41.032</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_03.gif">
+      <PackagePath>RawImages\Mage\images\images\idle_mage_03.gif</PackagePath>
+      <Modified>2018-04-11T12:45:41.079</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Attack.gif">
+      <PackagePath>RawImages\Skeleton\GIFS\Skeleton Attack.gif</PackagePath>
+      <Modified>2018-04-11T12:45:41.188</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Dead.gif">
+      <PackagePath>RawImages\Skeleton\GIFS\Skeleton Dead.gif</PackagePath>
+      <Modified>2018-04-11T12:45:41.188</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Hit.gif">
+      <PackagePath>RawImages\Skeleton\GIFS\Skeleton Hit.gif</PackagePath>
+      <Modified>2018-04-11T12:45:41.204</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Idle.gif">
+      <PackagePath>RawImages\Skeleton\GIFS\Skeleton Idle.gif</PackagePath>
+      <Modified>2018-04-11T12:45:41.219</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton React.gif">
+      <PackagePath>RawImages\Skeleton\GIFS\Skeleton React.gif</PackagePath>
+      <Modified>2018-04-11T12:45:41.219</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Walk.gif">
+      <PackagePath>RawImages\Skeleton\GIFS\Skeleton Walk.gif</PackagePath>
+      <Modified>2018-04-11T12:45:41.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Songs\Battle.mp3">
       <PackagePath>GameAssets\Songs\Battle.mp3</PackagePath>
@@ -732,11 +900,11 @@
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-10T14:08:54.600</Modified>
+      <Modified>2018-04-13T13:26:38.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\Core\MantaNecromante.exe">
       <PackagePath>MantaNecromante.exe</PackagePath>
-      <Modified>2018-04-10T14:08:54.944</Modified>
+      <Modified>2018-04-13T13:33:49.204</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
