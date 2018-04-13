@@ -436,6 +436,90 @@
     <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\pant.png">
       <PackagePath>GameAssets\Characters\itens\pant.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Armor 1.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Armor 1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Armor 2.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Armor 2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Armor 3.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Armor 3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Armor 4.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Armor 4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Axe 1.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Axe 1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Axe 2.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Axe 2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Axe 3.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Axe 3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Axe 4.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Axe 4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Axe 5.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Axe 5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Axe 6.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Axe 6.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Axe 7.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Axe 7.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Axe 8.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Axe 8.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Potion 1.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Potion 1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Potion 2.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Potion 2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Potion 3.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Potion 3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Potion 4.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Potion 4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Shield 1.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Shield 1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Shield 2.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Shield 2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Shield 3.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Shield 3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Shield 4.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Shield 4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Shield 5.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Shield 5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Sword 1.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Sword 1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Sword 2.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Sword 2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Sword 3.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Sword 3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Sword 4.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Sword 4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Sword 5.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Sword 5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Sword 6.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Sword 6.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Characters\itens\v2\Sword 7.png">
+      <PackagePath>GameAssets\Characters\itens\v2\Sword 7.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\%27%27%27\Source\Repos\MantaDoNecromante5\MantaNecromante\GameAssets\Maps\chest_idle.png">
       <PackagePath>GameAssets\Maps\chest_idle.png</PackagePath>
     </AppxPackagedFile>
