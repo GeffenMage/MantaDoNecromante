@@ -17,6 +17,7 @@ using Windows.UI.Core;
 using NecromanteLL;
 using Windows.Media.Playback;
 using Windows.Media.Core;
+using Windows.ApplicationModel.Core;
 
 // O modelo de item de Página em Branco está documentado em https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -30,15 +31,50 @@ namespace MantaNecromante.MainBattle {
         private bool isOptionsMenuOpen;
         private BattleController battleController;
         private MediaPlayer song = new MediaPlayer();
+
         public BattleStage() {
 
             this.InitializeComponent();
-
+            Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;
+            battleController.PlayerTurn += TurnChangeToPlayer;
+            battleController.EnemyTurn += TurnChangeToEnemy;
             Adjuster.AdjustWindow(Floor);
             SetAllMenusReady();
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Battle.mp3"));
             song.Play();
-            this.KeyDown += BattleStage_KeyDown;
+
+        }
+
+
+        /// <summary>
+        /// Trata o Evento que ocorre no battleController quando o turno muda para o Player
+        /// </summary>
+        public void TurnChangeToPlayer() {
+
+        }
+
+        /// <summary>
+        /// Trata o Evento que ocorre no battleController quando o turno muda para o Inimigo
+        /// </summary>
+        public void TurnChangeToEnemy() {
+
+        }
+
+        private void CoreWindow_KeyDown(CoreWindow sender, KeyEventArgs args) {
+            
+            if (args.VirtualKey == Windows.System.VirtualKey.Escape) {
+
+                if (!isOptionsMenuOpen) {
+
+                    Floor.Children.Add(OptionsMenu);
+                }
+                else {
+
+                    Floor.Children.Remove(OptionsMenu);
+                }
+
+                isOptionsMenuOpen = !isOptionsMenuOpen;
+            }
         }
 
         private void SetAllMenusReady() {
@@ -54,18 +90,19 @@ namespace MantaNecromante.MainBattle {
                 if (!isOptionsMenuOpen) {
 
                     Floor.Children.Add(OptionsMenu);
-                } else {
+                }
+                else {
 
                     Floor.Children.Remove(OptionsMenu);
                 }
 
-                isOptionsMenuOpen ^= false;
+                isOptionsMenuOpen = !isOptionsMenuOpen;
             } 
         }
 
         private void Exit(object sender, RoutedEventArgs e) {
-
-            //
+            Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
+            CoreApplication.Exit();
         }
 
         private void Continue(object sender, RoutedEventArgs e) {
@@ -76,9 +113,24 @@ namespace MantaNecromante.MainBattle {
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
             battleController = (BattleController) e.Parameter;
-
+            this.KeyDown += BattleStage_KeyDown;
             Hero.Source = battleController.Jogador.Sprite_idle_right;
             Foe.Source = battleController.Inimigo.Sprite.Source;
+        }
+
+        private void Menu_Click(object sender, RoutedEventArgs e) {
+
+                if (!isOptionsMenuOpen) {
+
+                    Floor.Children.Add(OptionsMenu);
+                }
+                else {
+
+                    Floor.Children.Remove(OptionsMenu);
+                }
+
+                isOptionsMenuOpen ^= false;
+            
         }
     }
 }
