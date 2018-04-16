@@ -15,6 +15,7 @@ namespace NecromanteLL {
         private Player jogador;
         private Mob inimigo;
         private int dice_num;
+        private int menorCusto;
 
         public int Turno_atual { get => Turno_atual1; set => Turno_atual1 = value; }
         public int Player_initalHP { get => player_initalHP; set => player_initalHP = value; }
@@ -31,10 +32,17 @@ namespace NecromanteLL {
             this.Jogador = jogador;
             this.Inimigo = inimigo;
             Set_initialStatus(Jogador);
+            //Seta o custo mais barato de mana das skills do inimigo
+            menorCusto = Inimigo.Skills[0].Custo_mp;
+            foreach (Skill s in Inimigo.Skills) {
+                if (menorCusto > s.Custo_mp) {
+                    menorCusto = s.Custo_mp;
+                }
+            }
         }
         
         //----------------------------------------------//
-        //Eventos para a tela saber quando muda de turno
+        //Eventos para a tela saber quando muda de turno//
           public delegate void TurnChangeEventHandler();
           public delegate void EnemyAttackEventHandler();
           public event EnemyAttackEventHandler EnemyTurn;
@@ -46,12 +54,14 @@ namespace NecromanteLL {
         /// </summary>
         public void EnemyChoice() {
             int choice;
+
             Random rand = new Random();
             choice = rand.Next(1, 101);
-            if (choice < 50) {
+            
+            if (choice < 50 || Inimigo.Mp_atual < menorCusto) {
                 Jogador.Take_dmg(Inimigo.Atk_base());
             }
-            else {
+            else{
                 CastSkill();
             }
         }
@@ -165,7 +175,7 @@ namespace NecromanteLL {
             Skill[] vet = Inimigo.Skills.ToArray();
             int dmg = vet[num.Next(0,3)].executar(Inimigo);
             if (dmg == -1) {
-                return CastSkill();//Quando o inimigo não tiver mana para usar a skill
+                return CastSkill();//Quando o inimigo não puder usar a skill aleatória
             }
             else {
                 Jogador.Take_dmg(dmg);
