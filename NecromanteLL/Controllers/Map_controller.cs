@@ -39,10 +39,10 @@ namespace NecromanteLL {
             mobs.Add(new Laposo(2));
             mobs.Add(new Laposo(3));
 
-            itens.Add(new Escudo("Escudo de madeira", 0, 20, 10, 0, "ms-appx:///GameAssets/Characters/itens/escudo_1.png"));
-            itens.Add(new Escudo("Escudo de metal", 0, 40, 10, 0, "ms-appx:///GameAssets/Characters/itens/escudo_2.png"));
-            itens.Add(new Espada("Espada de madeira", 20, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/espada_1.png"));
-            itens.Add(new Espada("Espada de metal", 40, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/espada_2.png"));
+            itens.Add(new Escudo("Escudo de madeira", 0, 20, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/Shield 1.png"));
+            itens.Add(new Escudo("Escudo de metal", 0, 40, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/Shield 2.png"));
+            itens.Add(new Espada("Espada de madeira", 20, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/Sword 1.png"));
+            itens.Add(new Espada("Espada de metal", 40, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/Sword 4.png"));
             itens.Add(new Arco("Arco de madeira", 20, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/arco_1.png"));
             itens.Add(new Arco("Arco de metal", 40, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/arco_2.png"));
             itens.Add(new Cajado("Cajado de madeira", 20, 0, 0, 10, "ms-appx:///GameAssets/Characters/itens/cajado_1.png"));
@@ -53,18 +53,21 @@ namespace NecromanteLL {
             itens.Add(new Calca("Calca de Bronze", 10, 30, 10, 0, "ms-appx:///GameAssets/Characters/itens/pant.png"));
             itens.Add(new Capacete("Capacete de Couro", 0, 20, 10, 0, "ms-appx:///GameAssets/Characters/itens/capacete_1.png"));
             itens.Add(new Capacete("Capacete de Bronze", 0, 50, 10, 0, "ms-appx:///GameAssets/Characters/itens/capacete_2.png"));
-            itens.Add(new Cota("Cota de Couro", 10, 10, 0, 10, "ms-appx:///GameAssets/Characters/itens/cota_1.png"));
-            itens.Add(new Cota("Cota de Bronze", 20, 20, 10, 10, "ms-appx:///GameAssets/Characters/itens/cota_2.png"));
+            itens.Add(new Cota("Cota de Couro", 10, 10, 0, 10, "ms-appx:///GameAssets/Characters/itens/v2/Armor 1.png"));
+            itens.Add(new Cota("Cota de Bronze", 20, 20, 10, 10, "ms-appx:///GameAssets/Characters/itens/v2/Armor 2.png"));
             itens.Add(new Luva("Luva de Couro", 10, 20, 0, 10, "ms-appx:///GameAssets/Characters/itens/luva_1.png"));
             itens.Add(new Luva("Luva de Bronze", 20, 30, 20, 10, "ms-appx:///GameAssets/Characters/itens/luva_2.png"));
+            itens.Add(new Luva("Porção de HP", 0, 0, 300, 0, "ms-appx:///GameAssets/Characters/itens/Hp_menor.png"));
+            itens.Add(new Luva("Porção de MP", 0, 0, 0, 300, "ms-appx:///GameAssets/Characters/itens/Mp_memor.png"));
         }
-        
+       
+
         public void setItem(int pos_x,int pos_y) {
             
             Itens[] vet = itens.ToArray();
             //vet[0].Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Maps/chest_idle.png"));
            
-            itens_do_mapa[pos_x, pos_y] = vet[item_num.Next(0,18)];
+            itens_do_mapa[pos_x, pos_y] = vet[item_num.Next(0,20)];
             //itens_do_mapa[pos_x, pos_y] = vet[0];
 
         }

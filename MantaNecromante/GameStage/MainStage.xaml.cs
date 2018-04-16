@@ -23,6 +23,7 @@ using MantaNecromante.MainBattle;
 using Windows.Media.Playback;
 using Windows.Media.Core;
 
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace MantaNecromante.GameStage {
@@ -979,7 +980,6 @@ namespace MantaNecromante.GameStage {
             SlotMatrix[7, 5] = Slot48;
             
         }
-
 
         private void GetItem(int row, int column) {
 
