@@ -7,8 +7,8 @@ using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Controls;
 
 namespace NecromanteLL {
-    public class PorcaoHP : Consumiveis {
-        public PorcaoHP(String nome, int dmg, int def, int hp_up, int mp_up, String figura) {
+    public class PocaoMP : Consumiveis {
+        public PocaoMP(String nome, int dmg, int def, int hp_up, int mp_up, String figura) {
             this.Nome = nome;
             this.Dmg = dmg;
             this.Def = def;
