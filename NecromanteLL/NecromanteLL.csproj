@@ -126,8 +126,8 @@
     <Compile Include="Enemys\Mob.cs" />
     <Compile Include="Enemys\Ogro.cs" />
     <Compile Include="Items\Concretos\Armaduras\Luva.cs" />
-    <Compile Include="Items\Concretos\Consumiveis\PorcaoMP.cs" />
-    <Compile Include="Items\Concretos\Consumiveis\PorcaoHP.cs" />
+    <Compile Include="Items\Concretos\Consumiveis\PocaoMP.cs" />
+    <Compile Include="Items\Concretos\Consumiveis\PocaoHP.cs" />
     <Compile Include="Jogador\Player.cs" />
     <Compile Include="Jogador\Rogue.cs" />
     <Compile Include="Jogador\Wizard.cs" />

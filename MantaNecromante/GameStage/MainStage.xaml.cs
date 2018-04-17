@@ -1127,6 +1127,9 @@ namespace MantaNecromante.GameStage {
 
                 battleController = new BattleController(chosen, foe);
 
+                Window.Current.CoreWindow.KeyDown -= KeySentinel;
+                //Window.Current.CoreWindow.KeyUp -= KeyDropped;
+
                 this.Frame.Navigate(typeof(BattleStage), battleController);
             }
             else {

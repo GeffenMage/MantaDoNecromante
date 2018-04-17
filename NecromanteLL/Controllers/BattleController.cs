@@ -11,9 +11,11 @@ namespace NecromanteLL {
         private int player_initalHP, player_initialMP, player_initialDmg, player_initialDef;
         private int turno_atual = 1;
         private bool turno_player = true;
+        private bool extra_turn = false;
         private Player jogador;
         private Mob inimigo;
-
+        private int dice_num;
+        private int menorCusto;
 
         public int Turno_atual { get => Turno_atual1; set => Turno_atual1 = value; }
         public int Player_initalHP { get => player_initalHP; set => player_initalHP = value; }
@@ -24,14 +26,75 @@ namespace NecromanteLL {
         public bool Turno_player { get => turno_player; set => turno_player = value; }
         public Player Jogador { get => jogador; set => jogador = value; }
         public Mob Inimigo { get => inimigo; set => inimigo = value; }
+        public int Dice_num { get => dice_num; set => dice_num = value; }
 
         public BattleController(Player jogador,Mob inimigo) {
             this.Jogador = jogador;
             this.Inimigo = inimigo;
             Set_initialStatus(Jogador);
+            //Seta o custo mais barato de mana das skills do inimigo
+            menorCusto = Inimigo.Skills[0].Custo_mp;
+            foreach (Skill s in Inimigo.Skills) {
+                if (menorCusto > s.Custo_mp) {
+                    menorCusto = s.Custo_mp;
+                }
+            }
+        }
+        
+        //----------------------------------------------//
+        //Eventos para a tela saber quando muda de turno//
+          public delegate void TurnChangeEventHandler();
+          public delegate void EnemyAttackEventHandler();
+          public event EnemyAttackEventHandler EnemyTurn;
+          public event TurnChangeEventHandler PlayerTurn;
+        //----------------------------------------------//
+        
+        /// <summary>
+        /// IA básica do inimigo, escolhe com 50% de chance atacar ou usar skill
+        /// </summary>
+        public void EnemyChoice() {
+            int choice;
+
+            Random rand = new Random();
+            choice = rand.Next(1, 101);
+            
+            if (choice < 50 || Inimigo.Mp_atual < menorCusto) {
+                Jogador.Take_dmg(Inimigo.Atk_base());
+            }
+            else{
+                CastSkill();
+            }
         }
 
 
+        /// <summary>
+        /// Rola um dado de 0 a 100 
+        /// </summary>
+        public void RollDice() {
+            Random rand = new Random();
+            Dice_num =  rand.Next(0, 101);
+            SetTurno();
+        }
+
+        /// <summary>
+        /// Verifica o valor obtido no dado e aplica um turno extra
+        /// </summary>
+        private void SetTurno() {
+            if (Turno_player == true && Dice_num == 0) {
+                Turno_player = false;
+            }
+            else if (Dice_num <= Jogador.Lvl || Dice_num <= Inimigo.Lvl) {
+                extra_turn = true;
+            }
+            else if (Turno_player == false && Dice_num == 0) {
+                Turno_player = true;
+            }
+        }
+
+        /// <summary>
+        /// Verifica se o jogador e o inimigo estão vivos e retorna uma código para cada caso de morte
+        /// </summary>
+        /// <returns>Retorna 0 para ambos vivos,Retorna 1 para vitória do jogador e 2 para derrota</returns>
         public int IsAlive() {
             if(Jogador.IsAlive()==true && Inimigo.IsAlive() == true) {
                 return 0;//Código para ambos vivos
@@ -58,11 +121,21 @@ namespace NecromanteLL {
                 inimigo.Take_dmg(jogador.Atk_base());
                 Turno_player = false;
                 Turno_atual++;
+                if (extra_turn == true) {
+                    Turno_player = true;
+                }
+                //CHAMAR EVENTO
+                this.EnemyTurn();
             }
             else {
-                Jogador.Take_dmg(Inimigo.Atk_base());
+                EnemyChoice();
                 Turno_player = true;
                 Turno_atual++;
+                if (extra_turn == true) {
+                    Turno_player = false;
+                }
+                //CHAMAR EVENTO
+                this.PlayerTurn();
             }
             return IsAlive();
         }
@@ -102,7 +175,7 @@ namespace NecromanteLL {
             Skill[] vet = Inimigo.Skills.ToArray();
             int dmg = vet[num.Next(0,3)].executar(Inimigo);
             if (dmg == -1) {
-                return CastSkill();//Quando o inimigo não tiver mana para usar a skill
+                return CastSkill();//Quando o inimigo não puder usar a skill aleatória
             }
             else {
                 Jogador.Take_dmg(dmg);

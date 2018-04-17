@@ -1,7 +1,6 @@
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\NecromanteLL\bin\x86\Debug\NecromanteLL.dll
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\NecromanteLL\bin\x86\Debug\NecromanteLL.pdb
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\NecromanteLL\bin\x86\Debug\NecromanteLL.pri
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\NecromanteLL\obj\x86\Debug\NecromanteLL.csprojResolveAssemblyReference.cache
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\NecromanteLL\obj\x86\Debug\NecromanteLL.csproj.CoreCompileInputs.cache
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\NecromanteLL\obj\x86\Debug\NecromanteLL.dll
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\NecromanteLL\obj\x86\Debug\NecromanteLL.pdb
