@@ -42,11 +42,17 @@ namespace NecromanteLL {
         }
         
         //----------------------------------------------//
-        //Eventos para a tela saber quando muda de turno//
+        //---------Eventos para a tela saber -----------//
           public delegate void TurnChangeEventHandler();
           public delegate void EnemyAttackEventHandler();
+          public delegate void PlayerDeathEventHandler();
+          public delegate void EnemyDeathEventHandler();
+          public delegate void NoManaEventHandler();
+          public event NoManaEventHandler PlayerHasNoMana;
           public event EnemyAttackEventHandler EnemyTurn;
           public event TurnChangeEventHandler PlayerTurn;
+          public event PlayerDeathEventHandler PlayerDeath;
+          public event EnemyDeathEventHandler EnemyDeath;
         //----------------------------------------------//
         
         /// <summary>
@@ -95,19 +101,21 @@ namespace NecromanteLL {
         /// Verifica se o jogador e o inimigo estão vivos e retorna uma código para cada caso de morte
         /// </summary>
         /// <returns>Retorna 0 para ambos vivos,Retorna 1 para vitória do jogador e 2 para derrota</returns>
-        public int IsAlive() {
+        public void IsAlive() {
             if(Jogador.IsAlive()==true && Inimigo.IsAlive() == true) {
-                return 0;//Código para ambos vivos
+                return;
             }
             else if(Jogador.IsAlive()==true && Inimigo.IsAlive() == false) {
                 Reset_Status(Jogador);
-                return 1;//Código para vitória do jogador
+                EnemyDeath();
+                //return 1;//Código para vitória do jogador
             }
             else if (Jogador.IsAlive() == false) {
-                return 2;//Código para derrota do jogador
+                PlayerDeath();
+                //return 2;//Código para derrota do jogador
             }
             else {
-                return IsAlive();
+                IsAlive();
             }
         }
 
@@ -116,7 +124,7 @@ namespace NecromanteLL {
         /// Ataca o inimigo ou o jogador dependendo de quem for o turno
         /// </summary>
         /// <returns></returns>
-        public int Atacar() {
+        public void Atacar() {
             if (turno_player == true) {
                 inimigo.Take_dmg(jogador.Atk_base());
                 Turno_player = false;
@@ -137,7 +145,7 @@ namespace NecromanteLL {
                 //CHAMAR EVENTO
                 this.PlayerTurn();
             }
-            return IsAlive();
+            IsAlive();
         }
 
         /// <summary>
@@ -145,23 +153,25 @@ namespace NecromanteLL {
         /// </summary>
         /// <param name="skill"></param>
         /// <returns></returns>
-        public int CastSkill(Skill skill) {
+        public void CastSkill(Skill skill) {
             if (Turno_player == true) {
                 Skill s = (from sk in Jogador.Skills where sk.Skill_name == skill.Skill_name select sk).FirstOrDefault<Skill>();
                 int dmg = s.executar(Jogador);
-                if (dmg == -2) {
-                    return -2;//Código para quando o jogador não tiver lvl para usar a skill
-                }
-                else if (dmg == -1) {
-                    return -1;//Código para quando o jogador não tiver mana para usar a skill
+                //Caso ocorra um bug e possa usar skill sem ter lv descomente essa parte
+                //if (dmg == -2) {
+                //    return -2;//Código para quando o jogador não tiver lvl para usar a skill
+                //}
+                if (dmg == -1) {
+                    PlayerHasNoMana();
+                    //return -1;//Código para quando o jogador não tiver mana para usar a skill
                 }
                 else {
                     inimigo.Take_dmg(dmg);
-                    return IsAlive();
+                    IsAlive();
                 }
             }
             else {
-                return IsAlive();
+                IsAlive();
             }
             
         }
@@ -170,18 +180,18 @@ namespace NecromanteLL {
         /// Casta skill aleatória do inimigo
         /// </summary>
         /// <returns></returns>
-        public int CastSkill() {
+        public void CastSkill() {
             Random num = new Random();
             Skill[] vet = Inimigo.Skills.ToArray();
             int dmg = vet[num.Next(0,3)].executar(Inimigo);
             if (dmg == -1) {
-                return CastSkill();//Quando o inimigo não puder usar a skill aleatória
+                CastSkill();//Quando o inimigo não puder usar a skill aleatória
             }
             else {
                 Jogador.Take_dmg(dmg);
                 Turno_player = true;
                 Turno_atual++;
-                return IsAlive();
+                IsAlive();
             }
         }
 

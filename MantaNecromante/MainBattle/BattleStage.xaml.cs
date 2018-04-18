@@ -38,13 +38,40 @@ namespace MantaNecromante.MainBattle {
             Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;
             battleController.PlayerTurn += TurnChangeToPlayer;
             battleController.EnemyTurn += TurnChangeToEnemy;
+            battleController.PlayerDeath += PlayerIsDead;
+            battleController.EnemyDeath += EnemyIsDead;
+            battleController.PlayerHasNoMana += NoManaAvalible;
             Adjuster.AdjustWindow(Floor);
             SetAllMenusReady();
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Battle.mp3"));
             song.Play();
 
         }
+        
 
+
+        /// <summary>
+        /// Método trata o caso do player não possuir mana para usar a skill escolhida
+        /// </summary>
+        public void NoManaAvalible() {
+
+        }
+
+
+        /// <summary>
+        /// Método que trata a morte do inimigo
+        /// </summary>
+        public void EnemyIsDead() {
+
+        }
+
+
+        /// <summary>
+        /// Método que trata a morte do jogador
+        /// </summary>
+        public void PlayerIsDead() {
+
+        }
 
         /// <summary>
         /// Trata o Evento que ocorre no battleController quando o turno muda para o Player
