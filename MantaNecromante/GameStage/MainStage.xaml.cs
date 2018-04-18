@@ -87,7 +87,7 @@ namespace MantaNecromante.GameStage {
         private static int chestHeight = 48, chestWidth = 80;
         //..................................//
 
-        private Image[,] SlotMatrix = new Image[8, 6]; // Matrix de armazenamento dos slots de item
+        private Itens[,] SlotMatrix = new Itens[8, 6]; // Matrix de armazenamento dos slots de item
         //Timer usado para o movimento:
 
         //para testes:
@@ -915,70 +915,90 @@ namespace MantaNecromante.GameStage {
 
         private void CreateSlot() {
 
+            for (int i = 0; i < 8; i++) {
+
+                for (int j = 0; j < 6; j++) {
+
+                    SlotMatrix[i, j] = null;
+                }
+            }
+
+           
+
             // Linha 1
-            SlotMatrix[0, 0] = Slot1;
-            SlotMatrix[0, 1] = Slot2;
-            SlotMatrix[0, 2] = Slot3;
-            SlotMatrix[0, 3] = Slot4;
-            SlotMatrix[0, 4] = Slot5;
-            SlotMatrix[0, 5] = Slot6;
+           // SlotMatrix[0, 0].Sprite.Source = Slot1.Source;
+            //SlotMatrix[0, 1].Sprite.Source = Slot2.Source;
+            //SlotMatrix[0, 2].Sprite.Source = Slot3.Source;
+            //SlotMatrix[0, 3].Sprite.Source = Slot4.Source;
+            //SlotMatrix[0, 4].Sprite.Source = Slot5.Source;
+            //SlotMatrix[0, 5].Sprite.Source = Slot6.Source;
 
-            // Linha 2
-            SlotMatrix[1, 0] = Slot7;
-            SlotMatrix[1, 1] = Slot8;
-            SlotMatrix[1, 2] = Slot9;
-            SlotMatrix[1, 3] = Slot10;
-            SlotMatrix[1, 4] = Slot11;
-            SlotMatrix[1, 5] = Slot12;
+            //// Linha 2
+            //SlotMatrix[1, 0].Sprite.Source = Slot7.Source;
+            //SlotMatrix[1, 1].Sprite.Source = Slot8.Source;
+            //SlotMatrix[1, 2].Sprite.Source = Slot9.Source;
+            //SlotMatrix[1, 3].Sprite.Source = Slot10.Source;
+            //SlotMatrix[1, 4].Sprite.Source = Slot11.Source;
+            //SlotMatrix[1, 5].Sprite.Source = Slot12.Source;
 
-            // Linha 3
-            SlotMatrix[2, 0] = Slot13;
-            SlotMatrix[2, 1] = Slot14;
-            SlotMatrix[2, 2] = Slot15;
-            SlotMatrix[2, 3] = Slot16;
-            SlotMatrix[2, 4] = Slot17;
-            SlotMatrix[2, 5] = Slot18;
+            //// Linha 3
+            //SlotMatrix[2, 0].Sprite.Source = Slot13.Source;
+            //SlotMatrix[2, 1].Sprite.Source = Slot14.Source;
+            //SlotMatrix[2, 2].Sprite.Source = Slot15.Source;
+            //SlotMatrix[2, 3].Sprite.Source = Slot16.Source;
+            //SlotMatrix[2, 4].Sprite.Source = Slot17.Source;
+            //SlotMatrix[2, 5].Sprite.Source = Slot18.Source;
 
-            // Linha 4
-            SlotMatrix[3, 0] = Slot19;
-            SlotMatrix[3, 1] = Slot20;
-            SlotMatrix[3, 2] = Slot21;
-            SlotMatrix[3, 3] = Slot22;
-            SlotMatrix[3, 4] = Slot23;
-            SlotMatrix[3, 5] = Slot24;
+            //// Linha 4
+            //SlotMatrix[3, 0].Sprite.Source = Slot19.Source;
+            //SlotMatrix[3, 1].Sprite.Source = Slot20.Source;
+            //SlotMatrix[3, 2].Sprite.Source = Slot21.Source;
+            //SlotMatrix[3, 3].Sprite.Source = Slot22.Source;
+            //SlotMatrix[3, 4].Sprite.Source = Slot23.Source;
+            //SlotMatrix[3, 5].Sprite.Source = Slot24.Source;
 
-            // Linha 5
-            SlotMatrix[4, 0] = Slot25;
-            SlotMatrix[4, 1] = Slot26;
-            SlotMatrix[4, 2] = Slot27;
-            SlotMatrix[4, 3] = Slot28;
-            SlotMatrix[4, 4] = Slot29;
-            SlotMatrix[4, 5] = Slot30;
+            //// Linha 5
+            //SlotMatrix[4, 0].Sprite.Source = Slot25.Source;
+            //SlotMatrix[4, 1].Sprite.Source = Slot26.Source;
+            //SlotMatrix[4, 2].Sprite.Source = Slot27.Source;
+            //SlotMatrix[4, 3].Sprite.Source = Slot28.Source;
+            //SlotMatrix[4, 4].Sprite.Source = Slot29.Source;
+            //SlotMatrix[4, 5].Sprite.Source = Slot30.Source;
 
-            // Linha 6
-            SlotMatrix[5, 0] = Slot31;
-            SlotMatrix[5, 1] = Slot32;
-            SlotMatrix[5, 2] = Slot33;
-            SlotMatrix[5, 3] = Slot34;
-            SlotMatrix[5, 4] = Slot35;
-            SlotMatrix[5, 5] = Slot36;
+            //// Linha 6
+            //SlotMatrix[5, 0].Sprite.Source = Slot31.Source;
+            //SlotMatrix[5, 1].Sprite.Source = Slot32.Source;
+            //SlotMatrix[5, 2].Sprite.Source = Slot33.Source;
+            //SlotMatrix[5, 3].Sprite.Source = Slot34.Source;
+            //SlotMatrix[5, 4].Sprite.Source = Slot35.Source;
+            //SlotMatrix[5, 5].Sprite.Source = Slot36.Source;
 
-            // Linha 7
-            SlotMatrix[6, 0] = Slot37;
-            SlotMatrix[6, 1] = Slot38;
-            SlotMatrix[6, 2] = Slot39;
-            SlotMatrix[6, 3] = Slot40;
-            SlotMatrix[6, 4] = Slot41;
-            SlotMatrix[6, 5] = Slot42;
+            //// Linha 7
+            //SlotMatrix[6, 0].Sprite.Source = Slot37.Source;
+            //SlotMatrix[6, 1].Sprite.Source = Slot38.Source;
+            //SlotMatrix[6, 2].Sprite.Source = Slot39.Source;
+            //SlotMatrix[6, 3].Sprite.Source = Slot40.Source;
+            //SlotMatrix[6, 4].Sprite.Source = Slot41.Source;
+            //SlotMatrix[6, 5].Sprite.Source = Slot42.Source;
 
-            // Linha 8
-            SlotMatrix[7, 0] = Slot43;
-            SlotMatrix[7, 1] = Slot44;
-            SlotMatrix[7, 2] = Slot45;
-            SlotMatrix[7, 3] = Slot46;
-            SlotMatrix[7, 4] = Slot47;
-            SlotMatrix[7, 5] = Slot48;
+            //// Linha 8
+            //SlotMatrix[7, 0].Sprite.Source = Slot43.Source;
+            //SlotMatrix[7, 1].Sprite.Source = Slot44.Source;
+            //SlotMatrix[7, 2].Sprite.Source = Slot45.Source;
+            //SlotMatrix[7, 3].Sprite.Source = Slot46.Source;
+            //SlotMatrix[7, 4].Sprite.Source = Slot47.Source;
+            //SlotMatrix[7, 5].Sprite.Source = Slot48.Source;
             
+        }
+
+        private void Tapped(object sender, TappedRoutedEventArgs e) {
+
+            Itens i = sender as Itens;
+
+            if(chosen.Equipar(i)) {
+                Debug.WriteLine("Deu certo");
+            }
+
         }
 
         private void GetItem(int row, int column) {
@@ -989,9 +1009,10 @@ namespace MantaNecromante.GameStage {
 
                 for (int j = 0; j < 6; j++) {
 
-                    if (SlotMatrix[i, j].Source == null) {
+                    if (SlotMatrix[i, j] == null) {
 
-                        SlotMatrix[i, j].Source = found.Sprite.Source;
+                        SlotMatrix[i, j] = found;
+                        Image img = FindName("Slot1") as Image;
                         chosen.Inventario.Add(found);
                         SetItems(); // baús infinitos até acabar o espaço
                         return;
