@@ -70,7 +70,7 @@ namespace MantaNecromante.ClassMenu {
         }
         private void Retornar(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PageStackEntry));
+            this.Frame.Navigate(typeof(Page));
 
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/ClickSound.mp3"));
             song.Play();

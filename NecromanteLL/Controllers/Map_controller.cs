@@ -86,11 +86,14 @@ namespace NecromanteLL {
             Random mob_num;
             mob_num = new Random();
             Mob[] vet = mobs.ToArray();
-            vet[0].Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+            vet[0].Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/GoblinParado.gif"));
+            vet[0].Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/OgroParado.gif"));
 
             //Mobs_do_mapa[pos_x, pos_y] = vet[mob_num.Next(0,12)];
             Mobs_do_mapa[pos_x, pos_y] = vet[0];
-           
+            Mobs_do_mapa[pos_x, pos_y] = vet[3];
+
+
 
         }
 
