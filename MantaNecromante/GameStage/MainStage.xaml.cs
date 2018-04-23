@@ -87,7 +87,8 @@ namespace MantaNecromante.GameStage {
         private static int chestHeight = 48, chestWidth = 80;
         //..................................//
 
-        private Image[,] SlotMatrix = new Image[8, 6]; // Matrix de armazenamento dos slots de item
+        // Matrix de armazenamento dos slots de item
+        private Image[,] ImageMatrix = new Image[8, 6];
         //Timer usado para o movimento:
 
         //para testes:
@@ -107,6 +108,7 @@ namespace MantaNecromante.GameStage {
         private List<Image> MovableProps = new List<Image>();
         //..........................................................//
         private MediaPlayer song = new MediaPlayer();
+
         public MainStage() {
 
             this.InitializeComponent();
@@ -119,7 +121,7 @@ namespace MantaNecromante.GameStage {
             Adjuster.AdjustWindow(Floor);
             Adjuster.adjustForCamera(Mansion, Hero, ref ScreenWidth, ref ScreenHeight, ref Cell_Width, ref Cell_Height, ref topSide, ref botSide, ref leftSide, ref rightSide);
             //....................................................................................................//
-
+            
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Castelo.mp3"));
             song.Play();
 
@@ -916,69 +918,79 @@ namespace MantaNecromante.GameStage {
         private void CreateSlot() {
 
             // Linha 1
-            SlotMatrix[0, 0] = Slot1;
-            SlotMatrix[0, 1] = Slot2;
-            SlotMatrix[0, 2] = Slot3;
-            SlotMatrix[0, 3] = Slot4;
-            SlotMatrix[0, 4] = Slot5;
-            SlotMatrix[0, 5] = Slot6;
+            ImageMatrix[0, 0] = Slot1; ImageMatrix[0, 0].Tapped += TappedImage;
+            ImageMatrix[0, 1] = Slot2;
+            ImageMatrix[0, 2] = Slot3; ImageMatrix[0, 2].Tapped += TappedImage;
+            ImageMatrix[0, 3] = Slot4;
+            ImageMatrix[0, 4] = Slot5;
+            ImageMatrix[0, 5] = Slot6;
 
             // Linha 2
-            SlotMatrix[1, 0] = Slot7;
-            SlotMatrix[1, 1] = Slot8;
-            SlotMatrix[1, 2] = Slot9;
-            SlotMatrix[1, 3] = Slot10;
-            SlotMatrix[1, 4] = Slot11;
-            SlotMatrix[1, 5] = Slot12;
+            ImageMatrix[1, 0] = Slot7;
+            ImageMatrix[1, 1] = Slot8;
+            ImageMatrix[1, 2] = Slot9;
+            ImageMatrix[1, 3] = Slot10;
+            ImageMatrix[1, 4] = Slot11;
+            ImageMatrix[1, 5] = Slot12;
 
             // Linha 3
-            SlotMatrix[2, 0] = Slot13;
-            SlotMatrix[2, 1] = Slot14;
-            SlotMatrix[2, 2] = Slot15;
-            SlotMatrix[2, 3] = Slot16;
-            SlotMatrix[2, 4] = Slot17;
-            SlotMatrix[2, 5] = Slot18;
+            ImageMatrix[2, 0] = Slot13;
+            ImageMatrix[2, 1] = Slot14;
+            ImageMatrix[2, 2] = Slot15;
+            ImageMatrix[2, 3] = Slot16;
+            ImageMatrix[2, 4] = Slot17;
+            ImageMatrix[2, 5] = Slot18;
 
             // Linha 4
-            SlotMatrix[3, 0] = Slot19;
-            SlotMatrix[3, 1] = Slot20;
-            SlotMatrix[3, 2] = Slot21;
-            SlotMatrix[3, 3] = Slot22;
-            SlotMatrix[3, 4] = Slot23;
-            SlotMatrix[3, 5] = Slot24;
+            ImageMatrix[3, 0] = Slot19;
+            ImageMatrix[3, 1] = Slot20;
+            ImageMatrix[3, 2] = Slot21;
+            ImageMatrix[3, 3] = Slot22;
+            ImageMatrix[3, 4] = Slot23;
+            ImageMatrix[3, 5] = Slot24;
 
             // Linha 5
-            SlotMatrix[4, 0] = Slot25;
-            SlotMatrix[4, 1] = Slot26;
-            SlotMatrix[4, 2] = Slot27;
-            SlotMatrix[4, 3] = Slot28;
-            SlotMatrix[4, 4] = Slot29;
-            SlotMatrix[4, 5] = Slot30;
+            ImageMatrix[4, 0] = Slot25;
+            ImageMatrix[4, 1] = Slot26;
+            ImageMatrix[4, 2] = Slot27;
+            ImageMatrix[4, 3] = Slot28;
+            ImageMatrix[4, 4] = Slot29;
+            ImageMatrix[4, 5] = Slot30;
 
             // Linha 6
-            SlotMatrix[5, 0] = Slot31;
-            SlotMatrix[5, 1] = Slot32;
-            SlotMatrix[5, 2] = Slot33;
-            SlotMatrix[5, 3] = Slot34;
-            SlotMatrix[5, 4] = Slot35;
-            SlotMatrix[5, 5] = Slot36;
+            ImageMatrix[5, 0] = Slot31;
+            ImageMatrix[5, 1] = Slot32;
+            ImageMatrix[5, 2] = Slot33;
+            ImageMatrix[5, 3] = Slot34;
+            ImageMatrix[5, 4] = Slot35;
+            ImageMatrix[5, 5] = Slot36;
 
             // Linha 7
-            SlotMatrix[6, 0] = Slot37;
-            SlotMatrix[6, 1] = Slot38;
-            SlotMatrix[6, 2] = Slot39;
-            SlotMatrix[6, 3] = Slot40;
-            SlotMatrix[6, 4] = Slot41;
-            SlotMatrix[6, 5] = Slot42;
+            ImageMatrix[6, 0] = Slot37;
+            ImageMatrix[6, 1] = Slot38;
+            ImageMatrix[6, 2] = Slot39;
+            ImageMatrix[6, 3] = Slot40;
+            ImageMatrix[6, 4] = Slot41;
+            ImageMatrix[6, 5] = Slot42;
 
             // Linha 8
-            SlotMatrix[7, 0] = Slot43;
-            SlotMatrix[7, 1] = Slot44;
-            SlotMatrix[7, 2] = Slot45;
-            SlotMatrix[7, 3] = Slot46;
-            SlotMatrix[7, 4] = Slot47;
-            SlotMatrix[7, 5] = Slot48;
+            ImageMatrix[7, 0] = Slot43;
+            ImageMatrix[7, 1] = Slot44;
+            ImageMatrix[7, 2] = Slot45;
+            ImageMatrix[7, 3] = Slot46;
+            ImageMatrix[7, 4] = Slot47;
+            ImageMatrix[7, 5] = Slot48;
             
+        }
+
+        private void TappedImage(object sender, TappedRoutedEventArgs e) {
+
+            Image i = sender as Image;
+            int coordImg = Convert.ToInt16(i.Name.Replace("Slot", ""));
+            
+            
+            
+
         }
 
         private void GetItem(int row, int column) {
@@ -989,10 +1001,10 @@ namespace MantaNecromante.GameStage {
 
                 for (int j = 0; j < 6; j++) {
 
-                    if (SlotMatrix[i, j].Source == null) {
+                    if (ImageMatrix[i, j].Source == null) {
 
-                        SlotMatrix[i, j].Source = found.Sprite.Source;
-                        chosen.Inventario.Add(found);
+                        ImageMatrix[i, j].Source = found.Sprite.Source; 
+                        chosen.Inventario.Add(controller.FindIten(i,j));
                         SetItems(); // baús infinitos até acabar o espaço
                         return;
                     }
@@ -1012,9 +1024,6 @@ namespace MantaNecromante.GameStage {
             controller.setMob(row, column);
 
             foe = controller.FindMob(row, column);
-
-            foe.Sprite.Height = Hero.Height * 4 / 3;
-            foe.Sprite.Width = Hero.Width * 4 / 3;
 
             Floor.Children.Add(foe.Sprite);
 
