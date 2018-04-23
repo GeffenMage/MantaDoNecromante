@@ -13,6 +13,7 @@ GameAssets\Buttons\idle_button.png
 GameAssets\Characters\enemies\exqueleton\attack.gif
 GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif
 GameAssets\Characters\exhibit\knight_idle.gif
+GameAssets\Characters\exhibit\knight_idle2.gif
 GameAssets\Characters\heroes\knight\idleLeft.gif
 GameAssets\Characters\heroes\knight\idleRight.gif
 GameAssets\Characters\heroes\knight\walkLeft.gif
@@ -50,6 +51,7 @@ GameAssets\Characters\itens\v2\Axe 5.png
 GameAssets\Characters\itens\v2\Axe 6.png
 GameAssets\Characters\itens\v2\Axe 7.png
 GameAssets\Characters\itens\v2\Axe 8.png
+GameAssets\Characters\itens\v2\pant_t.png
 GameAssets\Characters\itens\v2\Potion 1.png
 GameAssets\Characters\itens\v2\Potion 2.png
 GameAssets\Characters\itens\v2\Potion 3.png
@@ -77,6 +79,24 @@ GameAssets\Menu\mainTitle.png
 GameAssets\Menu\nudePanel.png
 GameAssets\Menu\optionMenu.png
 GameAssets\Menu\panel.png
+GameAssets\Menu\Sprites\GoblinAtaque.gif
+GameAssets\Menu\Sprites\GoblinMorte.gif
+GameAssets\Menu\Sprites\GoblinParado.gif
+GameAssets\Menu\Sprites\MagoAndar.gif
+GameAssets\Menu\Sprites\MagoAtaque.gif
+GameAssets\Menu\Sprites\MagoMorre.gif
+GameAssets\Menu\Sprites\MagoParado.gif
+GameAssets\Menu\Sprites\MagoParadoRight.gif
+GameAssets\Menu\Sprites\OgroAtaque.gif
+GameAssets\Menu\Sprites\OgroMorte.gif
+GameAssets\Menu\Sprites\OgroParado.gif
+GameAssets\Menu\Sprites\RogueAndar.gif
+GameAssets\Menu\Sprites\RogueAtaque.gif
+GameAssets\Menu\Sprites\RogueParada.gif
+GameAssets\Menu\Sprites\RogueParadaLeft.gif
+GameAssets\Menu\Sprites\SkeletonAtaque.gif
+GameAssets\Menu\Sprites\SkeletonMorre.gif
+GameAssets\Menu\Sprites\SkeletonParado.gif
 GameAssets\Songs\Battle.mp3
 GameAssets\Songs\Bau.mp3
 GameAssets\Songs\Castelo.mp3

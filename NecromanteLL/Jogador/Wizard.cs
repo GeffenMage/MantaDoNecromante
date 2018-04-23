@@ -20,10 +20,10 @@ namespace NecromanteLL {
             Nome_classe = "Wizard";
             //Inicializa os sprites do personagem
             
-            //Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
-            //Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleLeft.gif"));
-            //Sprite_walking_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkLeft.gif"));
-            //Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkRight.gif"));
+            Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/MagoParado.gif"));
+            Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/MagoparadoRight.gif"));
+            Sprite_walking_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/MagoAndar.gif"));
+            Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/MagoAndar.gif"));
             
             //Cria e inicializa as skills da classe do personagem
             Skills = new List<Skill>();

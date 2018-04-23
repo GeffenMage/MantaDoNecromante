@@ -21,7 +21,7 @@ namespace NecromanteLL {
                     Base_def = 20; Base_dmg = 50;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
-                    Sprite.Source= new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite.Source= new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/GoblinParado.gif"));
                     
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall I", 0, 20, 1, 0, 0, 0, 0, 30));
@@ -36,7 +36,7 @@ namespace NecromanteLL {
                     Given_xp = 300; Lvl = 10;
                     Base_def = 30; Base_dmg = 70;
                     Sprite = new Image();
-                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/GoblinParado.gif"));
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall II", 0, 20, 1, 0, 0, 0, 0, 50));
@@ -52,7 +52,7 @@ namespace NecromanteLL {
                     Base_def = 40; Base_dmg = 90;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
-                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/GoblinParado.gif"));
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall III", 0, 20, 1, 0, 0, 0, 0, 70));

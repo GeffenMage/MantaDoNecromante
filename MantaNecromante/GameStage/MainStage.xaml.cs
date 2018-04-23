@@ -121,7 +121,7 @@ namespace MantaNecromante.GameStage {
             Adjuster.AdjustWindow(Floor);
             Adjuster.adjustForCamera(Mansion, Hero, ref ScreenWidth, ref ScreenHeight, ref Cell_Width, ref Cell_Height, ref topSide, ref botSide, ref leftSide, ref rightSide);
             //....................................................................................................//
-
+            
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Castelo.mp3"));
             song.Play();
 
