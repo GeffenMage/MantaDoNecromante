@@ -53,6 +53,7 @@ namespace NecromanteLL {
         public BitmapImage Sprite_walking_left { get => sprite_walking_left; set => sprite_walking_left = value; }
         public BitmapImage Sprite_walking_right { get => sprite_walking_right; set => sprite_walking_right = value; }
 
+ 
         //Implementar interface gráfica de movimento para o personagem
         public bool IsLvUP() {
             if (Xp_atual >= Xp_total) {

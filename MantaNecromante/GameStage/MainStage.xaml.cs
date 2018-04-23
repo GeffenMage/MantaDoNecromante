@@ -918,9 +918,9 @@ namespace MantaNecromante.GameStage {
         private void CreateSlot() {
 
             // Linha 1
-            ImageMatrix[0, 0] = Slot1;
+            ImageMatrix[0, 0] = Slot1; ImageMatrix[0, 0].Tapped += TappedImage;
             ImageMatrix[0, 1] = Slot2;
-            ImageMatrix[0, 2] = Slot3;
+            ImageMatrix[0, 2] = Slot3; ImageMatrix[0, 2].Tapped += TappedImage;
             ImageMatrix[0, 3] = Slot4;
             ImageMatrix[0, 4] = Slot5;
             ImageMatrix[0, 5] = Slot6;
@@ -986,8 +986,8 @@ namespace MantaNecromante.GameStage {
         private void TappedImage(object sender, TappedRoutedEventArgs e) {
 
             Image i = sender as Image;
-            string[] coordImg = i.Name.Replace("Slot", "").Split('_');
-
+            int coordImg = Convert.ToInt16(i.Name.Replace("Slot", ""));
+            
             
             
 
@@ -1001,9 +1001,9 @@ namespace MantaNecromante.GameStage {
 
                 for (int j = 0; j < 6; j++) {
 
-                    if (ImageMatrix[i, j] == null) {
+                    if (ImageMatrix[i, j].Source == null) {
 
-                        found.Sprite.Source = ImageMatrix[i, j].Source;
+                        ImageMatrix[i, j].Source = found.Sprite.Source; 
                         chosen.Inventario.Add(controller.FindIten(i,j));
                         SetItems(); // baús infinitos até acabar o espaço
                         return;
@@ -1024,9 +1024,6 @@ namespace MantaNecromante.GameStage {
             controller.setMob(row, column);
 
             foe = controller.FindMob(row, column);
-
-            foe.Sprite.Height = Hero.Height * 4 / 3;
-            foe.Sprite.Width = Hero.Width * 4 / 3;
 
             Floor.Children.Add(foe.Sprite);
 

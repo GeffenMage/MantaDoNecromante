@@ -20,8 +20,11 @@ namespace NecromanteLL {
                     Given_xp = 100; Lvl = 5;
                     Base_def = 20; Base_dmg = 50;
                     //Inicializa os sprites do inimigo
+                   
                     Sprite = new Image();
-                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite.Height = 118 * 4 / 3;
+                    Sprite.Width = 54 * 4 / 3;
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
                     break;
                 case 2:
                     Nome = "Laposo World";
@@ -31,7 +34,10 @@ namespace NecromanteLL {
                     Base_def = 30; Base_dmg = 70;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
-                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite.Height = 118 * 4 / 3;
+                    Sprite.Width = 54 * 4/ 3;
+
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
                     break;
                 case 3:
                     Nome = "Laposo HelloWorld";
@@ -41,7 +47,10 @@ namespace NecromanteLL {
                     Base_def = 40; Base_dmg = 90;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
-                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite.Height = 118 * 4 / 3;
+                    Sprite.Width = 54 * 4 / 3;
+
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
                     break;
             }
 

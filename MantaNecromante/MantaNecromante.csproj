@@ -211,7 +211,7 @@
     <Content Include="GameAssets\Menu\panel.png" />
     <Content Include="GameAssets\Menu\Sprites\GoblinAtaque.gif" />
     <Content Include="GameAssets\Menu\Sprites\GoblinMorte.gif" />
-    <Content Include="GameAssets\Menu\Sprites\GoblinParado.gif" />
+    <Content Include="GameAssets\Menu\Sprites\GoblinParado1.gif" />
     <Content Include="GameAssets\Menu\Sprites\MagoAndar.gif" />
     <Content Include="GameAssets\Menu\Sprites\MagoAtaque.gif" />
     <Content Include="GameAssets\Menu\Sprites\MagoMorre.gif" />

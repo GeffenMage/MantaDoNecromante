@@ -718,8 +718,8 @@
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\GoblinMorte.gif">
       <PackagePath>GameAssets\Menu\Sprites\GoblinMorte.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\GoblinParado.gif">
-      <PackagePath>GameAssets\Menu\Sprites\GoblinParado.gif</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\GoblinParado1.gif">
+      <PackagePath>GameAssets\Menu\Sprites\GoblinParado1.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\MagoAndar.gif">
       <PackagePath>GameAssets\Menu\Sprites\MagoAndar.gif</PackagePath>
@@ -744,6 +744,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\OgroParado.gif">
       <PackagePath>GameAssets\Menu\Sprites\OgroParado.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\OgroParado1.gif">
+      <PackagePath>GameAssets\Menu\Sprites\OgroParado1.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\RogueAndar.gif">
       <PackagePath>GameAssets\Menu\Sprites\RogueAndar.gif</PackagePath>
