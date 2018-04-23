@@ -87,7 +87,7 @@ namespace MantaNecromante.GameStage {
         private static int chestHeight = 48, chestWidth = 80;
         //..................................//
 
-        private Itens[,] SlotMatrix = new Itens[8, 6]; // Matrix de armazenamento dos slots de item
+        // Matrix de armazenamento dos slots de item
         private Image[,] ImageMatrix = new Image[8, 6];
         //Timer usado para o movimento:
 
@@ -108,6 +108,7 @@ namespace MantaNecromante.GameStage {
         private List<Image> MovableProps = new List<Image>();
         //..........................................................//
         private MediaPlayer song = new MediaPlayer();
+
         public MainStage() {
 
             this.InitializeComponent();
@@ -982,12 +983,12 @@ namespace MantaNecromante.GameStage {
             
         }
 
-        private void Tapped(object sender, TappedRoutedEventArgs e) {
+        private void TappedImage(object sender, TappedRoutedEventArgs e) {
 
             Image i = sender as Image;
             string[] coordImg = i.Name.Replace("Slot", "").Split('_');
 
-                    
+            
             
 
         }
@@ -1002,7 +1003,6 @@ namespace MantaNecromante.GameStage {
 
                     if (ImageMatrix[i, j] == null) {
 
-                        SlotMatrix[i, j] = found;
                         found.Sprite.Source = ImageMatrix[i, j].Source;
                         chosen.Inventario.Add(controller.FindIten(i,j));
                         SetItems(); // baús infinitos até acabar o espaço
