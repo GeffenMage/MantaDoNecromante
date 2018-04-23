@@ -21,7 +21,7 @@ namespace NecromanteLL {
                     Base_def = 60; Base_dmg = 110;
                     //Inicializa os sprites do inimigo
 
-                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/OgroParado.gif"));
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/OgroParado1.gif"));
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Blast I", 30, 0, 1, 0, 0, 0, 0, 200));

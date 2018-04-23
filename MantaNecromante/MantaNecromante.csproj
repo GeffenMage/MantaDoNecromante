@@ -220,6 +220,7 @@
     <Content Include="GameAssets\Menu\Sprites\OgroAtaque.gif" />
     <Content Include="GameAssets\Menu\Sprites\OgroMorte.gif" />
     <Content Include="GameAssets\Menu\Sprites\OgroParado.gif" />
+    <Content Include="GameAssets\Menu\Sprites\OgroParado1.gif" />
     <Content Include="GameAssets\Menu\Sprites\RogueAndar.gif" />
     <Content Include="GameAssets\Menu\Sprites\RogueAtaque.gif" />
     <Content Include="GameAssets\Menu\Sprites\RogueParada.gif" />
