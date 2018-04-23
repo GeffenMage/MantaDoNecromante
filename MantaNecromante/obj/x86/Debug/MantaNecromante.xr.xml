@@ -32,13 +32,20 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Stretch" />
-      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Children" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Background" />
@@ -55,6 +62,9 @@
       <RootProperty Name="Name" />
       <RootProperty Name="Opacity" />
       <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="ScaleX" />
     </RootType>
     <RootType FullName="MantaNecromante.ClassMenu.ClassMenu" />
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">

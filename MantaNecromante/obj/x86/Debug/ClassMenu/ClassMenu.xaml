@@ -10,26 +10,49 @@
     <Canvas x:ConnectionId='2' Name="Floor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1440" Height="900">
         <Image x:ConnectionId='3' Name ="Fall" Source="ms-appx:///GameAssets/Menu/main_background.gif" HorizontalAlignment="Left" VerticalAlignment="Top" Height="900" Width="1440" Stretch="UniformToFill"/>
         <Grid Height="50" Canvas.Left="122.5" Canvas.Top="700" Width="235">
-            <Image Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button x:ConnectionId='7' Background="Transparent" BorderThickness="0" x:Name="Start"                 Content="Gladiador" Height="40" Width="183" FontSize="25" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="71*"/>
+                <ColumnDefinition Width="47*"/>
+            </Grid.ColumnDefinitions>
+            <Image Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png" Margin="-113,-57,-122,57" Grid.ColumnSpan="2"/>
+            <Button x:ConnectionId='8' Background="Transparent" BorderThickness="0" x:Name="Start"                           Content="Gladiador" Height="46" Width="183" FontSize="25" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-88,-55,-95,59" Grid.ColumnSpan="2"/>
         </Grid>
-        <Grid Height="50" Canvas.Left="1082.5" Canvas.Top="700" Width="235">
-            <Image  Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button x:ConnectionId='6' Background="Transparent" BorderThickness="0" x:Name="Exit" Content="" Height="40" Width="183" FontSize="30" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"/>
+        <Grid Height="50" Canvas.Left="1083" Canvas.Top="700" Width="235">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="169*"/>
+                <ColumnDefinition Width="66*"/>
+            </Grid.ColumnDefinitions>
+            <Image  Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png" Margin="10,-51,-10,51" Grid.ColumnSpan="2"/>
+            <Button x:ConnectionId='7' Background="Transparent" BorderThickness="0" x:Name="Exit" Content="Mago"                     Height="40" Width="188" FontSize="25" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-84,-49,-104,59" Grid.ColumnSpan="2"/>
         </Grid>
-        <Image x:ConnectionId='4' Name="Title" Height="101" Canvas.Left="40" Canvas.Top="100" Width="1360" Source="ms-appx:///GameAssets/Menu/chooseClassTitle.png"/>
+        <Image x:ConnectionId='4' Name="Title" Height="101" Canvas.Left="38" Canvas.Top="72" Width="1360" Source="ms-appx:///GameAssets/Menu/chooseClassTitle.png"/>
         <Grid Height="50" Canvas.Left="602.5" Canvas.Top="700" Width="235">
-            <Image  Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button x:ConnectionId='5' Background="Transparent" BorderThickness="0" x:Name="Exit1" Content="Mago" Height="40" Width="183" FontSize="30" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="97*"/>
+                <ColumnDefinition Width="21*"/>
+            </Grid.ColumnDefinitions>
+            <Image  Height="50" Width="235" Source="ms-appx:///GameAssets/Buttons/idle_button.png" Margin="-109,-52,-126,52" Grid.ColumnSpan="2"/>
+            <Button x:ConnectionId='5' Background="Transparent" BorderThickness="0" x:Name="Exit1" Content="Ladina"                       Height="40" Width="188" FontSize="25" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-84,-49,-104,59" Grid.ColumnSpan="2"/>
+
+
+            <Image Source="ms-appx:///GameAssets/Buttons/idle_button.png" Margin="356,103,-784,-86" Canvas.Left="1106" Canvas.Top="789" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+                <Image.RenderTransform>
+                    <CompositeTransform ScaleX="-1"/>
+                </Image.RenderTransform>
+            </Image>
+            <Button x:ConnectionId='6' Background="Transparent" BorderThickness="0" x:Name="voltar"                  Content="Retornar" Height="33" Width="115" FontSize="21" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="511,103,-626,-86" Grid.ColumnSpan="2" Canvas.Left="1134" Canvas.Top="791"/>
         </Grid>
-        <Image Stretch="Fill" Height="365" Canvas.Left="122.5" Canvas.Top="295" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
-        <Image Stretch="UniformToFill" Height="309" Canvas.Left="130" Canvas.Top="340" Width="220" Source="ms-appx:///GameAssets/Characters/exhibit/knight_idle.gif"/>
+        <Image Stretch="Fill" Height="365" Canvas.Left="121" Canvas.Top="229" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
+        <Image Stretch="UniformToFill" Height="309" Canvas.Left="128" Canvas.Top="270" Width="220" Source="ms-appx:///GameAssets/Characters/exhibit/knight_idle2.gif"/>
 
-        <Image Stretch="Fill"  Height="365" Canvas.Left="602.5" Canvas.Top="295" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
-        <Image Stretch="Fill" Height="365" Canvas.Left="1082.5" Canvas.Top="295" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
+        <Image Stretch="Fill" Height="365" Canvas.Left="608" Canvas.Top="229" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
+        <Image Stretch="UniformtoFill"  Height="365" Canvas.Left="623" Canvas.Top="259" Width="235" Source="ms-appx:///GameAssets/Menu/Sprites/RogueParada.gif"/>
 
+        <Image Stretch="Fill" Height="365" Canvas.Left="1083" Canvas.Top="229" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
+        <Image Stretch="UniformToFill" Height="365" Canvas.Left="1069" Canvas.Top="254" Width="290" Source="ms-appx:///GameAssets/Menu/Sprites/MagoParado.gif"/>
 
 
     </Canvas>
+
 </Page>
 
