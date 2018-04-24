@@ -20,6 +20,9 @@ namespace NecromanteLL {
             Nome_classe = "Rogue";
             //Inicializa os sprites do personagem
 
+           
+            
+
             Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/RogueParada.gif"));
             Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/RogueParadaLeft.gif"));
             Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/RogueAndar.gif"));

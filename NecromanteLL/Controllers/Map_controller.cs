@@ -67,7 +67,7 @@ namespace NecromanteLL {
             Itens[] vet = itens.ToArray();
             //vet[0].Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Maps/chest_idle.png"));
            
-            itens_do_mapa[pos_x, pos_y] = vet[item_num.Next(0,1)];
+            itens_do_mapa[pos_x, pos_y] = vet[item_num.Next(0,20)];
             //itens_do_mapa[pos_x, pos_y] = vet[0];
 
         }
@@ -86,12 +86,10 @@ namespace NecromanteLL {
             Random mob_num;
             mob_num = new Random();
             Mob[] vet = mobs.ToArray();
-            vet[0].Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/GoblinParado.gif"));
-            vet[0].Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/OgroParado.gif"));
 
-            //Mobs_do_mapa[pos_x, pos_y] = vet[mob_num.Next(0,12)];
-            Mobs_do_mapa[pos_x, pos_y] = vet[0];
-            Mobs_do_mapa[pos_x, pos_y] = vet[3];
+            Mobs_do_mapa[pos_x, pos_y] = vet[mob_num.Next(0,12)];
+            //Mobs_do_mapa[pos_x, pos_y] = vet[0];
+            
 
 
 

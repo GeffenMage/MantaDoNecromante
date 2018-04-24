@@ -81,7 +81,7 @@ GameAssets\Menu\optionMenu.png
 GameAssets\Menu\panel.png
 GameAssets\Menu\Sprites\GoblinAtaque.gif
 GameAssets\Menu\Sprites\GoblinMorte.gif
-GameAssets\Menu\Sprites\GoblinParado.gif
+GameAssets\Menu\Sprites\GoblinParado1.gif
 GameAssets\Menu\Sprites\MagoAndar.gif
 GameAssets\Menu\Sprites\MagoAtaque.gif
 GameAssets\Menu\Sprites\MagoMorre.gif
@@ -90,6 +90,7 @@ GameAssets\Menu\Sprites\MagoParadoRight.gif
 GameAssets\Menu\Sprites\OgroAtaque.gif
 GameAssets\Menu\Sprites\OgroMorte.gif
 GameAssets\Menu\Sprites\OgroParado.gif
+GameAssets\Menu\Sprites\OgroParado1.gif
 GameAssets\Menu\Sprites\RogueAndar.gif
 GameAssets\Menu\Sprites\RogueAtaque.gif
 GameAssets\Menu\Sprites\RogueParada.gif
