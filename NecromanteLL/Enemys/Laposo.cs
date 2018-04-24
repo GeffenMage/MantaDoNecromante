@@ -25,6 +25,9 @@ namespace NecromanteLL {
                     Sprite.Height = 118 * 4 / 3;
                     Sprite.Width = 54 * 4 / 3;
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+
+                    Skills.Add(new Skill("Teste", 10, 0, 0, 0, 0, 0, 0, 10));
+
                     break;
                 case 2:
                     Nome = "Laposo World";
@@ -38,6 +41,8 @@ namespace NecromanteLL {
                     Sprite.Width = 54 * 4/ 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+
+                    Skills.Add(new Skill("Teste", 10, 0, 0, 0, 0, 0, 0, 10));
                     break;
                 case 3:
                     Nome = "Laposo HelloWorld";
@@ -51,6 +56,8 @@ namespace NecromanteLL {
                     Sprite.Width = 54 * 4 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+
+                    Skills.Add(new Skill("Teste", 10, 0, 0, 0, 0, 0, 0, 10));
                     break;
             }
 

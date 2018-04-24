@@ -33,14 +33,9 @@ namespace MantaNecromante.MainBattle {
         private MediaPlayer song = new MediaPlayer();
 
         public BattleStage() {
-
+            
             this.InitializeComponent();
             Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;
-            battleController.PlayerTurn += TurnChangeToPlayer;
-            battleController.EnemyTurn += TurnChangeToEnemy;
-            battleController.PlayerDeath += PlayerIsDead;
-            battleController.EnemyDeath += EnemyIsDead;
-            battleController.PlayerHasNoMana += NoManaAvalible;
             Adjuster.AdjustWindow(Floor);
             SetAllMenusReady();
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Battle.mp3"));
@@ -143,6 +138,11 @@ namespace MantaNecromante.MainBattle {
             this.KeyDown += BattleStage_KeyDown;
             Hero.Source = battleController.Jogador.Sprite_idle_right;
             Foe.Source = battleController.Inimigo.Sprite.Source;
+            battleController.PlayerTurn += TurnChangeToPlayer;
+            battleController.EnemyTurn += TurnChangeToEnemy;
+            battleController.PlayerDeath += PlayerIsDead;
+            battleController.EnemyDeath += EnemyIsDead;
+            battleController.PlayerHasNoMana += NoManaAvalible;
         }
 
         private void Menu_Click(object sender, RoutedEventArgs e) {
