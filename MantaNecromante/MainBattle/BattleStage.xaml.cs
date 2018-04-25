@@ -42,6 +42,9 @@ namespace MantaNecromante.MainBattle {
             song.Play();
 
         }
+
+        
+
         
 
 
@@ -80,6 +83,28 @@ namespace MantaNecromante.MainBattle {
         /// </summary>
         public void TurnChangeToEnemy() {
 
+        }
+
+        public void Progress_Bar() {
+            // Progess bar dinamica para o Hp do jogador
+            Progress_HP_chosen.Minimum = 0;
+            Progress_HP_chosen.Maximum = battleController.Jogador.Hp_total;
+            Progress_HP_chosen.Value = battleController.Jogador.Hp_atual;
+
+            // Progess bar dinamica para o Mp do jogador
+            Progress_MP_chosen.Minimum = 0;
+            Progress_MP_chosen.Maximum = battleController.Jogador.Mp_total;
+            Progress_MP_chosen.Value = battleController.Jogador.Mp_atual;
+
+            // Progess bar dinamica para o Mp do Mob
+            Progress_HP_Mob.Minimum = 0;
+            Progress_HP_Mob.Maximum = battleController.Inimigo.Hp_total;
+            Progress_HP_Mob.Value = battleController.Inimigo.Hp_atual;
+
+            // Progess bar dinamica para o Mp do Mob
+            Progress_MP_Mob.Minimum = 0;
+            Progress_MP_Mob.Maximum = battleController.Inimigo.Mp_total;
+            Progress_MP_Mob.Value = battleController.Inimigo.Mp_atual;
         }
 
         private void CoreWindow_KeyDown(CoreWindow sender, KeyEventArgs args) {
@@ -159,10 +184,21 @@ namespace MantaNecromante.MainBattle {
                 isOptionsMenuOpen ^= false;
             
         }
-        private void Voltar(Object sender,RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(BattleStage), battleController);
+
+        private void BotaoAtacar(object sender, RoutedEventArgs e) {
+
+            battleController.Atacar();
+            Progress_Bar();
         }
 
+        private void BotaoSkill(object sender, RoutedEventArgs e) {
+
+            Button b = sender as Button;
+
+            int Skill = Convert.ToInt16(b.Name.Replace("Skill", ""));
+
+            battleController.CastSkill(battleController.Jogador.Skills[Skill]);
+            Progress_Bar();
+        }
     }
 }
