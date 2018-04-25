@@ -46,10 +46,10 @@
         <Image Stretch="UniformToFill" Height="309" Canvas.Left="128" Canvas.Top="270" Width="220" Source="ms-appx:///GameAssets/Characters/exhibit/knight_idle2.gif"/>
 
         <Image Stretch="Fill" Height="365" Canvas.Left="608" Canvas.Top="229" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
-        <Image Stretch="UniformtoFill"  Height="365" Canvas.Left="623" Canvas.Top="259" Width="235" Source="ms-appx:///GameAssets/Menu/Sprites/RogueParada.gif"/>
+        <Image Stretch="UniformtoFill"  Height="356" Canvas.Left="617" Canvas.Top="268" Width="217" Source="ms-appx:///GameAssets/Characters/heroes/rogue/RogueParadaLeft.gif"/>
 
         <Image Stretch="Fill" Height="365" Canvas.Left="1083" Canvas.Top="229" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
-        <Image Stretch="UniformToFill" Height="365" Canvas.Left="1069" Canvas.Top="254" Width="290" Source="ms-appx:///GameAssets/Menu/Sprites/MagoParado.gif"/>
+        <Image Stretch="UniformToFill" Height="377" Canvas.Left="1084" Canvas.Top="251" Width="260" Source="ms-appx:///GameAssets/Characters/heroes/mage/MagoParadoLeft.gif"/>
 
 
     </Canvas>

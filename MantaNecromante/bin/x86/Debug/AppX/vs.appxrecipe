@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-25T02:15:04.183</Modified>
+      <Modified>2018-04-25T14:45:22.442</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x86\Debug\MantaNecromante.exe">
       <PackagePath>entrypoint\MantaNecromante.exe</PackagePath>
-      <Modified>2018-04-25T02:15:03.042</Modified>
+      <Modified>2018-04-25T14:45:21.787</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -497,7 +497,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\NecromanteLL\bin\x86\Debug\NecromanteLL.dll">
       <PackagePath>NecromanteLL.dll</PackagePath>
-      <Modified>2018-04-25T02:12:45.379</Modified>
+      <Modified>2018-04-25T14:42:48.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\dots.png">
       <PackagePath>Assets\dots.png</PackagePath>
@@ -598,6 +598,10 @@
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\pant.png">
       <PackagePath>GameAssets\Characters\itens\pant.png</PackagePath>
       <Modified>2018-04-20T03:24:09.479</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\pant_t.png">
+      <PackagePath>GameAssets\Characters\itens\pant_t.png</PackagePath>
+      <Modified>2018-04-25T14:03:34.845</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Armor 1.png">
       <PackagePath>GameAssets\Characters\itens\v2\Armor 1.png</PackagePath>
@@ -917,6 +921,46 @@
       <PackagePath>GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif</PackagePath>
       <Modified>2018-04-20T03:24:09.334</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinAtaque.gif">
+      <PackagePath>GameAssets\Characters\enemies\goblin\GoblinAtaque.gif</PackagePath>
+      <Modified>2018-04-25T13:34:05.417</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinAtaqueLeft.gif">
+      <PackagePath>GameAssets\Characters\enemies\goblin\GoblinAtaqueLeft.gif</PackagePath>
+      <Modified>2018-04-25T13:54:28.628</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinMorte.gif">
+      <PackagePath>GameAssets\Characters\enemies\goblin\GoblinMorte.gif</PackagePath>
+      <Modified>2018-04-25T13:34:05.417</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinMorteLeft.gif">
+      <PackagePath>GameAssets\Characters\enemies\goblin\GoblinMorteLeft.gif</PackagePath>
+      <Modified>2018-04-25T13:54:28.628</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinParado.gif">
+      <PackagePath>GameAssets\Characters\enemies\goblin\GoblinParado.gif</PackagePath>
+      <Modified>2018-04-25T13:34:05.417</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinParadoLeft.gif">
+      <PackagePath>GameAssets\Characters\enemies\goblin\GoblinParadoLeft.gif</PackagePath>
+      <Modified>2018-04-25T13:54:28.628</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroAtaque.gif">
+      <PackagePath>GameAssets\Characters\enemies\ogro\OgroAtaque.gif</PackagePath>
+      <Modified>2018-04-25T13:34:18.530</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroMorte.gif">
+      <PackagePath>GameAssets\Characters\enemies\ogro\OgroMorte.gif</PackagePath>
+      <Modified>2018-04-25T13:34:18.537</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroParado.gif">
+      <PackagePath>GameAssets\Characters\enemies\ogro\OgroParado.gif</PackagePath>
+      <Modified>2018-04-25T13:34:18.539</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroParado1.gif">
+      <PackagePath>GameAssets\Characters\enemies\ogro\OgroParado1.gif</PackagePath>
+      <Modified>2018-04-25T13:34:18.530</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\knight_idle.gif">
       <PackagePath>GameAssets\Characters\exhibit\knight_idle.gif</PackagePath>
       <Modified>2018-04-20T03:24:09.337</Modified>
@@ -941,6 +985,54 @@
       <PackagePath>GameAssets\Characters\heroes\knight\walkRight.gif</PackagePath>
       <Modified>2018-04-20T03:24:09.430</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAndarLeft.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoAndarLeft.gif</PackagePath>
+      <Modified>2018-04-25T13:32:33.618</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAndarRight.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoAndarRight.gif</PackagePath>
+      <Modified>2018-04-25T13:32:33.602</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAtaque.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoAtaque.gif</PackagePath>
+      <Modified>2018-04-25T13:32:33.602</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoMorre.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoMorre.gif</PackagePath>
+      <Modified>2018-04-25T13:32:33.602</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoParado.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoParado.gif</PackagePath>
+      <Modified>2018-04-25T13:32:33.602</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoParadoLeft.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoParadoLeft.gif</PackagePath>
+      <Modified>2018-04-25T13:51:26.617</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoParadoRight.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoParadoRight.gif</PackagePath>
+      <Modified>2018-04-25T13:32:33.618</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueAndarLeft.gif">
+      <PackagePath>GameAssets\Characters\heroes\rogue\RogueAndarLeft.gif</PackagePath>
+      <Modified>2018-04-25T13:33:06.159</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueAndarRight.gif">
+      <PackagePath>GameAssets\Characters\heroes\rogue\RogueAndarRight.gif</PackagePath>
+      <Modified>2018-04-25T13:33:06.159</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueAtaque.gif">
+      <PackagePath>GameAssets\Characters\heroes\rogue\RogueAtaque.gif</PackagePath>
+      <Modified>2018-04-25T13:33:06.159</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueParadaLeft.gif">
+      <PackagePath>GameAssets\Characters\heroes\rogue\RogueParadaLeft.gif</PackagePath>
+      <Modified>2018-04-25T13:33:06.159</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueParadaRight.gif">
+      <PackagePath>GameAssets\Characters\heroes\rogue\RogueParadaRight.gif</PackagePath>
+      <Modified>2018-04-25T13:33:06.159</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Maps\chest_open.gif">
       <PackagePath>GameAssets\Maps\chest_open.gif</PackagePath>
       <Modified>2018-04-20T03:24:09.547</Modified>
@@ -948,82 +1040,6 @@
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\main_background.gif">
       <PackagePath>GameAssets\Menu\main_background.gif</PackagePath>
       <Modified>2018-04-20T03:24:09.697</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\GoblinAtaque.gif">
-      <PackagePath>GameAssets\Menu\Sprites\GoblinAtaque.gif</PackagePath>
-      <Modified>2018-04-20T14:15:50.338</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\GoblinMorte.gif">
-      <PackagePath>GameAssets\Menu\Sprites\GoblinMorte.gif</PackagePath>
-      <Modified>2018-04-20T14:15:50.340</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\GoblinParado1.gif">
-      <PackagePath>GameAssets\Menu\Sprites\GoblinParado1.gif</PackagePath>
-      <Modified>2018-04-20T14:15:50.343</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\MagoAndar.gif">
-      <PackagePath>GameAssets\Menu\Sprites\MagoAndar.gif</PackagePath>
-      <Modified>2018-04-20T14:15:50.345</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\MagoAtaque.gif">
-      <PackagePath>GameAssets\Menu\Sprites\MagoAtaque.gif</PackagePath>
-      <Modified>2018-04-20T14:15:50.348</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\MagoMorre.gif">
-      <PackagePath>GameAssets\Menu\Sprites\MagoMorre.gif</PackagePath>
-      <Modified>2018-04-20T14:15:50.350</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\MagoParado.gif">
-      <PackagePath>GameAssets\Menu\Sprites\MagoParado.gif</PackagePath>
-      <Modified>2018-04-18T14:53:12.654</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\MagoParadoRight.gif">
-      <PackagePath>GameAssets\Menu\Sprites\MagoParadoRight.gif</PackagePath>
-      <Modified>2018-04-21T17:29:14.812</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\OgroAtaque.gif">
-      <PackagePath>GameAssets\Menu\Sprites\OgroAtaque.gif</PackagePath>
-      <Modified>2018-04-18T13:43:43.246</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\OgroMorte.gif">
-      <PackagePath>GameAssets\Menu\Sprites\OgroMorte.gif</PackagePath>
-      <Modified>2018-04-18T14:21:43.463</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\OgroParado.gif">
-      <PackagePath>GameAssets\Menu\Sprites\OgroParado.gif</PackagePath>
-      <Modified>2018-04-18T13:48:33.989</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\OgroParado1.gif">
-      <PackagePath>GameAssets\Menu\Sprites\OgroParado1.gif</PackagePath>
-      <Modified>2018-04-23T14:27:14.433</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\RogueAndar.gif">
-      <PackagePath>GameAssets\Menu\Sprites\RogueAndar.gif</PackagePath>
-      <Modified>2018-04-18T13:28:34.921</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\RogueAtaque.gif">
-      <PackagePath>GameAssets\Menu\Sprites\RogueAtaque.gif</PackagePath>
-      <Modified>2018-04-18T13:22:40.299</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\RogueParada.gif">
-      <PackagePath>GameAssets\Menu\Sprites\RogueParada.gif</PackagePath>
-      <Modified>2018-04-18T13:13:16.807</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\RogueParadaLeft.gif">
-      <PackagePath>GameAssets\Menu\Sprites\RogueParadaLeft.gif</PackagePath>
-      <Modified>2018-04-21T17:29:14.812</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\SkeletonAtaque.gif">
-      <PackagePath>GameAssets\Menu\Sprites\SkeletonAtaque.gif</PackagePath>
-      <Modified>2018-04-18T15:01:40.540</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\SkeletonMorre.gif">
-      <PackagePath>GameAssets\Menu\Sprites\SkeletonMorre.gif</PackagePath>
-      <Modified>2018-04-18T15:02:34.904</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\SkeletonParado.gif">
-      <PackagePath>GameAssets\Menu\Sprites\SkeletonParado.gif</PackagePath>
-      <Modified>2018-04-18T15:00:00.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\RawImages\Cursor\atack.gif">
       <PackagePath>RawImages\Cursor\atack.gif</PackagePath>
@@ -1112,11 +1128,11 @@
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-25T02:15:03.856</Modified>
+      <Modified>2018-04-25T14:03:42.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x86\Debug\Core\MantaNecromante.exe">
       <PackagePath>MantaNecromante.exe</PackagePath>
-      <Modified>2018-04-25T02:15:04.180</Modified>
+      <Modified>2018-04-25T14:45:22.439</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

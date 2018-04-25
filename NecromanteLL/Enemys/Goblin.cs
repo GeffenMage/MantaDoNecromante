@@ -26,7 +26,7 @@ namespace NecromanteLL {
                     Sprite = new Image();
                     Sprite.Height = 118 * 10/3;
                     Sprite.Width = 54 * 10/3;
-                    Sprite.Source= new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/GoblinParado1.gif"));
+                    Sprite.Source= new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/goblin/GoblinParadoLeft.gif"));
                     
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall I", 0, 20, 1, 0, 0, 0, 0, 30));
@@ -44,7 +44,7 @@ namespace NecromanteLL {
                     Sprite.Height = 118 * 8 / 3;
                     Sprite.Width = 54 * 8 / 3;
 
-                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/GoblinParado1.gif"));
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/goblin/GoblinParadoLeft.gif"));
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall II", 0, 20, 1, 0, 0, 0, 0, 50));
@@ -63,7 +63,7 @@ namespace NecromanteLL {
                     Sprite.Height = 118 * 8 / 3;
                     Sprite.Width = 54 * 8 / 3;
 
-                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Menu/Sprites/GoblinParado1.gif"));
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/goblin/GoblinParadoLeft.gif"));
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall III", 0, 20, 1, 0, 0, 0, 0, 70));

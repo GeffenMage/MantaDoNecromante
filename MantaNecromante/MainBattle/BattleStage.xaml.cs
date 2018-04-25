@@ -159,5 +159,10 @@ namespace MantaNecromante.MainBattle {
                 isOptionsMenuOpen ^= false;
             
         }
+        private void Voltar(Object sender,RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(BattleStage), battleController);
+        }
+
     }
 }

@@ -448,6 +448,9 @@
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\pant.png">
       <PackagePath>GameAssets\Characters\itens\pant.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\pant_t.png">
+      <PackagePath>GameAssets\Characters\itens\pant_t.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Armor 1.png">
       <PackagePath>GameAssets\Characters\itens\v2\Armor 1.png</PackagePath>
     </AppxPackagedFile>
@@ -688,6 +691,36 @@
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif">
       <PackagePath>GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinAtaque.gif">
+      <PackagePath>GameAssets\Characters\enemies\goblin\GoblinAtaque.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinAtaqueLeft.gif">
+      <PackagePath>GameAssets\Characters\enemies\goblin\GoblinAtaqueLeft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinMorte.gif">
+      <PackagePath>GameAssets\Characters\enemies\goblin\GoblinMorte.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinMorteLeft.gif">
+      <PackagePath>GameAssets\Characters\enemies\goblin\GoblinMorteLeft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinParado.gif">
+      <PackagePath>GameAssets\Characters\enemies\goblin\GoblinParado.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinParadoLeft.gif">
+      <PackagePath>GameAssets\Characters\enemies\goblin\GoblinParadoLeft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroAtaque.gif">
+      <PackagePath>GameAssets\Characters\enemies\ogro\OgroAtaque.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroMorte.gif">
+      <PackagePath>GameAssets\Characters\enemies\ogro\OgroMorte.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroParado.gif">
+      <PackagePath>GameAssets\Characters\enemies\ogro\OgroParado.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroParado1.gif">
+      <PackagePath>GameAssets\Characters\enemies\ogro\OgroParado1.gif</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\knight_idle.gif">
       <PackagePath>GameAssets\Characters\exhibit\knight_idle.gif</PackagePath>
     </AppxPackagedFile>
@@ -706,68 +739,47 @@
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\walkRight.gif">
       <PackagePath>GameAssets\Characters\heroes\knight\walkRight.gif</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAndarLeft.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoAndarLeft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAndarRight.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoAndarRight.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAtaque.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoAtaque.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoMorre.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoMorre.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoParado.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoParado.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoParadoLeft.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoParadoLeft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoParadoRight.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoParadoRight.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueAndarLeft.gif">
+      <PackagePath>GameAssets\Characters\heroes\rogue\RogueAndarLeft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueAndarRight.gif">
+      <PackagePath>GameAssets\Characters\heroes\rogue\RogueAndarRight.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueAtaque.gif">
+      <PackagePath>GameAssets\Characters\heroes\rogue\RogueAtaque.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueParadaLeft.gif">
+      <PackagePath>GameAssets\Characters\heroes\rogue\RogueParadaLeft.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueParadaRight.gif">
+      <PackagePath>GameAssets\Characters\heroes\rogue\RogueParadaRight.gif</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Maps\chest_open.gif">
       <PackagePath>GameAssets\Maps\chest_open.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\main_background.gif">
       <PackagePath>GameAssets\Menu\main_background.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\GoblinAtaque.gif">
-      <PackagePath>GameAssets\Menu\Sprites\GoblinAtaque.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\GoblinMorte.gif">
-      <PackagePath>GameAssets\Menu\Sprites\GoblinMorte.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\GoblinParado1.gif">
-      <PackagePath>GameAssets\Menu\Sprites\GoblinParado1.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\MagoAndar.gif">
-      <PackagePath>GameAssets\Menu\Sprites\MagoAndar.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\MagoAtaque.gif">
-      <PackagePath>GameAssets\Menu\Sprites\MagoAtaque.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\MagoMorre.gif">
-      <PackagePath>GameAssets\Menu\Sprites\MagoMorre.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\MagoParado.gif">
-      <PackagePath>GameAssets\Menu\Sprites\MagoParado.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\MagoParadoRight.gif">
-      <PackagePath>GameAssets\Menu\Sprites\MagoParadoRight.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\OgroAtaque.gif">
-      <PackagePath>GameAssets\Menu\Sprites\OgroAtaque.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\OgroMorte.gif">
-      <PackagePath>GameAssets\Menu\Sprites\OgroMorte.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\OgroParado.gif">
-      <PackagePath>GameAssets\Menu\Sprites\OgroParado.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\OgroParado1.gif">
-      <PackagePath>GameAssets\Menu\Sprites\OgroParado1.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\RogueAndar.gif">
-      <PackagePath>GameAssets\Menu\Sprites\RogueAndar.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\RogueAtaque.gif">
-      <PackagePath>GameAssets\Menu\Sprites\RogueAtaque.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\RogueParada.gif">
-      <PackagePath>GameAssets\Menu\Sprites\RogueParada.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\RogueParadaLeft.gif">
-      <PackagePath>GameAssets\Menu\Sprites\RogueParadaLeft.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\SkeletonAtaque.gif">
-      <PackagePath>GameAssets\Menu\Sprites\SkeletonAtaque.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\SkeletonMorre.gif">
-      <PackagePath>GameAssets\Menu\Sprites\SkeletonMorre.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\Sprites\SkeletonParado.gif">
-      <PackagePath>GameAssets\Menu\Sprites\SkeletonParado.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\RawImages\Cursor\atack.gif">
       <PackagePath>RawImages\Cursor\atack.gif</PackagePath>

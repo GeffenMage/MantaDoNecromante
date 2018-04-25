@@ -116,7 +116,8 @@ namespace MantaNecromante.GameStage {
 
             Window.Current.CoreWindow.KeyDown += KeySentinel;
             Window.Current.CoreWindow.KeyUp += KeyDropped;
-
+            
+        
             //Fazendo os ajustes para para tudo rodar "perfeitamente":
             //....................................................................................................//
             Adjuster.AdjustWindow(Floor);
@@ -1319,6 +1320,9 @@ namespace MantaNecromante.GameStage {
         protected override void OnNavigatedTo(NavigationEventArgs e) {
 
             chosen = (Player)e.Parameter;
+            if (chosen is Rogue) { Hero.Height = 106;Hero.Width = 54.18; }
+            if (chosen is Wizard) { Hero.Height = 112; Hero.Width = 55.16; }
+            if (chosen is Warrior) { Hero.Height = 85; Hero.Width = 54.18; }
 
             idletoLeft = chosen.Sprite_idle_left;
             idletoRight = chosen.Sprite_idle_right;
