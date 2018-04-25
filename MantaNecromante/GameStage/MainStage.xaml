@@ -250,4 +250,3 @@
         <Image Name="extend" Stretch="fill" Height="30" Canvas.Left="430" Canvas.Top="-125" Width="601" Source="ms-appx:///GameAssets/Maps/mansion_03.gif"/>
     </Canvas>
 </Page>
-
