@@ -30,6 +30,7 @@ namespace MantaNecromante.GameStage {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+
     public sealed partial class MainStage : Page {
 
         //Timer usado para o movimento:
@@ -1449,5 +1450,15 @@ namespace MantaNecromante.GameStage {
             Floor.Children.Remove(OptionsMenu);
             isOptionsMenuOpen = false;
         }
+        private void Selecao_campeoes(object sender, RoutedEventArgs e)
+        {
+
+            this.Frame.Navigate(typeof(MantaNecromante.ClassMenu.ClassMenu));
+        }
+        private void Menu_Iniciar(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(FrontEnd.MainPage));
+        }
+
     }
 }
