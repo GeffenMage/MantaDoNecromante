@@ -11,7 +11,7 @@
 
 
         <Image x:ConnectionId='2' Name ="Mansion" Source="ms-appx:///GameAssets/Maps/mansion.png" HorizontalAlignment="Left" Stretch="Fill" VerticalAlignment="Top" Height="6455" Width="5605" Canvas.Top="-3100" Canvas.Left="-2660"/>
-        <Image x:ConnectionId='3' Stretch="Fill" Name="Hero" Height="303" Canvas.Left="336" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
+        <Image x:ConnectionId='3' Stretch="UniformToFill" Name="Hero" Height="303" Canvas.Left="336" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
         <Image x:ConnectionId='4' Stretch="Fill" Name="Foe" Height="303" Canvas.Left="781" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
 
         <RelativePanel x:ConnectionId='5' Opacity="100" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">

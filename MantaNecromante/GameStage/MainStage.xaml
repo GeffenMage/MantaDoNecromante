@@ -10,7 +10,7 @@
     <Canvas Name="Floor" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="1440" Height="900">
 
         <Image Name ="Mansion" Source="ms-appx:///GameAssets/Maps/mansion.png" HorizontalAlignment="Left" Stretch="Fill" VerticalAlignment="Top" Height="3995" Width="3595" Canvas.Top="-3090" Canvas.Left="0"/>
-        <Image Stretch="UniformToFill" Name="Hero" Height="118" Canvas.Left="106" Canvas.Top="530" Width="54.18" RenderTransformOrigin="0.5,0.507"/>
+        <Image Stretch="Fill" Name="Hero" Height="118" Canvas.Left="106" Canvas.Top="530" Width="54.18" RenderTransformOrigin="0.5,0.507"/>
 
         <RelativePanel Opacity="1" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/optionMenu.png" Margin="-8,10,-2,-10" Width="360" HorizontalAlignment="Left"/>

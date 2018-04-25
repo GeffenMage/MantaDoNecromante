@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-25T14:45:22.442</Modified>
+      <Modified>2018-04-25T15:10:11.063</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x86\Debug\MantaNecromante.exe">
       <PackagePath>entrypoint\MantaNecromante.exe</PackagePath>
-      <Modified>2018-04-25T14:45:21.787</Modified>
+      <Modified>2018-04-25T15:10:09.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -497,7 +497,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\NecromanteLL\bin\x86\Debug\NecromanteLL.dll">
       <PackagePath>NecromanteLL.dll</PackagePath>
-      <Modified>2018-04-25T14:42:48.055</Modified>
+      <Modified>2018-04-25T14:48:52.645</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\Assets\dots.png">
       <PackagePath>Assets\dots.png</PackagePath>
@@ -1128,11 +1128,11 @@
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-25T14:03:42.817</Modified>
+      <Modified>2018-04-25T15:10:10.776</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\bin\x86\Debug\Core\MantaNecromante.exe">
       <PackagePath>MantaNecromante.exe</PackagePath>
-      <Modified>2018-04-25T14:45:22.439</Modified>
+      <Modified>2018-04-25T15:10:11.060</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
