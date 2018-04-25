@@ -14,11 +14,47 @@
         <Image Stretch="Fill" Name="Hero" Height="303" Canvas.Left="336" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
         <Image Stretch="Fill" Name="Foe" Height="303" Canvas.Left="781" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
 
+        <Grid Height="1613" Canvas.Left="512" Canvas.Top="29" Width="236" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Grid.RenderTransform>
+                <CompositeTransform Rotation="-90.225"/>
+            </Grid.RenderTransform>
+            <Image Stretch="Fill" Source="ms-appx:///GameAssets/Menu/nudePanel.png" Margin="52,-130,-59,-118"/>
+        </Grid>
+
+        <Grid Height="44" Canvas.Left="9" Canvas.Top="773" Width="195">
+            <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="Start1" Content="Atacar" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="5,-3,7,2" Click="BotaoAtacar"/>
+        </Grid>
+
+        <Grid Height="44" Canvas.Left="265" Canvas.Top="773" Width="195">
+            <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="Skill0" Content="Skill 1" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5" Click="BotaoSkill"/>
+        </Grid>
+
+        <Grid Height="44" Canvas.Left="9" Canvas.Top="833" Width="195">
+            <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="Skill1" Content="Skill 2" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5" Click="BotaoSkill"/>
+        </Grid>
+
+        <Grid Height="44" Canvas.Left="265" Canvas.Top="833" Width="195">
+            <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="Skill2" Content="Skill 3" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5" Click="BotaoSkill"/>
+        </Grid>
+
+
+
         <RelativePanel Opacity="100" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/optionMenu.png" Margin="0,0,-10,0" Width="360" HorizontalAlignment="Left"/>
             <Button  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="56" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,167,80,264" Click="Continue" Canvas.Top="172"/>
             <Button Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="42" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,272,80,173" Click="Exit" Canvas.Left="82" Canvas.Top="267"/>
         </RelativePanel>
+
+        <ProgressBar Name = "Progress_HP_chosen" Height="20" Canvas.Left="26" Canvas.Top="680" Width="394" Background="Red"/>
+        <ProgressBar Name = "Progress_MP_chosen" Height="20" Canvas.Left="26" Canvas.Top="714" Width="394"  Background="Blue"/>
+
+        <ProgressBar Name = "Progress_HP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="680" Width="394" Background="Red"/>
+        <ProgressBar Name = "Progress_MP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="714" Width="394"  Background="Blue"/>
+
 
         <!--<Button Name="Menu" Content="Menu" Click="Menu_Click" ></Button>-->
 
