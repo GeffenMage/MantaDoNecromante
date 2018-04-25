@@ -13,9 +13,12 @@
         <Image x:ConnectionId='3' Stretch="Fill" Name="Hero" Height="118" Canvas.Left="106" Canvas.Top="530" Width="54.18" RenderTransformOrigin="0.5,0.507"/>
 
         <RelativePanel x:ConnectionId='4' Opacity="1" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Image Source="ms-appx:///GameAssets/Menu/optionMenu.png" Margin="0,0,-10,0" Width="360" HorizontalAlignment="Left"/>
-            <Button x:ConnectionId='70'  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="35" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,177,80,275"                  Canvas.Top="172"/>
-            <Button x:ConnectionId='71' Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="36" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,274,80,177"              Canvas.Left="82" Canvas.Top="267"/>
+            <Image Source="ms-appx:///GameAssets/Menu/optionMenu.png" Margin="-8,10,-2,-10" Width="360" HorizontalAlignment="Left"/>
+            <Button x:ConnectionId='70'  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="43" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,181,80,263"                  Canvas.Top="172"/>
+            <Button x:ConnectionId='71' Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="38" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,360,80,89"              Canvas.Left="82" Canvas.Top="267"/>
+            <Button x:ConnectionId='72' Background="Transparent" BorderThickness="0" x:Name="Escolher" Content="Seleção de campeões" Height="38" Width="323" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="10,317,17,132"                          Canvas.Left="82" Canvas.Top="267"/>
+            <Button x:ConnectionId='73' Background="Transparent" BorderThickness="0" x:Name="Inicial" Content="Menu inicial" Height="38" Width="323" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="10,237,17,212"                      Canvas.Left="82" Canvas.Top="267"/>
+
         </RelativePanel>
 
         <RelativePanel x:ConnectionId='5' Name="infoBox" Opacity="0" Width="175" Height="40" Canvas.Left="150" Canvas.Top="127">
@@ -25,10 +28,10 @@
         </RelativePanel>
 
         <RelativePanel x:ConnectionId='6' Opacity="1" Name="Inventory" Height="497" Canvas.Left="545" Canvas.Top="208" Width="320" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Image Source="ms-appx:///GameAssets/Menu/inventory.png" Margin="0,0,0,0" Width="305" HorizontalAlignment="Left"/>
-            
+            <Image Source="ms-appx:///GameAssets/Menu/inventory.png" Margin="0,0,-305,0" Width="305" HorizontalAlignment="Left"/>
+
             <Button x:ConnectionId='20' Height="17" Margin="270,7,-275,-12" Width="25"                      />
-            
+
             <Button Height="34" Margin="28,75,-42,-97" Width="34">
                 <Image x:ConnectionId='68' Name="Slot1" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
@@ -238,7 +241,7 @@
             <Button x:ConnectionId='17' Name="quick8" Height="34" Opacity="0" Margin="486,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
             <Button x:ConnectionId='18' Name="quick9" Height="34" Opacity="0" Margin="532,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
             <Button x:ConnectionId='19' Name="quick10" Height="34" Opacity="0" Margin="578,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
-        
+
         </RelativePanel>
 
 
