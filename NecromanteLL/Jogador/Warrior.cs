@@ -9,9 +9,12 @@ using Windows.UI.Xaml.Controls;
 
 namespace NecromanteLL {
     public class Warrior : Player {
-
+        private float altura { get => altura; set => altura = 110; }
+        private float largura { get => largura; set => largura = 40; }
         //Construtor setando os valores base do warrior
         public Warrior(String nome) {
+            
+            
 
             //Inicializa atributos do personagem
             this.Nome = nome;

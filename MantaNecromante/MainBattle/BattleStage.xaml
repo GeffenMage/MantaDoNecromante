@@ -46,7 +46,9 @@
         <RelativePanel Opacity="100" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/optionMenu.png" Margin="0,0,-10,0" Width="360" HorizontalAlignment="Left"/>
             <Button  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="56" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,167,80,264" Click="Continue" Canvas.Top="172"/>
-            <Button Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="42" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,272,80,173" Click="Exit" Canvas.Left="82" Canvas.Top="267"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="42" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,332,80,113" Click="Exit" Canvas.Left="82" Canvas.Top="267"/>
+            <Button  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="voltar" Content="Voltar mapa" Height="56" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,228,80,203" Click="Voltar" Canvas.Top="172"/>
+
         </RelativePanel>
 
         <ProgressBar Name = "Progress_HP_chosen" Height="20" Canvas.Left="26" Canvas.Top="680" Width="394" Background="Red"/>
