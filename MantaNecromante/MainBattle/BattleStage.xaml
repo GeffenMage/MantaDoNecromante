@@ -11,7 +11,7 @@
 
 
         <Image Name ="Mansion" Source="ms-appx:///GameAssets/Maps/mansion.png" HorizontalAlignment="Left" Stretch="Fill" VerticalAlignment="Top" Height="6455" Width="5605" Canvas.Top="-3100" Canvas.Left="-2660"/>
-        <Image Stretch="UniformToFill" Name="Hero" Height="303" Canvas.Left="336" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
+        <Image Stretch="Fill" Name="Hero" Height="303" Canvas.Left="336" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
         <Image Stretch="Fill" Name="Foe" Height="303" Canvas.Left="781" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
 
         <Grid Height="1613" Canvas.Left="512" Canvas.Top="29" Width="236" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
@@ -23,7 +23,7 @@
 
         <Grid Height="44" Canvas.Left="9" Canvas.Top="773" Width="195">
             <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button Background="Transparent" BorderThickness="0" x:Name="Start1" Content="Atacar" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="5,-3,7,2" Click="BotaoAtacar"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="Start1" Content="Atacar" Height="41" Width="175" FontSize="31" FontFamily="Algerian" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,0,10,3" Click="BotaoAtacar"/>
         </Grid>
 
         <Grid Height="44" Canvas.Left="265" Canvas.Top="773" Width="195">
@@ -46,8 +46,7 @@
         <RelativePanel Opacity="100" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/optionMenu.png" Margin="0,0,-10,0" Width="360" HorizontalAlignment="Left"/>
             <Button  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="56" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,167,80,264" Click="Continue" Canvas.Top="172"/>
-            <Button Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="42" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,332,80,113" Click="Exit" Canvas.Left="82" Canvas.Top="267"/>
-            <Button  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="voltar" Content="Voltar mapa" Height="56" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,228,80,203" Click="Voltar" Canvas.Top="172"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="42" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,272,80,173" Click="Exit" Canvas.Left="82" Canvas.Top="267"/>
 
         </RelativePanel>
 

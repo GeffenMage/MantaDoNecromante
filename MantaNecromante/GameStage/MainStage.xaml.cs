@@ -120,10 +120,10 @@ namespace MantaNecromante.GameStage {
 
             //Fazendo os ajustes para para tudo rodar "perfeitamente":
             //....................................................................................................//
-          //  Adjuster.AdjustWindow(Floor);
-            //Adjuster.adjustForCamera(Mansion, Hero, ref ScreenWidth, ref ScreenHeight, ref Cell_Width, ref Cell_Height, ref topSide, ref botSide, ref leftSide, ref rightSide);
+           Adjuster.AdjustWindow(Floor);
+            Adjuster.adjustForCamera(Mansion,Hero, ref ScreenWidth, ref ScreenHeight, ref Cell_Width, ref Cell_Height, ref topSide, ref botSide, ref leftSide, ref rightSide);
             //....................................................................................................//
-
+           
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Castelo.mp3"));
             song.Play();
 
@@ -1319,17 +1319,22 @@ namespace MantaNecromante.GameStage {
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
 
-            chosen = (Player)e.Parameter;
-            if (chosen is Rogue) { Hero.Height = 100;Hero.Width = 65.18; }
-            if (chosen is Wizard) { Hero.Height = 105; Hero.Width = 54.16; }
-            if (chosen is Warrior) { Hero.Height = 100; Hero.Width = 65.18; }
-
             //Fazendo os ajustes para para tudo rodar "perfeitamente":
             //....................................................................................................//
-            Adjuster.AdjustWindow(Floor);
-            Adjuster.adjustForCamera(Mansion, Hero, ref ScreenWidth, ref ScreenHeight, ref Cell_Width, ref Cell_Height, ref topSide, ref botSide, ref leftSide, ref rightSide);
+           //Adjuster.AdjustWindow(Floor);
+            // Adjuster.adjustForCamera(Mansion, Hero, ref ScreenWidth, ref ScreenHeight, ref Cell_Width, ref Cell_Height, ref topSide, ref botSide, ref leftSide, ref rightSide);
             //....................................................................................................//
+           
+          
 
+            chosen = (Player)e.Parameter;
+
+            // if (chosen is Warrior) { Hero.Height = 100; Hero.Width = 30.18; }
+
+           // if (chosen is Rogue) { Hero.Height = 110; Hero.Width = 52.18; }
+            
+            //if (chosen is Wizard) { Hero.Height = 105; Hero.Width = 50.16; }
+           
 
             idletoLeft = chosen.Sprite_idle_left;
             idletoRight = chosen.Sprite_idle_right;
@@ -1339,6 +1344,7 @@ namespace MantaNecromante.GameStage {
 
             direction = runtoRight;
             Hero.Source = idletoRight;
+            
         }
 
         //A sentinela que vigia as teclas atentamente:
@@ -1465,10 +1471,13 @@ namespace MantaNecromante.GameStage {
         {
 
             this.Frame.Navigate(typeof(MantaNecromante.ClassMenu.ClassMenu));
+            song.Pause();
+
         }
         private void Menu_Iniciar(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(FrontEnd.MainPage));
+            song.Pause();
         }
 
     }

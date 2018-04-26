@@ -11,16 +11,51 @@
 
 
         <Image x:ConnectionId='2' Name ="Mansion" Source="ms-appx:///GameAssets/Maps/mansion.png" HorizontalAlignment="Left" Stretch="Fill" VerticalAlignment="Top" Height="6455" Width="5605" Canvas.Top="-3100" Canvas.Left="-2660"/>
-        <Image x:ConnectionId='3' Stretch="UniformToFill" Name="Hero" Height="303" Canvas.Left="336" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
+        <Image x:ConnectionId='3' Stretch="Fill" Name="Hero" Height="303" Canvas.Left="336" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
         <Image x:ConnectionId='4' Stretch="Fill" Name="Foe" Height="303" Canvas.Left="781" Canvas.Top="245" Width="174" RenderTransformOrigin="0.5,0.507"/>
+
+        <Grid Height="1613" Canvas.Left="512" Canvas.Top="29" Width="236" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Grid.RenderTransform>
+                <CompositeTransform Rotation="-90.225"/>
+            </Grid.RenderTransform>
+            <Image Stretch="Fill" Source="ms-appx:///GameAssets/Menu/nudePanel.png" Margin="52,-130,-59,-118"/>
+        </Grid>
+
+        <Grid Height="44" Canvas.Left="9" Canvas.Top="773" Width="195">
+            <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button x:ConnectionId='15' Background="Transparent" BorderThickness="0" x:Name="Start1" Content="Atacar" Height="41" Width="175" FontSize="31" FontFamily="Algerian" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,0,10,3"                    />
+        </Grid>
+
+        <Grid Height="44" Canvas.Left="265" Canvas.Top="773" Width="195">
+            <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button x:ConnectionId='14' Background="Transparent" BorderThickness="0" x:Name="Skill0" Content="Skill 1" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5"                   />
+        </Grid>
+
+        <Grid Height="44" Canvas.Left="9" Canvas.Top="833" Width="195">
+            <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button x:ConnectionId='13' Background="Transparent" BorderThickness="0" x:Name="Skill1" Content="Skill 2" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5"                   />
+        </Grid>
+
+        <Grid Height="44" Canvas.Left="265" Canvas.Top="833" Width="195">
+            <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
+            <Button x:ConnectionId='12' Background="Transparent" BorderThickness="0" x:Name="Skill2" Content="Skill 3" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5"                   />
+        </Grid>
+
+
 
         <RelativePanel x:ConnectionId='5' Opacity="100" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/optionMenu.png" Margin="0,0,-10,0" Width="360" HorizontalAlignment="Left"/>
-            <Button x:ConnectionId='6'  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="56" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,167,80,264"                  Canvas.Top="172"/>
-            <Button x:ConnectionId='7' Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="42" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,332,80,113"              Canvas.Left="82" Canvas.Top="267"/>
-            <Button x:ConnectionId='8'  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="voltar" Content="Voltar mapa" Height="56" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,228,80,203"                Canvas.Top="172"/>
+            <Button x:ConnectionId='10'  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="56" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,167,80,264"                  Canvas.Top="172"/>
+            <Button x:ConnectionId='11' Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="42" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,272,80,173"              Canvas.Left="82" Canvas.Top="267"/>
 
         </RelativePanel>
+
+        <ProgressBar x:ConnectionId='6' Name = "Progress_HP_chosen" Height="20" Canvas.Left="26" Canvas.Top="680" Width="394" Background="Red"/>
+        <ProgressBar x:ConnectionId='7' Name = "Progress_MP_chosen" Height="20" Canvas.Left="26" Canvas.Top="714" Width="394"  Background="Blue"/>
+
+        <ProgressBar x:ConnectionId='8' Name = "Progress_HP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="680" Width="394" Background="Red"/>
+        <ProgressBar x:ConnectionId='9' Name = "Progress_MP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="714" Width="394"  Background="Blue"/>
+
 
         <!--<Button Name="Menu" Content="Menu" Click="Menu_Click" ></Button>-->
 

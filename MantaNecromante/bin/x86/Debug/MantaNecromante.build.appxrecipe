@@ -385,6 +385,9 @@
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\idle_button.png">
       <PackagePath>GameAssets\Buttons\idle_button.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\Knight250.png">
+      <PackagePath>GameAssets\Characters\exhibit\Knight250.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\arco_1.png">
       <PackagePath>GameAssets\Characters\itens\arco_1.png</PackagePath>
     </AppxPackagedFile>
@@ -550,6 +553,9 @@
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\equip_menu.png">
       <PackagePath>GameAssets\Menu\equip_menu.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\HealthManaPanels2.png">
+      <PackagePath>GameAssets\Menu\HealthManaPanels2.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\inventory.png">
       <PackagePath>GameAssets\Menu\inventory.png</PackagePath>
     </AppxPackagedFile>
@@ -583,8 +589,14 @@
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\nudePanel.png">
       <PackagePath>GameAssets\Menu\nudePanel.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\nudePanel3.png">
+      <PackagePath>GameAssets\Menu\nudePanel3.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\optionMenu.png">
       <PackagePath>GameAssets\Menu\optionMenu.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\optionMenu2.png">
+      <PackagePath>GameAssets\Menu\optionMenu2.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewert\Source\Repos\MantaDoNecromante\MantaNecromante\GameAssets\Menu\panel.png">
       <PackagePath>GameAssets\Menu\panel.png</PackagePath>

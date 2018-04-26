@@ -22,8 +22,8 @@ namespace NecromanteLL {
                     //Inicializa os sprites do inimigo
                    
                     Sprite = new Image();
-                    Sprite.Height = 118 * 4 / 3;
-                    Sprite.Width = 54 * 4 / 3;
+                    Sprite.Height = 105 * 8 / 3;
+                    Sprite.Width = 20 * 8 / 3;
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
 
                     Skills.Add(new Skill("Fall I", 0, 20, 1, 0, 0, 0, 0, 30));
@@ -39,8 +39,8 @@ namespace NecromanteLL {
                     Base_def = 30; Base_dmg = 70;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
-                    Sprite.Height = 118 * 4 / 3;
-                    Sprite.Width = 54 * 4/ 3;
+                    Sprite.Height = 105 * 8 / 3;
+                    Sprite.Width = 20 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
 
@@ -56,8 +56,8 @@ namespace NecromanteLL {
                     Base_def = 40; Base_dmg = 90;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
-                    Sprite.Height = 118 * 4 / 3;
-                    Sprite.Width = 54 * 4 / 3;
+                    Sprite.Height = 105 * 8 / 3;
+                    Sprite.Width = 20 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
 

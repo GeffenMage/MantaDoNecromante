@@ -13,11 +13,11 @@
         <Image x:ConnectionId='3' Stretch="Fill" Name="Hero" Height="118" Canvas.Left="106" Canvas.Top="530" Width="54.18" RenderTransformOrigin="0.5,0.507"/>
 
         <RelativePanel x:ConnectionId='4' Opacity="1" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Image Source="ms-appx:///GameAssets/Menu/optionMenu.png" Margin="-8,10,-2,-10" Width="360" HorizontalAlignment="Left"/>
-            <Button x:ConnectionId='70'  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="43" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,181,80,263"                  Canvas.Top="172"/>
-            <Button x:ConnectionId='71' Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="38" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,360,80,89"              Canvas.Left="82" Canvas.Top="267"/>
-            <Button x:ConnectionId='72' Background="Transparent" BorderThickness="0" x:Name="Escolher" Content="Seleção de campeões" Height="38" Width="323" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="10,317,17,132"                          Canvas.Left="82" Canvas.Top="267"/>
-            <Button x:ConnectionId='73' Background="Transparent" BorderThickness="0" x:Name="Inicial" Content="Menu inicial" Height="38" Width="323" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="10,237,17,212"                      Canvas.Left="82" Canvas.Top="267"/>
+            <Image Source="ms-appx:///GameAssets/Menu/nudePanel3.png" Margin="0,-90,-360,69" Width="360" HorizontalAlignment="Left"/>
+            <Button x:ConnectionId='70' Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="56" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="58,10,80,421"                  Canvas.Top="172"/>
+            <Button x:ConnectionId='71' Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="40" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="58,314,80,133"              Canvas.Left="82" Canvas.Top="267"/>
+            <Button x:ConnectionId='72' Background="Transparent" BorderThickness="0" x:Name="Escolher" Content="Campeões" Height="47" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="58,117,80,323"                          Canvas.Left="82" Canvas.Top="267"/>
+            <Button x:ConnectionId='73' Background="Transparent" BorderThickness="0" x:Name="Inicial" Content="Menu inicial" Height="48" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="58,217,80,222"                      Canvas.Left="82" Canvas.Top="267"/>
 
         </RelativePanel>
 
@@ -227,8 +227,7 @@
 
         </RelativePanel>
 
-        <Image x:ConnectionId='7' Name="quick_menu" Height="55" Canvas.Top="845" Width="1405" Source="ms-appx:///GameAssets/Menu/equip_menu.png"/>
-
+        <Image x:ConnectionId='7' Name="quick_menu" Height="55" Canvas.Top="845" Width="1408" Source="ms-appx:///GameAssets/Menu/equip_menu.png"/>
         <RelativePanel Width="780" Canvas.Left="310" Canvas.Top="845" Height="55">
 
             <Button x:ConnectionId='10' Name="quick1" Height="34" Opacity="0" Margin="171,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>

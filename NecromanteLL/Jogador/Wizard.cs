@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,8 +10,7 @@ using Windows.UI.Xaml.Controls;
 namespace NecromanteLL {
     public class Wizard : Player {
         //Construtor setando os valores base do warrior 
-        private float altura { get => altura; set => altura = 110; }
-        private float largura { get => largura; set => largura = 40; }
+        
         public Wizard(String nome) {
           
             //Inicializa atributos do personagem
