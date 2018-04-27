@@ -53,6 +53,7 @@ namespace NecromanteLL {
         public BitmapImage Sprite_walking_left { get => sprite_walking_left; set => sprite_walking_left = value; }
         public BitmapImage Sprite_walking_right { get => sprite_walking_right; set => sprite_walking_right = value; }
 
+ 
         //Implementar interface gráfica de movimento para o personagem
         public bool IsLvUP() {
             if (Xp_atual >= Xp_total) {
@@ -114,8 +115,19 @@ namespace NecromanteLL {
             }
         }
 
+        public void Consumir(Itens item) {
+            this.hp_atual += item.Hp_up;
+            this.mp_atual += item.Mp_up;
+        }
+
+
+
+
         public bool Equipar(Itens item) {
-            if (item is Espada && Mao_dir == null) {
+            if (item is Espada ) {
+                if(Mao_dir != null) {
+                    Desequipar(item);
+                }
                 mao_dir = item;
                 Mao_dir.Equipado = true;
                 Base_def += Mao_dir.Def;
@@ -123,7 +135,10 @@ namespace NecromanteLL {
                 Hp_total += Mao_dir.Hp_up;
                 return true;
             }
-            else if (item is Escudo && Mao_esq == null) {
+            else if (item is Escudo) {
+                if(Mao_esq != null) {
+                    Desequipar(item);
+                }
                 mao_esq = item;
                 Mao_esq.Equipado = true;
                 Base_def += Mao_esq.Def;
@@ -131,7 +146,10 @@ namespace NecromanteLL {
                 Hp_total += Mao_esq.Hp_up;
                 return true;
             }
-            else if (item is Luva && Maos == null) {
+            else if (item is Luva) {
+                if (Maos != null) {
+                    Desequipar(item);
+                }
                 maos = item;
                 Maos.Equipado = true;
                 Base_def += Maos.Def;
@@ -139,7 +157,10 @@ namespace NecromanteLL {
                 Hp_total += Maos.Hp_up;
                 return true;
             }
-            else if (item is Calca && Inferior == null) {
+            else if (item is Calca) {
+                if(Inferior != null) {
+                    Desequipar(item);
+                }
                 inferior = item;
                 Inferior.Equipado = true;
                 Base_def += Inferior.Def;
@@ -147,7 +168,10 @@ namespace NecromanteLL {
                 Hp_total += Inferior.Hp_up;
                 return true;
             }
-            else if (item is Capacete && Cabeca == null) {
+            else if (item is Capacete) {
+                if(Cabeca != null) {
+                    Desequipar(item);
+                }
                 cabeca = item;
                 Cabeca.Equipado = true;
                 Base_def += Cabeca.Def;
@@ -155,7 +179,10 @@ namespace NecromanteLL {
                 Hp_total += Cabeca.Hp_up;
                 return true;
             }
-            else if (item is Bota && Pes == null) {
+            else if (item is Bota) {
+                if(Pes != null) {
+                    Desequipar(item);
+                }
                 pes = item;
                 Pes.Equipado = true;
                 Base_def += Pes.Def;
@@ -163,7 +190,10 @@ namespace NecromanteLL {
                 Hp_total += Pes.Hp_up;
                 return true;
             }
-            else if (item is Cajado && Mao_dir == null) {
+            else if (item is Cajado) {
+                if(Mao_dir != null) {
+                    Desequipar(item);
+                }
                 mao_dir = item;
                 Mao_dir.Equipado = true;
                 Base_def += Mao_dir.Def;
@@ -171,7 +201,10 @@ namespace NecromanteLL {
                 Hp_total += Mao_dir.Hp_up;
                 return true;
             }
-            else if (item is Arco && Mao_dir == null) {
+            else if (item is Arco) {
+                if (Mao_dir != null) {
+                    Desequipar(item);
+                }
                 mao_dir = item;
                 Mao_dir.Equipado = true;
                 Base_def += Mao_dir.Def;
@@ -179,7 +212,10 @@ namespace NecromanteLL {
                 Hp_total += Mao_dir.Hp_up;
                 return true;
             }
-            else if (item is Cota && Torso == null) {
+            else if (item is Cota) {
+                if (Torso != null) {
+                    Desequipar(item);
+                }
                 torso = item;
                 Torso.Equipado = true;
                 Base_def += Torso.Def;
@@ -193,97 +229,83 @@ namespace NecromanteLL {
 
         }
 
-        public bool Desequipar(String slot) {
-            switch (slot) {
-                case "Maos":
-                    if (maos != null) {
-                        Maos.Equipado = false;
-                        Base_def -= Maos.Def;
-                        Mp_total -= Maos.Mp_up;
-                        Hp_total -= Maos.Hp_up;
-                        maos = null;
-                        return true;
-                    }
-                    else {
-                        return false;
-                    }
-                case "Pes":
-                    if (Pes != null) {
-                        Pes.Equipado = false;
-                        Base_def -= Pes.Def;
-                        Mp_total -= Pes.Mp_up;
-                        Hp_total -= Pes.Hp_up;
-                        pes = null;
-                        return true;
-                    }
-                    else {
-                        return false;
-                    }
-                case "Torso":
-                    if (Torso != null) {
-                        Torso.Equipado = false;
-                        Base_def -= Torso.Def;
-                        Mp_total -= Torso.Mp_up;
-                        Hp_total -= Torso.Hp_up;
-                        torso = null;
-                        return true;
-                    }
-                    else {
-                        return false;
-                    }
-                case "Inferior":
-                    if (Inferior != null) {
-                        Inferior.Equipado = false;
-                        Base_def -= Inferior.Def;
-                        Mp_total -= Inferior.Mp_up;
-                        Hp_total -= Inferior.Hp_up;
-                        inferior = null;
-                        return true;
-                    }
-                    else {
-                        return false;
-                    }
-                case "Cabeca":
-                    if (Cabeca != null) {
-                        Cabeca.Equipado = false;
-                        Base_def -= Cabeca.Def;
-                        Mp_total -= Cabeca.Mp_up;
-                        Hp_total -= Cabeca.Hp_up;
-                        cabeca = null;
-                        return true;
-                    }
-                    else {
-                        return false;
-                    }
-                case "Mao Esquerda":
-                    if (Mao_esq != null) {
-                        Mao_esq.Equipado = false;
-                        Base_def -= Mao_esq.Def;
-                        Mp_total -= Mao_esq.Mp_up;
-                        Hp_total -= Mao_esq.Hp_up;
-                        mao_esq = null;
-                        return true;
-                    }
-                    else {
-                        return false;
-                    }
-                case "Mao Direita":
-                    if (Mao_dir != null) {
-                        Mao_dir.Equipado = false;
-                        Base_def -= Mao_dir.Def;
-                        Mp_total -= Mao_dir.Mp_up;
-                        Hp_total -= Mao_dir.Hp_up;
-                        mao_dir = null;
-                        return true;
-                    }
-                    else {
-                        return false;
-                    }
-                default:
-                    return false;
+        public bool Desequipar(Itens item) {
+            if (item is Espada) {
+                Mao_dir.Equipado = false;
+                Base_def -= Mao_dir.Def;
+                Mp_total -= Mao_dir.Mp_up;
+                Hp_total -= Mao_dir.Hp_up;
+                mao_dir = null;
+                return true;
             }
+            else if (item is Escudo) {
+                Mao_esq.Equipado = false;
+                Base_def -= Mao_esq.Def;
+                Mp_total -= Mao_esq.Mp_up;
+                Hp_total -= Mao_esq.Hp_up;
+                mao_esq = null;
+                return true;
+            }
+            else if (item is Luva) {
+                Maos.Equipado = false;
+                Base_def -= Maos.Def;
+                Mp_total -= Maos.Mp_up;
+                Hp_total -= Maos.Hp_up;
+                maos = null;
+                return true;
+            }
+            else if (item is Calca) {
+                Inferior.Equipado = false;
+                Base_def -= Inferior.Def;
+                Mp_total -= Inferior.Mp_up;
+                Hp_total -= Inferior.Hp_up;
+                inferior = null;
+                return true;
+            }
+            else if (item is Capacete) {
+                Cabeca.Equipado = false;
+                Base_def -= Cabeca.Def;
+                Mp_total -= Cabeca.Mp_up;
+                Hp_total -= Cabeca.Hp_up;
+                cabeca = null;
+                return true;
+            }
+            else if (item is Bota) {
+                Pes.Equipado = false;
+                Base_def -= Pes.Def;
+                Mp_total -= Pes.Mp_up;
+                Hp_total -= Pes.Hp_up;
+                pes = null;
+                return true;
+            }
+            else if (item is Cajado) {
+                Mao_dir.Equipado = false;
+                Base_def -= Mao_dir.Def;
+                Mp_total -= Mao_dir.Mp_up;
+                Hp_total -= Mao_dir.Hp_up;
+                mao_dir = null;
+                return true;
+            }
+            else if (item is Arco) {
+                Mao_dir.Equipado = false;
+                Base_def -= Mao_dir.Def;
+                Mp_total -= Mao_dir.Mp_up;
+                Hp_total -= Mao_dir.Hp_up;
+                mao_dir = null;
+                return true;
+            }
+            else if (item is Cota) {
+                Torso.Equipado = false;
+                Base_def -= Torso.Def;
+                Mp_total -= Torso.Mp_up;
+                Hp_total -= Torso.Hp_up;
+                torso = null;
+                return true;
+            }
+            else {
+                return false;
+            }
+
         }
-
-
     }
 }

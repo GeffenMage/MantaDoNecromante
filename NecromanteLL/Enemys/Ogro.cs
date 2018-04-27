@@ -12,6 +12,7 @@ namespace NecromanteLL {
         public Ogro(int lvl) {
             Skills = new List<Skill>();
             Sprite = new Image();
+
             switch (lvl) {
                 case 1:
                     Nome = "Ogro Verde";
@@ -21,7 +22,10 @@ namespace NecromanteLL {
                     Base_def = 60; Base_dmg = 110;
                     //Inicializa os sprites do inimigo
 
-                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite = new Image();
+                    Sprite.Height = 110 * 8 / 3;
+                    Sprite.Width = 54 * 8 / 3;
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/enemies/ogro/OgroParado1.gif"));
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Blast I", 30, 0, 1, 0, 0, 0, 0, 200));
@@ -36,8 +40,11 @@ namespace NecromanteLL {
                     Given_xp = 1300; Lvl = 25;
                     Base_def = 70; Base_dmg = 130;
                     //Inicializa os sprites do inimigo
+                    Sprite = new Image();
+                    Sprite.Height = 110 * 8 / 3;
+                    Sprite.Width = 54 * 8 / 3;
 
-                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/enemies/ogro/OgroParado1.gif"));
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Blast II", 50, 0, 1, 0, 0, 0, 0, 400));
@@ -53,8 +60,11 @@ namespace NecromanteLL {
                     Base_def = 80; Base_dmg = 150;
                     //Inicializa os sprites do inimigo
 
-                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite = new Image();
+                    Sprite.Height = 110 * 8 / 3;
+                    Sprite.Width = 54 * 8 / 3;
 
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/enemies/ogro/OgroParado1.gif"));
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Blast III", 70, 0, 1, 0, 0, 0, 0, 600));
                     Skills.Add(new Skill("Regen Hp III", 80, 0, 1, 450, 0, 0, 30, 0));

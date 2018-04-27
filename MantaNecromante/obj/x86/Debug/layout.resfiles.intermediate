@@ -12,11 +12,35 @@ GameAssets\Buttons\clicked_button.png
 GameAssets\Buttons\idle_button.png
 GameAssets\Characters\enemies\exqueleton\attack.gif
 GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif
+GameAssets\Characters\enemies\goblin\GoblinAtaque.gif
+GameAssets\Characters\enemies\goblin\GoblinAtaqueLeft.gif
+GameAssets\Characters\enemies\goblin\GoblinMorte.gif
+GameAssets\Characters\enemies\goblin\GoblinMorteLeft.gif
+GameAssets\Characters\enemies\goblin\GoblinParado.gif
+GameAssets\Characters\enemies\goblin\GoblinParadoLeft.gif
+GameAssets\Characters\enemies\ogro\OgroAtaque.gif
+GameAssets\Characters\enemies\ogro\OgroMorte.gif
+GameAssets\Characters\enemies\ogro\OgroParado.gif
+GameAssets\Characters\enemies\ogro\OgroParado1.gif
 GameAssets\Characters\exhibit\knight_idle.gif
+GameAssets\Characters\exhibit\knight_idle2.gif
+GameAssets\Characters\exhibit\Knight250.png
 GameAssets\Characters\heroes\knight\idleLeft.gif
 GameAssets\Characters\heroes\knight\idleRight.gif
 GameAssets\Characters\heroes\knight\walkLeft.gif
 GameAssets\Characters\heroes\knight\walkRight.gif
+GameAssets\Characters\heroes\mage\MagoAndarLeft.gif
+GameAssets\Characters\heroes\mage\MagoAndarRight.gif
+GameAssets\Characters\heroes\mage\MagoAtaque.gif
+GameAssets\Characters\heroes\mage\MagoMorre.gif
+GameAssets\Characters\heroes\mage\MagoParado.gif
+GameAssets\Characters\heroes\mage\MagoParadoLeft.gif
+GameAssets\Characters\heroes\mage\MagoParadoRight.gif
+GameAssets\Characters\heroes\rogue\RogueAndarLeft.gif
+GameAssets\Characters\heroes\rogue\RogueAndarRight.gif
+GameAssets\Characters\heroes\rogue\RogueAtaque.gif
+GameAssets\Characters\heroes\rogue\RogueParadaLeft.gif
+GameAssets\Characters\heroes\rogue\RogueParadaRight.gif
 GameAssets\Characters\itens\arco_1.png
 GameAssets\Characters\itens\arco_2.png
 GameAssets\Characters\itens\bota_1.png
@@ -38,6 +62,7 @@ GameAssets\Characters\itens\luva_2.png
 GameAssets\Characters\itens\Mp_maior.png
 GameAssets\Characters\itens\Mp_menor.png
 GameAssets\Characters\itens\pant.png
+GameAssets\Characters\itens\pant_t.png
 GameAssets\Characters\itens\v2\Armor 1.png
 GameAssets\Characters\itens\v2\Armor 2.png
 GameAssets\Characters\itens\v2\Armor 3.png
@@ -50,6 +75,7 @@ GameAssets\Characters\itens\v2\Axe 5.png
 GameAssets\Characters\itens\v2\Axe 6.png
 GameAssets\Characters\itens\v2\Axe 7.png
 GameAssets\Characters\itens\v2\Axe 8.png
+GameAssets\Characters\itens\v2\pant_t.png
 GameAssets\Characters\itens\v2\Potion 1.png
 GameAssets\Characters\itens\v2\Potion 2.png
 GameAssets\Characters\itens\v2\Potion 3.png
@@ -71,11 +97,14 @@ GameAssets\Maps\chest_open.gif
 GameAssets\Maps\mansion.png
 GameAssets\Menu\chooseClassTitle.png
 GameAssets\Menu\equip_menu.png
+GameAssets\Menu\HealthManaPanels2.png
 GameAssets\Menu\inventory.png
 GameAssets\Menu\main_background.gif
 GameAssets\Menu\mainTitle.png
 GameAssets\Menu\nudePanel.png
+GameAssets\Menu\nudePanel3.png
 GameAssets\Menu\optionMenu.png
+GameAssets\Menu\optionMenu2.png
 GameAssets\Menu\panel.png
 GameAssets\Songs\Battle.mp3
 GameAssets\Songs\Bau.mp3

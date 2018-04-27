@@ -5,13 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Controls;
-
+    
 namespace NecromanteLL {
     public class Rogue : Player {
+         
         //Construtor setando os valores base do warrior
         public Rogue(String nome) {
-
+            
             //Inicializa atributos do personagem
+            
             this.Nome = nome;
             Lvl = 1; Xp_atual = 0; Xp_total = 1000;
             Hp_total = 400; Hp_atual = Hp_total;
@@ -20,10 +22,13 @@ namespace NecromanteLL {
             Nome_classe = "Rogue";
             //Inicializa os sprites do personagem
 
-            //Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
-            //Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleLeft.gif"));
-            //Sprite_walking_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkLeft.gif"));
-            //Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkRight.gif"));
+           
+            
+
+            Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/rogue/RogueParadaRight.gif"));
+            Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/rogue/RogueParadaLeft.gif"));
+            Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/rogue/RogueAndarRight.gif"));
+            Sprite_walking_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/rogue/RogueAndarLeft.gif"));
             
             //Cria e inicializa as skills da classe do personagem
             Skills = new List<Skill>();

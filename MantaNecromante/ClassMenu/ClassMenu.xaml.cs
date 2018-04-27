@@ -25,23 +25,56 @@ namespace MantaNecromante.ClassMenu {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    /// 
     
+
+
     public sealed partial class ClassMenu : Page {
         private MediaPlayer song = new MediaPlayer();
         public ClassMenu() {
-
             this.InitializeComponent();
             Adjuster.AdjustWindow(Floor);
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Waterfall.mp3"));
             song.Play();
         }
 
-        private void Iniciar(object sender, RoutedEventArgs e) {
+        private void Iniciar_Gladiador(object sender, RoutedEventArgs e) {
+
             Warrior w = new Warrior("Jogador");
+            
             this.Frame.Navigate(typeof(MainStage),w);
+            
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/ClickSound.mp3"));
             song.Play();
         }
+
+        private void IniciarMago(object sender, RoutedEventArgs e)
+        {
+
+            Wizard m = new Wizard("Jogador");
+
+            this.Frame.Navigate(typeof(MainStage),m);
+
+            song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/ClickSound.mp3"));
+            song.Play();
+        }
+
+        private void IniciarLadina(object sender, RoutedEventArgs e)
+        {
+
+            Rogue r = new Rogue("Jogador");
+
+            this.Frame.Navigate(typeof(MainStage),r);
+
+            song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/ClickSound.mp3"));
+            song.Play();
+        }
+        private void Retornar(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(FrontEnd.MainPage));
+            
+            song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/ClickSound.mp3"));
+            song.Play();
+        }
+        
     }
 }

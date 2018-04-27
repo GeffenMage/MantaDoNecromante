@@ -20,8 +20,16 @@ namespace NecromanteLL {
                     Given_xp = 100; Lvl = 5;
                     Base_def = 20; Base_dmg = 50;
                     //Inicializa os sprites do inimigo
+                   
                     Sprite = new Image();
-                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite.Height = 105 * 8 / 3;
+                    Sprite.Width = 20 * 8 / 3;
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+
+                    Skills.Add(new Skill("Fall I", 0, 20, 1, 0, 0, 0, 0, 30));
+                    Skills.Add(new Skill("Luck I", 80, 0, 1, 0, 0, 0, 0, 150));
+                    Skills.Add(new Skill("Unique I", 40, 0, 1, 0, 0, 10, 10, 100));
+
                     break;
                 case 2:
                     Nome = "Laposo World";
@@ -31,7 +39,14 @@ namespace NecromanteLL {
                     Base_def = 30; Base_dmg = 70;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
-                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite.Height = 105 * 8 / 3;
+                    Sprite.Width = 20 * 8 / 3;
+
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+
+                    Skills.Add(new Skill("Fall I", 0, 20, 1, 0, 0, 0, 0, 30));
+                    Skills.Add(new Skill("Luck I", 80, 0, 1, 0, 0, 0, 0, 150));
+                    Skills.Add(new Skill("Unique I", 40, 0, 1, 0, 0, 10, 10, 100));
                     break;
                 case 3:
                     Nome = "Laposo HelloWorld";
@@ -41,7 +56,14 @@ namespace NecromanteLL {
                     Base_def = 40; Base_dmg = 90;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
-                    //Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite.Height = 105 * 8 / 3;
+                    Sprite.Width = 20 * 8 / 3;
+
+                    Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+
+                    Skills.Add(new Skill("Fall I", 0, 20, 1, 0, 0, 0, 0, 30));
+                    Skills.Add(new Skill("Luck I", 80, 0, 1, 0, 0, 0, 0, 150));
+                    Skills.Add(new Skill("Unique I", 40, 0, 1, 0, 0, 10, 10, 100));
                     break;
             }
 

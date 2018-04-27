@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,10 @@ using Windows.UI.Xaml.Controls;
 
 namespace NecromanteLL {
     public class Wizard : Player {
-        //Construtor setando os valores base do warrior
+        //Construtor setando os valores base do warrior 
+        
         public Wizard(String nome) {
-
+          
             //Inicializa atributos do personagem
             this.Nome = nome;
             Lvl = 1; Xp_atual = 0; Xp_total = 1000;
@@ -20,10 +22,10 @@ namespace NecromanteLL {
             Nome_classe = "Wizard";
             //Inicializa os sprites do personagem
             
-            //Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleRight.gif"));
-            //Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/idleLeft.gif"));
-            //Sprite_walking_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkLeft.gif"));
-            //Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/Knight/walkRight.gif"));
+            Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoParadoRight.gif"));
+            Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoParadoLeft.gif"));
+            Sprite_walking_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoAndarLeft.gif"));
+            Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoAndarRight.gif"));
             
             //Cria e inicializa as skills da classe do personagem
             Skills = new List<Skill>();

@@ -34,11 +34,11 @@ namespace FrontEnd {
     /// 
 
 
-public sealed partial class MainPage : Page {
-
+    public sealed partial class MainPage : Page {
         private MediaPlayer song = new MediaPlayer();
 
         public MainPage() {
+
 
 
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.FullScreen;
@@ -49,15 +49,16 @@ public sealed partial class MainPage : Page {
             //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             //......................................................................................................
             this.InitializeComponent();
-            
-            //Classe de extensão para ajustar todas os xalm:
-            Adjuster.AdjustWindow(Floor);
+
+        //Classe de extensão para ajustar todas os xalm:
+        Adjuster.AdjustWindow(Floor);
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Waterfall.mp3"));
             song.Play();
             Debug.WriteLine(Start.Height + "," + Start.Width);
-        }
 
-        private void Sair(object sender, RoutedEventArgs e) {
+    }
+
+    private void Sair(object sender, RoutedEventArgs e) {
 
                song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/ClickSound.mp3"));
                song.Play();
@@ -72,5 +73,6 @@ public sealed partial class MainPage : Page {
 
             this.Frame.Navigate(typeof(ClassMenu));
         }
+
     }
 }
