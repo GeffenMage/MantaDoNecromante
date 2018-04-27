@@ -86,3 +86,4 @@ C:\Users\ewert\Source\Repos\MantaDoNecromante\NecromanteLL\obj\x86\Debug\pri.res
 C:\Users\ewert\Source\Repos\MantaDoNecromante\NecromanteLL\obj\x86\Debug\qualifiers.txt
 C:\Users\ewert\Source\Repos\MantaDoNecromante\NecromanteLL\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\ewert\Source\Repos\MantaDoNecromante\NecromanteLL\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\ewert\Source\Repos\MantaDoNecromante\NecromanteLL\obj\x86\Debug\NecromanteLL.csprojResolveAssemblyReference.cache
