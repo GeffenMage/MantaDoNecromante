@@ -1037,7 +1037,8 @@ namespace MantaNecromante.GameStage {
 
         private void SetEnemies() {
 
-            CreateEnemy(72, 24);
+            //CreateEnemy(72, 24);
+            CreateEnemy(88, 19);
         }
 
         /// <summary>
