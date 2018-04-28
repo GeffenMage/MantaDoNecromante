@@ -35,12 +35,12 @@
             <Button x:ConnectionId='5' Background="Transparent" BorderThickness="0" x:Name="Exit1" Content="Ladina"                       Height="40" Width="188" FontSize="25" FontStretch="Condensed" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-84,-49,-104,59" Grid.ColumnSpan="2"/>
 
 
-            <Image Source="ms-appx:///GameAssets/Buttons/idle_button.png" Margin="356,103,-784,-86" Canvas.Left="1106" Canvas.Top="789" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Image Source="ms-appx:///GameAssets/Buttons/idle_button.png" Margin="-448,102,-1429,-108" Canvas.Left="1106" Canvas.Top="789" RenderTransformOrigin="0.5,0.5" Stretch="None" Grid.ColumnSpan="2">
                 <Image.RenderTransform>
-                    <CompositeTransform ScaleX="-1"/>
+                    <CompositeTransform ScaleX="1"/>
                 </Image.RenderTransform>
             </Image>
-            <Button x:ConnectionId='6' Background="Transparent" BorderThickness="0" x:Name="voltar"                  Content="Retornar" Height="33" Width="115" FontSize="21" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="511,103,-626,-86" Grid.ColumnSpan="2" Canvas.Left="1134" Canvas.Top="791"/>
+            <Button x:ConnectionId='6' Background="Transparent" BorderThickness="0" x:Name="voltar"                  Content="Retornar" Height="55" Width="128" FontSize="25" FontFamily="Microsoft YaHei" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="425,103,-553,-108" Grid.ColumnSpan="2" Canvas.Left="1134" Canvas.Top="791"/>
         </Grid>
         <Image Stretch="Fill" Height="365" Canvas.Left="121" Canvas.Top="229" Width="235" Source="ms-appx:///GameAssets/Menu/nudePanel.png"/>
         <Image Stretch="UniformToFill" Height="309" Canvas.Left="128" Canvas.Top="270" Width="220" Source="ms-appx:///GameAssets/Characters/exhibit/knight_idle2.gif"/>

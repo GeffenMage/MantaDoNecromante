@@ -24,6 +24,7 @@ GameAssets\Characters\enemies\ogro\OgroParado.gif
 GameAssets\Characters\enemies\ogro\OgroParado1.gif
 GameAssets\Characters\exhibit\knight_idle.gif
 GameAssets\Characters\exhibit\knight_idle2.gif
+GameAssets\Characters\exhibit\Knight250.png
 GameAssets\Characters\heroes\knight\idleLeft.gif
 GameAssets\Characters\heroes\knight\idleRight.gif
 GameAssets\Characters\heroes\knight\walkLeft.gif
@@ -96,11 +97,14 @@ GameAssets\Maps\chest_open.gif
 GameAssets\Maps\mansion.png
 GameAssets\Menu\chooseClassTitle.png
 GameAssets\Menu\equip_menu.png
+GameAssets\Menu\HealthManaPanels2.png
 GameAssets\Menu\inventory.png
 GameAssets\Menu\main_background.gif
 GameAssets\Menu\mainTitle.png
 GameAssets\Menu\nudePanel.png
+GameAssets\Menu\nudePanel3.png
 GameAssets\Menu\optionMenu.png
+GameAssets\Menu\optionMenu2.png
 GameAssets\Menu\panel.png
 GameAssets\Songs\Battle.mp3
 GameAssets\Songs\Bau.mp3

@@ -146,6 +146,7 @@
     <Content Include="GameAssets\Characters\enemies\ogro\OgroMorte.gif" />
     <Content Include="GameAssets\Characters\enemies\ogro\OgroParado.gif" />
     <Content Include="GameAssets\Characters\enemies\ogro\OgroParado1.gif" />
+    <Content Include="GameAssets\Characters\exhibit\Knight250.png" />
     <Content Include="GameAssets\Characters\exhibit\knight_idle.gif" />
     <Content Include="GameAssets\Characters\exhibit\knight_idle2.gif" />
     <Content Include="GameAssets\Characters\heroes\knight\idleLeft.gif" />
@@ -220,6 +221,7 @@
     <Content Include="GameAssets\Maps\mansion.png" />
     <Content Include="GameAssets\Menu\chooseClassTitle.png" />
     <Content Include="GameAssets\Menu\equip_menu.png" />
+    <Content Include="GameAssets\Menu\HealthManaPanels2.png" />
     <Content Include="GameAssets\Menu\inventory.png" />
     <Content Include="GameAssets\Menu\main_background.gif" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -230,7 +232,9 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="GameAssets\Menu\mainTitle.png" />
     <Content Include="GameAssets\Menu\nudePanel.png" />
+    <Content Include="GameAssets\Menu\nudePanel3.png" />
     <Content Include="GameAssets\Menu\optionMenu.png" />
+    <Content Include="GameAssets\Menu\optionMenu2.png" />
     <Content Include="GameAssets\Menu\panel.png" />
     <Content Include="GameAssets\Songs\Battle.mp3" />
     <Content Include="GameAssets\Songs\Bau.mp3" />

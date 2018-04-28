@@ -26,12 +26,14 @@ using Windows.Media.Core;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace MantaNecromante.GameStage {
+namespace MantaNecromante.GameStage
+{
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
 
-    public sealed partial class MainStage : Page {
+    public sealed partial class MainStage : Page
+    {
 
         //Timer usado para o movimento:
         //..................................//
@@ -45,6 +47,7 @@ namespace MantaNecromante.GameStage {
         private bool isOptionsMenuOpen;                     //Checa se o menu estão no xalm;
         private bool isInventoryOpen;                       //Idem ao que está acima.
         private bool isInteractive;                         //Checa se na região do herói há algum item coletável. 
+        private bool equip;                                     //equip item
         //..................................//
 
         //BitmapImages para salvar os gifs de movimento das classes que o variam conforme a escolhe do usuário no menu de classes:
@@ -110,20 +113,21 @@ namespace MantaNecromante.GameStage {
         //..........................................................//
         private MediaPlayer song = new MediaPlayer();
 
-        public MainStage() {
+        public MainStage()
+        {
 
             this.InitializeComponent();
 
             Window.Current.CoreWindow.KeyDown += KeySentinel;
             Window.Current.CoreWindow.KeyUp += KeyDropped;
-            
-        
+
+
             //Fazendo os ajustes para para tudo rodar "perfeitamente":
             //....................................................................................................//
             Adjuster.AdjustWindow(Floor);
             Adjuster.adjustForCamera(Mansion, Hero, ref ScreenWidth, ref ScreenHeight, ref Cell_Width, ref Cell_Height, ref topSide, ref botSide, ref leftSide, ref rightSide);
             //....................................................................................................//
-            
+
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Castelo.mp3"));
             song.Play();
 
@@ -143,7 +147,8 @@ namespace MantaNecromante.GameStage {
             walkTimer.Start();
         }
 
-        private void SetAllMenusReady() {
+        private void SetAllMenusReady()
+        {
 
             Floor.Children.Remove(quick_menu);
             Floor.Children.Add(quick_menu);
@@ -153,42 +158,51 @@ namespace MantaNecromante.GameStage {
 
             Floor.Children.Remove(OptionsMenu);
             isOptionsMenuOpen = false;
-        } 
+        }
 
-        private void X_movePropsAlongWithCamera() {
+        private void X_movePropsAlongWithCamera()
+        {
 
-            foreach (Image prop in MovableProps) {
+            foreach (Image prop in MovableProps)
+            {
 
                 Canvas.SetLeft(prop, Canvas.GetLeft(prop) - x);
             }
         }
 
-        private void Y_movePropsAlongWithCamera() {
+        private void Y_movePropsAlongWithCamera()
+        {
 
-            foreach (Image prop in MovableProps) {
+            foreach (Image prop in MovableProps)
+            {
 
                 Canvas.SetTop(prop, Canvas.GetTop(prop) - y);
             }
         }
 
-        private void X_RetrievePropsPosition() {
+        private void X_RetrievePropsPosition()
+        {
 
-            foreach (Image prop in MovableProps) {
+            foreach (Image prop in MovableProps)
+            {
 
                 Canvas.SetLeft(prop, Canvas.GetLeft(prop) + x);
             }
         }
 
-        private void Y_RetrievePropsPosition() {
+        private void Y_RetrievePropsPosition()
+        {
 
-            foreach (Image prop in MovableProps) {
+            foreach (Image prop in MovableProps)
+            {
 
                 Canvas.SetTop(prop, Canvas.GetTop(prop) + y);
             }
         }
 
         //Blocos de colisão: paredes, mesas, etc...
-        private void SetBlocks() {
+        private void SetBlocks()
+        {
             CollisionMatrix[93, 20] = COLLISION;
             CollisionMatrix[92, 20] = COLLISION;
             CollisionMatrix[91, 20] = COLLISION;
@@ -870,14 +884,16 @@ namespace MantaNecromante.GameStage {
         /// 
 
         //BACK END
-        private void SetItems() {
+        private void SetItems()
+        {
 
             CreateItem(79, 30);
             CreateItem(88, 11);
 
         }
 
-        private void CreateItem(int row, int column) {
+        private void CreateItem(int row, int column)
+        {
 
             CollisionMatrix[row, column] = COLLISION;
             CollisionMatrix[row - 1, column] = ITEM;
@@ -899,16 +915,19 @@ namespace MantaNecromante.GameStage {
             MovableProps.Add(chest);
         }
 
-        private Image GetChest(int row, int column) {
+        private Image GetChest(int row, int column)
+        {
 
             Image foe = new Image();
 
             double x = column * Cell_Width + Canvas.GetLeft(Mansion) + Cell_Width / 2 - chestWidth / 2;
             double y = row * Cell_Height + Canvas.GetTop(Mansion) + Cell_Height / 2 - chestHeight / 2;
 
-            foreach (Image item in MovableProps) {
+            foreach (Image item in MovableProps)
+            {
 
-                if (Canvas.GetTop(item) == y || Canvas.GetLeft(item) == x) {
+                if (Canvas.GetTop(item) == y || Canvas.GetLeft(item) == x)
+                {
 
                     return item;
                 }
@@ -917,7 +936,8 @@ namespace MantaNecromante.GameStage {
             return null;
         }
 
-        private void CreateSlot() {
+        private void CreateSlot()
+        {
 
             // Linha 1
             ImageMatrix[0, 0] = Slot1; ImageMatrix[0, 0].Tapped += TappedImage;
@@ -982,31 +1002,36 @@ namespace MantaNecromante.GameStage {
             ImageMatrix[7, 3] = Slot46;
             ImageMatrix[7, 4] = Slot47;
             ImageMatrix[7, 5] = Slot48;
-            
+
         }
 
-        private void TappedImage(object sender, TappedRoutedEventArgs e) {
+        private void TappedImage(object sender, TappedRoutedEventArgs e)
+        {
 
             Image i = sender as Image;
             int coordImg = Convert.ToInt16(i.Name.Replace("Slot", ""));
-            
-            
-            
+
+
+
 
         }
 
-        private void GetItem(int row, int column) {
+        private void GetItem(int row, int column)
+        {
 
             Itens found = controller.FindIten(row, column);
 
-            for (int i = 0; i < 8; i++) {
+            for (int i = 0; i < 8; i++)
+            {
 
-                for (int j = 0; j < 6; j++) {
+                for (int j = 0; j < 6; j++)
+                {
 
-                    if (ImageMatrix[i, j].Source == null) {
+                    if (ImageMatrix[i, j].Source == null)
+                    {
 
-                        ImageMatrix[i, j].Source = found.Sprite.Source; 
-                        chosen.Inventario.Add(controller.FindIten(i,j));
+                        ImageMatrix[i, j].Source = found.Sprite.Source;
+                        chosen.Inventario.Add(controller.FindIten(i, j));
                         SetItems(); // baús infinitos até acabar o espaço
                         return;
                     }
@@ -1014,12 +1039,14 @@ namespace MantaNecromante.GameStage {
             }
         }
 
-        private Mob GetEnemy(int row, int column) {
+        private Mob GetEnemy(int row, int column)
+        {
 
             return controller.FindMob(row, column);
         }
 
-        private void CreateEnemy(int row, int column) {
+        private void CreateEnemy(int row, int column)
+        {
 
             CollisionMatrix[row, column] = ENEMY;
 
@@ -1035,7 +1062,8 @@ namespace MantaNecromante.GameStage {
             MovableProps.Add(foe.Sprite);
         }
 
-        private void SetEnemies() {
+        private void SetEnemies()
+        {
 
             //CreateEnemy(72, 24);
             CreateEnemy(88, 19);
@@ -1049,9 +1077,11 @@ namespace MantaNecromante.GameStage {
         //Aqui é feito o retorno do herói/Mapa a sua posição anterior à atual, em que ele colide com o cenário:
         //Caso seja o mapa se movendo, ele é quem retorna à coordenada de canvas anterior.
         //..........................................................//
-        private void BumpWithScenario() {
+        private void BumpWithScenario()
+        {
 
-            if (isCameraHorizontal) {
+            if (isCameraHorizontal)
+            {
                 Canvas.SetLeft(Mansion, Canvas.GetLeft(Mansion) + x);
 
                 X_RetrievePropsPosition();
@@ -1059,13 +1089,15 @@ namespace MantaNecromante.GameStage {
                 //Apenas para testes//
                 Canvas.SetLeft(CollisionGrid, Canvas.GetLeft(CollisionGrid) + x);
             }
-            else {
+            else
+            {
 
                 Canvas.SetLeft(Hero, Canvas.GetLeft(Hero) - x);
             }
 
 
-            if (isCameraVertical) {
+            if (isCameraVertical)
+            {
                 Canvas.SetTop(Mansion, Canvas.GetTop(Mansion) + y);
 
                 Y_RetrievePropsPosition();
@@ -1073,14 +1105,16 @@ namespace MantaNecromante.GameStage {
                 //Apenas para testes//
                 Canvas.SetTop(CollisionGrid, Canvas.GetTop(CollisionGrid) + y);
             }
-            else {
+            else
+            {
 
                 Canvas.SetTop(Hero, Canvas.GetTop(Hero) - y);
             }
         }
         //..........................................................//
 
-        private void CheckCollision() {
+        private void CheckCollision()
+        {
 
             //Aqui há o cálculo para determinar em quais células da matriz os vértices do herói estão:
             //....................................................................................................\\
@@ -1096,11 +1130,13 @@ namespace MantaNecromante.GameStage {
             //Aqui procuro saber se as 4 células da matriz em que se situam os vértices do herói estão em células de colisão (1),
             //células de inimigos (3) ou células de itens (2) ou em nenhuma das três (0).
             //..............................................................................................................................................................................................................\\
-            if (CollisionMatrix[upper_row, left_column] == COLLISION || CollisionMatrix[upper_row, right_column] == COLLISION || CollisionMatrix[bottom_row, left_column] == COLLISION || CollisionMatrix[bottom_row, right_column] == COLLISION) {
+            if (CollisionMatrix[upper_row, left_column] == COLLISION || CollisionMatrix[upper_row, right_column] == COLLISION || CollisionMatrix[bottom_row, left_column] == COLLISION || CollisionMatrix[bottom_row, right_column] == COLLISION)
+            {
 
                 BumpWithScenario();
             }
-            else if (CollisionMatrix[upper_row, left_column] == ITEM || CollisionMatrix[upper_row, right_column] == ITEM || CollisionMatrix[bottom_row, left_column] == ITEM || CollisionMatrix[bottom_row, right_column] == ITEM) {
+            else if (CollisionMatrix[upper_row, left_column] == ITEM || CollisionMatrix[upper_row, right_column] == ITEM || CollisionMatrix[bottom_row, left_column] == ITEM || CollisionMatrix[bottom_row, right_column] == ITEM)
+            {
 
                 Canvas.SetTop(infoBox, Canvas.GetTop(Hero) - Hero.Height / 2);
                 Canvas.SetLeft(infoBox, Canvas.GetLeft(Hero) + Hero.Width / 2 - infoBox.Width / 2);
@@ -1108,26 +1144,31 @@ namespace MantaNecromante.GameStage {
                 isInteractive = true;
                 infoBox.Opacity = 1;
             }
-            else if (CollisionMatrix[upper_row, left_column] == ENEMY || CollisionMatrix[upper_row, right_column] == ENEMY || CollisionMatrix[bottom_row, left_column] == ENEMY || CollisionMatrix[bottom_row, right_column] == ENEMY) {
+            else if (CollisionMatrix[upper_row, left_column] == ENEMY || CollisionMatrix[upper_row, right_column] == ENEMY || CollisionMatrix[bottom_row, left_column] == ENEMY || CollisionMatrix[bottom_row, right_column] == ENEMY)
+            {
 
                 int x = 0, y = 0;
 
-                if (CollisionMatrix[upper_row, left_column] == ENEMY) {
+                if (CollisionMatrix[upper_row, left_column] == ENEMY)
+                {
 
                     x = left_column;
                     y = upper_row;
                 }
-                else if (CollisionMatrix[upper_row, right_column] == ENEMY) {
+                else if (CollisionMatrix[upper_row, right_column] == ENEMY)
+                {
 
                     x = right_column;
                     y = upper_row;
                 }
-                else if (CollisionMatrix[bottom_row, left_column] == ENEMY) {
+                else if (CollisionMatrix[bottom_row, left_column] == ENEMY)
+                {
 
                     x = left_column;
                     y = bottom_row;
                 }
-                else if (CollisionMatrix[bottom_row, right_column] == ENEMY) {
+                else if (CollisionMatrix[bottom_row, right_column] == ENEMY)
+                {
 
                     x = right_column;
                     y = bottom_row;
@@ -1144,7 +1185,8 @@ namespace MantaNecromante.GameStage {
 
                 this.Frame.Navigate(typeof(BattleStage), battleController);
             }
-            else {
+            else
+            {
 
                 infoBox.Opacity = 0;
             }
@@ -1152,29 +1194,34 @@ namespace MantaNecromante.GameStage {
 
         //Ao apertar 'E' para interagir, é necessário saber se uma das célula em que se encontra os vértices do herói é uma célula de itens.
         //..............................................................................................//
-        private void Interact() {
+        private void Interact()
+        {
 
             Image item = new Image();
             int x = 0, y = 0;
 
             if (!isInteractive) return;
 
-            if (CollisionMatrix[upper_row + 1, left_column] == COLLISION) {
+            if (CollisionMatrix[upper_row + 1, left_column] == COLLISION)
+            {
 
                 x = left_column;
                 y = upper_row + 1;
             }
-            else if (CollisionMatrix[upper_row + 1, right_column] == COLLISION) {
+            else if (CollisionMatrix[upper_row + 1, right_column] == COLLISION)
+            {
 
                 x = right_column;
                 y = upper_row + 1;
             }
-            else if (CollisionMatrix[bottom_row + 1, left_column] == COLLISION) {
+            else if (CollisionMatrix[bottom_row + 1, left_column] == COLLISION)
+            {
 
                 x = left_column;
                 y = bottom_row + 1;
             }
-            else if (CollisionMatrix[bottom_row + 1, right_column] == COLLISION) {
+            else if (CollisionMatrix[bottom_row + 1, right_column] == COLLISION)
+            {
 
                 x = right_column;
                 y = bottom_row + 1;
@@ -1190,7 +1237,8 @@ namespace MantaNecromante.GameStage {
         }
         //..............................................................................................//
 
-        private void CreateGrid() {
+        private void CreateGrid()
+        {
 
             int x, y, divider = 100;
 
@@ -1199,14 +1247,16 @@ namespace MantaNecromante.GameStage {
 
             divider += 2;
 
-            for (int i = 0; i < divider; i++) {
+            for (int i = 0; i < divider; i++)
+            {
 
                 RowDefinition rd = new RowDefinition();
                 rd.Height = new GridLength(y, GridUnitType.Pixel);
 
                 CollisionGrid.RowDefinitions.Add(rd);
 
-                for (int j = 0; j < divider; j++) {
+                for (int j = 0; j < divider; j++)
+                {
 
                     ColumnDefinition cd = new ColumnDefinition();
                     cd.Width = new GridLength(x, GridUnitType.Pixel);
@@ -1215,9 +1265,11 @@ namespace MantaNecromante.GameStage {
                 }
             }
 
-            for (int j = 0; j < divider; j++) {
+            for (int j = 0; j < divider; j++)
+            {
 
-                for (int k = 0; k < divider; k++) {
+                for (int k = 0; k < divider; k++)
+                {
 
                     Border border = new Border();
                     border.BorderThickness = new Thickness(1);
@@ -1245,13 +1297,15 @@ namespace MantaNecromante.GameStage {
             Canvas.SetLeft(CollisionGrid, Canvas.GetLeft(Mansion));
         }
 
-        private void ExitInventory(object sender, RoutedEventArgs e) {
+        private void ExitInventory(object sender, RoutedEventArgs e)
+        {
 
             Floor.Children.Remove(Inventory);
             isInventoryOpen = false;
         }
 
-        private void GettingCell(object sender, TappedRoutedEventArgs e) {
+        private void GettingCell(object sender, TappedRoutedEventArgs e)
+        {
 
             var cell = (Border)sender;
             cell.Background = new SolidColorBrush(Colors.Red);
@@ -1263,12 +1317,15 @@ namespace MantaNecromante.GameStage {
 
         }
 
-        private void Walk(object sender, object e) {
+        private void Walk(object sender, object e)
+        {
 
             //If statements para decidir qual imagem deve se mover: a do herói ou a do mapa,gerando a ilusão de uma câmera seguindo o personagem.
-            if (Canvas.GetLeft(Hero) + (Hero.Width / 2) == ScreenWidth / 2) {
+            if (Canvas.GetLeft(Hero) + (Hero.Width / 2) == ScreenWidth / 2)
+            {
 
-                if ((x < 0 && Canvas.GetLeft(Mansion) < 0) || (x > 0 && Canvas.GetLeft(Mansion) > ScreenWidth - Mansion.Width)) {
+                if ((x < 0 && Canvas.GetLeft(Mansion) < 0) || (x > 0 && Canvas.GetLeft(Mansion) > ScreenWidth - Mansion.Width))
+                {
 
                     isCameraHorizontal = true;
                     Canvas.SetLeft(Mansion, Canvas.GetLeft(Mansion) - x);
@@ -1278,21 +1335,25 @@ namespace MantaNecromante.GameStage {
                     //Apenas Teste//
                     Canvas.SetLeft(CollisionGrid, Canvas.GetLeft(CollisionGrid) - x);
                 }
-                else {
+                else
+                {
 
                     isCameraHorizontal = false;
                     Canvas.SetLeft(Hero, Canvas.GetLeft(Hero) + x);
                 }
             }
-            else {
+            else
+            {
 
                 isCameraHorizontal = false;
                 Canvas.SetLeft(Hero, Canvas.GetLeft(Hero) + x);
             }
 
-            if (Canvas.GetTop(Hero) + (Hero.Height / 2) == ScreenHeight / 2) {
+            if (Canvas.GetTop(Hero) + (Hero.Height / 2) == ScreenHeight / 2)
+            {
 
-                if ((y < 0 && Canvas.GetTop(Mansion) < 0) || (y > 0 && Canvas.GetTop(Mansion) > ScreenHeight - Mansion.Height)) {
+                if ((y < 0 && Canvas.GetTop(Mansion) < 0) || (y > 0 && Canvas.GetTop(Mansion) > ScreenHeight - Mansion.Height))
+                {
 
                     isCameraVertical = true;
                     Canvas.SetTop(Mansion, Canvas.GetTop(Mansion) - y);
@@ -1302,14 +1363,16 @@ namespace MantaNecromante.GameStage {
                     //Apenas Teste//
                     Canvas.SetTop(CollisionGrid, Canvas.GetTop(CollisionGrid) - y);
                 }
-                else {
+                else
+                {
 
                     isCameraVertical = false;
                     Canvas.SetTop(Hero, Canvas.GetTop(Hero) + y);
                 }
 
             }
-            else {
+            else
+            {
 
                 isCameraVertical = false;
                 Canvas.SetTop(Hero, Canvas.GetTop(Hero) + y);
@@ -1318,12 +1381,23 @@ namespace MantaNecromante.GameStage {
             CheckCollision();
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e) {
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+
+            //Fazendo os ajustes para para tudo rodar "perfeitamente":
+            //....................................................................................................//
+            //Adjuster.AdjustWindow(Floor);
+            // Adjuster.adjustForCamera(Mansion, Hero, ref ScreenWidth, ref ScreenHeight, ref Cell_Width, ref Cell_Height, ref topSide, ref botSide, ref leftSide, ref rightSide);
+            //..................................................................................................../
 
             chosen = (Player)e.Parameter;
-            if (chosen is Rogue) { Hero.Height = 106;Hero.Width = 54.18; }
-            if (chosen is Wizard) { Hero.Height = 112; Hero.Width = 55.16; }
-            if (chosen is Warrior) { Hero.Height = 85; Hero.Width = 54.18; }
+
+            if (chosen is Warrior) { Hero.Height = 90; Hero.Width = 37.18; }
+
+            if (chosen is Rogue) { Hero.Height = 110; Hero.Width = 55.18; }
+
+            if (chosen is Wizard) { Hero.Height = 110; Hero.Width = 60.18; }
+
 
             idletoLeft = chosen.Sprite_idle_left;
             idletoRight = chosen.Sprite_idle_right;
@@ -1333,16 +1407,19 @@ namespace MantaNecromante.GameStage {
 
             direction = runtoRight;
             Hero.Source = idletoRight;
+
         }
 
         //A sentinela que vigia as teclas atentamente:
-        private void KeySentinel(CoreWindow sender, KeyEventArgs e) {
+        private void KeySentinel(CoreWindow sender, KeyEventArgs e)
+        {
 
             isMovementKey = true;
 
             int speed = 5;
 
-            switch (e.VirtualKey) {
+            switch (e.VirtualKey)
+            {
 
                 case Windows.System.VirtualKey.Escape:
 
@@ -1410,11 +1487,13 @@ namespace MantaNecromante.GameStage {
             if (Hero.Source != direction && isMovementKey) Hero.Source = direction;
         }
 
-        private void KeyDropped(CoreWindow sender, KeyEventArgs e) {
+        private void KeyDropped(CoreWindow sender, KeyEventArgs e)
+        {
 
             BitmapImage stand = null;
 
-            switch (e.VirtualKey) {
+            switch (e.VirtualKey)
+            {
 
                 case Windows.System.VirtualKey.Escape:
 
@@ -1439,18 +1518,21 @@ namespace MantaNecromante.GameStage {
             if (direction == runtoLeft) stand = idletoLeft;
             else if (direction == runtoRight) stand = idletoRight;
 
-            if (isMovementKey) {
+            if (isMovementKey)
+            {
 
                 Hero.Source = stand;
             }
         }
 
-        private void Exit(object sender, RoutedEventArgs e) {
+        private void Exit(object sender, RoutedEventArgs e)
+        {
 
             CoreApplication.Exit();
         }
 
-        private void Continue(object sender, RoutedEventArgs e) {
+        private void Continue(object sender, RoutedEventArgs e)
+        {
 
             Floor.Children.Remove(OptionsMenu);
             isOptionsMenuOpen = false;
@@ -1459,11 +1541,15 @@ namespace MantaNecromante.GameStage {
         {
 
             this.Frame.Navigate(typeof(MantaNecromante.ClassMenu.ClassMenu));
+            song.Pause();
+
         }
         private void Menu_Iniciar(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(FrontEnd.MainPage));
+            song.Pause();
         }
 
     }
 }
+   
