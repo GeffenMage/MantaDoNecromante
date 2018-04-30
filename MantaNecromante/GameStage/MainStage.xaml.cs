@@ -987,10 +987,13 @@ namespace MantaNecromante.GameStage {
 
             Image i = sender as Image;
             int coordImg = Convert.ToInt16(i.Name.Replace("Slot", ""));
-            
-            
-            
 
+            chosen.Equipar(chosen.Inventario[coordImg-1]);
+
+            chosen.Inventario[coordImg - 1].Sprite.
+            
+            
+  
         }
 
         private void GetItem(int row, int column) {
@@ -1335,6 +1338,9 @@ namespace MantaNecromante.GameStage {
             isMovementKey = true;
 
             int speed = 5;
+
+
+
 
             switch (e.VirtualKey) {
 
