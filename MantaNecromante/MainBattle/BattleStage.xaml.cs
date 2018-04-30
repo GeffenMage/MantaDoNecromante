@@ -198,7 +198,6 @@ namespace MantaNecromante.MainBattle {
         }
 
         private void BotaoAtacar(object sender, RoutedEventArgs e) {
-
             battleController.Atacar();
             Progress_Bar();
         }

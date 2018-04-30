@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Height="900" Width="1440">
-
+    
     <Canvas Name="Floor" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="1440" Height="900">
 
 
@@ -23,22 +23,22 @@
 
         <Grid Height="44" Canvas.Left="9" Canvas.Top="773" Width="195">
             <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button Background="Transparent" BorderThickness="0" x:Name="Start1" Content="Atacar" Height="31" Width="152" FontSize="24" FontFamily="Algerian" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="22,0,21,10" Click="BotaoAtacar" RenderTransformOrigin="0.493,0.613"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="Start1" Content="Atacar" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="5,-3,7,2" Click="BotaoAtacar"/>
         </Grid>
 
         <Grid Height="44" Canvas.Left="265" Canvas.Top="773" Width="195">
             <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button Background="Transparent" BorderThickness="0" x:Name="Skill0" Content="Skill 1" Height="45" Width="183" FontSize="24" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5" Click="BotaoSkill"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="Skill0" Content="Skill 1" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5" Click="BotaoSkill"/>
         </Grid>
 
         <Grid Height="44" Canvas.Left="9" Canvas.Top="833" Width="195">
             <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button Background="Transparent" BorderThickness="0" x:Name="Skill1" Content="Skill 2" Height="31" Width="151" FontSize="24" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="21,3,23,10" Click="BotaoSkill"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="Skill1" Content="Skill 2" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5" Click="BotaoSkill"/>
         </Grid>
 
         <Grid Height="44" Canvas.Left="265" Canvas.Top="833" Width="195">
             <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button Background="Transparent" BorderThickness="0" x:Name="Skill2" Content="Skill 3" Height="45" Width="183" FontSize="24" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5" Click="BotaoSkill"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="Skill2" Content="Skill 3" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5" Click="BotaoSkill"/>
         </Grid>
 
 
@@ -46,17 +46,16 @@
         <RelativePanel Opacity="100" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/optionMenu.png" Margin="0,0,-10,0" Width="360" HorizontalAlignment="Left"/>
             <Button  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="56" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,167,80,264" Click="Continue" Canvas.Top="172"/>
-            <Button Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="42" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="85,272,80,173" Click="Exit" Canvas.Left="82" Canvas.Top="267"/>
+            <Button Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="42" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="81,270,84,175" Click="Exit" Canvas.Left="82" Canvas.Top="267"/>
 
         </RelativePanel>
 
-        <ProgressBar Name = "Progress_HP_chosen" Height="20" Canvas.Left="26" Canvas.Top="680" Width="394" Background="Red"  />
-        <ProgressBar Name = "Progress_MP_chosen"  Height="20" Canvas.Left="26" Canvas.Top="714" Width="394"  Background="Blue"/>
+        <ProgressBar Name = "Progress_HP_chosen" Height="20" Canvas.Left="26" Canvas.Top="760" Width="394" Foreground="Red" Background="Gray"/>
+        <ProgressBar Name = "Progress_MP_chosen" Height="20" Canvas.Left="26" Canvas.Top="800" Width="394" Foreground="Blue" Background="Gray"/>
 
-        <ProgressBar Name = "Progress_HP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="680" Width="394" Background="Red"/>
-        <ProgressBar Name = "Progress_MP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="714" Width="394"  Background="Blue"/>
-
-
+        <ProgressBar Name = "Progress_HP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="760" Width="394" Foreground="Red" Background="Gray"/>
+        <ProgressBar Name = "Progress_MP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="800" Width="394" Foreground="Blue" Background="Gray"/>
+        
         <!--<Button Name="Menu" Content="Menu" Click="Menu_Click" ></Button>-->
 
     </Canvas>

@@ -1009,9 +1009,9 @@ namespace MantaNecromante.GameStage
 
             Image i = sender as Image;
             int coordImg = Convert.ToInt16(i.Name.Replace("Slot", ""));
-
-
-
+            
+            
+            
 
         }
 
@@ -1064,7 +1064,8 @@ namespace MantaNecromante.GameStage
         private void SetEnemies()
         {
 
-            CreateEnemy(72, 24);
+            //CreateEnemy(72, 24);
+            CreateEnemy(88, 19);
         }
 
         /// <summary>
@@ -1416,8 +1417,7 @@ namespace MantaNecromante.GameStage
 
             int speed = 5;
 
-            switch (e.VirtualKey)
-            {
+            switch (e.VirtualKey) {
 
                 case Windows.System.VirtualKey.Escape:
 
