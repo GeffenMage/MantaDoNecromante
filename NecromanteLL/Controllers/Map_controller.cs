@@ -49,8 +49,8 @@ namespace NecromanteLL {
             itens.Add(new Cajado("Cajado de metal", 40, 0, 0, 10, "ms-appx:///GameAssets/Characters/itens/cajado_2.png"));
             itens.Add(new Bota("Bota de Couro", 0, 20, 0, 10, "ms-appx:///GameAssets/Characters/itens/bota_1.png"));
             itens.Add(new Bota("Bota de Bronze", 10, 20, 10, 0, "ms-appx:///GameAssets/Characters/itens/bota_2.png"));
-            itens.Add(new Calca("Calca de Couro", 0, 20, 0, 10, "ms-appx:///GameAssets/Characters/itens/pant.png"));
-            itens.Add(new Calca("Calca de Bronze", 10, 30, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/pant_t"));
+            itens.Add(new Calca("Calca de Couro", 0, 20, 0, 10, "ms-appx:///GameAssets/Characters/itens/pant_t.png"));
+            itens.Add(new Calca("Calca de Bronze", 10, 30, 10, 0, "ms-appx:///GameAssets/Characters/itens/pant_t.png"));
             itens.Add(new Capacete("Capacete de Couro", 0, 20, 10, 0, "ms-appx:///GameAssets/Characters/itens/capacete_1.png"));
             itens.Add(new Capacete("Capacete de Bronze", 0, 50, 10, 0, "ms-appx:///GameAssets/Characters/itens/capacete_2.png"));
             itens.Add(new Cota("Cota de Couro", 10, 10, 0, 10, "ms-appx:///GameAssets/Characters/itens/v2/Armor 1.png"));

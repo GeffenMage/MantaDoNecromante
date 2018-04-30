@@ -9,9 +9,11 @@ using Windows.UI.Xaml.Controls;
 
 namespace NecromanteLL {
     public class Warrior : Player {
-
+        
         //Construtor setando os valores base do warrior
         public Warrior(String nome) {
+            
+            
 
             //Inicializa atributos do personagem
             this.Nome = nome;

@@ -25,12 +25,12 @@ namespace MantaNecromante.ClassMenu {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    /// 
+    
+
 
     public sealed partial class ClassMenu : Page {
         private MediaPlayer song = new MediaPlayer();
         public ClassMenu() {
-
             this.InitializeComponent();
             Adjuster.AdjustWindow(Floor);
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Waterfall.mp3"));
@@ -70,8 +70,8 @@ namespace MantaNecromante.ClassMenu {
         }
         private void Retornar(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Page));
-
+            this.Frame.Navigate(typeof(FrontEnd.MainPage));
+            
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/ClickSound.mp3"));
             song.Play();
         }

@@ -41,6 +41,9 @@
       <RootProperty Name="Width" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Children" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="RenderTransform" />
       <RootMethod Name="GetColumnSpan" />
       <RootMethod Name="SetColumnSpan" />
     </RootType>
@@ -65,6 +68,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
       <RootProperty Name="ScaleX" />
+      <RootProperty Name="Rotation" />
     </RootType>
     <RootType FullName="MantaNecromante.ClassMenu.ClassMenu" />
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
@@ -90,6 +94,13 @@
       <RootProperty Name="FontFamily" />
     </RootType>
     <RootType FullName="MantaNecromante.GameStage.MainStage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+    </RootType>
     <RootType FullName="MantaNecromante.MainBattle.BattleStage" />
     <RootType FullName="FrontEnd.MainPage" />
   </Roots.RootTypes>
