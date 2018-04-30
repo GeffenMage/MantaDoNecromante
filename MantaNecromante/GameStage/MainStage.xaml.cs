@@ -47,7 +47,6 @@ namespace MantaNecromante.GameStage
         private bool isOptionsMenuOpen;                     //Checa se o menu estão no xalm;
         private bool isInventoryOpen;                       //Idem ao que está acima.
         private bool isInteractive;                         //Checa se na região do herói há algum item coletável. 
-        private bool equip;                                     //equip item
         //..................................//
 
         //BitmapImages para salvar os gifs de movimento das classes que o variam conforme a escolhe do usuário no menu de classes:
@@ -1041,7 +1040,7 @@ namespace MantaNecromante.GameStage
 
         private Mob GetEnemy(int row, int column)
         {
-
+            song.Pause();
             return controller.FindMob(row, column);
         }
 
