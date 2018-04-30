@@ -98,8 +98,8 @@
       <RootProperty Name="Name" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="Background" />
-      <RootProperty Name="BorderBrush" />
     </RootType>
     <RootType FullName="MantaNecromante.MainBattle.BattleStage" />
     <RootType FullName="FrontEnd.MainPage" />

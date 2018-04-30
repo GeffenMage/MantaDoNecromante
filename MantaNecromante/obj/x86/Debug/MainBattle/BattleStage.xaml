@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Height="900" Width="1440">
-
+    
     <Canvas x:ConnectionId='1' Name="Floor" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="1440" Height="900">
 
 
@@ -50,11 +50,11 @@
 
         </RelativePanel>
 
-        <ProgressBar x:ConnectionId='6' Name = "Progress_HP_chosen" Height="20" Canvas.Left="26" Canvas.Top="680" Width="394" Background="Red" BorderBrush="AntiqueWhite" />
-        <ProgressBar x:ConnectionId='7' Name = "Progress_MP_chosen" Height="20" Canvas.Left="26" Canvas.Top="714" Width="394"  Background="Blue"/>
+        <ProgressBar x:ConnectionId='6' Name = "Progress_HP_chosen" Height="20" Canvas.Left="26" Canvas.Top="760" Width="394" Foreground="Red" Background="Gray"/>
+        <ProgressBar x:ConnectionId='7' Name = "Progress_MP_chosen" Height="20" Canvas.Left="26" Canvas.Top="800" Width="394"  Background="Blue"/>
 
-        <ProgressBar x:ConnectionId='8' Name = "Progress_HP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="680" Width="394" Background="Red"/>
-        <ProgressBar x:ConnectionId='9' Name = "Progress_MP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="714" Width="394"  Background="Blue"/>
+        <ProgressBar x:ConnectionId='8' Name = "Progress_HP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="760" Width="394" Background="Red"/>
+        <ProgressBar x:ConnectionId='9' Name = "Progress_MP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="800" Width="394"  Background="Blue"/>
         
         <!--<Button Name="Menu" Content="Menu" Click="Menu_Click" ></Button>-->
 
