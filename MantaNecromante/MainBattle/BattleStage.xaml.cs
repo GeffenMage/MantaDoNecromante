@@ -61,6 +61,7 @@ namespace MantaNecromante.MainBattle {
         /// </summary>
         public void EnemyIsDead() {
 
+
         }
 
 
@@ -68,7 +69,16 @@ namespace MantaNecromante.MainBattle {
         /// Método que trata a morte do jogador
         /// </summary>
         public void PlayerIsDead() {
+            if (battleController.Jogador.Hp_atual <= 0)
+            {
+                battleController.Jogador.IsAlive();
+            }
+            else
+            {
+                battleController.
 
+
+            }
         }
 
         /// <summary>
@@ -87,10 +97,11 @@ namespace MantaNecromante.MainBattle {
 
         public void Progress_Bar() {
             // Progess bar dinamica para o Hp do jogador
+
             Progress_HP_chosen.Minimum = 0;
             Progress_HP_chosen.Maximum = battleController.Jogador.Hp_total;
-            Progress_HP_chosen.Value = battleController.Jogador.Hp_atual;
-
+            Progress_HP_chosen.Value  = battleController.Jogador.Hp_atual;
+            
             // Progess bar dinamica para o Mp do jogador
             Progress_MP_chosen.Minimum = 0;
             Progress_MP_chosen.Maximum = battleController.Jogador.Mp_total;
@@ -105,6 +116,7 @@ namespace MantaNecromante.MainBattle {
             Progress_MP_Mob.Minimum = 0;
             Progress_MP_Mob.Maximum = battleController.Inimigo.Mp_total;
             Progress_MP_Mob.Value = battleController.Inimigo.Mp_atual;
+            
         }
 
         private void CoreWindow_KeyDown(CoreWindow sender, KeyEventArgs args) {
