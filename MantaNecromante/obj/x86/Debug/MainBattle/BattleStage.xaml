@@ -50,11 +50,11 @@
 
         </RelativePanel>
 
-        <ProgressBar x:ConnectionId='6' Name = "Progress_HP_chosen" Height="20" Canvas.Left="26" Canvas.Top="760" Width="394" Foreground="Red" Background="Gray"/>
-        <ProgressBar x:ConnectionId='7' Name = "Progress_MP_chosen" Height="20" Canvas.Left="26" Canvas.Top="800" Width="394" Foreground="Blue" Background="Gray"/>
+        <ProgressBar x:ConnectionId='6' Name = "Progress_HP_chosen" Height="20" Canvas.Left="26" Canvas.Top="760" Width="394" Foreground="Red" />
+        <ProgressBar x:ConnectionId='7' Name = "Progress_MP_chosen" Height="20" Canvas.Left="26" Canvas.Top="800" Width="394" Foreground="Blue" />
 
-        <ProgressBar x:ConnectionId='8' Name = "Progress_HP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="760" Width="394" Foreground="Red" Background="Gray"/>
-        <ProgressBar x:ConnectionId='9' Name = "Progress_MP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="800" Width="394" Foreground="Blue" Background="Gray"/>
+        <ProgressBar x:ConnectionId='8' Name = "Progress_HP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="760" Width="394" Foreground="Red" />
+        <ProgressBar x:ConnectionId='9' Name = "Progress_MP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="800" Width="394" Foreground="Blue" />
         
         <!--<Button Name="Menu" Content="Menu" Click="Menu_Click" ></Button>-->
 
