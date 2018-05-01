@@ -14,7 +14,6 @@ namespace NecromanteLL {
         private List<Mob> mobs;
         private Itens[,] itens_do_mapa;
         private Mob[,] Mobs_do_mapa;
-        private Player jogador;
         Random item_num;
 
         internal List<Itens> Itens { get => Itens; set => Itens = value; }
@@ -81,13 +80,17 @@ namespace NecromanteLL {
             }
         }
 
+
         public void setMob(int pos_x,int pos_y) {
             Random mob_num;
             mob_num = new Random();
             Mob[] vet = mobs.ToArray();
+            int qnt_mobs = mobs.Count;
+            int x = mob_num.Next(0, qnt_mobs);
+            Mobs_do_mapa[pos_x, pos_y] = vet[x];
+            mobs.RemoveAt(x);
 
-            Mobs_do_mapa[pos_x, pos_y] = vet[mob_num.Next(0,12)];
-            //Mobs_do_mapa[pos_x, pos_y] = vet[0];
+            //Mobs_do_mapa[pos_x, pos_y] = vet[9];
 
         }
 

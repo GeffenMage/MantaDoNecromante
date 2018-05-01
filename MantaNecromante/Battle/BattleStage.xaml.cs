@@ -61,6 +61,7 @@ namespace MantaNecromante.MainBattle {
         /// </summary>
         public void EnemyIsDead() {
 
+
         }
 
 
@@ -68,29 +69,40 @@ namespace MantaNecromante.MainBattle {
         /// Método que trata a morte do jogador
         /// </summary>
         public void PlayerIsDead() {
-
+            //Mostrar uma mensagem que o player morreu e encerrar a batalha
         }
 
         /// <summary>
         /// Trata o Evento que ocorre no battleController quando o turno muda para o Player
         /// </summary>
         public void TurnChangeToPlayer() {
-
+            //Mostrar que o turno mudou para o jogador
+            Progress_Bar_Update();
         }
 
         /// <summary>
         /// Trata o Evento que ocorre no battleController quando o turno muda para o Inimigo
         /// </summary>
         public void TurnChangeToEnemy() {
+            //Mostrar que o turno mudou para o inimigo
+            Progress_Bar_Update();
+            battleController.EnemyChoice();
+        }
 
+        public void Progress_Bar_Update() {
+            Progress_HP_chosen.Value = battleController.Jogador.Hp_atual;
+            Progress_MP_chosen.Value = battleController.Jogador.Mp_atual;
+            Progress_HP_Mob.Value = battleController.Inimigo.Hp_atual;
+            Progress_MP_Mob.Value = battleController.Inimigo.Mp_atual;
         }
 
         public void Progress_Bar() {
             // Progess bar dinamica para o Hp do jogador
+
             Progress_HP_chosen.Minimum = 0;
             Progress_HP_chosen.Maximum = battleController.Jogador.Hp_total;
-            Progress_HP_chosen.Value = battleController.Jogador.Hp_atual;
-
+            Progress_HP_chosen.Value  = battleController.Jogador.Hp_atual;
+            
             // Progess bar dinamica para o Mp do jogador
             Progress_MP_chosen.Minimum = 0;
             Progress_MP_chosen.Maximum = battleController.Jogador.Mp_total;
@@ -105,6 +117,7 @@ namespace MantaNecromante.MainBattle {
             Progress_MP_Mob.Minimum = 0;
             Progress_MP_Mob.Maximum = battleController.Inimigo.Mp_total;
             Progress_MP_Mob.Value = battleController.Inimigo.Mp_atual;
+            
         }
 
         private void CoreWindow_KeyDown(CoreWindow sender, KeyEventArgs args) {
@@ -168,6 +181,7 @@ namespace MantaNecromante.MainBattle {
             battleController.PlayerDeath += PlayerIsDead;
             battleController.EnemyDeath += EnemyIsDead;
             battleController.PlayerHasNoMana += NoManaAvalible;
+            Progress_Bar();
         }
 
         private void Menu_Click(object sender, RoutedEventArgs e) {
@@ -187,7 +201,6 @@ namespace MantaNecromante.MainBattle {
 
         private void BotaoAtacar(object sender, RoutedEventArgs e) {
             battleController.Atacar();
-            Progress_Bar();
         }
 
         private void BotaoSkill(object sender, RoutedEventArgs e) {
@@ -197,7 +210,8 @@ namespace MantaNecromante.MainBattle {
             int Skill = Convert.ToInt16(b.Name.Replace("Skill", ""));
 
             battleController.CastSkill(battleController.Jogador.Skills[Skill]);
-            Progress_Bar();
+
+            Progress_Bar_Update();
         }
     }
 }

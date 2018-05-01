@@ -50,11 +50,11 @@
 
         </RelativePanel>
 
-        <ProgressBar Name = "Progress_HP_chosen" Height="20" Canvas.Left="26" Canvas.Top="680" Width="394" Background="Red"/>
-        <ProgressBar Name = "Progress_MP_chosen" Height="20" Canvas.Left="26" Canvas.Top="714" Width="394"  Background="Blue"/>
+        <ProgressBar Name = "Progress_HP_chosen" Height="20" Canvas.Left="26" Canvas.Top="760" Width="394" Foreground="Red" />
+        <ProgressBar Name = "Progress_MP_chosen" Height="20" Canvas.Left="26" Canvas.Top="800" Width="394" Foreground="Blue" />
 
-        <ProgressBar Name = "Progress_HP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="680" Width="394" Background="Red"/>
-        <ProgressBar Name = "Progress_MP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="714" Width="394"  Background="Blue"/>
+        <ProgressBar Name = "Progress_HP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="760" Width="394" Foreground="Red" />
+        <ProgressBar Name = "Progress_MP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="800" Width="394" Foreground="Blue" />
         
         <!--<Button Name="Menu" Content="Menu" Click="Menu_Click" ></Button>-->
 
