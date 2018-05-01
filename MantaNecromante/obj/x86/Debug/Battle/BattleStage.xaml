@@ -28,17 +28,17 @@
 
         <Grid Height="44" Canvas.Left="265" Canvas.Top="773" Width="195">
             <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button x:ConnectionId='14' Background="Transparent" BorderThickness="0" x:Name="Skill0" Content="Skill 1" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5"                   />
+            <Button x:ConnectionId='14' Background="Transparent" BorderThickness="0" x:Name="Skill0" Content="Skill 1" Height="45" Width="183" FontSize="29" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"                   />
         </Grid>
 
         <Grid Height="44" Canvas.Left="9" Canvas.Top="833" Width="195">
             <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button x:ConnectionId='13' Background="Transparent" BorderThickness="0" x:Name="Skill1" Content="Skill 2" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5"                   />
+            <Button x:ConnectionId='13' Background="Transparent" BorderThickness="0" x:Name="Skill1" Content="Skill 2" Height="45" Width="183" FontSize="29" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"                   />
         </Grid>
 
         <Grid Height="44" Canvas.Left="265" Canvas.Top="833" Width="195">
             <Image Height="44" Width="195" Source="ms-appx:///GameAssets/Buttons/idle_button.png"/>
-            <Button x:ConnectionId='12' Background="Transparent" BorderThickness="0" x:Name="Skill2" Content="Skill 3" Height="45" Width="183" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,0,27,5"                   />
+            <Button x:ConnectionId='12' Background="Transparent" BorderThickness="0" x:Name="Skill2" Content="Skill 3" Height="45" Width="183" FontSize="28" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,5,27,5"                   />
         </Grid>
 
 

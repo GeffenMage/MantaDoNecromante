@@ -43,10 +43,12 @@ namespace MantaNecromante.MainBattle {
 
         }
 
-        
+        public void NameSkills() {
 
-        
-
+            Skill0.Content = battleController.Jogador.Skills.ElementAt(0).Skill_name;
+            Skill1.Content = battleController.Jogador.Skills.ElementAt(1).Skill_name;
+            Skill2.Content = battleController.Jogador.Skills.ElementAt(2).Skill_name;
+        }
 
         /// <summary>
         /// Método trata o caso do player não possuir mana para usar a skill escolhida
@@ -182,6 +184,7 @@ namespace MantaNecromante.MainBattle {
             battleController.EnemyDeath += EnemyIsDead;
             battleController.PlayerHasNoMana += NoManaAvalible;
             Progress_Bar();
+            NameSkills();
         }
 
         private void Menu_Click(object sender, RoutedEventArgs e) {
@@ -210,8 +213,6 @@ namespace MantaNecromante.MainBattle {
             int Skill = Convert.ToInt16(b.Name.Replace("Skill", ""));
 
             battleController.CastSkill(battleController.Jogador.Skills[Skill]);
-
-            Progress_Bar_Update();
         }
     }
 }
