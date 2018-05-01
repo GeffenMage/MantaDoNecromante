@@ -99,10 +99,10 @@
     <Compile Include="ClassMenu\ClassMenu.xaml.cs">
       <DependentUpon>ClassMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GameStage\MainStage.xaml.cs">
+    <Compile Include="Stage\MainStage.xaml.cs">
       <DependentUpon>MainStage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainBattle\BattleStage.xaml.cs">
+    <Compile Include="Battle\BattleStage.xaml.cs">
       <DependentUpon>BattleStage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainMenu\MainPage.xaml.cs">
@@ -297,11 +297,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GameStage\MainStage.xaml">
+    <Page Include="Stage\MainStage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainBattle\BattleStage.xaml">
+    <Page Include="Battle\BattleStage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

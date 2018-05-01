@@ -129,7 +129,7 @@ namespace MantaNecromante.GameStage
             //....................................................................................................//
 
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Castelo.mp3"));
-            song.Play();
+            //song.Play();
 
             //CreateGrid();
             CreateSlot();
@@ -1065,7 +1065,7 @@ namespace MantaNecromante.GameStage
         private void SetEnemies()
         {
 
-            //CreateEnemy(72, 24);
+            CreateEnemy(72, 24);
             CreateEnemy(88, 19);
         }
 
