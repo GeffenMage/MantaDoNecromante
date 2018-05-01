@@ -1059,6 +1059,9 @@ namespace MantaNecromante.GameStage
             Canvas.SetTop(enemy.Sprite, row * Cell_Height + Canvas.GetTop(Mansion) + Cell_Height / 2 - enemy.Sprite.Height / 2);
 
             MovableProps.Add(enemy.Sprite);
+
+            enemy = null;
+
         }
 
         private void SetEnemies()
