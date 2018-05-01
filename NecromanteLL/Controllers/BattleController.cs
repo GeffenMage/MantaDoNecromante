@@ -103,16 +103,16 @@ namespace NecromanteLL {
         /// <returns>Retorna 0 para ambos vivos,Retorna 1 para vitória do jogador e 2 para derrota</returns>
         public void IsAlive() {
             if(Jogador.IsAlive()==true && Inimigo.IsAlive() == true) {
-                return;
+                //return;
             }
             else if(Jogador.IsAlive()==true && Inimigo.IsAlive() == false) {
                 Reset_Status(Jogador);
                 EnemyDeath();
-                //return 1;//Código para vitória do jogador
+               //return 1;//Código para vitória do jogador
             }
             else if (Jogador.IsAlive() == false) {
                 PlayerDeath();
-                //return 2;//Código para derrota do jogador
+               // return 2;//Código para derrota do jogador
             }
             else {
                 IsAlive();

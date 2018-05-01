@@ -98,8 +98,10 @@ namespace NecromanteLL {
         public int Atk_base() {
             int damage_add = 0;
             foreach (Itens i in Inventario) {
-                if (i.Equipado == true) {
-                    damage_add += i.Dmg;
+                if (i != null) {
+                    if (i.Equipado == true) {
+                        damage_add += i.Dmg;
+                    }
                 }
             }
             return Base_dmg + damage_add;

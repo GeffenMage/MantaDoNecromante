@@ -86,12 +86,9 @@ namespace NecromanteLL {
             Random mob_num;
             mob_num = new Random();
             Mob[] vet = mobs.ToArray();
-
-            Mobs_do_mapa[pos_x, pos_y] = vet[mob_num.Next(0,12)];
-            //Mobs_do_mapa[pos_x, pos_y] = vet[0];
-            
-
-
+            Mob Copia_de_mob = vet[mob_num.Next(0, 12)];
+            Mobs_do_mapa[pos_x, pos_y] = Copia_de_mob;
+            //Mobs_do_mapa[pos_x, pos_y] = vet[9];
 
         }
 

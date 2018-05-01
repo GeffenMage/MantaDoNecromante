@@ -47,7 +47,6 @@ namespace MantaNecromante.GameStage
         private bool isOptionsMenuOpen;                     //Checa se o menu estão no xalm;
         private bool isInventoryOpen;                       //Idem ao que está acima.
         private bool isInteractive;                         //Checa se na região do herói há algum item coletável. 
-        private bool equip;                                     //equip item
         //..................................//
 
         //BitmapImages para salvar os gifs de movimento das classes que o variam conforme a escolhe do usuário no menu de classes:
@@ -1041,7 +1040,7 @@ namespace MantaNecromante.GameStage
 
         private Mob GetEnemy(int row, int column)
         {
-
+            song.Pause();
             return controller.FindMob(row, column);
         }
 
@@ -1052,20 +1051,20 @@ namespace MantaNecromante.GameStage
 
             controller.setMob(row, column);
 
-            foe = controller.FindMob(row, column);
+            Mob enemy = controller.FindMob(row, column);
 
-            Floor.Children.Add(foe.Sprite);
+            Floor.Children.Add(enemy.Sprite);
 
-            Canvas.SetLeft(foe.Sprite, column * Cell_Width + Canvas.GetLeft(Mansion) + Cell_Width / 2 - foe.Sprite.Width / 2);
-            Canvas.SetTop(foe.Sprite, row * Cell_Height + Canvas.GetTop(Mansion) + Cell_Height / 2 - foe.Sprite.Height / 2);
+            Canvas.SetLeft(enemy.Sprite, column * Cell_Width + Canvas.GetLeft(Mansion) + Cell_Width / 2 - enemy.Sprite.Width / 2);
+            Canvas.SetTop(enemy.Sprite, row * Cell_Height + Canvas.GetTop(Mansion) + Cell_Height / 2 - enemy.Sprite.Height / 2);
 
-            MovableProps.Add(foe.Sprite);
+            MovableProps.Add(enemy.Sprite);
         }
 
         private void SetEnemies()
         {
 
-            //CreateEnemy(72, 24);
+            CreateEnemy(72, 24);
             CreateEnemy(88, 19);
         }
 
