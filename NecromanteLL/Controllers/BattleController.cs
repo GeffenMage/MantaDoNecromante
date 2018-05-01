@@ -168,10 +168,12 @@ namespace NecromanteLL {
                 else {
                     inimigo.Take_dmg(dmg);
                     IsAlive();
+                    this.EnemyTurn();
                 }
             }
             else {
                 IsAlive();
+                this.EnemyTurn();
             }
             
         }

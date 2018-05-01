@@ -1,2 +1,2 @@
-C:\Users\Lucas\Source\Repos\MantaDoNecromante4\MantaNecromante\MantaNecromante.csproj;x86
-C:\Users\Lucas\Source\Repos\MantaDoNecromante4\NecromanteLL\NecromanteLL.csproj;x86
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\MantaNecromante.csproj;x86
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\NecromanteLL\NecromanteLL.csproj;x86
