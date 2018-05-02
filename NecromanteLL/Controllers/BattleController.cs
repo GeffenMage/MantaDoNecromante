@@ -85,9 +85,10 @@ namespace NecromanteLL {
         /// <summary>
         /// Verifica o valor obtido no dado e aplica um turno extra
         /// </summary>
-        private void SetTurno() {
+        public void SetTurno() {
             if (Turno_player == true && Dice_num == 0) {
                 Turno_player = false;
+          
             }
             else if (Dice_num <= Jogador.Lvl || Dice_num <= Inimigo.Lvl) {
                 extra_turn = true;
@@ -168,10 +169,12 @@ namespace NecromanteLL {
                 else {
                     inimigo.Take_dmg(dmg);
                     IsAlive();
+                    this.EnemyTurn();
                 }
             }
             else {
                 IsAlive();
+                this.EnemyTurn();
             }
             
         }

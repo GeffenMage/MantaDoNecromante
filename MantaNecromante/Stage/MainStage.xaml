@@ -29,11 +29,40 @@
 
         <RelativePanel Opacity="1" Name="Inventory" Height="497" Canvas.Left="545" Canvas.Top="208" Width="320" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/inventory.png" Margin="0,0,-305,0" Width="305" HorizontalAlignment="Left"/>
+            <Image Source="ms-appx:///GameAssets/Menu/equip2.png" Margin="-285,48,0,48" Width="249" HorizontalAlignment="Left"/>
 
+           <!-- <ProgressBar Name="Hp_equip" Height="14" Canvas.Left="10" Canvas.Top="70" Foreground="Red" Margin="-215,324,76,-318" />
+            <ProgressBar Name="Mp_equip" Height="14" Canvas.Left="10" Canvas.Top="70" Foreground="Blue" Margin="-215,371,76,-365" />
+-->
             <Button Height="17" Margin="270,7,-275,-12" Width="25" Click="ExitInventory"/>
 
-            <Button Height="34" Margin="28,75,-42,-97" Width="34">
-                <Image Name="Slot1" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+            <Button Height="34" Margin="-251,134,0,-156" Width="34">
+                <Image Name="sword_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
+            </Button>
+
+            <Button Height="34" Margin="-177,134,0,-156" Width="34">
+                <Image Name="gloves_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
+            </Button>
+
+            <Button Height="34" Margin="-108,141,0,-163" Width="32">
+                <Image Name="boot_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
+            </Button>
+
+            <Button Height="34" Margin="-251,203,0,-228" Width="34">
+                <Image Name="capacete_equip" Stretch="Fill" Margin="-18,-18,-17,-13"/>
+            </Button>
+
+            <Button Height="34" Margin="-177,203,0,-228" Width="34">
+                <Image Name="cota_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
+            </Button>
+
+            <Button Height="34" Margin="-110,203,0,-228" Width="34">
+                <Image Name="pant_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
+            </Button>
+
+
+            <Button Height="34" Margin="28,75,-62,-97" Width="34"  >
+                <Image Name="Slot1" Stretch="Fill" Width="34" Height="34" Margin="-17,-17,-17,-17"></Image>
             </Button>
 
             <Button Height="34" Margin="71,75,-85,-97" Width="34">
@@ -241,11 +270,12 @@
             <Button Name="quick9" Height="34" Opacity="0" Margin="532,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
             <Button Name="quick10" Height="34" Opacity="0" Margin="578,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
 
+
         </RelativePanel>
 
+      
 
-
-        <TextBlock FontSize="30" Foreground="Red" Name="teste" Canvas.Left="275" Canvas.Top="329" Text="" TextWrapping="Wrap" Height="260" Width="195"/>
+        <!-- <TextBlock FontSize="30" Foreground="Red" Name="teste" Canvas.Left="275" Canvas.Top="329" Text="" TextWrapping="Wrap" Height="260" Width="195"/>-->
         <Image Name="extend" Stretch="fill" Height="30" Canvas.Left="430" Canvas.Top="-125" Width="601" Source="ms-appx:///GameAssets/Maps/mansion_03.gif"/>
     </Canvas>
 </Page>

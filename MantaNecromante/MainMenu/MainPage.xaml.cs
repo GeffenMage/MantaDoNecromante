@@ -39,7 +39,9 @@ namespace FrontEnd {
 
         public MainPage() {
 
-            //ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.FullScreen;
+
+
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.FullScreen;
 
             //Teste de tamanho ajustável:
             //......................................................................................................
