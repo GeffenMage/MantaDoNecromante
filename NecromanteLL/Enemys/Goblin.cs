@@ -24,8 +24,8 @@ namespace NecromanteLL {
                     Base_def = 20; Base_dmg = 50;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
-                    Sprite.Height = 105 * 8 / 3;
-                    Sprite.Width = 50 * 8 / 3;
+                    Sprite.Height = 95 * 8 / 3;
+                    Sprite.Width = 40 * 8 / 3;
                     Sprite.Source= new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/goblin/GoblinParadoLeft.gif"));
                     
                     //Inicializa as skills do inimigo
@@ -41,8 +41,8 @@ namespace NecromanteLL {
                     Given_xp = 300; Lvl = 10;
                     Base_def = 30; Base_dmg = 70;
                     Sprite = new Image();
-                    Sprite.Height = 105 * 8 / 3;
-                    Sprite.Width = 50 * 8 / 3;
+                    Sprite.Height = 95 * 8 / 3;
+                    Sprite.Width = 40 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/goblin/GoblinParadoLeft.gif"));
 
@@ -60,8 +60,8 @@ namespace NecromanteLL {
                     Base_def = 40; Base_dmg = 90;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
-                    Sprite.Height = 105 * 8 / 3;
-                    Sprite.Width = 50 * 8 / 3;
+                    Sprite.Height = 95 * 8 / 3;
+                    Sprite.Width = 40 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/goblin/GoblinParadoLeft.gif"));
 
