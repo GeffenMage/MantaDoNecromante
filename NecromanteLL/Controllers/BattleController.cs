@@ -88,13 +88,14 @@ namespace NecromanteLL {
         public void SetTurno() {
             if (Turno_player == true && Dice_num == 0) {
                 Turno_player = false;
-          
+                this.EnemyTurn();
             }
             else if (Dice_num <= Jogador.Lvl || Dice_num <= Inimigo.Lvl) {
                 extra_turn = true;
             }
             else if (Turno_player == false && Dice_num == 0) {
                 Turno_player = true;
+                this.PlayerTurn();
             }
         }
 
@@ -132,9 +133,11 @@ namespace NecromanteLL {
                 Turno_atual++;
                 if (extra_turn == true) {
                     Turno_player = true;
+                    this.PlayerTurn();
                 }
-                //CHAMAR EVENTO
-                this.EnemyTurn();
+                else {
+                    this.EnemyTurn();
+                }
             }
             else {
                 EnemyChoice();
@@ -142,9 +145,11 @@ namespace NecromanteLL {
                 Turno_atual++;
                 if (extra_turn == true) {
                     Turno_player = false;
+                    this.EnemyTurn();
                 }
-                //CHAMAR EVENTO
-                this.PlayerTurn();
+                else {
+                    this.PlayerTurn();
+                }
             }
             IsAlive();
         }
@@ -169,7 +174,13 @@ namespace NecromanteLL {
                 else {
                     inimigo.Take_dmg(dmg);
                     IsAlive();
-                    this.EnemyTurn();
+                    if (extra_turn == true) {
+                        Turno_player = true;
+                        this.PlayerTurn();
+                    }
+                    else {
+                        this.EnemyTurn();
+                    }
                 }
             }
             else {
@@ -195,6 +206,13 @@ namespace NecromanteLL {
                 Turno_player = true;
                 Turno_atual++;
                 IsAlive();
+                if (extra_turn == true) {
+                    Turno_player = false;
+                    this.EnemyTurn();
+                }
+                else {
+                    this.PlayerTurn();
+                }
             }
         }
 
