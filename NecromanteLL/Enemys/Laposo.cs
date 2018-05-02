@@ -15,10 +15,10 @@ namespace NecromanteLL {
             switch (lvl) {
                 case 1:
                     Nome = "Laposo Hello";
-                    Hp_total = 300; Hp_atual = Hp_total;
-                    Mp_total = 150; Mp_atual = Mp_total;
-                    Given_xp = 100; Lvl = 5;
-                    Base_def = 20; Base_dmg = 50;
+                    Hp_total = 2500; Hp_atual = Hp_total;
+                    Mp_total = 1500; Mp_atual = Mp_total;
+                    Given_xp = 205000; Lvl = 25;
+                    Base_def = 90; Base_dmg = 300;
                     //Inicializa os sprites do inimigo
                    
                     Sprite = new Image();
@@ -27,17 +27,17 @@ namespace NecromanteLL {
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
 
-                    Skills.Add(new Skill("Fall I", 0, 20, 1, 0, 0, 0, 0, 30));
-                    Skills.Add(new Skill("Luck I", 80, 0, 1, 0, 0, 0, 0, 150));
-                    Skills.Add(new Skill("Unique I", 40, 0, 1, 0, 0, 10, 10, 100));
+                    Skills.Add(new Skill("POG I", 200, 0, 20, 0, 0, 0, 0, 900));
+                    Skills.Add(new Skill("GOTO I", 250, 0, 25, 0, 0, 50, 0, 250));
+                    Skills.Add(new Skill("If-False I", 300, 0, 30, 666, 0, 20, 20, 100));
 
                     break;
                 case 2:
                     Nome = "Laposo World";
-                    Hp_total = 450; Hp_atual = Hp_total;
-                    Mp_total = 200; Mp_atual = Mp_total;
-                    Given_xp = 300; Lvl = 10;
-                    Base_def = 30; Base_dmg = 70;
+                    Hp_total = 3000; Hp_atual = Hp_total;
+                    Mp_total = 1700; Mp_atual = Mp_total;
+                    Given_xp = 210000; Lvl = 27;
+                    Base_def = 100; Base_dmg = 320;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
                     Sprite.Height = 105 * 8 / 3;
@@ -45,16 +45,16 @@ namespace NecromanteLL {
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
 
-                    Skills.Add(new Skill("Fall I", 0, 20, 1, 0, 0, 0, 0, 30));
-                    Skills.Add(new Skill("Luck I", 80, 0, 1, 0, 0, 0, 0, 150));
-                    Skills.Add(new Skill("Unique I", 40, 0, 1, 0, 0, 10, 10, 100));
+                    Skills.Add(new Skill("POG I", 200, 0, 20, 0, 0, 0, 0, 900));
+                    Skills.Add(new Skill("GOTO I", 250, 0, 25, 0, 0, 50, 0, 250));
+                    Skills.Add(new Skill("If-False I", 300, 0, 30, 666, 0, 20, 20, 100));
                     break;
                 case 3:
                     Nome = "Laposo HelloWorld";
-                    Hp_total = 600; Hp_atual = Hp_total;
-                    Mp_total = 300; Mp_atual = Mp_total;
-                    Given_xp = 700; Lvl = 15;
-                    Base_def = 40; Base_dmg = 90;
+                    Hp_total = 5500; Hp_atual = Hp_total;
+                    Mp_total = 2000; Mp_atual = Mp_total;
+                    Given_xp = 220000; Lvl = 30;
+                    Base_def = 190; Base_dmg = 630;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
                     Sprite.Height = 105 * 8 / 3;
@@ -62,9 +62,9 @@ namespace NecromanteLL {
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
 
-                    Skills.Add(new Skill("Fall I", 0, 20, 1, 0, 0, 0, 0, 30));
-                    Skills.Add(new Skill("Luck I", 80, 0, 1, 0, 0, 0, 0, 150));
-                    Skills.Add(new Skill("Unique I", 40, 0, 1, 0, 0, 10, 10, 100));
+                    Skills.Add(new Skill("POG I", 200, 0, 20, 0, 0, 0, 0, 900));
+                    Skills.Add(new Skill("GOTO I", 250, 0, 25, 0, 0, 50, 0, 250));
+                    Skills.Add(new Skill("If-False I", 300, 0, 30, 666, 0, 20, 20, 100));
                     break;
             }
 
