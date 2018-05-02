@@ -24,6 +24,7 @@ namespace NecromanteLL {
                     Sprite = new Image();
                     Sprite.Height = 105 * 8 / 3;
                     Sprite.Width = 20 * 8 / 3;
+
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
 
                     Skills.Add(new Skill("Fall I", 0, 20, 1, 0, 0, 0, 0, 30));
