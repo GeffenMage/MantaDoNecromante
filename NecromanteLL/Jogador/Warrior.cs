@@ -37,12 +37,17 @@ namespace NecromanteLL {
             public override void LvUp() {
                 Lvl++;
                 Xp_total *= 2;
-                Xp_atual = 0;
                 Hp_total += 50;
                 Mp_total += 10;
                 Base_def += 5;
                 Base_dmg += 20;
-            }
+                Hp_atual = Hp_total;
+                Mp_atual = Mp_total;
+                if (IsLvUP() == true) {
+                    LvUp();
+                }
+
+        }
     }
 }
 
