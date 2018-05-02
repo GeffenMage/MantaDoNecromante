@@ -43,8 +43,8 @@ namespace NecromanteLL {
             Xp_atual = 0;
             Hp_total += 30;
             Mp_total += 30;
-            Base_def += 30;
-            Base_dmg += 30;
+            Base_def += 10;
+            Base_dmg += 15;
         }
     }
 }
