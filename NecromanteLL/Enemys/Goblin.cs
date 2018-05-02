@@ -49,7 +49,7 @@ namespace NecromanteLL {
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall II", 0, 20, 1, 0, 0, 0, 0, 50));
                     Skills.Add(new Skill("Luck III", 100, 0, 2, 0, 0, 0, 0, 200));
-                    Skills.Add(new Skill("Unique II", 80, 0, 3, 0, 0, 20, 60, 100));
+                    Skills.Add(new Skill("Unique II", 120, 0, 2, 0, 0, 20, 60, 100));
 
                     break;
                 case 3:
@@ -68,7 +68,7 @@ namespace NecromanteLL {
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall III", 0, 20, 1, 0, 0, 0, 0, 70));
                     Skills.Add(new Skill("Luck III", 120, 0, 2, 0, 0, 0, 0, 250));
-                    Skills.Add(new Skill("Unique III", 120, 0, 3, 0, 0, 60, 20, 100));
+                    Skills.Add(new Skill("Unique III", 140, 0, 2, 0, 0, 60, 20, 100));
 
                     break;
             }
