@@ -436,8 +436,6 @@ D:\MantaNecromante\MantaNecromante\obj\x86\Debug\MultipleQualifiersPerDimensionF
 D:\MantaNecromante\MantaNecromante\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\App.xbf
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\ClassMenu\ClassMenu.xbf
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\GameStage\MainStage.xbf
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\MainBattle\BattleStage.xbf
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\MainMenu\MainPage.xbf
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\MantaNecromante.xr.xml
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\MantaNecromante.exe
@@ -569,22 +567,14 @@ C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\App.g.cs
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\ClassMenu\ClassMenu.g.i.cs
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\ClassMenu\ClassMenu.g.cs
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\GameStage\MainStage.g.i.cs
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\GameStage\MainStage.g.cs
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\MainBattle\BattleStage.g.i.cs
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\MainBattle\BattleStage.g.cs
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\MainMenu\MainPage.g.i.cs
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\MainMenu\MainPage.g.cs
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\App.xaml
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\ClassMenu\ClassMenu.xaml
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\GameStage\MainStage.xaml
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\MainBattle\BattleStage.xaml
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\MainMenu\MainPage.xaml
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\App.xbf
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\ClassMenu\ClassMenu.xbf
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\GameStage\MainStage.xbf
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\MainBattle\BattleStage.xbf
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\MainMenu\MainPage.xbf
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\MantaNecromante.csproj.CoreCompileInputs.cache
@@ -1622,3 +1612,13 @@ C:\Users\Lucas\Source\Repos\MantaDoNecromante4\MantaNecromante\obj\x86\Debug\Sta
 C:\Users\Lucas\Source\Repos\MantaDoNecromante4\MantaNecromante\obj\x86\Debug\Battle\BattleStage.xaml
 C:\Users\Lucas\Source\Repos\MantaDoNecromante4\MantaNecromante\obj\x86\Debug\Stage\MainStage.xbf
 C:\Users\Lucas\Source\Repos\MantaDoNecromante4\MantaNecromante\obj\x86\Debug\Battle\BattleStage.xbf
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\Stage\MainStage.xbf
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\Battle\BattleStage.xbf
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\Stage\MainStage.g.i.cs
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\Stage\MainStage.g.cs
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\Battle\BattleStage.g.i.cs
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\Battle\BattleStage.g.cs
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\Stage\MainStage.xaml
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\Battle\BattleStage.xaml
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\Stage\MainStage.xbf
+C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\Battle\BattleStage.xbf
