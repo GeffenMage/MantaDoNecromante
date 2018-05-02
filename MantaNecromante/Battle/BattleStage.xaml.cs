@@ -31,7 +31,7 @@ namespace MantaNecromante.MainBattle {
         private bool isOptionsMenuOpen;
         private BattleController battleController;
         private MediaPlayer song = new MediaPlayer();
-
+        
         public BattleStage() {
             
             this.InitializeComponent();
@@ -66,7 +66,7 @@ namespace MantaNecromante.MainBattle {
 
         }
 
-
+        
         /// <summary>
         /// Método que trata a morte do jogador
         /// </summary>
@@ -74,12 +74,16 @@ namespace MantaNecromante.MainBattle {
             //Mostrar uma mensagem que o player morreu e encerrar a batalha
         }
 
+        
         /// <summary>
         /// Trata o Evento que ocorre no battleController quando o turno muda para o Player
         /// </summary>
         public void TurnChangeToPlayer() {
+            
+
             //Mostrar que o turno mudou para o jogador
             Progress_Bar_Update();
+            
         }
 
         /// <summary>
@@ -185,6 +189,7 @@ namespace MantaNecromante.MainBattle {
             battleController.PlayerHasNoMana += NoManaAvalible;
             Progress_Bar();
             NameSkills();
+           
         }
 
         private void Menu_Click(object sender, RoutedEventArgs e) {
@@ -214,5 +219,6 @@ namespace MantaNecromante.MainBattle {
 
             battleController.CastSkill(battleController.Jogador.Skills[Skill]);
         }
+       
     }
 }

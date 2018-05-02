@@ -116,10 +116,10 @@ namespace MantaNecromante.GameStage
         {
 
             this.InitializeComponent();
-
+       
             Window.Current.CoreWindow.KeyDown += KeySentinel;
             Window.Current.CoreWindow.KeyUp += KeyDropped;
-
+            
 
             //Fazendo os ajustes para para tudo rodar "perfeitamente":
             //....................................................................................................//
@@ -1428,7 +1428,7 @@ namespace MantaNecromante.GameStage
 
                     if (isOptionsMenuOpen) Floor.Children.Remove(OptionsMenu);
                     else Floor.Children.Add(OptionsMenu);
-
+                    
                     isOptionsMenuOpen ^= true;
 
                     break;
@@ -1551,6 +1551,7 @@ namespace MantaNecromante.GameStage
             song.Pause();
         }
 
+        
     }
 }
    
