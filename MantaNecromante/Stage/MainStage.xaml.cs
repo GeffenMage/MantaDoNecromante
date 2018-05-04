@@ -887,7 +887,7 @@ namespace MantaNecromante.GameStage
         {
 
             CreateItem(79, 30);
-            CreateItem(88, 11);
+            CreateItem(87, 11);
 
         }
 
@@ -1068,7 +1068,7 @@ namespace MantaNecromante.GameStage
         {
 
             CreateEnemy(72, 24);
-            CreateEnemy(88, 19);
+            CreateEnemy(92, 19);
         }
 
         /// <summary>

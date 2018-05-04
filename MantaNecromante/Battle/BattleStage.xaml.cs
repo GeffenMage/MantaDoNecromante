@@ -152,6 +152,8 @@ namespace MantaNecromante.MainBattle {
 
             Progress_Bar_Update();
             battleController.EnemyChoice();
+            DmgPlayer -= battleController.Inimigo.Hp_atual;
+            MpPlayer = MpPlayer - battleController.Jogador.Mp_atual;
             if (nomeSkill == Ataque.Content.ToString()) {
                 Infobox.Text = "Player" + " causou " + DmgPlayer + " de dano";
             }
@@ -163,20 +165,15 @@ namespace MantaNecromante.MainBattle {
 
         public void Progress_Bar_Update() {
 
-            MpPlayer = (int)Progress_MP_chosen.Value;
-            int hp_temp = (int)Progress_HP_Mob.Value;
-
 
             Progress_HP_chosen.Value = battleController.Jogador.Hp_atual;
             Progress_MP_chosen.Value = battleController.Jogador.Mp_atual;
-
-            MpPlayer -= (int)Progress_MP_chosen.Value;
             
 
             Progress_HP_Mob.Value = battleController.Inimigo.Hp_atual;
             Progress_MP_Mob.Value = battleController.Inimigo.Mp_atual;
 
-            DmgPlayer = (int)hp_temp - (int)Progress_HP_Mob.Value;
+            
         }
 
         public void Progress_Bar() {
@@ -291,7 +288,8 @@ namespace MantaNecromante.MainBattle {
 
         private void BotaoAtacar(object sender, RoutedEventArgs e) {
             nomeSkill = ((Button)sender).Content.ToString();
-            battleController.Atacar();
+            DmgPlayer = battleController.Inimigo.Hp_atual;
+            battleController.Atacar();   
         }
 
         private void BotaoSkill(object sender, RoutedEventArgs e) {
@@ -302,7 +300,11 @@ namespace MantaNecromante.MainBattle {
 
             nomeSkill = b.Content.ToString();
 
+            MpPlayer = battleController.Jogador.Mp_atual;
+            DmgPlayer = battleController.Inimigo.Hp_atual;
+
             battleController.CastSkill(battleController.Jogador.Skills[Skill]);
+
         }
        
     }
