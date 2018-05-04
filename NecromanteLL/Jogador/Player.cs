@@ -67,10 +67,16 @@ namespace NecromanteLL {
         public virtual void LvUp() {
             Lvl++;
             Xp_total *= 2;
+            hp_atual = Hp_total;
+            mp_atual = Mp_total;
+            xp_atual = 0;
         }
 
         public void Gain_xp(int xp_gain) {
             Xp_atual += xp_gain;
+            if (IsLvUP() == true) {
+                LvUp();
+            }
         }
 
 

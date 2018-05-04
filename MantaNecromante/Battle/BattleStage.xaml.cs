@@ -38,6 +38,8 @@ namespace MantaNecromante.MainBattle {
             Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;
             Adjuster.AdjustWindow(Floor);
             SetAllMenusReady();
+            Floor.Children.Remove(Turn1);
+            Floor.Children.Remove(Turn2);
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Battle.mp3"));
             song.Play();
 
@@ -79,11 +81,22 @@ namespace MantaNecromante.MainBattle {
         /// Trata o Evento que ocorre no battleController quando o turno muda para o Player
         /// </summary>
         public void TurnChangeToPlayer() {
-            
+
+            removeAll();
+
+            Floor.Children.Add(Turn1);
 
             //Mostrar que o turno mudou para o jogador
             Progress_Bar_Update();
+
             
+        }
+
+        void removeAll()
+        {
+
+            Floor.Children.Remove(Turn1);
+            Floor.Children.Remove(Turn2);
         }
 
         /// <summary>
@@ -91,8 +104,16 @@ namespace MantaNecromante.MainBattle {
         /// </summary>
         public void TurnChangeToEnemy() {
             //Mostrar que o turno mudou para o inimigo
+
+
+            removeAll();
+
+            Floor.Children.Add(Turn2);
+
             Progress_Bar_Update();
             battleController.EnemyChoice();
+            
+
         }
 
         public void Progress_Bar_Update() {

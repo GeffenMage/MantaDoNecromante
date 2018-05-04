@@ -31,9 +31,9 @@
             <Image Source="ms-appx:///GameAssets/Menu/inventory.png" Margin="0,0,-305,0" Width="305" HorizontalAlignment="Left"/>
             <Image Source="ms-appx:///GameAssets/Menu/equip2.png" Margin="-285,48,0,48" Width="249" HorizontalAlignment="Left"/>
 
-           <!-- <ProgressBar Name="Hp_equip" Height="14" Canvas.Left="10" Canvas.Top="70" Foreground="Red" Margin="-215,324,76,-318" />
+            <ProgressBar Name="Hp_equip" Height="14" Canvas.Left="10" Canvas.Top="70" Foreground="Red" Margin="-215,324,76,-318" />
             <ProgressBar Name="Mp_equip" Height="14" Canvas.Left="10" Canvas.Top="70" Foreground="Blue" Margin="-215,371,76,-365" />
--->
+
             <Button Height="17" Margin="270,7,-275,-12" Width="25" Click="ExitInventory"/>
 
             <Button Height="34" Margin="-251,134,0,-156" Width="34">

@@ -23,8 +23,8 @@ namespace NecromanteLL {
                     //Inicializa os sprites do inimigo
 
                     Sprite = new Image();
-                    Sprite.Height = 110 * 8 / 3;
-                    Sprite.Width = 54 * 8 / 3;
+                    Sprite.Height = 75 * 8 / 3;
+                    Sprite.Width = 40 * 8 / 3;
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/ogro/OgroParado1.gif"));
 
                     //Inicializa as skills do inimigo
@@ -41,8 +41,8 @@ namespace NecromanteLL {
                     Base_def = 70; Base_dmg = 130;
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
-                    Sprite.Height = 110 * 8 / 3;
-                    Sprite.Width = 54 * 8 / 3;
+                    Sprite.Height = 75 * 8 / 3;
+                    Sprite.Width = 40 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/ogro/OgroParado1.gif"));
 
@@ -61,8 +61,8 @@ namespace NecromanteLL {
                     //Inicializa os sprites do inimigo
 
                     Sprite = new Image();
-                    Sprite.Height = 110 * 8 / 3;
-                    Sprite.Width = 54 * 8 / 3;
+                    Sprite.Height = 75 * 8 / 3;
+                    Sprite.Width = 40 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/ogro/OgroParado1.gif"));
                     //Inicializa as skills do inimigo
