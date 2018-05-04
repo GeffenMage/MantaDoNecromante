@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-Q0BEDPK</Machine>
-    <WindowsUser>Daniel Sousa Duplat</WindowsUser>
+    <Machine>PAULO</Machine>
+    <WindowsUser>paulo</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>5b684eb0-42c8-48ab-9f60-5613a1841a81</PackageIdentityName>
     <PackageIdentityPublisher>CN=Lucas</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>51EB60622544DA9BED534F7447034CB1B5CBB1F95964A31788019173A9ACA589</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>412022DCB9EDDF4F92FF49B31FCC96DC6F31DF31E61FAFD706829CEDAB17E39F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>5b684eb0-42c8-48ab-9f60-5613a1841a81_1.0.0.0_x86__m0we3rjtmsxmt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>5b684eb0-42c8-48ab-9f60-5613a1841a81_m0we3rjtmsxmt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>5b684eb0-42c8-48ab-9f60-5613a1841a81</RegisteredPackageID>
@@ -28,1196 +28,1205 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-04T13:34:44.039</Modified>
+      <Modified>2018-05-04T14:28:16.217</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\MantaNecromante.exe">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\MantaNecromante.exe">
       <PackagePath>entrypoint\MantaNecromante.exe</PackagePath>
-      <Modified>2018-05-04T13:34:43.486</Modified>
+      <Modified>2018-05-04T14:28:15.269</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
       <Modified>2016-06-12T02:13:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
       <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Core.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Core.dll">
       <PackagePath>System.Core.dll</PackagePath>
       <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Net.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Net.dll">
       <PackagePath>System.Net.dll</PackagePath>
       <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Numerics.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Numerics.dll">
       <PackagePath>System.Numerics.dll</PackagePath>
       <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Runtime.Serialization.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Runtime.Serialization.dll">
       <PackagePath>System.Runtime.Serialization.dll</PackagePath>
       <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.ServiceModel.Web.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.ServiceModel.Web.dll">
       <PackagePath>System.ServiceModel.Web.dll</PackagePath>
       <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.ServiceModel.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.ServiceModel.dll">
       <PackagePath>System.ServiceModel.dll</PackagePath>
       <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Windows.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Windows.dll">
       <PackagePath>System.Windows.dll</PackagePath>
       <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Xml.Linq.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Xml.Linq.dll">
       <PackagePath>System.Xml.Linq.dll</PackagePath>
       <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Xml.Serialization.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Xml.Serialization.dll">
       <PackagePath>System.Xml.Serialization.dll</PackagePath>
       <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Xml.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.Xml.dll">
       <PackagePath>System.Xml.dll</PackagePath>
       <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.netcore.portable.compatibility\1.0.2\lib\netcore50\System.dll">
       <PackagePath>System.dll</PackagePath>
       <Modified>2016-07-01T21:10:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.visualbasic\10.0.1\lib\netcore50\Microsoft.VisualBasic.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\microsoft.visualbasic\10.0.1\lib\netcore50\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
       <Modified>2016-06-12T02:13:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.collections\4.0.11\lib\netcore50\System.Collections.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.collections\4.0.11\lib\netcore50\System.Collections.dll">
       <PackagePath>System.Collections.dll</PackagePath>
       <Modified>2016-06-12T02:13:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.diagnostics.tools\4.0.1\lib\netcore50\System.Diagnostics.Tools.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.diagnostics.tools\4.0.1\lib\netcore50\System.Diagnostics.Tools.dll">
       <PackagePath>System.Diagnostics.Tools.dll</PackagePath>
       <Modified>2016-06-12T02:13:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.diagnostics.tracing\4.1.0\lib\netcore50\System.Diagnostics.Tracing.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.diagnostics.tracing\4.1.0\lib\netcore50\System.Diagnostics.Tracing.dll">
       <PackagePath>System.Diagnostics.Tracing.dll</PackagePath>
       <Modified>2016-06-12T02:13:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.globalization\4.0.11\lib\netcore50\System.Globalization.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.globalization\4.0.11\lib\netcore50\System.Globalization.dll">
       <PackagePath>System.Globalization.dll</PackagePath>
       <Modified>2016-06-12T02:13:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.globalization.calendars\4.0.1\lib\netcore50\System.Globalization.Calendars.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.globalization.calendars\4.0.1\lib\netcore50\System.Globalization.Calendars.dll">
       <PackagePath>System.Globalization.Calendars.dll</PackagePath>
       <Modified>2016-06-12T02:13:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.io\4.1.0\lib\netcore50\System.IO.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.io\4.1.0\lib\netcore50\System.IO.dll">
       <PackagePath>System.IO.dll</PackagePath>
       <Modified>2016-06-12T02:13:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.reflection\4.1.0\lib\netcore50\System.Reflection.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.reflection\4.1.0\lib\netcore50\System.Reflection.dll">
       <PackagePath>System.Reflection.dll</PackagePath>
       <Modified>2016-06-12T02:14:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.reflection.extensions\4.0.1\lib\netcore50\System.Reflection.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.reflection.extensions\4.0.1\lib\netcore50\System.Reflection.Extensions.dll">
       <PackagePath>System.Reflection.Extensions.dll</PackagePath>
       <Modified>2016-06-12T02:14:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.reflection.primitives\4.0.1\lib\netcore50\System.Reflection.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.reflection.primitives\4.0.1\lib\netcore50\System.Reflection.Primitives.dll">
       <PackagePath>System.Reflection.Primitives.dll</PackagePath>
       <Modified>2016-06-12T02:14:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.resources.resourcemanager\4.0.1\lib\netcore50\System.Resources.ResourceManager.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.resources.resourcemanager\4.0.1\lib\netcore50\System.Resources.ResourceManager.dll">
       <PackagePath>System.Resources.ResourceManager.dll</PackagePath>
       <Modified>2016-06-12T02:14:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.runtime\4.1.0\lib\netcore50\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.runtime\4.1.0\lib\netcore50\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2016-06-12T02:14:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.runtime.handles\4.0.1\lib\netstandard1.3\System.Runtime.Handles.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.runtime.handles\4.0.1\lib\netstandard1.3\System.Runtime.Handles.dll">
       <PackagePath>System.Runtime.Handles.dll</PackagePath>
       <Modified>2016-06-12T02:14:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.runtime.interopservices\4.1.0\lib\netcore50\System.Runtime.InteropServices.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.runtime.interopservices\4.1.0\lib\netcore50\System.Runtime.InteropServices.dll">
       <PackagePath>System.Runtime.InteropServices.dll</PackagePath>
       <Modified>2016-06-12T02:14:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.text.encoding\4.0.11\lib\netcore50\System.Text.Encoding.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.text.encoding\4.0.11\lib\netcore50\System.Text.Encoding.dll">
       <PackagePath>System.Text.Encoding.dll</PackagePath>
       <Modified>2016-06-12T02:14:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.text.encoding.extensions\4.0.11\lib\netcore50\System.Text.Encoding.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.text.encoding.extensions\4.0.11\lib\netcore50\System.Text.Encoding.Extensions.dll">
       <PackagePath>System.Text.Encoding.Extensions.dll</PackagePath>
       <Modified>2016-06-12T02:14:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.threading.tasks\4.0.11\lib\netcore50\System.Threading.Tasks.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.threading.tasks\4.0.11\lib\netcore50\System.Threading.Tasks.dll">
       <PackagePath>System.Threading.Tasks.dll</PackagePath>
       <Modified>2016-06-12T02:14:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.any.system.threading.timer\4.0.1\lib\netcore50\System.Threading.Timer.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.any.system.threading.timer\4.0.1\lib\netcore50\System.Threading.Timer.dll">
       <PackagePath>System.Threading.Timer.dll</PackagePath>
       <Modified>2016-06-12T02:14:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.win.microsoft.win32.primitives\4.0.1\runtimes\win\lib\netstandard1.3\Microsoft.Win32.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.win.microsoft.win32.primitives\4.0.1\runtimes\win\lib\netstandard1.3\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
       <Modified>2016-06-12T02:13:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.win.system.diagnostics.debug\4.0.11\runtimes\win\lib\netcore50\System.Diagnostics.Debug.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.win.system.diagnostics.debug\4.0.11\runtimes\win\lib\netcore50\System.Diagnostics.Debug.dll">
       <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
       <Modified>2016-06-12T02:13:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.win.system.io.filesystem\4.0.1\runtimes\win\lib\netcore50\System.IO.FileSystem.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.win.system.io.filesystem\4.0.1\runtimes\win\lib\netcore50\System.IO.FileSystem.dll">
       <PackagePath>System.IO.FileSystem.dll</PackagePath>
       <Modified>2016-06-12T02:13:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.win.system.net.primitives\4.0.11\runtimes\win\lib\netcore50\System.Net.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.win.system.net.primitives\4.0.11\runtimes\win\lib\netcore50\System.Net.Primitives.dll">
       <PackagePath>System.Net.Primitives.dll</PackagePath>
       <Modified>2016-06-12T02:14:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.win.system.net.sockets\4.1.0\runtimes\win\lib\netcore50\System.Net.Sockets.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.win.system.net.sockets\4.1.0\runtimes\win\lib\netcore50\System.Net.Sockets.dll">
       <PackagePath>System.Net.Sockets.dll</PackagePath>
       <Modified>2016-06-12T02:14:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.win.system.runtime.extensions\4.1.0\runtimes\win\lib\netcore50\System.Runtime.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.win.system.runtime.extensions\4.1.0\runtimes\win\lib\netcore50\System.Runtime.Extensions.dll">
       <PackagePath>System.Runtime.Extensions.dll</PackagePath>
       <Modified>2016-06-12T02:14:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.win7-x86.microsoft.netcore.jit\1.0.3\runtimes\win7-x86\native\clrjit.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.win7-x86.microsoft.netcore.jit\1.0.3\runtimes\win7-x86\native\clrjit.dll">
       <PackagePath>clrjit.dll</PackagePath>
       <Modified>2016-06-13T21:27:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.win7-x86.runtime.native.system.io.compression\4.0.1\runtimes\win7-x86\native\clrcompression.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.win7-x86.runtime.native.system.io.compression\4.0.1\runtimes\win7-x86\native\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
       <Modified>2016-06-14T00:51:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\runtime.win7.system.private.uri\4.0.2\runtimes\win\lib\netcore50\System.Private.Uri.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\runtime.win7.system.private.uri\4.0.2\runtimes\win\lib\netcore50\System.Private.Uri.dll">
       <PackagePath>System.Private.Uri.dll</PackagePath>
       <Modified>2016-07-01T18:48:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.appcontext\4.1.0\lib\netcore50\System.AppContext.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.appcontext\4.1.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
       <Modified>2016-06-12T02:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.buffers\4.0.0\lib\netstandard1.1\System.Buffers.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.buffers\4.0.0\lib\netstandard1.1\System.Buffers.dll">
       <PackagePath>System.Buffers.dll</PackagePath>
       <Modified>2016-06-12T02:13:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.collections.concurrent\4.0.12\lib\netcore50\System.Collections.Concurrent.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.collections.concurrent\4.0.12\lib\netcore50\System.Collections.Concurrent.dll">
       <PackagePath>System.Collections.Concurrent.dll</PackagePath>
       <Modified>2016-06-12T02:13:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.collections.immutable\1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.collections.immutable\1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll">
       <PackagePath>System.Collections.Immutable.dll</PackagePath>
       <Modified>2016-06-12T02:13:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.collections.nongeneric\4.0.1\lib\netstandard1.3\System.Collections.NonGeneric.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.collections.nongeneric\4.0.1\lib\netstandard1.3\System.Collections.NonGeneric.dll">
       <PackagePath>System.Collections.NonGeneric.dll</PackagePath>
       <Modified>2016-06-12T02:13:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.collections.specialized\4.0.1\lib\netstandard1.3\System.Collections.Specialized.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.collections.specialized\4.0.1\lib\netstandard1.3\System.Collections.Specialized.dll">
       <PackagePath>System.Collections.Specialized.dll</PackagePath>
       <Modified>2016-06-12T02:13:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.componentmodel\4.0.1\lib\netcore50\System.ComponentModel.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.componentmodel\4.0.1\lib\netcore50\System.ComponentModel.dll">
       <PackagePath>System.ComponentModel.dll</PackagePath>
       <Modified>2016-06-12T02:13:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.componentmodel.annotations\4.1.0\lib\netcore50\System.ComponentModel.Annotations.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.componentmodel.annotations\4.1.0\lib\netcore50\System.ComponentModel.Annotations.dll">
       <PackagePath>System.ComponentModel.Annotations.dll</PackagePath>
       <Modified>2016-06-12T02:13:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.componentmodel.eventbasedasync\4.0.11\lib\netcore50\System.ComponentModel.EventBasedAsync.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.componentmodel.eventbasedasync\4.0.11\lib\netcore50\System.ComponentModel.EventBasedAsync.dll">
       <PackagePath>System.ComponentModel.EventBasedAsync.dll</PackagePath>
       <Modified>2016-06-12T02:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.data.common\4.1.0\lib\netstandard1.2\System.Data.Common.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.data.common\4.1.0\lib\netstandard1.2\System.Data.Common.dll">
       <PackagePath>System.Data.Common.dll</PackagePath>
       <Modified>2016-06-12T02:13:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.diagnostics.contracts\4.0.1\lib\netcore50\System.Diagnostics.Contracts.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.diagnostics.contracts\4.0.1\lib\netcore50\System.Diagnostics.Contracts.dll">
       <PackagePath>System.Diagnostics.Contracts.dll</PackagePath>
       <Modified>2016-06-12T02:13:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.diagnostics.diagnosticsource\4.0.0\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.diagnostics.diagnosticsource\4.0.0\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll">
       <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
       <Modified>2016-06-12T02:13:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.diagnostics.stacktrace\4.0.2\lib\netstandard1.3\System.Diagnostics.StackTrace.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.diagnostics.stacktrace\4.0.2\lib\netstandard1.3\System.Diagnostics.StackTrace.dll">
       <PackagePath>System.Diagnostics.StackTrace.dll</PackagePath>
       <Modified>2016-07-01T18:48:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.dynamic.runtime\4.0.11\lib\netcore50\System.Dynamic.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.dynamic.runtime\4.0.11\lib\netcore50\System.Dynamic.Runtime.dll">
       <PackagePath>System.Dynamic.Runtime.dll</PackagePath>
       <Modified>2016-06-12T02:13:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.globalization.extensions\4.0.1\runtimes\win\lib\netstandard1.3\System.Globalization.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.globalization.extensions\4.0.1\runtimes\win\lib\netstandard1.3\System.Globalization.Extensions.dll">
       <PackagePath>System.Globalization.Extensions.dll</PackagePath>
       <Modified>2016-06-12T02:13:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.io.compression\4.1.1\runtimes\win\lib\netstandard1.3\System.IO.Compression.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.io.compression\4.1.1\runtimes\win\lib\netstandard1.3\System.IO.Compression.dll">
       <PackagePath>System.IO.Compression.dll</PackagePath>
       <Modified>2016-07-01T18:48:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.io.compression.zipfile\4.0.1\lib\netstandard1.3\System.IO.Compression.ZipFile.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.io.compression.zipfile\4.0.1\lib\netstandard1.3\System.IO.Compression.ZipFile.dll">
       <PackagePath>System.IO.Compression.ZipFile.dll</PackagePath>
       <Modified>2016-06-12T02:13:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.io.filesystem.primitives\4.0.1\lib\netstandard1.3\System.IO.FileSystem.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.io.filesystem.primitives\4.0.1\lib\netstandard1.3\System.IO.FileSystem.Primitives.dll">
       <PackagePath>System.IO.FileSystem.Primitives.dll</PackagePath>
       <Modified>2016-06-12T02:13:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.io.isolatedstorage\4.0.1\lib\netcore50\System.IO.IsolatedStorage.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.io.isolatedstorage\4.0.1\lib\netcore50\System.IO.IsolatedStorage.dll">
       <PackagePath>System.IO.IsolatedStorage.dll</PackagePath>
       <Modified>2016-06-12T02:13:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.io.unmanagedmemorystream\4.0.1\lib\netstandard1.3\System.IO.UnmanagedMemoryStream.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.io.unmanagedmemorystream\4.0.1\lib\netstandard1.3\System.IO.UnmanagedMemoryStream.dll">
       <PackagePath>System.IO.UnmanagedMemoryStream.dll</PackagePath>
       <Modified>2016-06-12T02:13:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.linq\4.1.0\lib\netcore50\System.Linq.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.linq\4.1.0\lib\netcore50\System.Linq.dll">
       <PackagePath>System.Linq.dll</PackagePath>
       <Modified>2016-06-12T02:14:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.linq.expressions\4.1.0\lib\netcore50\System.Linq.Expressions.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.linq.expressions\4.1.0\lib\netcore50\System.Linq.Expressions.dll">
       <PackagePath>System.Linq.Expressions.dll</PackagePath>
       <Modified>2016-06-12T02:13:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.linq.parallel\4.0.1\lib\netcore50\System.Linq.Parallel.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.linq.parallel\4.0.1\lib\netcore50\System.Linq.Parallel.dll">
       <PackagePath>System.Linq.Parallel.dll</PackagePath>
       <Modified>2016-06-12T02:13:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.linq.queryable\4.0.1\lib\netcore50\System.Linq.Queryable.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.linq.queryable\4.0.1\lib\netcore50\System.Linq.Queryable.dll">
       <PackagePath>System.Linq.Queryable.dll</PackagePath>
       <Modified>2016-06-12T02:13:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.net.http\4.1.0\runtimes\win\lib\netcore50\System.Net.Http.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.net.http\4.1.0\runtimes\win\lib\netcore50\System.Net.Http.dll">
       <PackagePath>System.Net.Http.dll</PackagePath>
       <Modified>2016-06-12T02:13:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.net.http.rtc\4.0.1\runtimes\win\lib\netcore50\System.Net.Http.Rtc.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.net.http.rtc\4.0.1\runtimes\win\lib\netcore50\System.Net.Http.Rtc.dll">
       <PackagePath>System.Net.Http.Rtc.dll</PackagePath>
       <Modified>2016-06-12T02:13:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.net.nameresolution\4.0.0\runtimes\win\lib\netcore50\System.Net.NameResolution.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.net.nameresolution\4.0.0\runtimes\win\lib\netcore50\System.Net.NameResolution.dll">
       <PackagePath>System.Net.NameResolution.dll</PackagePath>
       <Modified>2016-06-12T02:13:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.net.networkinformation\4.1.0\runtimes\win\lib\netcore50\System.Net.NetworkInformation.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.net.networkinformation\4.1.0\runtimes\win\lib\netcore50\System.Net.NetworkInformation.dll">
       <PackagePath>System.Net.NetworkInformation.dll</PackagePath>
       <Modified>2016-06-12T02:14:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.net.requests\4.0.11\runtimes\win\lib\netstandard1.3\System.Net.Requests.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.net.requests\4.0.11\runtimes\win\lib\netstandard1.3\System.Net.Requests.dll">
       <PackagePath>System.Net.Requests.dll</PackagePath>
       <Modified>2016-06-12T02:14:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.net.webheadercollection\4.0.1\lib\netstandard1.3\System.Net.WebHeaderCollection.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.net.webheadercollection\4.0.1\lib\netstandard1.3\System.Net.WebHeaderCollection.dll">
       <PackagePath>System.Net.WebHeaderCollection.dll</PackagePath>
       <Modified>2016-06-12T02:14:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.net.websockets\4.0.0\lib\netstandard1.3\System.Net.WebSockets.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.net.websockets\4.0.0\lib\netstandard1.3\System.Net.WebSockets.dll">
       <PackagePath>System.Net.WebSockets.dll</PackagePath>
       <Modified>2016-06-12T02:14:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.net.websockets.client\4.0.2\runtimes\win\lib\netcore50\System.Net.WebSockets.Client.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.net.websockets.client\4.0.2\runtimes\win\lib\netcore50\System.Net.WebSockets.Client.dll">
       <PackagePath>System.Net.WebSockets.Client.dll</PackagePath>
-      <Modified>2017-11-20T17:34:00.000</Modified>
+      <Modified>2017-11-20T16:34:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.numerics.vectors\4.1.1\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.numerics.vectors\4.1.1\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.dll">
       <PackagePath>System.Numerics.Vectors.dll</PackagePath>
       <Modified>2016-06-12T02:14:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.numerics.vectors.windowsruntime\4.0.1\lib\uap10.0\System.Numerics.Vectors.WindowsRuntime.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.numerics.vectors.windowsruntime\4.0.1\lib\uap10.0\System.Numerics.Vectors.WindowsRuntime.dll">
       <PackagePath>System.Numerics.Vectors.WindowsRuntime.dll</PackagePath>
       <Modified>2016-06-12T02:14:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.objectmodel\4.0.12\lib\netcore50\System.ObjectModel.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.objectmodel\4.0.12\lib\netcore50\System.ObjectModel.dll">
       <PackagePath>System.ObjectModel.dll</PackagePath>
       <Modified>2016-06-12T02:14:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.private.datacontractserialization\4.1.2\lib\netstandard1.3\System.Private.DataContractSerialization.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.private.datacontractserialization\4.1.2\lib\netstandard1.3\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
-      <Modified>2017-02-09T16:26:02.000</Modified>
+      <Modified>2017-02-09T15:26:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.private.servicemodel\4.1.1\runtimes\win7\lib\netcore50\System.Private.ServiceModel.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.private.servicemodel\4.1.1\runtimes\win7\lib\netcore50\System.Private.ServiceModel.dll">
       <PackagePath>System.Private.ServiceModel.dll</PackagePath>
-      <Modified>2017-12-13T03:31:12.000</Modified>
+      <Modified>2017-12-13T02:31:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.reflection.context\4.0.1\lib\netcore50\System.Reflection.Context.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.reflection.context\4.0.1\lib\netcore50\System.Reflection.Context.dll">
       <PackagePath>System.Reflection.Context.dll</PackagePath>
       <Modified>2016-06-12T02:14:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.reflection.dispatchproxy\4.0.1\lib\netstandard1.3\System.Reflection.DispatchProxy.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.reflection.dispatchproxy\4.0.1\lib\netstandard1.3\System.Reflection.DispatchProxy.dll">
       <PackagePath>System.Reflection.DispatchProxy.dll</PackagePath>
       <Modified>2016-06-12T02:14:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.reflection.emit\4.0.1\lib\netcore50\System.Reflection.Emit.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.reflection.emit\4.0.1\lib\netcore50\System.Reflection.Emit.dll">
       <PackagePath>System.Reflection.Emit.dll</PackagePath>
       <Modified>2016-06-12T02:14:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.reflection.emit.ilgeneration\4.0.1\lib\netcore50\System.Reflection.Emit.ILGeneration.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.reflection.emit.ilgeneration\4.0.1\lib\netcore50\System.Reflection.Emit.ILGeneration.dll">
       <PackagePath>System.Reflection.Emit.ILGeneration.dll</PackagePath>
       <Modified>2016-06-12T02:14:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.reflection.emit.lightweight\4.0.1\lib\netcore50\System.Reflection.Emit.Lightweight.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.reflection.emit.lightweight\4.0.1\lib\netcore50\System.Reflection.Emit.Lightweight.dll">
       <PackagePath>System.Reflection.Emit.Lightweight.dll</PackagePath>
       <Modified>2016-06-12T02:14:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.reflection.metadata\1.3.0\lib\portable-net45+win8\System.Reflection.Metadata.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.reflection.metadata\1.3.0\lib\portable-net45+win8\System.Reflection.Metadata.dll">
       <PackagePath>System.Reflection.Metadata.dll</PackagePath>
       <Modified>2016-06-12T02:14:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.reflection.typeextensions\4.1.0\lib\netcore50\System.Reflection.TypeExtensions.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.reflection.typeextensions\4.1.0\lib\netcore50\System.Reflection.TypeExtensions.dll">
       <PackagePath>System.Reflection.TypeExtensions.dll</PackagePath>
       <Modified>2016-06-12T02:14:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.runtime.interopservices.windowsruntime\4.0.1\lib\netcore50\System.Runtime.InteropServices.WindowsRuntime.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.runtime.interopservices.windowsruntime\4.0.1\lib\netcore50\System.Runtime.InteropServices.WindowsRuntime.dll">
       <PackagePath>System.Runtime.InteropServices.WindowsRuntime.dll</PackagePath>
       <Modified>2016-06-12T02:14:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.runtime.numerics\4.0.1\lib\netcore50\System.Runtime.Numerics.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.runtime.numerics\4.0.1\lib\netcore50\System.Runtime.Numerics.dll">
       <PackagePath>System.Runtime.Numerics.dll</PackagePath>
       <Modified>2016-06-12T02:14:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.runtime.serialization.json\4.0.3\lib\netcore50\System.Runtime.Serialization.Json.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.runtime.serialization.json\4.0.3\lib\netcore50\System.Runtime.Serialization.Json.dll">
       <PackagePath>System.Runtime.Serialization.Json.dll</PackagePath>
-      <Modified>2017-02-09T16:26:02.000</Modified>
+      <Modified>2017-02-09T15:26:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.runtime.serialization.primitives\4.1.1\lib\netcore50\System.Runtime.Serialization.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.runtime.serialization.primitives\4.1.1\lib\netcore50\System.Runtime.Serialization.Primitives.dll">
       <PackagePath>System.Runtime.Serialization.Primitives.dll</PackagePath>
       <Modified>2016-06-12T02:14:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.runtime.serialization.xml\4.1.2\lib\netcore50\System.Runtime.Serialization.Xml.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.runtime.serialization.xml\4.1.2\lib\netcore50\System.Runtime.Serialization.Xml.dll">
       <PackagePath>System.Runtime.Serialization.Xml.dll</PackagePath>
-      <Modified>2017-02-09T16:26:02.000</Modified>
+      <Modified>2017-02-09T15:26:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.runtime.windowsruntime\4.0.11\runtimes\win8\lib\netstandard1.3\System.Runtime.WindowsRuntime.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.runtime.windowsruntime\4.0.11\runtimes\win8\lib\netstandard1.3\System.Runtime.WindowsRuntime.dll">
       <PackagePath>System.Runtime.WindowsRuntime.dll</PackagePath>
       <Modified>2016-06-12T02:14:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.runtime.windowsruntime.ui.xaml\4.0.1\runtimes\win8\lib\netstandard1.3\System.Runtime.WindowsRuntime.UI.Xaml.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.runtime.windowsruntime.ui.xaml\4.0.1\runtimes\win8\lib\netstandard1.3\System.Runtime.WindowsRuntime.UI.Xaml.dll">
       <PackagePath>System.Runtime.WindowsRuntime.UI.Xaml.dll</PackagePath>
       <Modified>2016-06-12T02:14:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.security.claims\4.0.1\lib\netstandard1.3\System.Security.Claims.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.security.claims\4.0.1\lib\netstandard1.3\System.Security.Claims.dll">
       <PackagePath>System.Security.Claims.dll</PackagePath>
       <Modified>2016-06-12T02:14:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.security.cryptography.algorithms\4.2.0\runtimes\win\lib\netcore50\System.Security.Cryptography.Algorithms.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.security.cryptography.algorithms\4.2.0\runtimes\win\lib\netcore50\System.Security.Cryptography.Algorithms.dll">
       <PackagePath>System.Security.Cryptography.Algorithms.dll</PackagePath>
       <Modified>2016-06-12T02:14:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.security.cryptography.cng\4.2.0\runtimes\win\lib\netstandard1.4\System.Security.Cryptography.Cng.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.security.cryptography.cng\4.2.0\runtimes\win\lib\netstandard1.4\System.Security.Cryptography.Cng.dll">
       <PackagePath>System.Security.Cryptography.Cng.dll</PackagePath>
       <Modified>2016-06-12T02:14:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.security.cryptography.encoding\4.0.0\runtimes\win\lib\netstandard1.3\System.Security.Cryptography.Encoding.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.security.cryptography.encoding\4.0.0\runtimes\win\lib\netstandard1.3\System.Security.Cryptography.Encoding.dll">
       <PackagePath>System.Security.Cryptography.Encoding.dll</PackagePath>
       <Modified>2016-06-12T02:14:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.security.cryptography.primitives\4.0.0\lib\netstandard1.3\System.Security.Cryptography.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.security.cryptography.primitives\4.0.0\lib\netstandard1.3\System.Security.Cryptography.Primitives.dll">
       <PackagePath>System.Security.Cryptography.Primitives.dll</PackagePath>
       <Modified>2016-06-12T02:14:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.security.cryptography.x509certificates\4.1.0\runtimes\win\lib\netcore50\System.Security.Cryptography.X509Certificates.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.security.cryptography.x509certificates\4.1.0\runtimes\win\lib\netcore50\System.Security.Cryptography.X509Certificates.dll">
       <PackagePath>System.Security.Cryptography.X509Certificates.dll</PackagePath>
       <Modified>2016-06-12T02:14:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.security.principal\4.0.1\lib\netcore50\System.Security.Principal.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.security.principal\4.0.1\lib\netcore50\System.Security.Principal.dll">
       <PackagePath>System.Security.Principal.dll</PackagePath>
       <Modified>2016-06-12T02:14:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.servicemodel.duplex\4.0.2\lib\netcore50\System.ServiceModel.Duplex.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.servicemodel.duplex\4.0.2\lib\netcore50\System.ServiceModel.Duplex.dll">
       <PackagePath>System.ServiceModel.Duplex.dll</PackagePath>
-      <Modified>2017-12-13T03:31:16.000</Modified>
+      <Modified>2017-12-13T02:31:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.servicemodel.http\4.1.1\lib\netcore50\System.ServiceModel.Http.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.servicemodel.http\4.1.1\lib\netcore50\System.ServiceModel.Http.dll">
       <PackagePath>System.ServiceModel.Http.dll</PackagePath>
-      <Modified>2017-12-13T03:31:18.000</Modified>
+      <Modified>2017-12-13T02:31:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.servicemodel.nettcp\4.1.1\lib\netcore50\System.ServiceModel.NetTcp.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.servicemodel.nettcp\4.1.1\lib\netcore50\System.ServiceModel.NetTcp.dll">
       <PackagePath>System.ServiceModel.NetTcp.dll</PackagePath>
-      <Modified>2017-12-13T03:31:18.000</Modified>
+      <Modified>2017-12-13T02:31:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.servicemodel.primitives\4.1.1\lib\netcore50\System.ServiceModel.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.servicemodel.primitives\4.1.1\lib\netcore50\System.ServiceModel.Primitives.dll">
       <PackagePath>System.ServiceModel.Primitives.dll</PackagePath>
-      <Modified>2017-12-13T03:31:20.000</Modified>
+      <Modified>2017-12-13T02:31:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.servicemodel.security\4.0.2\lib\netcore50\System.ServiceModel.Security.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.servicemodel.security\4.0.2\lib\netcore50\System.ServiceModel.Security.dll">
       <PackagePath>System.ServiceModel.Security.dll</PackagePath>
-      <Modified>2017-12-13T03:31:22.000</Modified>
+      <Modified>2017-12-13T02:31:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.text.encoding.codepages\4.0.1\runtimes\win\lib\netstandard1.3\System.Text.Encoding.CodePages.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.text.encoding.codepages\4.0.1\runtimes\win\lib\netstandard1.3\System.Text.Encoding.CodePages.dll">
       <PackagePath>System.Text.Encoding.CodePages.dll</PackagePath>
       <Modified>2016-06-12T02:14:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.text.regularexpressions\4.1.0\lib\netcore50\System.Text.RegularExpressions.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.text.regularexpressions\4.1.0\lib\netcore50\System.Text.RegularExpressions.dll">
       <PackagePath>System.Text.RegularExpressions.dll</PackagePath>
       <Modified>2016-06-12T02:14:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.threading\4.0.11\lib\netcore50\System.Threading.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.threading\4.0.11\lib\netcore50\System.Threading.dll">
       <PackagePath>System.Threading.dll</PackagePath>
       <Modified>2016-06-12T02:15:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.threading.overlapped\4.0.1\runtimes\win\lib\netcore50\System.Threading.Overlapped.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.threading.overlapped\4.0.1\runtimes\win\lib\netcore50\System.Threading.Overlapped.dll">
       <PackagePath>System.Threading.Overlapped.dll</PackagePath>
       <Modified>2016-06-12T02:14:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.threading.tasks.dataflow\4.6.0\lib\netstandard1.1\System.Threading.Tasks.Dataflow.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.threading.tasks.dataflow\4.6.0\lib\netstandard1.1\System.Threading.Tasks.Dataflow.dll">
       <PackagePath>System.Threading.Tasks.Dataflow.dll</PackagePath>
       <Modified>2016-06-12T02:14:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.threading.tasks.extensions\4.0.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.threading.tasks.extensions\4.0.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll">
       <PackagePath>System.Threading.Tasks.Extensions.dll</PackagePath>
       <Modified>2016-06-12T02:14:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.threading.tasks.parallel\4.0.1\lib\netcore50\System.Threading.Tasks.Parallel.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.threading.tasks.parallel\4.0.1\lib\netcore50\System.Threading.Tasks.Parallel.dll">
       <PackagePath>System.Threading.Tasks.Parallel.dll</PackagePath>
       <Modified>2016-06-12T02:14:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.xml.readerwriter\4.0.11\lib\netcore50\System.Xml.ReaderWriter.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.xml.readerwriter\4.0.11\lib\netcore50\System.Xml.ReaderWriter.dll">
       <PackagePath>System.Xml.ReaderWriter.dll</PackagePath>
       <Modified>2016-06-12T02:15:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.xml.xdocument\4.0.11\lib\netcore50\System.Xml.XDocument.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.xml.xdocument\4.0.11\lib\netcore50\System.Xml.XDocument.dll">
       <PackagePath>System.Xml.XDocument.dll</PackagePath>
       <Modified>2016-06-12T02:15:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.xml.xmldocument\4.0.1\lib\netstandard1.3\System.Xml.XmlDocument.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.xml.xmldocument\4.0.1\lib\netstandard1.3\System.Xml.XmlDocument.dll">
       <PackagePath>System.Xml.XmlDocument.dll</PackagePath>
       <Modified>2016-06-12T02:15:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-12T02:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\NecromanteLL\bin\x86\Debug\NecromanteLL.dll">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\NecromanteLL\bin\x86\Debug\NecromanteLL.dll">
       <PackagePath>NecromanteLL.dll</PackagePath>
-      <Modified>2018-05-04T13:17:53.094</Modified>
+      <Modified>2018-05-04T13:57:50.651</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\Assets\dots.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\Assets\dots.png">
       <PackagePath>Assets\dots.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.421</Modified>
+      <Modified>2018-03-14T13:14:44.638</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.395</Modified>
+      <Modified>2018-03-02T13:14:11.343</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\equip2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\equip2.png">
       <PackagePath>GameAssets\Menu\equip2.png</PackagePath>
-      <Modified>2018-05-02T12:57:43.594</Modified>
+      <Modified>2018-05-02T12:55:51.563</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Buttons\clicked_button.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\clicked_button.png">
       <PackagePath>GameAssets\Buttons\clicked_button.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.620</Modified>
+      <Modified>2018-03-04T14:44:47.345</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Buttons\idle_button.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\idle_button.png">
       <PackagePath>GameAssets\Buttons\idle_button.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.621</Modified>
+      <Modified>2018-03-04T14:44:47.346</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\exhibit\Knight250.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\Knight250.png">
       <PackagePath>GameAssets\Characters\exhibit\Knight250.png</PackagePath>
-      <Modified>2018-04-30T11:11:55.690</Modified>
+      <Modified>2018-04-28T13:57:23.669</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\arco_1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\arco_1.png">
       <PackagePath>GameAssets\Characters\itens\arco_1.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.633</Modified>
+      <Modified>2016-11-16T17:05:47.177</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\arco_2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\arco_2.png">
       <PackagePath>GameAssets\Characters\itens\arco_2.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.634</Modified>
+      <Modified>2016-11-16T17:05:47.192</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\bota_1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\bota_1.png">
       <PackagePath>GameAssets\Characters\itens\bota_1.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.636</Modified>
+      <Modified>2016-11-16T17:05:47.224</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\bota_2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\bota_2.png">
       <PackagePath>GameAssets\Characters\itens\bota_2.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.636</Modified>
+      <Modified>2016-11-16T17:05:47.224</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\cajado_1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\cajado_1.png">
       <PackagePath>GameAssets\Characters\itens\cajado_1.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.637</Modified>
+      <Modified>2016-11-16T17:05:47.192</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\cajado_2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\cajado_2.png">
       <PackagePath>GameAssets\Characters\itens\cajado_2.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.637</Modified>
+      <Modified>2016-11-16T17:05:47.192</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\capacete_1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\capacete_1.png">
       <PackagePath>GameAssets\Characters\itens\capacete_1.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.638</Modified>
+      <Modified>2016-11-16T17:05:47.224</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\capacete_2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\capacete_2.png">
       <PackagePath>GameAssets\Characters\itens\capacete_2.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.638</Modified>
+      <Modified>2016-11-16T17:05:47.224</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\cota_1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\cota_1.png">
       <PackagePath>GameAssets\Characters\itens\cota_1.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.639</Modified>
+      <Modified>2016-11-16T17:05:47.224</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\cota_2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\cota_2.png">
       <PackagePath>GameAssets\Characters\itens\cota_2.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.640</Modified>
+      <Modified>2016-11-16T17:05:47.239</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\escudo_1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\escudo_1.png">
       <PackagePath>GameAssets\Characters\itens\escudo_1.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.641</Modified>
+      <Modified>2016-11-16T17:05:47.192</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\escudo_2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\escudo_2.png">
       <PackagePath>GameAssets\Characters\itens\escudo_2.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.641</Modified>
+      <Modified>2016-11-16T17:05:47.192</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\espada_1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\espada_1.png">
       <PackagePath>GameAssets\Characters\itens\espada_1.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.642</Modified>
+      <Modified>2016-11-16T17:05:47.173</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\espada_2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\espada_2.png">
       <PackagePath>GameAssets\Characters\itens\espada_2.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.642</Modified>
+      <Modified>2016-11-16T17:05:47.174</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\Hp_menor.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\Hp_menor.png">
       <PackagePath>GameAssets\Characters\itens\Hp_menor.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:27:32.250</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\Hp_maior.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\Hp_maior.png">
       <PackagePath>GameAssets\Characters\itens\Hp_maior.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:27:36.526</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\Mp_menor.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\Mp_menor.png">
       <PackagePath>GameAssets\Characters\itens\Mp_menor.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:27:39.486</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\Mp_maior.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\Mp_maior.png">
       <PackagePath>GameAssets\Characters\itens\Mp_maior.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:27:43.149</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\luva_1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\luva_1.png">
       <PackagePath>GameAssets\Characters\itens\luva_1.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.645</Modified>
+      <Modified>2016-11-16T17:05:47.239</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\luva_2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\luva_2.png">
       <PackagePath>GameAssets\Characters\itens\luva_2.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.645</Modified>
+      <Modified>2016-11-16T17:05:47.239</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\pant.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\pant.png">
       <PackagePath>GameAssets\Characters\itens\pant.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.646</Modified>
+      <Modified>2018-03-21T12:41:42.656</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\pant_t.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\pant_t.png">
       <PackagePath>GameAssets\Characters\itens\pant_t.png</PackagePath>
-      <Modified>2018-04-30T11:11:55.737</Modified>
+      <Modified>2018-04-25T15:08:26.707</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Armor 1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Armor 1.png">
       <PackagePath>GameAssets\Characters\itens\v2\Armor 1.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.770</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Armor 2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Armor 2.png">
       <PackagePath>GameAssets\Characters\itens\v2\Armor 2.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.771</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Armor 3.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Armor 3.png">
       <PackagePath>GameAssets\Characters\itens\v2\Armor 3.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.772</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Armor 4.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Armor 4.png">
       <PackagePath>GameAssets\Characters\itens\v2\Armor 4.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.773</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Axe 1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Axe 1.png">
       <PackagePath>GameAssets\Characters\itens\v2\Axe 1.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.774</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Axe 2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Axe 2.png">
       <PackagePath>GameAssets\Characters\itens\v2\Axe 2.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.775</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Axe 3.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Axe 3.png">
       <PackagePath>GameAssets\Characters\itens\v2\Axe 3.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.775</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Axe 4.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Axe 4.png">
       <PackagePath>GameAssets\Characters\itens\v2\Axe 4.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.776</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Axe 5.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Axe 5.png">
       <PackagePath>GameAssets\Characters\itens\v2\Axe 5.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.777</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Axe 6.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Axe 6.png">
       <PackagePath>GameAssets\Characters\itens\v2\Axe 6.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.778</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Axe 7.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Axe 7.png">
       <PackagePath>GameAssets\Characters\itens\v2\Axe 7.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.779</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Axe 8.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Axe 8.png">
       <PackagePath>GameAssets\Characters\itens\v2\Axe 8.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.780</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\pant_t.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\pant_t.png">
       <PackagePath>GameAssets\Characters\itens\v2\pant_t.png</PackagePath>
-      <Modified>2018-04-23T16:57:15.902</Modified>
+      <Modified>2018-04-23T13:27:02.480</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Potion 1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Potion 1.png">
       <PackagePath>GameAssets\Characters\itens\v2\Potion 1.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.780</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Potion 2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Potion 2.png">
       <PackagePath>GameAssets\Characters\itens\v2\Potion 2.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.781</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Potion 3.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Potion 3.png">
       <PackagePath>GameAssets\Characters\itens\v2\Potion 3.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.782</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Potion 4.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Potion 4.png">
       <PackagePath>GameAssets\Characters\itens\v2\Potion 4.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.783</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Shield 1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Shield 1.png">
       <PackagePath>GameAssets\Characters\itens\v2\Shield 1.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.784</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Shield 2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Shield 2.png">
       <PackagePath>GameAssets\Characters\itens\v2\Shield 2.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.785</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Shield 3.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Shield 3.png">
       <PackagePath>GameAssets\Characters\itens\v2\Shield 3.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.786</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Shield 4.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Shield 4.png">
       <PackagePath>GameAssets\Characters\itens\v2\Shield 4.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.787</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Shield 5.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Shield 5.png">
       <PackagePath>GameAssets\Characters\itens\v2\Shield 5.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.788</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Sword 1.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Sword 1.png">
       <PackagePath>GameAssets\Characters\itens\v2\Sword 1.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.789</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Sword 2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Sword 2.png">
       <PackagePath>GameAssets\Characters\itens\v2\Sword 2.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.790</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Sword 3.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Sword 3.png">
       <PackagePath>GameAssets\Characters\itens\v2\Sword 3.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.791</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Sword 4.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Sword 4.png">
       <PackagePath>GameAssets\Characters\itens\v2\Sword 4.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.792</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Sword 5.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Sword 5.png">
       <PackagePath>GameAssets\Characters\itens\v2\Sword 5.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.760</Modified>
+      <Modified>2018-04-13T14:24:33.792</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Sword 6.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Sword 6.png">
       <PackagePath>GameAssets\Characters\itens\v2\Sword 6.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.775</Modified>
+      <Modified>2018-04-13T14:24:33.793</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\itens\v2\Sword 7.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\itens\v2\Sword 7.png">
       <PackagePath>GameAssets\Characters\itens\v2\Sword 7.png</PackagePath>
-      <Modified>2018-04-16T11:35:09.775</Modified>
+      <Modified>2018-04-13T14:24:33.794</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Maps\chest_idle.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Maps\chest_idle.png">
       <PackagePath>GameAssets\Maps\chest_idle.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.650</Modified>
+      <Modified>2018-03-16T00:02:52.330</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Maps\mansion.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Maps\mansion.png">
       <PackagePath>GameAssets\Maps\mansion.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.729</Modified>
+      <Modified>2018-03-19T10:03:15.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\chooseClassTitle.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\chooseClassTitle.png">
       <PackagePath>GameAssets\Menu\chooseClassTitle.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.753</Modified>
+      <Modified>2018-03-04T14:44:47.502</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\equip.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\equip.png">
       <PackagePath>GameAssets\Menu\equip.png</PackagePath>
-      <Modified>2018-05-02T12:57:43.594</Modified>
+      <Modified>2018-05-02T12:55:51.563</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\equip_menu.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\equip_menu.png">
       <PackagePath>GameAssets\Menu\equip_menu.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.754</Modified>
+      <Modified>2018-03-04T14:44:47.503</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\HealthManaPanels2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\HealthManaPanels2.png">
       <PackagePath>GameAssets\Menu\HealthManaPanels2.png</PackagePath>
-      <Modified>2018-04-30T11:11:55.737</Modified>
+      <Modified>2018-04-28T13:57:23.697</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\inventory.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\inventory.png">
       <PackagePath>GameAssets\Menu\inventory.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.759</Modified>
+      <Modified>2018-03-16T00:02:52.331</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-23T13:32:56.395</Modified>
+      <Modified>2018-03-02T13:14:11.558</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-23T13:32:56.418</Modified>
+      <Modified>2018-03-02T13:14:11.559</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-23T13:32:56.419</Modified>
+      <Modified>2018-03-02T13:14:11.560</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-23T13:32:56.419</Modified>
+      <Modified>2018-03-02T13:14:11.561</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-23T13:32:56.420</Modified>
+      <Modified>2018-03-02T13:14:11.562</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-23T13:32:56.420</Modified>
+      <Modified>2018-03-02T13:14:11.563</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\mainTitle.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\mainTitle.png">
       <PackagePath>GameAssets\Menu\mainTitle.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.761</Modified>
+      <Modified>2018-03-04T14:44:47.507</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\nudePanel.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\nudePanel.png">
       <PackagePath>GameAssets\Menu\nudePanel.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.764</Modified>
+      <Modified>2018-03-04T14:44:47.543</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\nudePanel3.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\nudePanel3.png">
       <PackagePath>GameAssets\Menu\nudePanel3.png</PackagePath>
-      <Modified>2018-04-30T11:11:55.737</Modified>
+      <Modified>2018-04-28T13:57:23.697</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\optionMenu.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\optionMenu.png">
       <PackagePath>GameAssets\Menu\optionMenu.png</PackagePath>
-      <Modified>2018-03-23T13:32:56.765</Modified>
+      <Modified>2018-03-04T14:44:47.545</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\optionMenu2.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\optionMenu2.png">
       <PackagePath>GameAssets\Menu\optionMenu2.png</PackagePath>
-      <Modified>2018-04-30T11:11:55.737</Modified>
+      <Modified>2018-04-28T13:57:23.701</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\panel.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\panel.png">
       <PackagePath>GameAssets\Menu\panel.png</PackagePath>
-      <Modified>2018-03-23T13:32:57.440</Modified>
+      <Modified>2018-03-04T14:44:47.579</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\pauseMenu.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\pauseMenu.png">
       <PackagePath>pauseMenu.png</PackagePath>
-      <Modified>2018-03-23T13:33:06.995</Modified>
+      <Modified>2018-03-04T14:44:48.131</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Cursor\hand.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\hand.png">
       <PackagePath>RawImages\Cursor\hand.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.322</Modified>
+      <Modified>2018-04-11T12:45:40.954</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\images\mansion_01.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_01.png">
       <PackagePath>RawImages\images\mansion_01.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.445</Modified>
+      <Modified>2018-04-11T12:45:41.282</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\images\mansion_02.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_02.png">
       <PackagePath>RawImages\images\mansion_02.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.446</Modified>
+      <Modified>2018-04-11T12:45:41.282</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\images\mansion_03.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_03.png">
       <PackagePath>RawImages\images\mansion_03.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.461</Modified>
+      <Modified>2018-04-11T12:45:41.313</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\images\mansion_04.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_04.png">
       <PackagePath>RawImages\images\mansion_04.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.462</Modified>
+      <Modified>2018-04-11T12:45:41.313</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\images\mansion_05.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\images\mansion_05.png">
       <PackagePath>RawImages\images\mansion_05.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.463</Modified>
+      <Modified>2018-04-11T12:45:41.313</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\images\idle_mage_01.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_01.png">
       <PackagePath>RawImages\Mage\images\images\idle_mage_01.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.327</Modified>
+      <Modified>2018-04-11T12:45:41.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\images\idle_mage_02.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_02.png">
       <PackagePath>RawImages\Mage\images\images\idle_mage_02.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.328</Modified>
+      <Modified>2018-04-11T12:45:41.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\images\idle_mage_04.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_04.png">
       <PackagePath>RawImages\Mage\images\images\idle_mage_04.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.350</Modified>
+      <Modified>2018-04-11T12:45:41.079</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\images\idle_mage_05.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_05.png">
       <PackagePath>RawImages\Mage\images\images\idle_mage_05.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.351</Modified>
+      <Modified>2018-04-11T12:45:41.079</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\wizard-idle_01.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_01.png">
       <PackagePath>RawImages\Mage\images\wizard-idle_01.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.352</Modified>
+      <Modified>2018-04-11T12:45:41.094</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\wizard-idle_02.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_02.png">
       <PackagePath>RawImages\Mage\images\wizard-idle_02.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.353</Modified>
+      <Modified>2018-04-11T12:45:41.094</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\wizard-idle_03.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_03.png">
       <PackagePath>RawImages\Mage\images\wizard-idle_03.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.354</Modified>
+      <Modified>2018-04-11T12:45:41.094</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\wizard-idle_04.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_04.png">
       <PackagePath>RawImages\Mage\images\wizard-idle_04.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.355</Modified>
+      <Modified>2018-04-11T12:45:41.094</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\wizard-idle_05.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_05.png">
       <PackagePath>RawImages\Mage\images\wizard-idle_05.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.355</Modified>
+      <Modified>2018-04-11T12:45:41.110</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\wizard-idle_06.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_06.png">
       <PackagePath>RawImages\Mage\images\wizard-idle_06.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.356</Modified>
+      <Modified>2018-04-11T12:45:41.110</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\wizard-idle_07.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_07.png">
       <PackagePath>RawImages\Mage\images\wizard-idle_07.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.357</Modified>
+      <Modified>2018-04-11T12:45:41.110</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\wizard-idle_08.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_08.png">
       <PackagePath>RawImages\Mage\images\wizard-idle_08.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.358</Modified>
+      <Modified>2018-04-11T12:45:41.126</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\wizard-idle_09.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_09.png">
       <PackagePath>RawImages\Mage\images\wizard-idle_09.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.359</Modified>
+      <Modified>2018-04-11T12:45:41.126</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\wizard-idle_10.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\wizard-idle_10.png">
       <PackagePath>RawImages\Mage\images\wizard-idle_10.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.360</Modified>
+      <Modified>2018-04-11T12:45:41.126</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\wizard attack.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\wizard attack.png">
       <PackagePath>RawImages\Mage\wizard attack.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.362</Modified>
+      <Modified>2018-04-11T12:45:41.126</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\wizard death %281%29.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\wizard death %281%29.png">
       <PackagePath>RawImages\Mage\wizard death %281%29.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.362</Modified>
+      <Modified>2018-04-11T12:45:41.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\wizard fly forward %281%29.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\wizard fly forward %281%29.png">
       <PackagePath>RawImages\Mage\wizard fly forward %281%29.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.418</Modified>
+      <Modified>2018-04-11T12:45:41.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\wizard idle.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\wizard idle.png">
       <PackagePath>RawImages\Mage\wizard idle.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.419</Modified>
+      <Modified>2018-04-11T12:45:41.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\map.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\map.png">
       <PackagePath>RawImages\map.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.477</Modified>
+      <Modified>2018-04-11T12:45:41.360</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Attack.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Attack.png">
       <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Attack.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.437</Modified>
+      <Modified>2018-04-11T12:45:41.251</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Dead.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Dead.png">
       <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Dead.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.437</Modified>
+      <Modified>2018-04-11T12:45:41.251</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Hit.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Hit.png">
       <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Hit.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.439</Modified>
+      <Modified>2018-04-11T12:45:41.251</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Idle.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Idle.png">
       <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Idle.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.439</Modified>
+      <Modified>2018-04-11T12:45:41.266</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton React.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton React.png">
       <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton React.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.440</Modified>
+      <Modified>2018-04-11T12:45:41.266</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Walk.png">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Walk.png">
       <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Walk.png</PackagePath>
-      <Modified>2018-04-11T13:11:00.441</Modified>
+      <Modified>2018-04-11T12:45:41.266</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Buttons\arrow_down1.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\arrow_down1.gif">
       <PackagePath>GameAssets\Buttons\arrow_down1.gif</PackagePath>
-      <Modified>2018-05-02T15:03:51.552</Modified>
+      <Modified>2018-05-04T12:58:52.985</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Buttons\arrow_down.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\arrow_down.gif">
       <PackagePath>GameAssets\Buttons\arrow_down.gif</PackagePath>
-      <Modified>2018-05-02T12:57:43.579</Modified>
+      <Modified>2018-05-02T12:55:51.563</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\enemies\exqueleton\attack.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\attack.gif">
       <PackagePath>GameAssets\Characters\enemies\exqueleton\attack.gif</PackagePath>
-      <Modified>2018-03-23T13:32:56.623</Modified>
+      <Modified>2018-03-16T12:39:42.243</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif">
       <PackagePath>GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif</PackagePath>
-      <Modified>2018-03-23T13:32:56.624</Modified>
+      <Modified>2018-03-17T20:42:23.737</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinAtaque.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinAtaque.gif">
       <PackagePath>GameAssets\Characters\enemies\goblin\GoblinAtaque.gif</PackagePath>
-      <Modified>2018-04-30T11:11:56.362</Modified>
+      <Modified>2018-04-25T15:08:27.222</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinAtaqueLeft.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinAtaqueLeft.gif">
       <PackagePath>GameAssets\Characters\enemies\goblin\GoblinAtaqueLeft.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.674</Modified>
+      <Modified>2018-04-25T15:08:26.629</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinMorte.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinMorte.gif">
       <PackagePath>GameAssets\Characters\enemies\goblin\GoblinMorte.gif</PackagePath>
-      <Modified>2018-04-30T11:11:56.346</Modified>
+      <Modified>2018-04-25T15:08:27.207</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinMorteLeft.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinMorteLeft.gif">
       <PackagePath>GameAssets\Characters\enemies\goblin\GoblinMorteLeft.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.690</Modified>
+      <Modified>2018-04-25T15:08:26.629</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinParado.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinParado.gif">
       <PackagePath>GameAssets\Characters\enemies\goblin\GoblinParado.gif</PackagePath>
-      <Modified>2018-04-30T11:11:56.346</Modified>
+      <Modified>2018-04-25T15:08:27.207</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinParadoLeft.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\goblin\GoblinParadoLeft.gif">
       <PackagePath>GameAssets\Characters\enemies\goblin\GoblinParadoLeft.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.690</Modified>
+      <Modified>2018-04-25T15:08:26.629</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroAtaque.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroAtaque.gif">
       <PackagePath>GameAssets\Characters\enemies\ogro\OgroAtaque.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.690</Modified>
+      <Modified>2018-04-25T15:08:26.629</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroMorte.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroMorte.gif">
       <PackagePath>GameAssets\Characters\enemies\ogro\OgroMorte.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.690</Modified>
+      <Modified>2018-04-25T15:08:26.629</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroParado.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroParado.gif">
       <PackagePath>GameAssets\Characters\enemies\ogro\OgroParado.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.690</Modified>
+      <Modified>2018-04-25T15:08:26.629</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroParado1.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\ogro\OgroParado1.gif">
       <PackagePath>GameAssets\Characters\enemies\ogro\OgroParado1.gif</PackagePath>
-      <Modified>2018-04-30T11:11:56.346</Modified>
+      <Modified>2018-04-25T15:08:27.207</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\exhibit\knight_idle.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\knight_idle.gif">
       <PackagePath>GameAssets\Characters\exhibit\knight_idle.gif</PackagePath>
-      <Modified>2018-03-23T13:32:56.626</Modified>
+      <Modified>2018-03-04T14:44:47.348</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\exhibit\knight_idle2.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\exhibit\knight_idle2.gif">
       <PackagePath>GameAssets\Characters\exhibit\knight_idle2.gif</PackagePath>
-      <Modified>2018-04-23T16:57:15.901</Modified>
+      <Modified>2018-04-23T13:27:02.479</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\knight\idleLeft.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\idleLeft.gif">
       <PackagePath>GameAssets\Characters\heroes\knight\idleLeft.gif</PackagePath>
-      <Modified>2018-03-23T13:32:56.629</Modified>
+      <Modified>2018-03-14T13:14:44.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\knight\idleRight.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\idleRight.gif">
       <PackagePath>GameAssets\Characters\heroes\knight\idleRight.gif</PackagePath>
-      <Modified>2018-03-23T13:32:56.630</Modified>
+      <Modified>2018-03-14T13:14:44.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\knight\walkLeft.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\walkLeft.gif">
       <PackagePath>GameAssets\Characters\heroes\knight\walkLeft.gif</PackagePath>
-      <Modified>2018-03-23T13:32:56.631</Modified>
+      <Modified>2018-03-14T13:14:44.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\knight\walkRight.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\walkRight.gif">
       <PackagePath>GameAssets\Characters\heroes\knight\walkRight.gif</PackagePath>
-      <Modified>2018-03-23T13:32:56.632</Modified>
+      <Modified>2018-03-14T13:14:44.653</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAndarLeft.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAndarLeft.gif">
       <PackagePath>GameAssets\Characters\heroes\mage\MagoAndarLeft.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.690</Modified>
+      <Modified>2018-04-25T15:08:26.629</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAndarRight.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAndarRight.gif">
       <PackagePath>GameAssets\Characters\heroes\mage\MagoAndarRight.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.690</Modified>
+      <Modified>2018-04-25T15:08:26.644</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAtaque.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAtaque.gif">
       <PackagePath>GameAssets\Characters\heroes\mage\MagoAtaque.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.705</Modified>
+      <Modified>2018-04-25T15:08:26.644</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\mage\MagoMorre.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoMorre.gif">
       <PackagePath>GameAssets\Characters\heroes\mage\MagoMorre.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.705</Modified>
+      <Modified>2018-04-25T15:08:26.644</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\mage\MagoParado.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoParado.gif">
       <PackagePath>GameAssets\Characters\heroes\mage\MagoParado.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.705</Modified>
+      <Modified>2018-04-25T15:08:26.644</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\mage\MagoParadoLeft.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoParadoLeft.gif">
       <PackagePath>GameAssets\Characters\heroes\mage\MagoParadoLeft.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.705</Modified>
+      <Modified>2018-04-25T15:08:26.644</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\mage\MagoParadoRight.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoParadoRight.gif">
       <PackagePath>GameAssets\Characters\heroes\mage\MagoParadoRight.gif</PackagePath>
-      <Modified>2018-04-30T11:11:56.346</Modified>
+      <Modified>2018-04-25T15:08:27.207</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueAndarLeft.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueAndarLeft.gif">
       <PackagePath>GameAssets\Characters\heroes\rogue\RogueAndarLeft.gif</PackagePath>
-      <Modified>2018-04-30T11:11:55.705</Modified>
+      <Modified>2018-04-25T15:08:26.660</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueAndarRight.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueAndarRight.gif">
       <PackagePath>GameAssets\Characters\heroes\rogue\RogueAndarRight.gif</PackagePath>
-      <Modified>2018-04-30T11:11:56.346</Modified>
+      <Modified>2018-04-25T15:08:27.207</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueAtaque.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueAtaque.gif">
       <PackagePath>GameAssets\Characters\heroes\rogue\RogueAtaque.gif</PackagePath>
-      <Modified>2018-04-30T11:11:56.331</Modified>
+      <Modified>2018-04-25T15:08:27.191</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueParadaLeft.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueParadaLeft.gif">
       <PackagePath>GameAssets\Characters\heroes\rogue\RogueParadaLeft.gif</PackagePath>
-      <Modified>2018-04-30T11:11:56.331</Modified>
+      <Modified>2018-04-25T15:08:27.191</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueParadaRight.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\rogue\RogueParadaRight.gif">
       <PackagePath>GameAssets\Characters\heroes\rogue\RogueParadaRight.gif</PackagePath>
-      <Modified>2018-04-30T11:11:56.331</Modified>
+      <Modified>2018-04-25T15:08:27.191</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Maps\chest_open.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Maps\chest_open.gif">
       <PackagePath>GameAssets\Maps\chest_open.gif</PackagePath>
-      <Modified>2018-03-23T13:32:56.651</Modified>
+      <Modified>2018-03-17T20:42:23.721</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Menu\main_background.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Menu\main_background.gif">
       <PackagePath>GameAssets\Menu\main_background.gif</PackagePath>
-      <Modified>2018-03-23T13:32:56.763</Modified>
+      <Modified>2018-03-04T14:44:47.542</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Cursor\atack.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\atack.gif">
       <PackagePath>RawImages\Cursor\atack.gif</PackagePath>
-      <Modified>2018-04-11T13:11:00.321</Modified>
+      <Modified>2018-04-11T12:45:40.954</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Cursor\pointer.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\pointer.gif">
       <PackagePath>RawImages\Cursor\pointer.gif</PackagePath>
-      <Modified>2018-04-11T13:11:00.323</Modified>
+      <Modified>2018-04-11T12:45:41.016</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Cursor\talk.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\talk.gif">
       <PackagePath>RawImages\Cursor\talk.gif</PackagePath>
-      <Modified>2018-04-11T13:11:00.324</Modified>
+      <Modified>2018-04-11T12:45:41.032</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Cursor\wand.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Cursor\wand.gif">
       <PackagePath>RawImages\Cursor\wand.gif</PackagePath>
-      <Modified>2018-04-11T13:11:00.324</Modified>
+      <Modified>2018-04-11T12:45:41.032</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Mage\images\images\idle_mage_03.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Mage\images\images\idle_mage_03.gif">
       <PackagePath>RawImages\Mage\images\images\idle_mage_03.gif</PackagePath>
-      <Modified>2018-04-11T13:11:00.349</Modified>
+      <Modified>2018-04-11T12:45:41.079</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Attack.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Attack.gif">
       <PackagePath>RawImages\Skeleton\GIFS\Skeleton Attack.gif</PackagePath>
-      <Modified>2018-04-11T13:11:00.429</Modified>
+      <Modified>2018-04-11T12:45:41.188</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Dead.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Dead.gif">
       <PackagePath>RawImages\Skeleton\GIFS\Skeleton Dead.gif</PackagePath>
-      <Modified>2018-04-11T13:11:00.430</Modified>
+      <Modified>2018-04-11T12:45:41.188</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Hit.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Hit.gif">
       <PackagePath>RawImages\Skeleton\GIFS\Skeleton Hit.gif</PackagePath>
-      <Modified>2018-04-11T13:11:00.432</Modified>
+      <Modified>2018-04-11T12:45:41.204</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Idle.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Idle.gif">
       <PackagePath>RawImages\Skeleton\GIFS\Skeleton Idle.gif</PackagePath>
-      <Modified>2018-04-11T13:11:00.433</Modified>
+      <Modified>2018-04-11T12:45:41.219</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton React.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton React.gif">
       <PackagePath>RawImages\Skeleton\GIFS\Skeleton React.gif</PackagePath>
-      <Modified>2018-04-11T13:11:00.434</Modified>
+      <Modified>2018-04-11T12:45:41.219</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Walk.gif">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\RawImages\Skeleton\GIFS\Skeleton Walk.gif">
       <PackagePath>RawImages\Skeleton\GIFS\Skeleton Walk.gif</PackagePath>
-      <Modified>2018-04-11T13:11:00.435</Modified>
+      <Modified>2018-04-11T12:45:41.235</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Songs\Battle.mp3">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Songs\Battle.mp3">
       <PackagePath>GameAssets\Songs\Battle.mp3</PackagePath>
-      <Modified>2018-03-23T13:32:58.030</Modified>
+      <Modified>2018-03-23T11:34:23.572</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Songs\Bau.mp3">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Songs\Bau.mp3">
       <PackagePath>GameAssets\Songs\Bau.mp3</PackagePath>
-      <Modified>2018-03-23T13:32:58.202</Modified>
+      <Modified>2018-03-23T11:34:22.829</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Songs\Castelo.mp3">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Songs\Castelo.mp3">
       <PackagePath>GameAssets\Songs\Castelo.mp3</PackagePath>
-      <Modified>2018-03-23T13:32:58.223</Modified>
+      <Modified>2018-03-23T11:34:25.143</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Songs\Castelo2.mp3">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Songs\Castelo2.mp3">
       <PackagePath>GameAssets\Songs\Castelo2.mp3</PackagePath>
-      <Modified>2018-03-23T13:32:58.246</Modified>
+      <Modified>2018-03-23T11:34:24.952</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Songs\ClickSound.mp3">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Songs\ClickSound.mp3">
       <PackagePath>GameAssets\Songs\ClickSound.mp3</PackagePath>
-      <Modified>2018-03-23T13:32:58.248</Modified>
+      <Modified>2018-03-23T11:34:31.693</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Songs\Ossos.mp3">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Songs\Ossos.mp3">
       <PackagePath>GameAssets\Songs\Ossos.mp3</PackagePath>
-      <Modified>2018-03-23T13:32:58.298</Modified>
+      <Modified>2018-03-23T11:34:33.117</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Songs\Waterfall.mp3">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Songs\Waterfall.mp3">
       <PackagePath>GameAssets\Songs\Waterfall.mp3</PackagePath>
-      <Modified>2018-03-23T13:32:58.326</Modified>
+      <Modified>2018-03-23T11:34:33.788</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2018-03-23T13:32:58.383</Modified>
+      <Modified>2018-03-02T13:14:11.611</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\MantaNecromante.xr.xml">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\MantaNecromante.xr.xml">
       <PackagePath>MantaNecromante.xr.xml</PackagePath>
-      <Modified>2018-05-02T15:03:51.568</Modified>
+      <Modified>2018-05-04T12:58:53.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2017-09-28T20:28:16.000</Modified>
+      <Modified>2017-09-28T19:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-04T13:17:56.390</Modified>
+      <Modified>2018-05-04T13:52:42.164</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\Core\MantaNecromante.exe">
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\Core\MantaNecromante.exe">
       <PackagePath>MantaNecromante.exe</PackagePath>
-      <Modified>2018-05-04T13:34:44.035</Modified>
+      <Modified>2018-05-04T14:28:16.211</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
       <Name>Microsoft.NET.CoreRuntime.1.1</Name>
-      <Version>1.1.25915.0</Version>
+      <Version>1.1.25305.1</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25915.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25305.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\ARM\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
       <Name>Microsoft.NET.CoreRuntime.1.1</Name>
-      <Version>1.1.25915.0</Version>
+      <Version>1.1.25305.1</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25915.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25305.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\x64\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
       <Name>Microsoft.NET.CoreRuntime.1.1</Name>
-      <Version>1.1.25915.0</Version>
+      <Version>1.1.25305.1</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25915.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25305.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\x86\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.26128.0</Version>
+      <Version>14.0.25830.2</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.26128.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.26128.0</Version>
+      <Version>14.0.25830.2</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.25830.2</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.26128.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.26128.0</Version>
+      <Version>14.0.25830.2</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.26128.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>

@@ -1009,8 +1009,8 @@ namespace MantaNecromante.GameStage
 
             Image i = sender as Image;
             int coordImg = Convert.ToInt16(i.Name.Replace("Slot", ""));
-            
-            
+
+            chosen.Equipar(chosen.Inventario[coordImg]);
             
 
         }
@@ -1069,6 +1069,9 @@ namespace MantaNecromante.GameStage
 
             CreateEnemy(72, 24);
             CreateEnemy(88, 19);
+            CreateEnemy(90, 19);
+            CreateEnemy(92, 19);
+            CreateEnemy(82, 11);
         }
 
         /// <summary>
