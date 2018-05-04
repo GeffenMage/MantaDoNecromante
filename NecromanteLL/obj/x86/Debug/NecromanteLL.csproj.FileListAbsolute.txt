@@ -123,22 +123,3 @@ C:\Users\ewert\Source\Repos\MantaDoNecromante4\NecromanteLL\obj\x86\Debug\pri.re
 C:\Users\ewert\Source\Repos\MantaDoNecromante4\NecromanteLL\obj\x86\Debug\qualifiers.txt
 C:\Users\ewert\Source\Repos\MantaDoNecromante4\NecromanteLL\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\ewert\Source\Repos\MantaDoNecromante4\NecromanteLL\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\NecromanteLL\obj\x86\Debug\NecromanteLL.csprojResolveAssemblyReference.cache
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\bin\x86\Debug\NecromanteLL.dll
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\NecromanteLL.csprojResolveAssemblyReference.cache
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\NecromanteLL.csproj.CoreCompileInputs.cache
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\NecromanteLL.dll
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\NecromanteLL.pdb
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\bin\x86\Debug\NecromanteLL.pdb
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\bin\x86\Debug\NecromanteLL.pri
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\priconfig.xml
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\priconfig.xml.intermediate
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\layout.resfiles
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\layout.resfiles.intermediate
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\resources.resfiles
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\resources.resfiles.intermediate
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\pri.resfiles
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\pri.resfiles.intermediate
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\qualifiers.txt
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\qualifiers.txt.intermediate
-C:\Users\ewert\Source\Repos\MantaDoNecromante5\NecromanteLL\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
