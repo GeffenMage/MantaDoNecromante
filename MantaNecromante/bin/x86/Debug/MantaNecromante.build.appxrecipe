@@ -703,6 +703,9 @@
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\RawImages\Skeleton\Sprite Sheets\Skeleton Walk.png">
       <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Walk.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Buttons\arrow_down1.gif">
+      <PackagePath>GameAssets\Buttons\arrow_down1.gif</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Buttons\arrow_down.gif">
       <PackagePath>GameAssets\Buttons\arrow_down.gif</PackagePath>
     </AppxPackagedFile>

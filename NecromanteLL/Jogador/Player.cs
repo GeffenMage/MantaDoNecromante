@@ -66,10 +66,13 @@ namespace NecromanteLL {
         // Virtula para poder realizar override
         public virtual void LvUp() {
             Lvl++;
+            xp_atual = xp_atual - xp_total;
             Xp_total *= 2;
             hp_atual = Hp_total;
             mp_atual = Mp_total;
-            xp_atual = 0;
+            if (IsLvUP() == true) {
+                LvUp();
+            }
         }
 
         public void Gain_xp(int xp_gain) {
