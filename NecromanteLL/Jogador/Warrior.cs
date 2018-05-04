@@ -36,6 +36,7 @@ namespace NecromanteLL {
             // Tentativa de override
             public override void LvUp() {
                 Lvl++;
+                Xp_atual = Xp_atual - Xp_total;
                 Xp_total *= 2;
                 Hp_total += 50;
                 Mp_total += 10;

@@ -22,7 +22,7 @@ using Windows.ApplicationModel.Core;
 // O modelo de item de Página em Branco está documentado em https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace MantaNecromante.MainBattle {
-    
+
     /// <summary>
     /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
     /// </summary>
@@ -31,9 +31,11 @@ namespace MantaNecromante.MainBattle {
         private bool isOptionsMenuOpen;
         private BattleController battleController;
         private MediaPlayer song = new MediaPlayer();
-        
+        private string nomeSkill;
+        private int DmgPlayer, DmgMob, MpPlayer;
+
         public BattleStage() {
-            
+
             this.InitializeComponent();
             Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;
             Adjuster.AdjustWindow(Floor);
@@ -42,7 +44,14 @@ namespace MantaNecromante.MainBattle {
             Floor.Children.Remove(Turn2);
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Battle.mp3"));
             song.Play();
+            RemoverMenus();
 
+
+        }
+
+        private void RemoverMenus() {
+
+            Floor.Children.Remove(ResultadosPane);
         }
 
         public void NameSkills() {
@@ -56,15 +65,36 @@ namespace MantaNecromante.MainBattle {
         /// Método trata o caso do player não possuir mana para usar a skill escolhida
         /// </summary>
         public void NoManaAvalible() {
-
+            Infobox.Text = "Você não tem mana o suficiente para usar " + nomeSkill;
         }
 
+        private void BlockButtons() {
+            
+            Skill0.Click -= BotaoSkill;
+            Skill1.Click -= BotaoSkill;
+            Skill2.Click -= BotaoSkill;
+            
+            Ataque.Click -= BotaoAtacar;
+                    
+        }
 
         /// <summary>
         /// Método que trata a morte do inimigo
         /// </summary>
         public void EnemyIsDead() {
+            Progress_Bar_Update();
+            battleController.Jogador.Gain_xp(battleController.Inimigo.Give_xp());
+            BlockButtons();
+            RemoverMenus();
 
+            Floor.Children.Add(ResultadosPane);
+
+            ResultadosText.Text = "Você Derrotou " + battleController.Inimigo.Nome +
+            "\n Você ganhou " + battleController.Inimigo.Given_xp + " de xp";
+            
+            ResultadosBotao.Content = "Voltar ao Castelo";
+            
+            this.Frame.GoBack();
 
         }
 
@@ -74,6 +104,16 @@ namespace MantaNecromante.MainBattle {
         /// </summary>
         public void PlayerIsDead() {
             //Mostrar uma mensagem que o player morreu e encerrar a batalha
+            Progress_Bar_Update();
+
+            RemoverMenus();
+            Floor.Children.Add(ResultadosPane);
+
+            ResultadosText.Text = "Você morreu!";
+            ResultadosBotao.Content = "Voltar ao Menu Inicial";
+            
+            BlockButtons();
+            
         }
 
         
@@ -112,15 +152,31 @@ namespace MantaNecromante.MainBattle {
 
             Progress_Bar_Update();
             battleController.EnemyChoice();
-            
+            if (nomeSkill == Ataque.Content.ToString()) {
+                Infobox.Text = "Player" + " causou " + DmgPlayer + " de dano";
+            }
+            else {
+                Infobox.Text = "Player usou "+nomeSkill + "("+MpPlayer+" MP)"+" e causou " + DmgPlayer + " de dano";
+            }
 
         }
 
         public void Progress_Bar_Update() {
+
+            MpPlayer = (int)Progress_MP_chosen.Value;
+            int hp_temp = (int)Progress_HP_Mob.Value;
+
+
             Progress_HP_chosen.Value = battleController.Jogador.Hp_atual;
             Progress_MP_chosen.Value = battleController.Jogador.Mp_atual;
+
+            MpPlayer -= (int)Progress_MP_chosen.Value;
+            
+
             Progress_HP_Mob.Value = battleController.Inimigo.Hp_atual;
             Progress_MP_Mob.Value = battleController.Inimigo.Mp_atual;
+
+            DmgPlayer = (int)hp_temp - (int)Progress_HP_Mob.Value;
         }
 
         public void Progress_Bar() {
@@ -210,7 +266,12 @@ namespace MantaNecromante.MainBattle {
             battleController.PlayerHasNoMana += NoManaAvalible;
             Progress_Bar();
             NameSkills();
-           
+            if (battleController.Turno_player == true) {
+                RollBox.Text = "O jogador Começa";
+            }
+            else {
+                RollBox.Text = battleController.Inimigo.Nome + " Começa";
+            }
         }
 
         private void Menu_Click(object sender, RoutedEventArgs e) {
@@ -229,6 +290,7 @@ namespace MantaNecromante.MainBattle {
         }
 
         private void BotaoAtacar(object sender, RoutedEventArgs e) {
+            nomeSkill = ((Button)sender).Content.ToString();
             battleController.Atacar();
         }
 
@@ -237,6 +299,8 @@ namespace MantaNecromante.MainBattle {
             Button b = sender as Button;
 
             int Skill = Convert.ToInt16(b.Name.Replace("Skill", ""));
+
+            nomeSkill = b.Content.ToString();
 
             battleController.CastSkill(battleController.Jogador.Skills[Skill]);
         }

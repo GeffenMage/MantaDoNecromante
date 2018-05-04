@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-02T14:55:03.184</Modified>
+      <Modified>2018-05-04T13:34:44.039</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\MantaNecromante.exe">
       <PackagePath>entrypoint\MantaNecromante.exe</PackagePath>
-      <Modified>2018-05-02T14:55:02.795</Modified>
+      <Modified>2018-05-04T13:34:43.486</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -497,7 +497,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\NecromanteLL\bin\x86\Debug\NecromanteLL.dll">
       <PackagePath>NecromanteLL.dll</PackagePath>
-      <Modified>2018-05-02T14:55:00.904</Modified>
+      <Modified>2018-05-04T13:17:53.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\Assets\dots.png">
       <PackagePath>Assets\dots.png</PackagePath>
@@ -937,6 +937,10 @@
       <PackagePath>RawImages\Skeleton\Sprite Sheets\Skeleton Walk.png</PackagePath>
       <Modified>2018-04-11T13:11:00.441</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Buttons\arrow_down1.gif">
+      <PackagePath>GameAssets\Buttons\arrow_down1.gif</PackagePath>
+      <Modified>2018-05-02T15:03:51.552</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\GameAssets\Buttons\arrow_down.gif">
       <PackagePath>GameAssets\Buttons\arrow_down.gif</PackagePath>
       <Modified>2018-05-02T12:57:43.579</Modified>
@@ -1147,7 +1151,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\MantaNecromante.xr.xml">
       <PackagePath>MantaNecromante.xr.xml</PackagePath>
-      <Modified>2018-05-02T14:13:49.824</Modified>
+      <Modified>2018-05-02T15:03:51.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1156,11 +1160,11 @@
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-02T14:46:28.745</Modified>
+      <Modified>2018-05-04T13:17:56.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\Core\MantaNecromante.exe">
       <PackagePath>MantaNecromante.exe</PackagePath>
-      <Modified>2018-05-02T14:55:03.180</Modified>
+      <Modified>2018-05-04T13:34:44.035</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
