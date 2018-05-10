@@ -86,13 +86,12 @@
       <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
-      <RootProperty Name="Height" />
+      <RootProperty Name="Name" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="RenderTransformOrigin" />
-      <RootProperty Name="Name" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootEvent Name="ValueChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Name" />

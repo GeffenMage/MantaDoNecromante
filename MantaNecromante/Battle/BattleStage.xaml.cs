@@ -82,7 +82,7 @@ namespace MantaNecromante.MainBattle {
         /// <summary>
         /// Método que trata a morte do inimigo
         /// </summary>
-        public void EnemyIsDead() {
+        public  void  EnemyIsDead() {
             Progress_Bar_Update();
             battleController.Jogador.Gain_xp(battleController.Inimigo.Give_xp());
             BlockButtons();
@@ -94,7 +94,9 @@ namespace MantaNecromante.MainBattle {
             "\n Você ganhou " + battleController.Inimigo.Given_xp + " de xp";
             
             ResultadosBotao.Content = "Voltar ao Castelo";
+
             
+            this.Frame.GoBack();
            
 
         }
@@ -103,7 +105,7 @@ namespace MantaNecromante.MainBattle {
         /// <summary>
         /// Método que trata a morte do jogador
         /// </summary>
-        public void PlayerIsDead() {
+        public  void PlayerIsDead() {
             //Mostrar uma mensagem que o player morreu e encerrar a batalha
             Progress_Bar_Update();
             removeAll();
@@ -112,7 +114,8 @@ namespace MantaNecromante.MainBattle {
             
             ResultadosText.Text = "Você morreu!";
             ResultadosBotao.Content = "Voltar ao Menu Inicial";
-           
+
+            
             BlockButtons();
         }
 
@@ -144,9 +147,9 @@ namespace MantaNecromante.MainBattle {
         /// </summary>
         public async void  TurnChangeToEnemy() {
             //Mostrar que o turno mudou para o inimigo
-            System.Threading.Tasks.Task.Delay(200).Wait();
+            System.Threading.Tasks.Task.Delay(400).Wait();
 
-            await System.Threading.Tasks.Task.Delay(200);
+            await System.Threading.Tasks.Task.Delay(400);
 
             removeAll();
 

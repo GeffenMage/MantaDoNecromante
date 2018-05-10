@@ -32,7 +32,14 @@
 
         <RelativePanel Opacity="1" Name="Inventory" Height="497" Canvas.Left="545" Canvas.Top="208" Width="320" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/inventory.png" Margin="0,0,-305,0" Width="305" HorizontalAlignment="Left"/>
-            <Image Source="ms-appx:///GameAssets/Menu/equip2.png" Margin="-288,47,0,49" Width="249" HorizontalAlignment="Left"/>
+            <Image Source="ms-appx:///GameAssets/Menu/equip2.png" Margin="-286,49,0,47" Width="249" HorizontalAlignment="Left"/>
+            <ProgressBar Name="Hp_equip" Canvas.Left="26" Canvas.Top="760" Foreground="Red" Margin="-218,316,56,-346" VerticalAlignment="Stretch" />
+            <ProgressBar Name="Mp_equip" Canvas.Left="26" Canvas.Top="760" Foreground="Blue" Margin="-218,379,56,-404" VerticalAlignment="Stretch"/>
+
+            
+
+
+
 
             <Button Height="17" Margin="270,7,-275,-12" Width="25" Click="ExitInventory"/>
 
@@ -252,11 +259,6 @@
             <Button Height="34" Margin="244,379,-258,-401" Width="34">
                 <Image Name="Slot48" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
             </Button>
-            
-            <ProgressBar x:Name="Mp_equip" Height="21"  Foreground="Blue" Margin="-214,369,75,-364" RenderTransformOrigin="0.5,0.5" ValueChanged="Mp_equip_ValueChanged" >
-                
-            </ProgressBar>
-            <ProgressBar x:Name="Hp_equip" Height="20"   Foreground="Red" Margin="-214,321,75,-315" ValueChanged="Hp_equip_ValueChanged" />
 
 
         </RelativePanel>

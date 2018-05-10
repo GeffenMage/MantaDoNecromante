@@ -157,7 +157,7 @@ namespace MantaNecromante.GameStage
 
         private void SetAllMenusReady()
         {
-
+            //Progressbar();
             Floor.Children.Remove(quick_menu);
             Floor.Children.Add(quick_menu);
 
@@ -1110,6 +1110,8 @@ namespace MantaNecromante.GameStage
 
         private void SetEnemies()
         {
+            CreateEnemy(50, 24);
+            CreateEnemy(40, 24);
 
             CreateEnemy(72, 24);
             CreateEnemy(92, 19);
@@ -1240,16 +1242,21 @@ namespace MantaNecromante.GameStage
             }
         }
 
-        private void Hp_equip_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
-        {
-            Hp_equip.Value = battleController.Jogador.Hp_atual;
-        }
+      
 
-        private void Mp_equip_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
-        {
-            Mp_equip.Value = battleController.Jogador.Mp_atual;
+        //private void Progressbar()
+        //{
+            
+        //    Hp_equip.Minimum = 0;
+        //    Hp_equip.Maximum = chosen.Hp_total;
+        //    Hp_equip.Value = chosen.Hp_atual;
 
-        }
+        //    Mp_equip.Minimum = 0;
+        //    Mp_equip.Maximum = chosen.Mp_total;
+        //    Mp_equip.Value = chosen.Mp_atual;
+        //}
+
+
 
         //Ao apertar 'E' para interagir, é necessário saber se uma das célula em que se encontra os vértices do herói é uma célula de itens.
         //..............................................................................................//
