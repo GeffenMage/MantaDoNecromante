@@ -1303,6 +1303,8 @@ namespace MantaNecromante.GameStage
         }
         //..............................................................................................//
 
+        int isMage = 0, isKnight = 1, isLadina = 2, history;
+
         private void CreateGrid()
         {
 
@@ -1475,16 +1477,19 @@ namespace MantaNecromante.GameStage
 
             if (chosen is Warrior) { Hero.Height = 90; Hero.Width = 37.18;
 
+                history = isKnight;
                 Floor.Children.Add(History_w);
                 
             }
 
             if (chosen is Rogue) { Hero.Height = 110; Hero.Width = 55.18;
+                history = isLadina;
                 Floor.Children.Add(History_l);
             }
             
 
             if (chosen is Wizard) { Hero.Height = 110; Hero.Width = 60.18;
+                history = isMage;
                 Floor.Children.Add(History_m);
             }
 
@@ -1566,6 +1571,24 @@ namespace MantaNecromante.GameStage
 
                     isMovementKey = false;
                     Interact();
+                    break;
+                case Windows.System.VirtualKey.H:
+
+                    isMovementKey = false;
+                    if (history == isKnight) {
+                        History_w.Opacity = (History_w.Opacity == 1) ? 0 : 1;
+
+                    }
+                    else if (history == isMage)
+                    {
+                        History_m.Opacity = (History_m.Opacity == 1) ? 0 : 1;
+
+                    }
+                    else if (history == isLadina)
+                    {
+                        History_l.Opacity = (History_l.Opacity == 1) ? 0 : 1;
+
+                    }
                     break;
                 default:
 

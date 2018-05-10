@@ -282,7 +282,8 @@
             <Button x:ConnectionId='23' Name="quick10" Height="34" Opacity="0" Margin="578,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
 
 
-        </RelativePanel   >
+        </RelativePanel>
+        
         <Image x:ConnectionId='8' Stretch="Fill" Name="History_w" Source="ms-appx:///GameAssets/Characters/heroes/knight/history_w.png" Height="556" Canvas.Left="651" Canvas.Top="115" Width="382" RenderTransformOrigin="0.5,0.507"/>
         <Button x:ConnectionId='9' Height="25" Margin="0,0,0,0" Width="28"                         Canvas.Left="996" Canvas.Top="121"/>
 

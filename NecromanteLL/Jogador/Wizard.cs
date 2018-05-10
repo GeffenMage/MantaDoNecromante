@@ -26,8 +26,10 @@ namespace NecromanteLL {
             Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoParadoLeft.gif"));
             Sprite_walking_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoAndarLeft.gif"));
             Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoAndarRight.gif"));
-            Sprite_Ataque_Right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoAtaque.gif"));
-            
+            Sprite_ataque_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoAtaque.gif"));
+            Sprite_skill_right = null;
+            Sprite_death = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoMorre.gif"));
+
             //Cria e inicializa as skills da classe do personagem
             Skills = new List<Skill>();
             Skills.Add(new Skill("Fireball", 40, 0, 1, 0, 0, 0, 0, 300));
