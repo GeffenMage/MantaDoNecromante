@@ -54,6 +54,8 @@ namespace MantaNecromante.GameStage
         private BitmapImage direction;
         private BitmapImage runtoLeft, runtoRight;
         private BitmapImage idletoLeft, idletoRight;
+      
+        
         //..................................//
 
         //Variáveis relacionadas à matriz interna que controla as interações do herói com o mapa:
@@ -92,6 +94,8 @@ namespace MantaNecromante.GameStage
 
         // Matrix de armazenamento dos slots de item
         private Image[,] ImageMatrix = new Image[8, 6];
+        private Image[,] ImageEquip = new Image[2, 3];
+
         //Timer usado para o movimento:
 
         //para testes:
@@ -111,6 +115,7 @@ namespace MantaNecromante.GameStage
         private List<Image> MovableProps = new List<Image>();
         //..........................................................//
         private MediaPlayer song = new MediaPlayer();
+        
 
         public MainStage()
         {
@@ -119,22 +124,22 @@ namespace MantaNecromante.GameStage
        
             Window.Current.CoreWindow.KeyDown += KeySentinel;
             Window.Current.CoreWindow.KeyUp += KeyDropped;
-            
+
 
             //Fazendo os ajustes para para tudo rodar "perfeitamente":
             //....................................................................................................//
             Adjuster.AdjustWindow(Floor);
             Adjuster.adjustForCamera(Mansion, Hero, ref ScreenWidth, ref ScreenHeight, ref Cell_Width, ref Cell_Height, ref topSide, ref botSide, ref leftSide, ref rightSide);
             //....................................................................................................//
-
+            
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Castelo.mp3"));
             //song.Play();
-
             //CreateGrid();
             CreateSlot();
             SetBlocks();
             SetEnemies();
             SetItems();
+            Created_Slot_Equip();
 
             //Os menus são feitos no xalm, mas antes de o jogo começar, são retirados, exceto o quickmenu, que é retirado e posto de volta,
             //para ficar a frente de todas as outras imagens.
@@ -144,11 +149,15 @@ namespace MantaNecromante.GameStage
             walkTimer.Tick += Walk;
 
             walkTimer.Start();
+
+            
+
         }
+  
 
         private void SetAllMenusReady()
         {
-
+            //Progressbar();
             Floor.Children.Remove(quick_menu);
             Floor.Children.Add(quick_menu);
 
@@ -157,6 +166,14 @@ namespace MantaNecromante.GameStage
 
             Floor.Children.Remove(OptionsMenu);
             isOptionsMenuOpen = false;
+            Floor.Children.Remove(History_w);
+
+            Floor.Children.Remove(History_l);
+
+            Floor.Children.Remove(History_m);
+
+
+
         }
 
         private void X_movePropsAlongWithCamera()
@@ -940,67 +957,90 @@ namespace MantaNecromante.GameStage
 
             // Linha 1
             ImageMatrix[0, 0] = Slot1; ImageMatrix[0, 0].Tapped += TappedImage;
-            ImageMatrix[0, 1] = Slot2;
+            ImageMatrix[0, 1] = Slot2; ImageMatrix[0, 1].Tapped += TappedImage;
             ImageMatrix[0, 2] = Slot3; ImageMatrix[0, 2].Tapped += TappedImage;
-            ImageMatrix[0, 3] = Slot4;
-            ImageMatrix[0, 4] = Slot5;
-            ImageMatrix[0, 5] = Slot6;
+            ImageMatrix[0, 3] = Slot4; ImageMatrix[0, 3].Tapped += TappedImage;
+            ImageMatrix[0, 4] = Slot5; ImageMatrix[0, 4].Tapped += TappedImage;
+            ImageMatrix[0, 5] = Slot6; ImageMatrix[0, 5].Tapped += TappedImage;
 
             // Linha 2
-            ImageMatrix[1, 0] = Slot7;
-            ImageMatrix[1, 1] = Slot8;
-            ImageMatrix[1, 2] = Slot9;
-            ImageMatrix[1, 3] = Slot10;
-            ImageMatrix[1, 4] = Slot11;
-            ImageMatrix[1, 5] = Slot12;
+            ImageMatrix[1, 0] = Slot7; ImageMatrix[1, 0].Tapped += TappedImage;
+            ImageMatrix[1, 1] = Slot8; ImageMatrix[1, 1].Tapped += TappedImage;
+            ImageMatrix[1, 2] = Slot9; ImageMatrix[1, 2].Tapped += TappedImage;
+            ImageMatrix[1, 3] = Slot10; ImageMatrix[1, 3].Tapped += TappedImage;
+            ImageMatrix[1, 4] = Slot11; ImageMatrix[1, 4].Tapped += TappedImage;
+            ImageMatrix[1, 5] = Slot12; ImageMatrix[1, 5].Tapped += TappedImage;
 
             // Linha 3
-            ImageMatrix[2, 0] = Slot13;
-            ImageMatrix[2, 1] = Slot14;
-            ImageMatrix[2, 2] = Slot15;
-            ImageMatrix[2, 3] = Slot16;
-            ImageMatrix[2, 4] = Slot17;
-            ImageMatrix[2, 5] = Slot18;
+            ImageMatrix[2, 0] = Slot13; ImageMatrix[2, 0].Tapped += TappedImage;
+            ImageMatrix[2, 1] = Slot14; ImageMatrix[2, 1].Tapped += TappedImage;
+            ImageMatrix[2, 2] = Slot15; ImageMatrix[2, 2].Tapped += TappedImage;
+            ImageMatrix[2, 3] = Slot16; ImageMatrix[2, 3].Tapped += TappedImage;
+            ImageMatrix[2, 4] = Slot17; ImageMatrix[2, 4].Tapped += TappedImage;
+            ImageMatrix[2, 5] = Slot18; ImageMatrix[2, 5].Tapped += TappedImage;
 
             // Linha 4
-            ImageMatrix[3, 0] = Slot19;
-            ImageMatrix[3, 1] = Slot20;
-            ImageMatrix[3, 2] = Slot21;
-            ImageMatrix[3, 3] = Slot22;
-            ImageMatrix[3, 4] = Slot23;
-            ImageMatrix[3, 5] = Slot24;
+            ImageMatrix[3, 0] = Slot19; ImageMatrix[3, 0].Tapped += TappedImage;
+            ImageMatrix[3, 1] = Slot20; ImageMatrix[3, 1].Tapped += TappedImage;
+            ImageMatrix[3, 2] = Slot21; ImageMatrix[3, 2].Tapped += TappedImage;
+            ImageMatrix[3, 3] = Slot22; ImageMatrix[3, 3].Tapped += TappedImage;
+            ImageMatrix[3, 4] = Slot23; ImageMatrix[3, 4].Tapped += TappedImage;
+            ImageMatrix[3, 5] = Slot24; ImageMatrix[3, 5].Tapped += TappedImage;
 
             // Linha 5
-            ImageMatrix[4, 0] = Slot25;
-            ImageMatrix[4, 1] = Slot26;
-            ImageMatrix[4, 2] = Slot27;
-            ImageMatrix[4, 3] = Slot28;
-            ImageMatrix[4, 4] = Slot29;
-            ImageMatrix[4, 5] = Slot30;
+            ImageMatrix[4, 0] = Slot25; ImageMatrix[4, 0].Tapped += TappedImage;
+            ImageMatrix[4, 1] = Slot26; ImageMatrix[4, 1].Tapped += TappedImage;
+            ImageMatrix[4, 2] = Slot27; ImageMatrix[4, 2].Tapped += TappedImage;
+            ImageMatrix[4, 3] = Slot28; ImageMatrix[4, 3].Tapped += TappedImage;
+            ImageMatrix[4, 4] = Slot29; ImageMatrix[4, 4].Tapped += TappedImage;
+            ImageMatrix[4, 5] = Slot30; ImageMatrix[4, 5].Tapped += TappedImage;
 
             // Linha 6
-            ImageMatrix[5, 0] = Slot31;
-            ImageMatrix[5, 1] = Slot32;
-            ImageMatrix[5, 2] = Slot33;
-            ImageMatrix[5, 3] = Slot34;
-            ImageMatrix[5, 4] = Slot35;
-            ImageMatrix[5, 5] = Slot36;
+            ImageMatrix[5, 0] = Slot31; ImageMatrix[5, 0].Tapped += TappedImage;
+            ImageMatrix[5, 1] = Slot32; ImageMatrix[5, 1].Tapped += TappedImage;
+            ImageMatrix[5, 2] = Slot33; ImageMatrix[5, 2].Tapped += TappedImage;
+            ImageMatrix[5, 3] = Slot34; ImageMatrix[5, 3].Tapped += TappedImage;
+            ImageMatrix[5, 4] = Slot35; ImageMatrix[5, 4].Tapped += TappedImage;
+            ImageMatrix[5, 5] = Slot36; ImageMatrix[5, 5].Tapped += TappedImage;
 
             // Linha 7
-            ImageMatrix[6, 0] = Slot37;
-            ImageMatrix[6, 1] = Slot38;
-            ImageMatrix[6, 2] = Slot39;
-            ImageMatrix[6, 3] = Slot40;
-            ImageMatrix[6, 4] = Slot41;
-            ImageMatrix[6, 5] = Slot42;
+            ImageMatrix[6, 0] = Slot37; ImageMatrix[6, 0].Tapped += TappedImage;
+            ImageMatrix[6, 1] = Slot38; ImageMatrix[6, 1].Tapped += TappedImage;
+            ImageMatrix[6, 2] = Slot39; ImageMatrix[6, 2].Tapped += TappedImage;
+            ImageMatrix[6, 3] = Slot40; ImageMatrix[6, 3].Tapped += TappedImage;
+            ImageMatrix[6, 4] = Slot41; ImageMatrix[6, 4].Tapped += TappedImage;
+            ImageMatrix[6, 5] = Slot42; ImageMatrix[6, 5].Tapped += TappedImage;
 
             // Linha 8
-            ImageMatrix[7, 0] = Slot43;
-            ImageMatrix[7, 1] = Slot44;
-            ImageMatrix[7, 2] = Slot45;
-            ImageMatrix[7, 3] = Slot46;
-            ImageMatrix[7, 4] = Slot47;
-            ImageMatrix[7, 5] = Slot48;
+            ImageMatrix[7, 0] = Slot43; ImageMatrix[7, 0].Tapped += TappedImage;
+            ImageMatrix[7, 1] = Slot44; ImageMatrix[7, 1].Tapped += TappedImage;
+            ImageMatrix[7, 2] = Slot45; ImageMatrix[7, 2].Tapped += TappedImage;
+            ImageMatrix[7, 3] = Slot46; ImageMatrix[7, 3].Tapped += TappedImage;
+            ImageMatrix[7, 4] = Slot47; ImageMatrix[7, 4].Tapped += TappedImage;
+            ImageMatrix[7, 5] = Slot48; ImageMatrix[7, 5].Tapped += TappedImage;
+
+        }
+
+        private void Created_Slot_Equip()
+        {
+            ImageEquip[0, 0] = sword_equip; ImageEquip[0, 0].Tapped += TappedImageEquip;
+            ImageEquip[0, 1] = gloves_equip; ImageEquip[0, 1].Tapped += TappedImageEquip;
+            ImageEquip[0, 2] = boot_equip; ImageEquip[0, 2].Tapped += TappedImageEquip;
+            ImageEquip[1, 0] = capacete_equip; ImageEquip[1, 0].Tapped += TappedImageEquip;
+            ImageEquip[1, 1] = cota_equip; ImageEquip[1, 1].Tapped += TappedImageEquip;
+            ImageEquip[1, 2] = pant_equip; ImageEquip[1, 2].Tapped += TappedImageEquip;
+
+        }
+
+
+        private void TappedImageEquip(object sender, TappedRoutedEventArgs e)
+        {
+
+            Image i = sender as Image;
+            int coordImg = Convert.ToInt16(i.Name.Replace("Slot_Equip", ""));
+
+
+
 
         }
 
@@ -1009,12 +1049,14 @@ namespace MantaNecromante.GameStage
 
             Image i = sender as Image;
             int coordImg = Convert.ToInt16(i.Name.Replace("Slot", ""));
-            
-            
-            
+
+
+
 
         }
+     
 
+        
         private void GetItem(int row, int column)
         {
 
@@ -1028,7 +1070,7 @@ namespace MantaNecromante.GameStage
 
                     if (ImageMatrix[i, j].Source == null)
                     {
-
+                        
                         ImageMatrix[i, j].Source = found.Sprite.Source;
                         chosen.Inventario.Add(controller.FindIten(i, j));
                         SetItems(); // baús infinitos até acabar o espaço
@@ -1064,13 +1106,19 @@ namespace MantaNecromante.GameStage
 
         }
 
+        
+
         private void SetEnemies()
         {
+            CreateEnemy(50, 24);
+            CreateEnemy(40, 24);
 
             CreateEnemy(72, 24);
             CreateEnemy(92, 19);
         }
 
+        
+       
         /// <summary>
         /// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /// </summary>
@@ -1194,6 +1242,22 @@ namespace MantaNecromante.GameStage
             }
         }
 
+      
+
+        //private void Progressbar()
+        //{
+            
+        //    Hp_equip.Minimum = 0;
+        //    Hp_equip.Maximum = chosen.Hp_total;
+        //    Hp_equip.Value = chosen.Hp_atual;
+
+        //    Mp_equip.Minimum = 0;
+        //    Mp_equip.Maximum = chosen.Mp_total;
+        //    Mp_equip.Value = chosen.Mp_atual;
+        //}
+
+
+
         //Ao apertar 'E' para interagir, é necessário saber se uma das célula em que se encontra os vértices do herói é uma célula de itens.
         //..............................................................................................//
         private void Interact()
@@ -1305,6 +1369,21 @@ namespace MantaNecromante.GameStage
             Floor.Children.Remove(Inventory);
             isInventoryOpen = false;
         }
+        private void ExitInventory_m(object sender, RoutedEventArgs e)
+        {
+
+            Floor.Children.Remove(History_m);
+        }
+        private void ExitInventory_l(object sender, RoutedEventArgs e)
+        {
+
+            Floor.Children.Remove(History_l);
+        }
+        private void ExitInventory_w(object sender, RoutedEventArgs e)
+        {
+
+            Floor.Children.Remove(History_w);
+        }
 
         private void GettingCell(object sender, TappedRoutedEventArgs e)
         {
@@ -1394,11 +1473,20 @@ namespace MantaNecromante.GameStage
 
             chosen = (Player)e.Parameter;
 
-            if (chosen is Warrior) { Hero.Height = 90; Hero.Width = 37.18; }
+            if (chosen is Warrior) { Hero.Height = 90; Hero.Width = 37.18;
 
-            if (chosen is Rogue) { Hero.Height = 110; Hero.Width = 55.18; }
+                Floor.Children.Add(History_w);
+                
+            }
 
-            if (chosen is Wizard) { Hero.Height = 110; Hero.Width = 60.18; }
+            if (chosen is Rogue) { Hero.Height = 110; Hero.Width = 55.18;
+                Floor.Children.Add(History_l);
+            }
+            
+
+            if (chosen is Wizard) { Hero.Height = 110; Hero.Width = 60.18;
+                Floor.Children.Add(History_m);
+            }
 
 
             idletoLeft = chosen.Sprite_idle_left;
@@ -1550,6 +1638,8 @@ namespace MantaNecromante.GameStage
             this.Frame.Navigate(typeof(FrontEnd.MainPage));
             song.Pause();
         }
+       
+        
 
         
     }

@@ -2205,6 +2205,19 @@
             "rid": "aot"
           }
         }
+      },
+      "NecromanteLL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/NecromanteLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NecromanteLL.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.10586/win10-arm": {
@@ -4500,6 +4513,19 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "NecromanteLL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/NecromanteLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NecromanteLL.dll": {}
         }
       }
     },
@@ -6833,6 +6859,19 @@
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "NecromanteLL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/NecromanteLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NecromanteLL.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.10586/win10-x64": {
@@ -9137,6 +9176,19 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "NecromanteLL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/NecromanteLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NecromanteLL.dll": {}
         }
       }
     },
@@ -11479,6 +11531,19 @@
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "NecromanteLL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/NecromanteLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NecromanteLL.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.10586/win10-x86": {
@@ -13783,6 +13848,19 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "NecromanteLL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/NecromanteLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NecromanteLL.dll": {}
         }
       }
     },
@@ -16124,6 +16202,19 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "NecromanteLL/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10586",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/NecromanteLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NecromanteLL.dll": {}
         }
       }
     }
@@ -25561,34 +25652,38 @@
         "system.xml.xmlserializer.4.0.11.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "NecromanteLL/1.0.0": {
+      "type": "project",
+      "path": "../NecromanteLL/NecromanteLL.csproj",
+      "msbuildProject": "../NecromanteLL/NecromanteLL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.10586": [
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.8"
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.8",
+      "NecromanteLL >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Das Neves\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+    "C:\\Users\\ewert\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Das Neves\\Source\\Repos\\MantaDoNecromante11\\MantaNecromante\\MantaNecromante.csproj",
+      "projectUniqueName": "C:\\Users\\ewert\\Source\\Repos\\MantaDoNecromante6\\MantaNecromante\\MantaNecromante.csproj",
       "projectName": "MantaNecromante",
-      "projectPath": "C:\\Users\\Das Neves\\Source\\Repos\\MantaDoNecromante11\\MantaNecromante\\MantaNecromante.csproj",
-      "packagesPath": "C:\\Users\\Das Neves\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Das Neves\\Source\\Repos\\MantaDoNecromante11\\MantaNecromante\\obj\\",
+      "projectPath": "C:\\Users\\ewert\\Source\\Repos\\MantaDoNecromante6\\MantaNecromante\\MantaNecromante.csproj",
+      "packagesPath": "C:\\Users\\ewert\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ewert\\Source\\Repos\\MantaDoNecromante6\\MantaNecromante\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Das Neves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ewert\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -25601,7 +25696,11 @@
       },
       "frameworks": {
         "uap10.0.10586": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ewert\\Source\\Repos\\MantaDoNecromante6\\NecromanteLL\\NecromanteLL.csproj": {
+              "projectPath": "C:\\Users\\ewert\\Source\\Repos\\MantaDoNecromante6\\NecromanteLL\\NecromanteLL.csproj"
+            }
+          }
         }
       }
     },

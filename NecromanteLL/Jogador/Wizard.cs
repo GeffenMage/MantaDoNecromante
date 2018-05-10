@@ -21,7 +21,7 @@ namespace NecromanteLL {
             Base_def = 30; Base_dmg = 60;
             Nome_classe = "Wizard";
             //Inicializa os sprites do personagem
-            
+
             Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoParadoRight.gif"));
             Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoParadoLeft.gif"));
             Sprite_walking_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoAndarLeft.gif"));

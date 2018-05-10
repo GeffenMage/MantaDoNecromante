@@ -48,13 +48,15 @@ namespace NecromanteLL {
         public Itens Torso { get => torso; }
         public Itens Mao_esq { get => mao_esq; }
         public Itens Mao_dir { get => mao_dir; }
+        
         public BitmapImage Sprite_idle_left { get => sprite_idle_left; set => sprite_idle_left = value; }
         public BitmapImage Sprite_idle_right { get => sprite_idle_right; set => sprite_idle_right = value; }
         public BitmapImage Sprite_walking_left { get => sprite_walking_left; set => sprite_walking_left = value; }
         public BitmapImage Sprite_walking_right { get => sprite_walking_right; set => sprite_walking_right = value; }
-        public BitmapImage Sprite_Ataque_Right { get => Sprite_Ataque_Right; set => Sprite_Ataque_Right = value; }
-        public double atacklenght;
-        public double skilllenght;
+        
+
+
+
 
 
 

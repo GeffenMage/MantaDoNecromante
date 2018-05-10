@@ -12,6 +12,9 @@
         <Image Name ="Mansion" Source="ms-appx:///GameAssets/Maps/mansion.png" HorizontalAlignment="Left" Stretch="Fill" VerticalAlignment="Top" Height="3995" Width="3595" Canvas.Top="-3090" Canvas.Left="0"/>
         <Image Stretch="Fill" Name="Hero" Height="118" Canvas.Left="106" Canvas.Top="530" Width="54.18" RenderTransformOrigin="0.5,0.507"/>
 
+
+
+
         <RelativePanel Opacity="1" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/nudePanel3.png" Margin="0,-90,-360,69" Width="360" HorizontalAlignment="Left"/>
             <Button Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="56" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="58,10,80,421" Click="Continue" Canvas.Top="172"/>
@@ -29,14 +32,18 @@
 
         <RelativePanel Opacity="1" Name="Inventory" Height="497" Canvas.Left="545" Canvas.Top="208" Width="320" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/inventory.png" Margin="0,0,-305,0" Width="305" HorizontalAlignment="Left"/>
-            <Image Source="ms-appx:///GameAssets/Menu/equip2.png" Margin="-285,48,0,48" Width="249" HorizontalAlignment="Left"/>
+            <Image Source="ms-appx:///GameAssets/Menu/equip2.png" Margin="-286,49,0,47" Width="249" HorizontalAlignment="Left"/>
+            <ProgressBar Name="Hp_equip" Canvas.Left="26" Canvas.Top="760" Foreground="Red" Margin="-218,316,56,-346" VerticalAlignment="Stretch" />
+            <ProgressBar Name="Mp_equip" Canvas.Left="26" Canvas.Top="760" Foreground="Blue" Margin="-218,379,56,-404" VerticalAlignment="Stretch"/>
 
-            <ProgressBar Name="Hp_equip" Height="14" Canvas.Left="10" Canvas.Top="70" Foreground="Red" Margin="-215,324,76,-318" />
-            <ProgressBar Name="Mp_equip" Height="14" Canvas.Left="10" Canvas.Top="70" Foreground="Blue" Margin="-215,371,76,-365" />
+            
+
+
+
 
             <Button Height="17" Margin="270,7,-275,-12" Width="25" Click="ExitInventory"/>
 
-            <Button Height="34" Margin="-251,134,0,-156" Width="34">
+            <Button Height="34" Margin="-251,134,0,-156" Width="34"  >
                 <Image Name="sword_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
             </Button>
 
@@ -255,8 +262,12 @@
 
 
         </RelativePanel>
-
+        <!--- <TextBlock Name="health" Canvas.Left="17" Canvas.Top="758" Text="" TextAlignment="Center" TextWrapping="Wrap" Height="55" Width="63" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
+        <TextBlock Name="mana" Canvas.Left="25" Canvas.Top="802" Text="" TextAlignment="Center" TextWrapping="Wrap" Height="55" Width="83" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
+                                            
+        -->
         <Image Name="quick_menu" Height="55" Canvas.Top="845" Width="1408" Source="ms-appx:///GameAssets/Menu/equip_menu.png"/>
+
         <RelativePanel Width="780" Canvas.Left="310" Canvas.Top="845" Height="55">
 
             <Button Name="quick1" Height="34" Opacity="0" Margin="171,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
@@ -271,11 +282,19 @@
             <Button Name="quick10" Height="34" Opacity="0" Margin="578,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
 
 
-        </RelativePanel>
+        </RelativePanel   >
+        <Image Stretch="Fill" Name="History_w" Source="ms-appx:///GameAssets/Characters/heroes/knight/history_w.png" Height="556" Canvas.Left="651" Canvas.Top="115" Width="382" RenderTransformOrigin="0.5,0.507"/>
+        <Button Height="25" Margin="0,0,0,0" Width="28" Click="ExitInventory_w" Canvas.Left="996" Canvas.Top="121"/>
 
-      
+        <Image Stretch="Fill" Name="History_l"  Source="ms-appx:///GameAssets/Characters/heroes/rogue/history_l.png" Height="508" Canvas.Left="704" Canvas.Top="216" Width="378" RenderTransformOrigin="0.5,0.507"/>
+        <Button Height="27" Margin="0,0,0,0" Width="27" Click="ExitInventory_l" Canvas.Left="1044" Canvas.Top="219"/>
 
-        <!-- <TextBlock FontSize="30" Foreground="Red" Name="teste" Canvas.Left="275" Canvas.Top="329" Text="" TextWrapping="Wrap" Height="260" Width="195"/>-->
-        <Image Name="extend" Stretch="fill" Height="30" Canvas.Left="430" Canvas.Top="-125" Width="601" Source="ms-appx:///GameAssets/Maps/mansion_03.gif"/>
+        <Image Stretch="Fill" Name="History_m"  Source="ms-appx:///GameAssets/Characters/heroes/mage/history_m.png" Height="482" Canvas.Left="655" Canvas.Top="183" Width="380" RenderTransformOrigin="0.5,0.507"/>
+        <Button Height="20" Margin="0,0,0,0" Width="28" Click="ExitInventory_m" Canvas.Left="996" Canvas.Top="188"/>
+        <RelativePanel/>
+
+
+
+
     </Canvas>
 </Page>

@@ -24,6 +24,7 @@ namespace Extension {
    
             ScaleUp(Map);
             ScaleUp(Hero);
+            
 
             ScreenWidth = (int)Window.Current.Bounds.Width;
             ScreenHeight = (int)Window.Current.Bounds.Height;
