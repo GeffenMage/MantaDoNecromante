@@ -28,6 +28,7 @@ namespace MantaNecromante.MainBattle {
     /// </summary>
     public sealed partial class BattleStage : Page {
 
+        private DispatcherTimer motion = new DispatcherTimer();
         private bool isOptionsMenuOpen;
         private BattleController battleController;
         private MediaPlayer song = new MediaPlayer();
@@ -45,6 +46,8 @@ namespace MantaNecromante.MainBattle {
             song.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///GameAssets/Songs/Battle.mp3"));
             song.Play();
             RemoverMenus();
+
+            motion.Tick +=
 
 
         }
@@ -289,7 +292,10 @@ namespace MantaNecromante.MainBattle {
         private void BotaoAtacar(object sender, RoutedEventArgs e) {
             nomeSkill = ((Button)sender).Content.ToString();
             DmgPlayer = battleController.Inimigo.Hp_atual;
-            battleController.Atacar();   
+            battleController.Atacar();
+
+            Hero.Source = battleController.Jogador.Sprite_Ataque_Right;
+
         }
 
         private void BotaoSkill(object sender, RoutedEventArgs e) {
