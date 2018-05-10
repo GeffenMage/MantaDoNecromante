@@ -136,6 +136,7 @@ namespace NecromanteLL {
                     this.PlayerTurn();
                 }
                 else {
+                    
                     this.EnemyTurn();
                 }
             }
