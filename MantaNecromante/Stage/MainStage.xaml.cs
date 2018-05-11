@@ -888,6 +888,9 @@ namespace MantaNecromante.GameStage
 
             CreateItem(79, 30);
             CreateItem(87, 11);
+            CreateItem(90, 33);
+            CreateItem(51, 11);
+            CreateItem(58, 31);
 
         }
 
@@ -1086,8 +1089,11 @@ namespace MantaNecromante.GameStage
             if (chosen.Inferior != null && pant_equip.Source==null) {
                 pant_equip.Source = chosen.Inferior.Sprite.Source;
             }
-            
-            
+            if (chosen.Mao_esq != null && shield_equip.Source == null) {
+                shield_equip.Source = chosen.Mao_esq.Sprite.Source;
+            }
+
+
 
         }
 
@@ -1168,6 +1174,8 @@ namespace MantaNecromante.GameStage
 
             CreateEnemy(72, 24);
             CreateEnemy(92, 19);
+            CreateEnemy(90, 30);
+            CreateEnemy(58, 33);
         }
 
         /// <summary>

@@ -60,6 +60,10 @@
                 <Image Name="pant_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
             </Button>
 
+            <Button Height="34" Margin="-176,257,0,-282" Width="34">
+                <Image Name="shield_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
+            </Button>
+
 
             <Button Height="34" Margin="28,75,-62,-97" Width="34"  >
                 <Image Name="Slot1" Stretch="Fill" Width="34" Height="34" Margin="-17,-17,-17,-17"></Image>
