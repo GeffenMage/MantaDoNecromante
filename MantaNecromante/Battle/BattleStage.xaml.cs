@@ -27,9 +27,7 @@ namespace MantaNecromante.MainBattle {
     /// Uma página vazia que pode ser usada isoladamente ou navegada dentro de um Quadro.
     /// </summary>
     public sealed partial class BattleStage : Page {
-       // private DispatcherTimer delayTurno = new DispatcherTimer();
-        private DispatcherTimer delay = new DispatcherTimer();
-        private DispatcherTimer delaymob = new DispatcherTimer();
+
         private bool isOptionsMenuOpen;
         private BattleController battleController;
         private MediaPlayer song = new MediaPlayer();
@@ -48,17 +46,9 @@ namespace MantaNecromante.MainBattle {
             song.Play();
             RemoverMenus();
 
-            delay.Tick += delayAtaque;
-            delaymob.Tick += delayMob;
-
-      
-            // delayTurno.Interval = System.TimeSpan.FromSeconds(5);
 
         }
-        //private void delayTurn(object sender, object e)
-        //{
-        //    delayTurno.Stop();
-        //}
+
         private void RemoverMenus() {
 
             Floor.Children.Remove(ResultadosPane);
@@ -76,7 +66,6 @@ namespace MantaNecromante.MainBattle {
         /// </summary>
         public void NoManaAvalible() {
             Infobox.Text = "Você não tem mana o suficiente para usar " + nomeSkill;
-            
         }
 
         private void BlockButtons() {
@@ -92,19 +81,18 @@ namespace MantaNecromante.MainBattle {
         /// <summary>
         /// Método que trata a morte do inimigo
         /// </summary>
-        public  void  EnemyIsDead() {
+        public void EnemyIsDead() {
             Progress_Bar_Update();
             battleController.Jogador.Gain_xp(battleController.Inimigo.Give_xp());
             BlockButtons();
             RemoverMenus();
-            removeAll();
+
             Floor.Children.Add(ResultadosPane);
-            
+
             ResultadosText.Text = "Você Derrotou " + battleController.Inimigo.Nome +
             "\n Você ganhou " + battleController.Inimigo.Given_xp + " de xp";
             
             ResultadosBotao.Content = "Voltar ao Castelo";
-
             
             this.Frame.GoBack();
 
@@ -114,39 +102,39 @@ namespace MantaNecromante.MainBattle {
         /// <summary>
         /// Método que trata a morte do jogador
         /// </summary>
-        public  void PlayerIsDead() {
+        public void PlayerIsDead() {
             //Mostrar uma mensagem que o player morreu e encerrar a batalha
             Progress_Bar_Update();
-            removeAll();
+
             RemoverMenus();
             Floor.Children.Add(ResultadosPane);
-            
+
             ResultadosText.Text = "Você morreu!";
             ResultadosBotao.Content = "Voltar ao Menu Inicial";
-
-            Hero.Source = battleController.Jogador.Sprite_death;
-            delay.Stop();
+            
             BlockButtons();
+            
         }
 
         
         /// <summary>
         /// Trata o Evento que ocorre no battleController quando o turno muda para o Player
         /// </summary>
-        public  void TurnChangeToPlayer() {
-            
+        public void TurnChangeToPlayer() {
+
             removeAll();
 
             Floor.Children.Add(Turn1);
 
             //Mostrar que o turno mudou para o jogador
             Progress_Bar_Update();
+
             
         }
 
-         void  removeAll()
+        void removeAll()
         {
-            
+
             Floor.Children.Remove(Turn1);
             Floor.Children.Remove(Turn2);
         }
@@ -154,24 +142,18 @@ namespace MantaNecromante.MainBattle {
         /// <summary>
         /// Trata o Evento que ocorre no battleController quando o turno muda para o Inimigo
         /// </summary>
-        public async void  TurnChangeToEnemy() {
+        public void TurnChangeToEnemy() {
             //Mostrar que o turno mudou para o inimigo
-            System.Threading.Tasks.Task.Delay(400).Wait();
 
-             await System.Threading.Tasks.Task.Delay(2000);
-            //delayTurno.Start();
+
             removeAll();
 
             Floor.Children.Add(Turn2);
 
             Progress_Bar_Update();
             battleController.EnemyChoice();
-
-            Foe.Source = battleController.Inimigo.Sprite_ataque_left;
-             delaymob.Interval = System.TimeSpan.FromMilliseconds(battleController.Inimigo.AtaqueLenght * 1000);
-
-            delaymob.Start();
-
+            DmgPlayer -= battleController.Inimigo.Hp_atual;
+            MpPlayer = MpPlayer - battleController.Jogador.Mp_atual;
             if (nomeSkill == Ataque.Content.ToString()) {
                 Infobox.Text = "Player" + " causou " + DmgPlayer + " de dano";
             }
@@ -183,20 +165,15 @@ namespace MantaNecromante.MainBattle {
 
         public void Progress_Bar_Update() {
 
-            MpPlayer = (int)Progress_MP_chosen.Value;
-            int hp_temp = (int)Progress_HP_Mob.Value;
-
 
             Progress_HP_chosen.Value = battleController.Jogador.Hp_atual;
             Progress_MP_chosen.Value = battleController.Jogador.Mp_atual;
-
-            MpPlayer -= (int)Progress_MP_chosen.Value;
             
 
             Progress_HP_Mob.Value = battleController.Inimigo.Hp_atual;
             Progress_MP_Mob.Value = battleController.Inimigo.Mp_atual;
 
-            DmgPlayer = (int)hp_temp - (int)Progress_HP_Mob.Value;
+            
         }
 
         public void Progress_Bar() {
@@ -274,21 +251,18 @@ namespace MantaNecromante.MainBattle {
             isOptionsMenuOpen = false;
         }
 
-        protected  override void OnNavigatedTo(NavigationEventArgs e) {
-
+        protected override void OnNavigatedTo(NavigationEventArgs e) {
             battleController = (BattleController) e.Parameter;
             this.KeyDown += BattleStage_KeyDown;
             Hero.Source = battleController.Jogador.Sprite_idle_right;
             Foe.Source = battleController.Inimigo.Sprite.Source;
             battleController.PlayerTurn += TurnChangeToPlayer;
-          
             battleController.EnemyTurn += TurnChangeToEnemy;
             battleController.PlayerDeath += PlayerIsDead;
             battleController.EnemyDeath += EnemyIsDead;
             battleController.PlayerHasNoMana += NoManaAvalible;
             Progress_Bar();
             NameSkills();
-
             if (battleController.Turno_player == true) {
                 RollBox.Text = "O jogador Começa";
             }
@@ -314,42 +288,9 @@ namespace MantaNecromante.MainBattle {
 
         private void BotaoAtacar(object sender, RoutedEventArgs e) {
             nomeSkill = ((Button)sender).Content.ToString();
-            battleController.Atacar();
-
-            Hero.Source = battleController.Jogador.Sprite_ataque_right;
-
-            delay.Interval = System.TimeSpan.FromMilliseconds(battleController.Jogador.atacklenght * 1000);
-
-            delay.Start();
-
+            DmgPlayer = battleController.Inimigo.Hp_atual;
+            battleController.Atacar();   
         }
-
-        private void delayAtaque(object sender, object e)
-        {
-            Hero.Source = battleController.Jogador.Sprite_idle_right;
-            delay.Stop();
-        }
-
-        private void delayMob(object sender, object e)
-        {
-            Foe.Source = battleController.Inimigo.Sprite.Source;
-            delay.Stop();
-        }
-        
-        //private void animaSkill(object sender, object e)
-        //{
-        //    Hero.Source = battleController.Jogador.Sprite_ataque_right
-        //}
-
-        //      private void animacao_atk() {
-        //          if (battleController.Jogador.Skills.ElementAt(0).Skill_name == ) 
-        //{
-        //              
-
-        //          }
-
-        //      }
-
 
         private void BotaoSkill(object sender, RoutedEventArgs e) {
 
@@ -359,37 +300,12 @@ namespace MantaNecromante.MainBattle {
 
             nomeSkill = b.Content.ToString();
 
+            MpPlayer = battleController.Jogador.Mp_atual;
+            DmgPlayer = battleController.Inimigo.Hp_atual;
+
             battleController.CastSkill(battleController.Jogador.Skills[Skill]);
-            
-
-            if (battleController.Jogador.Sprite_skill_right != null)
-            {
-                Hero.Source = battleController.Jogador.Sprite_skill_right;
-
-                delay.Interval = delay.Interval = System.TimeSpan.FromMilliseconds(battleController.Jogador.skilllenght * 1000);
-            } else
-            {
-                Hero.Source = battleController.Jogador.Sprite_ataque_right;
-
-                delay.Interval = delay.Interval = System.TimeSpan.FromMilliseconds(battleController.Jogador.atacklenght * 1000);
-
-            }
-            delay.Start();
-    
-
-
-
 
         }
-        private void Inicial(object sender,RoutedEventArgs e)
-        {
-
-            this.Frame.Navigate(typeof(FrontEnd.MainPage));
-            song.Pause();
-        }
-           
-        }
-        
-
+       
     }
-
+}

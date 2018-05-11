@@ -28,10 +28,7 @@ namespace NecromanteLL {
         public int Base_dmg { get => base_dmg; set => base_dmg = value; }
         public int Base_def { get => base_def; set => base_def = value; }
         public Image Sprite { get => sprite; set => sprite = value; }
-        public BitmapImage Sprite_ataque_left;
-        public BitmapImage Sprite_skill_left;
-        public BitmapImage Sprite_death;
-        public double AtaqueLenght = 1.8;
+
         public int Give_xp() {
             return Given_xp;
         }

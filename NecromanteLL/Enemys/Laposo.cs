@@ -20,11 +20,11 @@ namespace NecromanteLL {
                     Given_xp = 205000; Lvl = 25;
                     Base_def = 90; Base_dmg = 300;
                     //Inicializa os sprites do inimigo
-                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/SkeletonAtaque.gif"));
+                   
                     Sprite = new Image();
                     Sprite.Height = 105 * 8 / 3;
                     Sprite.Width = 20 * 8 / 3;
-                    Sprite_death = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/SkeletonMorre.gif"));
+
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
 
                     Skills.Add(new Skill("POG I", 200, 0, 20, 0, 0, 0, 0, 900));
@@ -41,11 +41,10 @@ namespace NecromanteLL {
                     //Inicializa os sprites do inimigo
                     Sprite = new Image();
                     Sprite.Height = 105 * 8 / 3;
-                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/SkeletonAtaque.gif"));
                     Sprite.Width = 20 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
-                    Sprite_death = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/SkeletonMorre.gif"));
+
                     Skills.Add(new Skill("POG I", 200, 0, 20, 0, 0, 0, 0, 900));
                     Skills.Add(new Skill("GOTO I", 250, 0, 25, 0, 0, 50, 0, 250));
                     Skills.Add(new Skill("If-False I", 300, 0, 30, 666, 0, 20, 20, 100));
@@ -62,8 +61,7 @@ namespace NecromanteLL {
                     Sprite.Width = 20 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
-                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/SkeletonAtaque.gif"));
-                    Sprite_death = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/SkeletonMorre.gif"));
+
                     Skills.Add(new Skill("POG I", 200, 0, 20, 0, 0, 0, 0, 900));
                     Skills.Add(new Skill("GOTO I", 250, 0, 25, 0, 0, 50, 0, 250));
                     Skills.Add(new Skill("If-False I", 300, 0, 30, 666, 0, 20, 20, 100));

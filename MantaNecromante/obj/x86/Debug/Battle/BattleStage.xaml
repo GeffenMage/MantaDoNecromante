@@ -47,7 +47,7 @@
 
         <RelativePanel x:ConnectionId='7' Opacity="100" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/optionMenu.png" Margin="0,0,-10,0" Width="360" HorizontalAlignment="Left"/>
-            <Button x:ConnectionId='17'  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="46" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="81,173,84,268"                  Canvas.Top="172"/>
+            <Button x:ConnectionId='17'  Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="56" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,167,80,264"                  Canvas.Top="172"/>
             <Button x:ConnectionId='18' Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="42" Width="185" FontSize="31" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="81,270,84,175"              Canvas.Left="82" Canvas.Top="267"/>
 
 
@@ -59,13 +59,13 @@
         <ProgressBar x:ConnectionId='10' Name = "Progress_HP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="760" Width="394" Foreground="Red" />
         <ProgressBar x:ConnectionId='11' Name = "Progress_MP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="800" Width="394" Foreground="Blue" />
 
-        <RelativePanel x:ConnectionId='12' Name="ResultadosPane" Height="209" Canvas.Left="485" Canvas.Top="169" Width="501">
-            <TextBlock x:ConnectionId='15' Name="ResultadosText" FontFamily="Algerian" Foreground="DarkGray" HorizontalAlignment="Center" Height="218" TextAlignment="Center"  Text="TextBox" FontSize="40"  VerticalAlignment="Top" Width="900" Margin="-215,29,-615,-215"  />
-            <Button x:ConnectionId='16' Name="ResultadosBotao" FontFamily="Algerian" Foreground="Black" Content="Button"  HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="338"                 FontSize="20" Margin="60,244,-333,-254"/>
+        <RelativePanel x:ConnectionId='12' Name="ResultadosPane" Height="121" Canvas.Left="555" Canvas.Top="183" Width="337">
+            <TextBlock x:ConnectionId='15' Name="ResultadosText" FontFamily="Algerian" HorizontalAlignment="Center" Height="70" TextAlignment="Center" Text="TextBox" VerticalAlignment="Top" Width="336" Margin="0,21,-266,-59"/>
+            <Button x:ConnectionId='16' Name="ResultadosBotao" FontFamily="Algerian" Content="Button" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="337" Margin="0,79,-272,-79"/>
         </RelativePanel>
 
-        <TextBlock x:ConnectionId='13' Name="Infobox" Canvas.Left="517" Foreground="Black" Canvas.Top="827" TextAlignment="Center" FontFamily="Algerian" Text="" TextWrapping="Wrap" Height="95" Width="418"/>
-        <TextBlock x:ConnectionId='14' Name="RollBox" Canvas.Left="515" Foreground="Black" Canvas.Top="770" Text="" TextAlignment="Center" TextWrapping="Wrap" Height="55" Width="419" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <TextBlock x:ConnectionId='13' Name="Infobox" Canvas.Left="517" Canvas.Top="827" TextAlignment="Center" FontFamily="Algerian" Text="" TextWrapping="Wrap" Height="95" Width="418"/>
+        <TextBlock x:ConnectionId='14' Name="RollBox" Canvas.Left="515" Canvas.Top="770" Text="" TextAlignment="Center" TextWrapping="Wrap" Height="55" Width="419" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <TextBlock.RenderTransform>
                 <CompositeTransform SkewY="-0.326" TranslateY="-0.744"/>
             </TextBlock.RenderTransform>

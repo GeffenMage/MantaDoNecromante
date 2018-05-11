@@ -38,24 +38,24 @@ namespace NecromanteLL {
             mobs.Add(new Laposo(2));
             mobs.Add(new Laposo(3));
 
-            itens.Add(new Escudo("Escudo de madeira", 0, 40, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/Shield 1.png"));
-            itens.Add(new Escudo("Escudo de metal", 0, 70, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/Shield 2.png"));
-            itens.Add(new Espada("Espada de madeira", 60, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/Sword 1.png"));
-            itens.Add(new Espada("Espada de metal", 100, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/Sword 4.png"));
-            itens.Add(new Arco("Arco de madeira", 60, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/arco_1.png"));
-            itens.Add(new Arco("Arco de metal", 100, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/arco_2.png"));
-            itens.Add(new Cajado("Cajado de madeira", 40, 0, 0, 10, "ms-appx:///GameAssets/Characters/itens/cajado_1.png"));
-            itens.Add(new Cajado("Cajado de metal", 70, 0, 0, 10, "ms-appx:///GameAssets/Characters/itens/cajado_2.png"));
+            itens.Add(new Escudo("Escudo de madeira", 0, 20, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/Shield 1.png"));
+            itens.Add(new Escudo("Escudo de metal", 0, 40, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/Shield 2.png"));
+            itens.Add(new Espada("Espada de madeira", 20, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/Sword 1.png"));
+            itens.Add(new Espada("Espada de metal", 40, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/v2/Sword 4.png"));
+            itens.Add(new Arco("Arco de madeira", 20, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/arco_1.png"));
+            itens.Add(new Arco("Arco de metal", 40, 0, 10, 0, "ms-appx:///GameAssets/Characters/itens/arco_2.png"));
+            itens.Add(new Cajado("Cajado de madeira", 20, 0, 0, 10, "ms-appx:///GameAssets/Characters/itens/cajado_1.png"));
+            itens.Add(new Cajado("Cajado de metal", 40, 0, 0, 10, "ms-appx:///GameAssets/Characters/itens/cajado_2.png"));
             itens.Add(new Bota("Bota de Couro", 0, 20, 0, 10, "ms-appx:///GameAssets/Characters/itens/bota_1.png"));
             itens.Add(new Bota("Bota de Bronze", 10, 20, 10, 0, "ms-appx:///GameAssets/Characters/itens/bota_2.png"));
             itens.Add(new Calca("Calca de Couro", 0, 20, 0, 10, "ms-appx:///GameAssets/Characters/itens/pant_t.png"));
             itens.Add(new Calca("Calca de Bronze", 10, 30, 10, 0, "ms-appx:///GameAssets/Characters/itens/pant_t.png"));
             itens.Add(new Capacete("Capacete de Couro", 0, 20, 10, 0, "ms-appx:///GameAssets/Characters/itens/capacete_1.png"));
             itens.Add(new Capacete("Capacete de Bronze", 0, 50, 10, 0, "ms-appx:///GameAssets/Characters/itens/capacete_2.png"));
-            itens.Add(new Cota("Cota de Couro", 30, 10, 0, 10, "ms-appx:///GameAssets/Characters/itens/v2/Armor 1.png"));
-            itens.Add(new Cota("Cota de Bronze", 50, 20, 10, 10, "ms-appx:///GameAssets/Characters/itens/v2/Armor 2.png"));
-            itens.Add(new Luva("Luva de Couro", 50, 20, 0, 10, "ms-appx:///GameAssets/Characters/itens/luva_1.png"));
-            itens.Add(new Luva("Luva de Bronze", 70, 30, 20, 10, "ms-appx:///GameAssets/Characters/itens/luva_2.png"));
+            itens.Add(new Cota("Cota de Couro", 10, 10, 0, 10, "ms-appx:///GameAssets/Characters/itens/v2/Armor 1.png"));
+            itens.Add(new Cota("Cota de Bronze", 20, 20, 10, 10, "ms-appx:///GameAssets/Characters/itens/v2/Armor 2.png"));
+            itens.Add(new Luva("Luva de Couro", 10, 20, 0, 10, "ms-appx:///GameAssets/Characters/itens/luva_1.png"));
+            itens.Add(new Luva("Luva de Bronze", 20, 30, 20, 10, "ms-appx:///GameAssets/Characters/itens/luva_2.png"));
             //itens.Add(new PocaoHP("Porção de HP", 0, 0, 300, 0, "ms-appx:///GameAssets/Characters/itens/Hp_menor.png"));
             //itens.Add(new PocaoMP("Porção de MP", 0, 0, 0, 300, "ms-appx:///GameAssets/Characters/itens/Mp_memor.png"));
         }
