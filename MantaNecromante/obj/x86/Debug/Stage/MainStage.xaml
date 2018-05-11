@@ -17,247 +17,247 @@
 
         <RelativePanel x:ConnectionId='4' Opacity="1" Name="OptionsMenu" Height="497" Canvas.Left="545" Canvas.Top="208" Width="360" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/nudePanel3.png" Margin="0,-90,-360,69" Width="360" HorizontalAlignment="Left"/>
-            <Button x:ConnectionId='82' Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="56" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="58,10,80,421"                  Canvas.Top="172"/>
-            <Button x:ConnectionId='83' Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="40" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="58,314,80,133"              Canvas.Left="82" Canvas.Top="267"/>
-            <Button x:ConnectionId='84' Background="Transparent" BorderThickness="0" x:Name="Escolher" Content="Campeões" Height="47" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="58,117,80,323"                          Canvas.Left="82" Canvas.Top="267"/>
-            <Button x:ConnectionId='85' Background="Transparent" BorderThickness="0" x:Name="Inicial" Content="Menu inicial" Height="48" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="58,217,80,222"                      Canvas.Left="82" Canvas.Top="267"/>
+            <Button x:ConnectionId='79' Background="Transparent" Canvas.Left="85" BorderThickness="0" x:Name="Start" Content="Retomar" Height="56" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="58,10,80,421"                  Canvas.Top="172"/>
+            <Button x:ConnectionId='80' Background="Transparent" BorderThickness="0" x:Name="ExitGame" Content="Sair" Height="40" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="58,314,80,133"              Canvas.Left="82" Canvas.Top="267"/>
+            <Button x:ConnectionId='81' Background="Transparent" BorderThickness="0" x:Name="Escolher" Content="Campeões" Height="47" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="58,117,80,323"                          Canvas.Left="82" Canvas.Top="267"/>
+            <Button x:ConnectionId='82' Background="Transparent" BorderThickness="0" x:Name="Inicial" Content="Menu inicial" Height="48" Width="212" FontSize="30" FontFamily="Algerian" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="58,217,80,222"                      Canvas.Left="82" Canvas.Top="267"/>
 
         </RelativePanel>
 
         <RelativePanel x:ConnectionId='5' Name="infoBox" Opacity="0" Width="175" Height="40" Canvas.Left="132" Canvas.Top="94">
 
             <Image Height="40" Width="175" Source="ms-appx:///GameAssets/Buttons/idle_button.png" Canvas.Left="5" Canvas.Top="5"/>
-            <TextBlock x:ConnectionId='81' Name="info" Margin="20,8,10,10" Text="Aperte 'E'" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Algerian" FontSize="20" Width="130" Height="35"/>
+            <TextBlock x:ConnectionId='78' Name="info" Margin="20,8,10,10" Text="Aperte 'E'" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Algerian" FontSize="20" Width="130" Height="35"/>
         </RelativePanel>
 
         <RelativePanel x:ConnectionId='6' Opacity="1" Name="Inventory" Height="497" Canvas.Left="545" Canvas.Top="208" Width="320" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image Source="ms-appx:///GameAssets/Menu/inventory.png" Margin="0,0,-305,0" Width="305" HorizontalAlignment="Left"/>
             <Image Source="ms-appx:///GameAssets/Menu/equip2.png" Margin="-286,49,0,47" Width="249" HorizontalAlignment="Left"/>
-            <ProgressBar x:ConnectionId='24' Name="Hp_equip" Canvas.Left="26" Canvas.Top="760" Foreground="Red" Margin="-218,316,56,-346" VerticalAlignment="Stretch" />
-            <ProgressBar x:ConnectionId='25' Name="Mp_equip" Canvas.Left="26" Canvas.Top="760" Foreground="Blue" Margin="-218,379,56,-404" VerticalAlignment="Stretch"/>
+            <ProgressBar x:ConnectionId='21' Name="Hp_equip" Canvas.Left="26" Canvas.Top="760" Foreground="Red" Margin="-218,316,56,-346" VerticalAlignment="Stretch" />
+            <ProgressBar x:ConnectionId='22' Name="Mp_equip" Canvas.Left="26" Canvas.Top="760" Foreground="Blue" Margin="-218,379,56,-404" VerticalAlignment="Stretch"/>
 
             
 
 
 
 
-            <Button x:ConnectionId='26' Height="17" Margin="270,7,-275,-12" Width="25"                      />
+            <Button x:ConnectionId='23' Height="17" Margin="270,7,-275,-12" Width="25"                      />
 
             <Button Height="34" Margin="-251,134,0,-156" Width="34"  >
-                <Image x:ConnectionId='80' Name="sword_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
+                <Image x:ConnectionId='77' Name="sword_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
             </Button>
 
             <Button Height="34" Margin="-177,134,0,-156" Width="34">
-                <Image x:ConnectionId='79' Name="gloves_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
+                <Image x:ConnectionId='76' Name="gloves_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
             </Button>
 
             <Button Height="34" Margin="-108,141,0,-163" Width="32">
-                <Image x:ConnectionId='78' Name="boot_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
+                <Image x:ConnectionId='75' Name="boot_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
             </Button>
 
             <Button Height="34" Margin="-251,203,0,-228" Width="34">
-                <Image x:ConnectionId='77' Name="capacete_equip" Stretch="Fill" Margin="-18,-18,-17,-13"/>
+                <Image x:ConnectionId='74' Name="capacete_equip" Stretch="Fill" Margin="-18,-18,-17,-13"/>
             </Button>
 
             <Button Height="34" Margin="-177,203,0,-228" Width="34">
-                <Image x:ConnectionId='76' Name="cota_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
+                <Image x:ConnectionId='73' Name="cota_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
             </Button>
 
             <Button Height="34" Margin="-110,203,0,-228" Width="34">
-                <Image x:ConnectionId='75' Name="pant_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
+                <Image x:ConnectionId='72' Name="pant_equip" Stretch="Fill" Margin="-18,-18,-17,-17"/>
             </Button>
 
 
             <Button Height="34" Margin="28,75,-62,-97" Width="34"  >
-                <Image x:ConnectionId='74' Name="Slot1" Stretch="Fill" Width="34" Height="34" Margin="-17,-17,-17,-17"></Image>
+                <Image x:ConnectionId='71' Name="Slot1" Stretch="Fill" Width="34" Height="34" Margin="-17,-17,-17,-17"></Image>
             </Button>
 
             <Button Height="34" Margin="71,75,-85,-97" Width="34">
-                <Image x:ConnectionId='73' Name="Slot2" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='70' Name="Slot2" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="115,75,-129,-97" Width="34">
-                <Image x:ConnectionId='72' Name="Slot3" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='69' Name="Slot3" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="157,76,-171,-98" Width="34">
-                <Image x:ConnectionId='71' Name="Slot4" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='68' Name="Slot4" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="201,75,-215,-97" Width="34">
-                <Image x:ConnectionId='70' Name="Slot5" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='67' Name="Slot5" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="245,75,-259,-97" Width="34">
-                <Image x:ConnectionId='69' Name="Slot6" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='66' Name="Slot6" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="28,119,-42,-141" Width="34">
-                <Image x:ConnectionId='68' Name="Slot7" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='65' Name="Slot7" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="71,119,-85,-141" Width="34">
-                <Image x:ConnectionId='67' Name="Slot8" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='64' Name="Slot8" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="114,119,-128,-141" Width="34">
-                <Image x:ConnectionId='66' Name="Slot9" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='63' Name="Slot9" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="158,119,-172,-141" Width="34">
-                <Image x:ConnectionId='65' Name="Slot10" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='62' Name="Slot10" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="201,119,-215,-141" Width="34">
-                <Image x:ConnectionId='64' Name="Slot11" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='61' Name="Slot11" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="244,119,-258,-141" Width="34">
-                <Image x:ConnectionId='63' Name="Slot12" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='60' Name="Slot12" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="28,162,-42,-184" Width="34">
-                <Image x:ConnectionId='62' Name="Slot13" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='59' Name="Slot13" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="71,162,-85,-184" Width="34">
-                <Image x:ConnectionId='61' Name="Slot14" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='58' Name="Slot14" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="114,162,-128,-184" Width="34">
-                <Image x:ConnectionId='60' Name="Slot15" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='57' Name="Slot15" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="158,163,-172,-185" Width="34">
-                <Image x:ConnectionId='59' Name="Slot16" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='56' Name="Slot16" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="201,162,-215,-184" Width="34">
-                <Image x:ConnectionId='58' Name="Slot17" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='55' Name="Slot17" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="244,162,-258,-184" Width="34">
-                <Image x:ConnectionId='57' Name="Slot18" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='54' Name="Slot18" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="28,206,-42,-228" Width="34">
-                <Image x:ConnectionId='56' Name="Slot19" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='53' Name="Slot19" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="71,206,-85,-228" Width="34">
-                <Image x:ConnectionId='55' Name="Slot20" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='52' Name="Slot20" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="114,206,-128,-228" Width="34">
-                <Image x:ConnectionId='54' Name="Slot21" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='51' Name="Slot21" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="158,206,-172,-228" Width="34">
-                <Image x:ConnectionId='53' Name="Slot22" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='50' Name="Slot22" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="201,206,-215,-228" Width="34">
-                <Image x:ConnectionId='52' Name="Slot23" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='49' Name="Slot23" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="244,206,-258,-228" Width="34">
-                <Image x:ConnectionId='51' Name="Slot24" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
+                <Image x:ConnectionId='48' Name="Slot24" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
             </Button>
 
             <Button Height="34" Margin="28,249,-42,-271" Width="34">
-                <Image x:ConnectionId='50' Name="Slot25" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='47' Name="Slot25" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="71,249,-85,-271" Width="34">
-                <Image x:ConnectionId='49' Name="Slot26" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='46' Name="Slot26" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="114,249,-128,-271" Width="34">
-                <Image x:ConnectionId='48' Name="Slot27" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='45' Name="Slot27" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="158,249,-172,-271" Width="34">
-                <Image x:ConnectionId='47' Name="Slot28" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='44' Name="Slot28" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="201,249,-215,-271" Width="34">
-                <Image x:ConnectionId='46' Name="Slot29" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='43' Name="Slot29" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="244,249,-258,-271" Width="34">
-                <Image x:ConnectionId='45' Name="Slot30" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
+                <Image x:ConnectionId='42' Name="Slot30" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
             </Button>
 
             <Button Height="34" Margin="28,293,-42,-315" Width="34">
-                <Image x:ConnectionId='44' Name="Slot31" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='41' Name="Slot31" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="71,292,-85,-314" Width="34">
-                <Image x:ConnectionId='43' Name="Slot32" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='40' Name="Slot32" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="114,292,-128,-314" Width="34">
-                <Image x:ConnectionId='42' Name="Slot33" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='39' Name="Slot33" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="158,292,-172,-314" Width="34">
-                <Image x:ConnectionId='41' Name="Slot34" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='38' Name="Slot34" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="201,293,-215,-315" Width="34">
-                <Image x:ConnectionId='40' Name="Slot35" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='37' Name="Slot35" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="244,293,-258,-315" Width="34">
-                <Image x:ConnectionId='39' Name="Slot36" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
+                <Image x:ConnectionId='36' Name="Slot36" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
             </Button>
 
             <Button Height="34" Margin="28,335,-42,-357" Width="34">
-                <Image x:ConnectionId='38' Name="Slot37" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='35' Name="Slot37" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="71,336,-85,-358" Width="34">
-                <Image x:ConnectionId='37' Name="Slot38" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='34' Name="Slot38" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="114,336,-128,-358" Width="34">
-                <Image x:ConnectionId='36' Name="Slot39" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='33' Name="Slot39" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="158,336,-172,-358" Width="34">
-                <Image x:ConnectionId='35' Name="Slot40" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='32' Name="Slot40" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="201,336,-215,-358" Width="34">
-                <Image x:ConnectionId='34' Name="Slot41" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='31' Name="Slot41" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="244,336,-258,-358" Width="34">
-                <Image x:ConnectionId='33' Name="Slot42" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
+                <Image x:ConnectionId='30' Name="Slot42" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
             </Button>
 
             <Button Height="34" Margin="28,379,-42,-401" Width="34">
-                <Image x:ConnectionId='32' Name="Slot43" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='29' Name="Slot43" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="71,379,-85,-401" Width="34">
-                <Image x:ConnectionId='31' Name="Slot44" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='28' Name="Slot44" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="114,379,-128,-401" Width="34">
-                <Image x:ConnectionId='30' Name="Slot45" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='27' Name="Slot45" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="158,379,-172,-401" Width="34">
-                <Image x:ConnectionId='29' Name="Slot46" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='26' Name="Slot46" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="201,379,-215,-401" Width="34">
-                <Image x:ConnectionId='28' Name="Slot47" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
+                <Image x:ConnectionId='25' Name="Slot47" Stretch="Fill" Width="34" Height="34" Margin="-14.286,-14.286,-14.714,-14.714"></Image>
             </Button>
 
             <Button Height="34" Margin="244,379,-258,-401" Width="34">
-                <Image x:ConnectionId='27' Name="Slot48" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
+                <Image x:ConnectionId='24' Name="Slot48" Stretch="Fill" Width="34" Height="34" Margin="-15,-15,-14,-14"></Image>
             </Button>
 
 
@@ -270,28 +270,28 @@
 
         <RelativePanel Width="780" Canvas.Left="310" Canvas.Top="845" Height="55">
 
-            <Button x:ConnectionId='14' Name="quick1" Height="34" Opacity="0" Margin="171,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
-            <Button x:ConnectionId='15' Name="quick2" Height="34" Opacity="0" Margin="216,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
-            <Button x:ConnectionId='16' Name="quick3" Height="34" Opacity="0" Margin="262,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
-            <Button x:ConnectionId='17' Name="quick4" Height="34" Opacity="0" Margin="308,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
-            <Button x:ConnectionId='18' Name="quick5" Height="34" Opacity="0" Margin="352,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
-            <Button x:ConnectionId='19' Name="quick6" Height="34" Opacity="0" Margin="398,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
-            <Button x:ConnectionId='20' Name="quick7" Height="34" Opacity="0" Margin="442,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
-            <Button x:ConnectionId='21' Name="quick8" Height="34" Opacity="0" Margin="486,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
-            <Button x:ConnectionId='22' Name="quick9" Height="34" Opacity="0" Margin="532,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
-            <Button x:ConnectionId='23' Name="quick10" Height="34" Opacity="0" Margin="578,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
+            <Button x:ConnectionId='11' Name="quick1" Height="34" Opacity="0" Margin="171,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
+            <Button x:ConnectionId='12' Name="quick2" Height="34" Opacity="0" Margin="216,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
+            <Button x:ConnectionId='13' Name="quick3" Height="34" Opacity="0" Margin="262,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
+            <Button x:ConnectionId='14' Name="quick4" Height="34" Opacity="0" Margin="308,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
+            <Button x:ConnectionId='15' Name="quick5" Height="34" Opacity="0" Margin="352,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
+            <Button x:ConnectionId='16' Name="quick6" Height="34" Opacity="0" Margin="398,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
+            <Button x:ConnectionId='17' Name="quick7" Height="34" Opacity="0" Margin="442,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
+            <Button x:ConnectionId='18' Name="quick8" Height="34" Opacity="0" Margin="486,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
+            <Button x:ConnectionId='19' Name="quick9" Height="34" Opacity="0" Margin="532,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
+            <Button x:ConnectionId='20' Name="quick10" Height="34" Opacity="0" Margin="578,11,-170.714,-10.714" Width="34" Canvas.Left="481" Canvas.Top="855"/>
 
 
         </RelativePanel>
         
         <Image x:ConnectionId='8' Stretch="Fill" Name="History_w" Source="ms-appx:///GameAssets/Characters/heroes/knight/history_w.png" Height="556" Canvas.Left="651" Canvas.Top="115" Width="382" RenderTransformOrigin="0.5,0.507"/>
-        <Button x:ConnectionId='9' Height="25" Margin="0,0,0,0" Width="28"                         Canvas.Left="996" Canvas.Top="121"/>
+        <!--<Button Height="25" Margin="0,0,0,0" Width="28" Click="ExitInventory_w" Canvas.Left="996" Canvas.Top="121"/>-->
 
-        <Image x:ConnectionId='10' Stretch="Fill" Name="History_l"  Source="ms-appx:///GameAssets/Characters/heroes/rogue/history_l.png" Height="508" Canvas.Left="704" Canvas.Top="216" Width="378" RenderTransformOrigin="0.5,0.507"/>
-        <Button x:ConnectionId='11' Height="27" Margin="0,0,0,0" Width="27"                         Canvas.Left="1044" Canvas.Top="219"/>
+        <Image x:ConnectionId='9' Stretch="Fill" Name="History_l"  Source="ms-appx:///GameAssets/Characters/heroes/rogue/history_l.png" Height="508" Canvas.Left="704" Canvas.Top="216" Width="378" RenderTransformOrigin="0.5,0.507"/>
+        <!--<Button Height="27" Margin="0,0,0,0" Width="27" Click="ExitInventory_l" Canvas.Left="1044" Canvas.Top="219"/>-->
 
-        <Image x:ConnectionId='12' Stretch="Fill" Name="History_m"  Source="ms-appx:///GameAssets/Characters/heroes/mage/history_m.png" Height="482" Canvas.Left="655" Canvas.Top="183" Width="380" RenderTransformOrigin="0.5,0.507"/>
-        <Button x:ConnectionId='13' Height="20" Margin="0,0,0,0" Width="28"                         Canvas.Left="996" Canvas.Top="188"/>
+        <Image x:ConnectionId='10' Stretch="Fill" Name="History_m"  Source="ms-appx:///GameAssets/Characters/heroes/mage/history_m.png" Height="482" Canvas.Left="655" Canvas.Top="183" Width="380" RenderTransformOrigin="0.5,0.507"/>
+        <!--<Button Height="20" Margin="0,0,0,0" Width="28" Click="ExitInventory_m" Canvas.Left="996" Canvas.Top="188"/>-->
         <RelativePanel/>
 
 

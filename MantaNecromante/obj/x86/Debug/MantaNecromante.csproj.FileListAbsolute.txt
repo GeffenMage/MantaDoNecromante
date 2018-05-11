@@ -917,8 +917,6 @@ C:\Users\EcV\Source\Repos\MantaDoNecromante8\MantaNecromante\obj\x86\Debug\Manta
 C:\Users\EcV\Source\Repos\MantaDoNecromante8\MantaNecromante\obj\x86\Debug\MantaNecromante.pdb
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\App.xbf
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\ClassMenu\ClassMenu.xbf
-C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\GameStage\MainStage.xbf
-C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\MainBattle\BattleStage.xbf
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\MainMenu\MainPage.xbf
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\MantaNecromante.xr.xml
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\MantaNecromante.exe
@@ -1050,22 +1048,14 @@ C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\App.g.cs
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\ClassMenu\ClassMenu.g.i.cs
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\ClassMenu\ClassMenu.g.cs
-C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\GameStage\MainStage.g.i.cs
-C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\GameStage\MainStage.g.cs
-C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\MainBattle\BattleStage.g.i.cs
-C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\MainBattle\BattleStage.g.cs
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\MainMenu\MainPage.g.i.cs
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\MainMenu\MainPage.g.cs
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\App.xaml
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\ClassMenu\ClassMenu.xaml
-C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\GameStage\MainStage.xaml
-C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\MainBattle\BattleStage.xaml
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\MainMenu\MainPage.xaml
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\App.xbf
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\ClassMenu\ClassMenu.xbf
-C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\GameStage\MainStage.xbf
-C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\MainBattle\BattleStage.xbf
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\MainMenu\MainPage.xbf
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\MantaNecromante.csproj.CoreCompileInputs.cache
@@ -2088,3 +2078,13 @@ C:\Users\Das Neves\Source\Repos\MantaDoNecromante11\MantaNecromante\obj\x86\Debu
 C:\Users\Das Neves\Source\Repos\MantaDoNecromante11\MantaNecromante\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Das Neves\Source\Repos\MantaDoNecromante11\MantaNecromante\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Das Neves\Source\Repos\MantaDoNecromante11\MantaNecromante\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\Stage\MainStage.g.i.cs
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\Stage\MainStage.g.cs
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\Battle\BattleStage.g.i.cs
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\Battle\BattleStage.g.cs
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\Stage\MainStage.xaml
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\Battle\BattleStage.xaml
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\Stage\MainStage.xbf
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\obj\x86\Debug\Battle\BattleStage.xbf
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\Stage\MainStage.xbf
+C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\bin\x86\Debug\Battle\BattleStage.xbf

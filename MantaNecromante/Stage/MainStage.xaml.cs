@@ -1068,8 +1068,6 @@ namespace MantaNecromante.GameStage
         {
 
             CreateEnemy(72, 24);
-            CreateEnemy(88, 19);
-            CreateEnemy(90, 19);
             CreateEnemy(92, 19);
             CreateEnemy(82, 11);
         }
