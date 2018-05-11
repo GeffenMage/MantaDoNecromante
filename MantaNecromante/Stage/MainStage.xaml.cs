@@ -940,69 +940,122 @@ namespace MantaNecromante.GameStage
 
             // Linha 1
             ImageMatrix[0, 0] = Slot1; ImageMatrix[0, 0].Tapped += TappedImage;
-            ImageMatrix[0, 1] = Slot2;
+            ImageMatrix[0, 1] = Slot2; ImageMatrix[0, 1].Tapped += TappedImage;
             ImageMatrix[0, 2] = Slot3; ImageMatrix[0, 2].Tapped += TappedImage;
-            ImageMatrix[0, 3] = Slot4;
-            ImageMatrix[0, 4] = Slot5;
-            ImageMatrix[0, 5] = Slot6;
+            ImageMatrix[0, 3] = Slot4; ImageMatrix[0, 3].Tapped += TappedImage;
+            ImageMatrix[0, 4] = Slot5; ImageMatrix[0, 4].Tapped += TappedImage;
+            ImageMatrix[0, 5] = Slot6; ImageMatrix[0, 5].Tapped += TappedImage;
 
             // Linha 2
-            ImageMatrix[1, 0] = Slot7;
-            ImageMatrix[1, 1] = Slot8;
-            ImageMatrix[1, 2] = Slot9;
-            ImageMatrix[1, 3] = Slot10;
-            ImageMatrix[1, 4] = Slot11;
-            ImageMatrix[1, 5] = Slot12;
+            ImageMatrix[1, 0] = Slot7;  ImageMatrix[1, 0].Tapped += TappedImage;
+            ImageMatrix[1, 1] = Slot8;  ImageMatrix[1, 1].Tapped += TappedImage;
+            ImageMatrix[1, 2] = Slot9;  ImageMatrix[1, 2].Tapped += TappedImage;
+            ImageMatrix[1, 3] = Slot10; ImageMatrix[1, 3].Tapped += TappedImage;
+            ImageMatrix[1, 4] = Slot11; ImageMatrix[1, 4].Tapped += TappedImage;
+            ImageMatrix[1, 5] = Slot12; ImageMatrix[1, 5].Tapped += TappedImage;
 
             // Linha 3
-            ImageMatrix[2, 0] = Slot13;
-            ImageMatrix[2, 1] = Slot14;
-            ImageMatrix[2, 2] = Slot15;
-            ImageMatrix[2, 3] = Slot16;
-            ImageMatrix[2, 4] = Slot17;
-            ImageMatrix[2, 5] = Slot18;
+            ImageMatrix[2, 0] = Slot13; ImageMatrix[2, 0].Tapped += TappedImage;
+            ImageMatrix[2, 1] = Slot14; ImageMatrix[2, 1].Tapped += TappedImage;
+            ImageMatrix[2, 2] = Slot15; ImageMatrix[2, 2].Tapped += TappedImage;
+            ImageMatrix[2, 3] = Slot16; ImageMatrix[2, 3].Tapped += TappedImage;
+            ImageMatrix[2, 4] = Slot17; ImageMatrix[2, 4].Tapped += TappedImage;
+            ImageMatrix[2, 5] = Slot18; ImageMatrix[2, 5].Tapped += TappedImage;
 
             // Linha 4
-            ImageMatrix[3, 0] = Slot19;
-            ImageMatrix[3, 1] = Slot20;
-            ImageMatrix[3, 2] = Slot21;
-            ImageMatrix[3, 3] = Slot22;
-            ImageMatrix[3, 4] = Slot23;
-            ImageMatrix[3, 5] = Slot24;
+            ImageMatrix[3, 0] = Slot19; ImageMatrix[3, 0].Tapped += TappedImage;
+            ImageMatrix[3, 1] = Slot20; ImageMatrix[3, 1].Tapped += TappedImage;
+            ImageMatrix[3, 2] = Slot21; ImageMatrix[3, 2].Tapped += TappedImage;
+            ImageMatrix[3, 3] = Slot22; ImageMatrix[3, 3].Tapped += TappedImage;
+            ImageMatrix[3, 4] = Slot23; ImageMatrix[3, 4].Tapped += TappedImage;
+            ImageMatrix[3, 5] = Slot24; ImageMatrix[3, 5].Tapped += TappedImage;
 
             // Linha 5
-            ImageMatrix[4, 0] = Slot25;
-            ImageMatrix[4, 1] = Slot26;
-            ImageMatrix[4, 2] = Slot27;
-            ImageMatrix[4, 3] = Slot28;
-            ImageMatrix[4, 4] = Slot29;
-            ImageMatrix[4, 5] = Slot30;
+            ImageMatrix[4, 0] = Slot25; ImageMatrix[4, 0].Tapped += TappedImage;
+            ImageMatrix[4, 1] = Slot26; ImageMatrix[4, 1].Tapped += TappedImage;
+            ImageMatrix[4, 2] = Slot27; ImageMatrix[4, 2].Tapped += TappedImage;
+            ImageMatrix[4, 3] = Slot28; ImageMatrix[4, 3].Tapped += TappedImage;
+            ImageMatrix[4, 4] = Slot29; ImageMatrix[4, 4].Tapped += TappedImage;
+            ImageMatrix[4, 5] = Slot30; ImageMatrix[4, 5].Tapped += TappedImage;
 
             // Linha 6
-            ImageMatrix[5, 0] = Slot31;
-            ImageMatrix[5, 1] = Slot32;
-            ImageMatrix[5, 2] = Slot33;
-            ImageMatrix[5, 3] = Slot34;
-            ImageMatrix[5, 4] = Slot35;
-            ImageMatrix[5, 5] = Slot36;
+            ImageMatrix[5, 0] = Slot31; ImageMatrix[5, 0].Tapped += TappedImage;
+            ImageMatrix[5, 1] = Slot32; ImageMatrix[5, 1].Tapped += TappedImage;
+            ImageMatrix[5, 2] = Slot33; ImageMatrix[5, 2].Tapped += TappedImage;
+            ImageMatrix[5, 3] = Slot34; ImageMatrix[5, 3].Tapped += TappedImage;
+            ImageMatrix[5, 4] = Slot35; ImageMatrix[5, 4].Tapped += TappedImage;
+            ImageMatrix[5, 5] = Slot36; ImageMatrix[5, 5].Tapped += TappedImage;
 
             // Linha 7
-            ImageMatrix[6, 0] = Slot37;
-            ImageMatrix[6, 1] = Slot38;
-            ImageMatrix[6, 2] = Slot39;
-            ImageMatrix[6, 3] = Slot40;
-            ImageMatrix[6, 4] = Slot41;
-            ImageMatrix[6, 5] = Slot42;
+            ImageMatrix[6, 0] = Slot37; ImageMatrix[6, 0].Tapped += TappedImage;
+            ImageMatrix[6, 1] = Slot38; ImageMatrix[6, 1].Tapped += TappedImage;
+            ImageMatrix[6, 2] = Slot39; ImageMatrix[6, 2].Tapped += TappedImage;
+            ImageMatrix[6, 3] = Slot40; ImageMatrix[6, 3].Tapped += TappedImage;
+            ImageMatrix[6, 4] = Slot41; ImageMatrix[6, 4].Tapped += TappedImage;
+            ImageMatrix[6, 5] = Slot42; ImageMatrix[6, 5].Tapped += TappedImage;
 
             // Linha 8
-            ImageMatrix[7, 0] = Slot43;
-            ImageMatrix[7, 1] = Slot44;
-            ImageMatrix[7, 2] = Slot45;
-            ImageMatrix[7, 3] = Slot46;
-            ImageMatrix[7, 4] = Slot47;
-            ImageMatrix[7, 5] = Slot48;
+            ImageMatrix[7, 0] = Slot43; ImageMatrix[7, 0].Tapped += TappedImage;
+            ImageMatrix[7, 1] = Slot44; ImageMatrix[7, 1].Tapped += TappedImage;
+            ImageMatrix[7, 2] = Slot45; ImageMatrix[7, 2].Tapped += TappedImage;
+            ImageMatrix[7, 3] = Slot46; ImageMatrix[7, 3].Tapped += TappedImage;
+            ImageMatrix[7, 4] = Slot47; ImageMatrix[7, 4].Tapped += TappedImage;
+            ImageMatrix[7, 5] = Slot48; ImageMatrix[7, 5].Tapped += TappedImage;
+
+            // Slots de itens equipados
+            sword_equip.Tapped += TappedImage2;
+            gloves_equip.Tapped += TappedImage2;
+            boot_equip.Tapped += TappedImage2;
+            capacete_equip.Tapped += TappedImage2;
+            pant_equip.Tapped += TappedImage2;
+            cota_equip.Tapped += TappedImage2;
 
         }
+
+        
+
+        private void TappedImage2(object sender, TappedRoutedEventArgs e) {
+            Image i = sender as Image;
+            if (i.Name.Contains("sword") == true) {
+                i.Source = null;
+                GetItem(chosen.Mao_dir);
+                chosen.Equipar(chosen.Mao_dir);
+                
+            }
+            else if (i.Name.Contains("gloves") == true) {
+                i.Source = null;
+                GetItem(chosen.Maos);
+                chosen.Equipar(chosen.Maos);
+                
+            }
+            else if (i.Name.Contains("boot") == true) {
+                i.Source = null;
+                GetItem(chosen.Pes);
+                chosen.Equipar(chosen.Pes);
+                
+            }
+            else if (i.Name.Contains("capacete") == true) {
+                i.Source = null;
+                GetItem(chosen.Cabeca);
+                chosen.Equipar(chosen.Cabeca);
+                
+            }
+            else if (i.Name.Contains("pant") == true) {
+                i.Source = null;
+                GetItem(chosen.Inferior);
+                chosen.Equipar(chosen.Inferior);
+                
+            }
+            else if (i.Name.Contains("cota") == true) {
+                i.Source = null;
+                GetItem(chosen.Torso);
+                chosen.Equipar(chosen.Torso);
+               
+            }
+        }
+        
+
+
 
         private void TappedImage(object sender, TappedRoutedEventArgs e)
         {
@@ -1011,7 +1064,7 @@ namespace MantaNecromante.GameStage
             int coordImg = Convert.ToInt16(i.Name.Replace("Slot", ""));
             chosen.Equipar(chosen.Inventario[coordImg-1]);
 
-            /* Esse código infelizmente não funciona =(
+            // Esse código infelizmente não funciona =(
             i.Source = null;
 
             if (chosen.Mao_dir != null && sword_equip.Source==null) {
@@ -1033,7 +1086,7 @@ namespace MantaNecromante.GameStage
             if (chosen.Inferior != null && pant_equip.Source==null) {
                 pant_equip.Source = chosen.Inferior.Sprite.Source;
             }
-            */
+            
             
 
         }
@@ -1060,6 +1113,29 @@ namespace MantaNecromante.GameStage
                 }
             }
         }
+
+
+
+         private void GetItem(Itens found) {
+
+            for (int i = 0; i < 8; i++) {
+
+                for (int j = 0; j < 6; j++) {
+
+                    if (ImageMatrix[i, j].Source == null) {
+
+                        ImageMatrix[i, j].Source = found.Sprite.Source;
+                        chosen.Inventario.Add(found);
+                        return;
+                    }
+                }
+            }
+        }
+
+
+
+
+
 
         private Mob GetEnemy(int row, int column)
         {
