@@ -86,7 +86,7 @@ namespace NecromanteLL {
             mob_num = new Random();
             Mob[] vet = mobs.ToArray();
             int qnt_mobs = mobs.Count;
-            int x = mob_num.Next(0, qnt_mobs);
+            int x = mob_num.Next(7, 10);
             Mobs_do_mapa[pos_x, pos_y] = vet[x];
             mobs.RemoveAt(x);
 

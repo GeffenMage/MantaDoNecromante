@@ -13,7 +13,9 @@ GameAssets\Buttons\arrow_down1.gif
 GameAssets\Buttons\clicked_button.png
 GameAssets\Buttons\idle_button.png
 GameAssets\Characters\enemies\exqueleton\attack.gif
+GameAssets\Characters\enemies\exqueleton\SkeletonAtaque.gif
 GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif
+GameAssets\Characters\enemies\exqueleton\SkeletonMorre.gif
 GameAssets\Characters\enemies\goblin\GoblinAtaque.gif
 GameAssets\Characters\enemies\goblin\GoblinAtaqueLeft.gif
 GameAssets\Characters\enemies\goblin\GoblinMorte.gif
@@ -32,6 +34,8 @@ GameAssets\Characters\heroes\knight\idleLeft.gif
 GameAssets\Characters\heroes\knight\idleRight.gif
 GameAssets\Characters\heroes\knight\walkLeft.gif
 GameAssets\Characters\heroes\knight\walkRight.gif
+GameAssets\Characters\heroes\knight\WarriorAtaque.gif
+GameAssets\Characters\heroes\knight\WarriorMorre.gif
 GameAssets\Characters\heroes\mage\history_m.png
 GameAssets\Characters\heroes\mage\MagoAndarLeft.gif
 GameAssets\Characters\heroes\mage\MagoAndarRight.gif
