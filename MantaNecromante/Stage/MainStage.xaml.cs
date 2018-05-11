@@ -1009,8 +1009,31 @@ namespace MantaNecromante.GameStage
 
             Image i = sender as Image;
             int coordImg = Convert.ToInt16(i.Name.Replace("Slot", ""));
-            chosen.Equipar(chosen.Inventario[coordImg]);
-            
+            chosen.Equipar(chosen.Inventario[coordImg-1]);
+
+            /* Esse código infelizmente não funciona =(
+            i.Source = null;
+
+            if (chosen.Mao_dir != null && sword_equip.Source==null) {
+                sword_equip.Source = chosen.Mao_dir.Sprite.Source;
+
+            }
+            if (chosen.Maos != null && gloves_equip.Source==null) {
+                gloves_equip.Source = chosen.Maos.Sprite.Source;
+            }
+            if (chosen.Pes != null && boot_equip.Source==null) {
+                boot_equip.Source = chosen.Pes.Sprite.Source;
+            }
+            if (chosen.Cabeca != null && capacete_equip.Source==null) {
+                capacete_equip.Source = chosen.Cabeca.Sprite.Source;
+            }
+            if (chosen.Torso != null && cota_equip.Source==null) {
+                cota_equip.Source = chosen.Torso.Sprite.Source;
+            }
+            if (chosen.Inferior != null && pant_equip.Source==null) {
+                pant_equip.Source = chosen.Inferior.Sprite.Source;
+            }
+            */
             
 
         }
@@ -1030,7 +1053,7 @@ namespace MantaNecromante.GameStage
                     {
 
                         ImageMatrix[i, j].Source = found.Sprite.Source;
-                        chosen.Inventario.Add(controller.FindIten(i, j));
+                        chosen.Inventario.Add(found);
                         SetItems(); // baús infinitos até acabar o espaço
                         return;
                     }
