@@ -27,11 +27,16 @@ namespace NecromanteLL {
             Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/knight/idleLeft.gif"));
             Sprite_walking_left = new  BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/knight/walkLeft.gif"));
             Sprite_walking_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/knight/walkRight.gif"));
+            Sprite_ataque_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/knight/WarriorAtaque.gif"));
+            Sprite_skill_right = null;
+            Sprite_death = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/knight/WarriorMorre.gif"));
+            
             //Cria e inicializa as skills da classe do personagem
             Skills = new List<Skill>();
             Skills.Add(new Skill("Stomp", 30, 0, 1, 0, 0, 0, 0, 250));
             Skills.Add(new Skill("WarCry", 40, 0, 5, 0, 0, 20, 20, 0));
             Skills.Add(new Skill("Berserk", 30, 80, 10, 0, 0, 100, -40, 400));
+            atacklenght = 1;
         }
             // Tentativa de override
             public override void LvUp() {

@@ -24,6 +24,8 @@ namespace NecromanteLL {
                     Sprite.Height = 118 * 8 / 3;
                     Sprite.Width = 50 * 8 / 3;
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoParadoLeft.gif"));
+                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoAtaqueLeft.gif"));
+                    AtaqueLenght = 0.91;
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Atk Up I", 0, 20, 10, 0, 0, 40, 0, 0));
@@ -42,6 +44,8 @@ namespace NecromanteLL {
                     Sprite.Height = 118 * 8 / 3;
                     Sprite.Width = 50 * 8 / 3;
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoParadoLeft.gif"));
+                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoAtaqueLeft.gif"));
+                    AtaqueLenght = 0.91;
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall II", 0, 20, 10, 0, 0, 0, 0, 70));
@@ -61,6 +65,8 @@ namespace NecromanteLL {
                     Sprite.Width = 50 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoParadoLeft.gif"));
+                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/mage/MagoAtaqueLeft.gif"));
+                    AtaqueLenght = 0.91;
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall III", 0, 20, 10, 0, 0, 0, 0, 70));

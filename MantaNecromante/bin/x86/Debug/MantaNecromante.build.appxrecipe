@@ -706,11 +706,23 @@
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\arrow_down1.gif">
       <PackagePath>GameAssets\Buttons\arrow_down1.gif</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\SkeletonAtaque.gif">
+      <PackagePath>GameAssets\Characters\enemies\exqueleton\SkeletonAtaque.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\SkeletonMorre.gif">
+      <PackagePath>GameAssets\Characters\enemies\exqueleton\SkeletonMorre.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\WarriorAtaque.gif">
+      <PackagePath>GameAssets\Characters\heroes\knight\WarriorAtaque.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\knight\WarriorMorre.gif">
+      <PackagePath>GameAssets\Characters\heroes\knight\WarriorMorre.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\heroes\mage\MagoAtaqueLeft.gif">
+      <PackagePath>GameAssets\Characters\heroes\mage\MagoAtaqueLeft.gif</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Buttons\arrow_down.gif">
       <PackagePath>GameAssets\Buttons\arrow_down.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\attack.gif">
-      <PackagePath>GameAssets\Characters\enemies\exqueleton\attack.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulo\source\repos\RPG\MantaDoNecromante\MantaNecromante\GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif">
       <PackagePath>GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif</PackagePath>

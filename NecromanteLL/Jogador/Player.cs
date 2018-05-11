@@ -8,6 +8,8 @@ using Windows.UI.Xaml.Controls;
 
 namespace NecromanteLL {
     public abstract class Player {
+        public double skilllenght;
+        public double atacklenght;
         private String nome;
         private int hp_atual, hp_total;
         private int mp_atual, mp_total;
@@ -52,8 +54,10 @@ namespace NecromanteLL {
         public BitmapImage Sprite_idle_right { get => sprite_idle_right; set => sprite_idle_right = value; }
         public BitmapImage Sprite_walking_left { get => sprite_walking_left; set => sprite_walking_left = value; }
         public BitmapImage Sprite_walking_right { get => sprite_walking_right; set => sprite_walking_right = value; }
+        public BitmapImage Sprite_ataque_right;
+        public BitmapImage Sprite_skill_right;
+        public BitmapImage Sprite_death;
 
- 
         //Implementar interface gráfica de movimento para o personagem
         public bool IsLvUP() {
             if (Xp_atual >= Xp_total) {
@@ -130,9 +134,6 @@ namespace NecromanteLL {
             this.hp_atual += item.Hp_up;
             this.mp_atual += item.Mp_up;
         }
-
-
-
 
         public bool Equipar(Itens item) {
             if (item is Espada ) {

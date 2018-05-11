@@ -12,6 +12,7 @@ namespace NecromanteLL {
         public Laposo(int lvl) {
             Skills = new List<Skill>();
             Sprite = new Image();
+
             switch (lvl) {
                 case 1:
                     Nome = "Laposo Hello";
@@ -26,6 +27,8 @@ namespace NecromanteLL {
                     Sprite.Width = 20 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/SkeletonAtaque.gif"));
+                    AtaqueLenght = 1.8;
 
                     Skills.Add(new Skill("POG I", 200, 0, 20, 0, 0, 0, 0, 900));
                     Skills.Add(new Skill("GOTO I", 250, 0, 25, 0, 0, 50, 0, 250));
@@ -44,6 +47,8 @@ namespace NecromanteLL {
                     Sprite.Width = 20 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/SkeletonAtaque.gif"));
+                    AtaqueLenght = 1.8;
 
                     Skills.Add(new Skill("POG I", 200, 0, 20, 0, 0, 0, 0, 900));
                     Skills.Add(new Skill("GOTO I", 250, 0, 25, 0, 0, 50, 0, 250));
@@ -61,6 +66,8 @@ namespace NecromanteLL {
                     Sprite.Width = 20 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/skeletonIdle.gif"));
+                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/exqueleton/SkeletonAtaque.gif"));
+                    AtaqueLenght = 1.8;
 
                     Skills.Add(new Skill("POG I", 200, 0, 20, 0, 0, 0, 0, 900));
                     Skills.Add(new Skill("GOTO I", 250, 0, 25, 0, 0, 50, 0, 250));

@@ -28,6 +28,8 @@ namespace MantaNecromante.MainBattle {
     /// </summary>
     public sealed partial class BattleStage : Page {
 
+        private DispatcherTimer delay = new DispatcherTimer();
+        private DispatcherTimer delaymob = new DispatcherTimer();
         private bool isOptionsMenuOpen;
         private BattleController battleController;
         private MediaPlayer song = new MediaPlayer();
@@ -46,6 +48,8 @@ namespace MantaNecromante.MainBattle {
             song.Play();
             RemoverMenus();
 
+            delay.Tick += delayAtaque;
+            delaymob.Tick += delayMob;
 
         }
 
@@ -112,6 +116,8 @@ namespace MantaNecromante.MainBattle {
             ResultadosText.Text = "Você morreu!";
             ResultadosBotao.Content = "Voltar ao Menu Inicial";
 
+            Hero.Source = battleController.Jogador.Sprite_death;
+            delay.Stop();
             BlockButtons();
 
         }
@@ -141,9 +147,11 @@ namespace MantaNecromante.MainBattle {
         /// <summary>
         /// Trata o Evento que ocorre no battleController quando o turno muda para o Inimigo
         /// </summary>
-        public void TurnChangeToEnemy() {
+        public async void TurnChangeToEnemy() {
             //Mostrar que o turno mudou para o inimigo
 
+            System.Threading.Tasks.Task.Delay(400).Wait();
+            await System.Threading.Tasks.Task.Delay(2000);
 
             removeAll();
 
@@ -151,6 +159,12 @@ namespace MantaNecromante.MainBattle {
 
             Progress_Bar_Update();
             battleController.EnemyChoice();
+
+            Foe.Source = battleController.Inimigo.Sprite_ataque_left;
+            delaymob.Interval = System.TimeSpan.FromMilliseconds(battleController.Inimigo.AtaqueLenght * 1000);
+
+            delaymob.Start();
+
             DmgPlayer -= battleController.Inimigo.Hp_atual;
             MpPlayer = MpPlayer - battleController.Jogador.Mp_atual;
             if (nomeSkill == Ataque.Content.ToString()) {
@@ -289,6 +303,21 @@ namespace MantaNecromante.MainBattle {
             nomeSkill = ((Button)sender).Content.ToString();
             DmgPlayer = battleController.Inimigo.Hp_atual;
             battleController.Atacar();
+
+            Hero.Source = battleController.Jogador.Sprite_ataque_right;
+
+            delay.Interval = System.TimeSpan.FromMilliseconds(battleController.Jogador.atacklenght * 1000);
+            delay.Start();
+        }
+
+        private void delayAtaque(object sender, object e) {
+            Hero.Source = battleController.Jogador.Sprite_idle_right;
+            delay.Stop();
+        }
+
+        private void delayMob(object sender, object e) {
+            Foe.Source = battleController.Inimigo.Sprite.Source;
+            delay.Stop();
         }
 
         private void BotaoSkill(object sender, RoutedEventArgs e) {

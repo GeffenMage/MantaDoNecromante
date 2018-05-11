@@ -13,8 +13,6 @@ namespace NecromanteLL {
             Skills = new List<Skill>();
             Sprite = new Image();
 
-            
-
             switch (lvl){
                 case 1:
                     Nome = "Goblin";
@@ -27,7 +25,9 @@ namespace NecromanteLL {
                     Sprite.Height = 95 * 8 / 3;
                     Sprite.Width = 40 * 8 / 3;
                     Sprite.Source= new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/goblin/GoblinParadoLeft.gif"));
-                    
+                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/goblin/GoblinAtaqueLeft.gif"));
+                    AtaqueLenght = 0.98;
+
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall I", 0, 20, 1, 0, 0, 0, 0, 30));
                     Skills.Add(new Skill("Luck I", 80, 0, 1, 0, 0, 0, 0, 150));
@@ -45,6 +45,8 @@ namespace NecromanteLL {
                     Sprite.Width = 40 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/goblin/GoblinParadoLeft.gif"));
+                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/goblin/GoblinAtaqueLeft.gif"));
+                    AtaqueLenght = 0.98;
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall II", 0, 20, 1, 0, 0, 0, 0, 50));
@@ -64,7 +66,8 @@ namespace NecromanteLL {
                     Sprite.Width = 40 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/goblin/GoblinParadoLeft.gif"));
-
+                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/goblin/GoblinAtaqueLeft.gif"));
+                    AtaqueLenght = 0.98;
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Fall III", 0, 20, 1, 0, 0, 0, 0, 70));
                     Skills.Add(new Skill("Luck III", 120, 0, 2, 0, 0, 0, 0, 250));

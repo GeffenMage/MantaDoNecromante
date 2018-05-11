@@ -133,11 +133,15 @@
     <Content Include="Assets\dots.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="GameAssets\Buttons\arrow_down1.gif" />
+    <Content Include="GameAssets\Characters\enemies\exqueleton\SkeletonAtaque.gif" />
+    <Content Include="GameAssets\Characters\enemies\exqueleton\SkeletonMorre.gif" />
+    <Content Include="GameAssets\Characters\heroes\knight\WarriorAtaque.gif" />
+    <Content Include="GameAssets\Characters\heroes\knight\WarriorMorre.gif" />
+    <Content Include="GameAssets\Characters\heroes\mage\MagoAtaqueLeft.gif" />
     <Content Include="GameAssets\Menu\equip2.png" />
     <Content Include="GameAssets\Buttons\arrow_down.gif" />
     <Content Include="GameAssets\Buttons\clicked_button.png" />
     <Content Include="GameAssets\Buttons\idle_button.png" />
-    <Content Include="GameAssets\Characters\enemies\exqueleton\attack.gif" />
     <Content Include="GameAssets\Characters\enemies\exqueleton\skeletonIdle.gif" />
     <Content Include="GameAssets\Characters\enemies\goblin\GoblinAtaque.gif" />
     <Content Include="GameAssets\Characters\enemies\goblin\GoblinAtaqueLeft.gif" />

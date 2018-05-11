@@ -26,6 +26,8 @@ namespace NecromanteLL {
                     Sprite.Height = 75 * 8 / 3;
                     Sprite.Width = 40 * 8 / 3;
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/ogro/OgroParado1.gif"));
+                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/ogro/OgroAtaque.gif"));
+                    AtaqueLenght = 0.7;
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Blast I", 30, 0, 5, 0, 0, 0, 0, 200));
@@ -45,6 +47,8 @@ namespace NecromanteLL {
                     Sprite.Width = 40 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/ogro/OgroParado1.gif"));
+                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/ogro/OgroAtaque.gif"));
+                    AtaqueLenght = 0.7;
 
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Blast II", 50, 0, 5, 0, 0, 0, 0, 400));
@@ -65,6 +69,9 @@ namespace NecromanteLL {
                     Sprite.Width = 40 * 8 / 3;
 
                     Sprite.Source = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/ogro/OgroParado1.gif"));
+                    Sprite_ataque_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/enemies/ogro/OgroAtaque.gif"));
+                    AtaqueLenght = 0.7;
+
                     //Inicializa as skills do inimigo
                     Skills.Add(new Skill("Blast III", 70, 0, 5, 0, 0, 0, 0, 600));
                     Skills.Add(new Skill("Regen Hp III", 80, 0, 6, 450, 0, 0, 30, 0));
