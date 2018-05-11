@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>51EB60622544DA9BED534F7447034CB1B5CBB1F95964A31788019173A9ACA589</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>029B528826EF4576336B590D73CBD28A05A4ACD5686A6D56C17C3FADD714E223</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>5b684eb0-42c8-48ab-9f60-5613a1841a81_1.0.0.0_x86__m0we3rjtmsxmt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>5b684eb0-42c8-48ab-9f60-5613a1841a81_m0we3rjtmsxmt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>5b684eb0-42c8-48ab-9f60-5613a1841a81</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-04T14:31:11.922</Modified>
+      <Modified>2018-05-11T02:27:54.008</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\MantaNecromante.exe">
       <PackagePath>entrypoint\MantaNecromante.exe</PackagePath>
-      <Modified>2018-05-04T14:31:11.377</Modified>
+      <Modified>2018-05-11T02:27:52.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -497,7 +497,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\NecromanteLL\bin\x86\Debug\NecromanteLL.dll">
       <PackagePath>NecromanteLL.dll</PackagePath>
-      <Modified>2018-05-04T14:19:42.313</Modified>
+      <Modified>2018-05-11T02:27:34.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\Assets\dots.png">
       <PackagePath>Assets\dots.png</PackagePath>
@@ -1151,7 +1151,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\MantaNecromante.xr.xml">
       <PackagePath>MantaNecromante.xr.xml</PackagePath>
-      <Modified>2018-05-02T15:03:51.568</Modified>
+      <Modified>2018-05-11T01:58:13.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1160,11 +1160,11 @@
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-04T14:19:46.135</Modified>
+      <Modified>2018-05-11T02:27:53.729</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel Sousa Duplat\source\repos\MantaDoNecromante2\MantaNecromante\bin\x86\Debug\Core\MantaNecromante.exe">
       <PackagePath>MantaNecromante.exe</PackagePath>
-      <Modified>2018-05-04T14:31:11.919</Modified>
+      <Modified>2018-05-11T02:27:54.004</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
