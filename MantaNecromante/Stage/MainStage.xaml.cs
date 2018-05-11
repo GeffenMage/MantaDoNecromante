@@ -888,7 +888,9 @@ namespace MantaNecromante.GameStage
 
             CreateItem(79, 30);
             CreateItem(87, 11);
-
+            CreateItem(90, 33);
+            CreateItem(51, 11);
+            CreateItem(58, 31);
         }
 
         private void CreateItem(int row, int column)
@@ -1009,8 +1011,8 @@ namespace MantaNecromante.GameStage
 
             Image i = sender as Image;
             int coordImg = Convert.ToInt16(i.Name.Replace("Slot", ""));
-            
-            
+
+            chosen.Equipar(chosen.Inventario[coordImg - 1]);
             
 
         }
@@ -1030,7 +1032,7 @@ namespace MantaNecromante.GameStage
                     {
 
                         ImageMatrix[i, j].Source = found.Sprite.Source;
-                        chosen.Inventario.Add(controller.FindIten(i, j));
+                        chosen.Inventario.Add(found);
                         SetItems(); // baús infinitos até acabar o espaço
                         return;
                     }
@@ -1069,6 +1071,8 @@ namespace MantaNecromante.GameStage
 
             CreateEnemy(72, 24);
             CreateEnemy(92, 19);
+            CreateEnemy(90, 30);
+            CreateEnemy(58, 33);
         }
 
         /// <summary>
