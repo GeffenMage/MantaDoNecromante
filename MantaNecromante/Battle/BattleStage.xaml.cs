@@ -98,10 +98,20 @@ namespace MantaNecromante.MainBattle {
 
             ResultadosBotao.Content = "Voltar ao Castelo";
 
-            this.Frame.GoBack();
+            ResultadosBotao.Click += ReturnStage;
 
+            Foe.Source = battleController.Inimigo.Sprite_death;
         }
 
+        public void ReturnStage(object sender, RoutedEventArgs e) {
+
+            this.Frame.GoBack();
+        }
+
+        public void ReturnMainMenu(object sender, RoutedEventArgs e) {
+
+            this.Frame.Navigate(typeof(FrontEnd.MainPage));
+        }
 
         /// <summary>
         /// Método que trata a morte do jogador
@@ -119,6 +129,8 @@ namespace MantaNecromante.MainBattle {
             Hero.Source = battleController.Jogador.Sprite_death;
             delay.Stop();
             BlockButtons();
+
+            ResultadosBotao.Click += ReturnMainMenu;
 
         }
 
@@ -167,6 +179,7 @@ namespace MantaNecromante.MainBattle {
 
             DmgPlayer -= battleController.Inimigo.Hp_atual;
             MpPlayer = MpPlayer - battleController.Jogador.Mp_atual;
+
             if (nomeSkill == Ataque.Content.ToString()) {
                 Infobox.Text = "Player" + " causou " + DmgPlayer + " de dano";
             }

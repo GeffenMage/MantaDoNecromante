@@ -60,9 +60,13 @@
         <ProgressBar x:ConnectionId='11' Name = "Progress_MP_Mob" Height="20" Canvas.Left="1000" Canvas.Top="800" Width="394" Foreground="Blue" />
 
         <RelativePanel x:ConnectionId='12' Name="ResultadosPane" Height="121" Canvas.Left="555" Canvas.Top="183" Width="337">
+            <Rectangle Fill="Beige" HorizontalAlignment="Left" Height="122" VerticalAlignment="Top" Width="338" Margin="0,0,-338,-122"/>
+
             <TextBlock x:ConnectionId='15' Name="ResultadosText" FontFamily="Algerian" HorizontalAlignment="Center" Height="70" TextAlignment="Center" Text="TextBox" VerticalAlignment="Top" Width="336" Margin="0,21,-266,-59"/>
             <Button x:ConnectionId='16' Name="ResultadosBotao" FontFamily="Algerian" Content="Button" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="337" Margin="0,79,-272,-79"/>
-        </RelativePanel>
+            </RelativePanel>
+
+        
 
         <TextBlock x:ConnectionId='13' Name="Infobox" Canvas.Left="517" Canvas.Top="827" TextAlignment="Center" FontFamily="Algerian" Text="" TextWrapping="Wrap" Height="95" Width="418"/>
         <TextBlock x:ConnectionId='14' Name="RollBox" Canvas.Left="515" Canvas.Top="770" Text="" TextAlignment="Center" TextWrapping="Wrap" Height="55" Width="419" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">

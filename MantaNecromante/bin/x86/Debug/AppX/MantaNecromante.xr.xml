@@ -108,6 +108,14 @@
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="MantaNecromante.GameStage.MainStage" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+    </RootType>
     <RootType FullName="MantaNecromante.MainBattle.BattleStage" />
     <RootType FullName="FrontEnd.MainPage" />
   </Roots.RootTypes>

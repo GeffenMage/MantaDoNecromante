@@ -1517,7 +1517,27 @@ namespace MantaNecromante.GameStage
             direction = runtoRight;
             Hero.Source = idletoRight;
 
+                
         }
+
+        //public void percorrerInventario() {
+
+        //    List<UIElement> all = Floor.Children.ToList();
+        //    List<Image> slots = new List<Image>();
+
+        //    foreach (UIElement item in all) {
+
+        //        if (item is RelativePanel && ((RelativePanel)item).Name == "slotinventario") {
+
+        //            List<UIElement> buttons = ((RelativePanel)item).Children.ToList();
+
+        //            foreach (UIElement button in buttons) {
+
+        //               Image i = (Button)button
+        //            }
+        //        }
+        //    }
+        //}
 
         //A sentinela que vigia as teclas atentamente:
         private void KeySentinel(CoreWindow sender, KeyEventArgs e)
