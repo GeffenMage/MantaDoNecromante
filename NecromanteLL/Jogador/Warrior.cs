@@ -9,7 +9,6 @@ using Windows.UI.Xaml.Controls;
 
 namespace NecromanteLL {
     public class Warrior : Player {
-        
         //Construtor setando os valores base do warrior
         public Warrior(String nome) {
             
@@ -23,6 +22,7 @@ namespace NecromanteLL {
             Base_def = 30; Base_dmg = 80;
             Nome_classe = "Warrior";
             //Inicializa os sprites do personagem
+
             Sprite_idle_right = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/knight/idleRight.gif"));
             Sprite_idle_left = new BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/knight/idleLeft.gif"));
             Sprite_walking_left = new  BitmapImage(new Uri("ms-appx:///GameAssets/Characters/heroes/knight/walkLeft.gif"));
