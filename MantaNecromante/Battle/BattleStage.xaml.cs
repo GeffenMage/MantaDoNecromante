@@ -69,13 +69,13 @@ namespace MantaNecromante.MainBattle {
         }
 
         private void BlockButtons() {
-            
+
             Skill0.Click -= BotaoSkill;
             Skill1.Click -= BotaoSkill;
             Skill2.Click -= BotaoSkill;
-            
+
             Ataque.Click -= BotaoAtacar;
-                    
+
         }
 
         /// <summary>
@@ -91,14 +91,14 @@ namespace MantaNecromante.MainBattle {
 
             ResultadosText.Text = "Você Derrotou " + battleController.Inimigo.Nome +
             "\n Você ganhou " + battleController.Inimigo.Given_xp + " de xp";
-            
+
             ResultadosBotao.Content = "Voltar ao Castelo";
-            
+
             this.Frame.GoBack();
 
         }
 
-        
+
         /// <summary>
         /// Método que trata a morte do jogador
         /// </summary>
@@ -111,12 +111,12 @@ namespace MantaNecromante.MainBattle {
 
             ResultadosText.Text = "Você morreu!";
             ResultadosBotao.Content = "Voltar ao Menu Inicial";
-            
+
             BlockButtons();
-            
+
         }
 
-        
+
         /// <summary>
         /// Trata o Evento que ocorre no battleController quando o turno muda para o Player
         /// </summary>
@@ -129,11 +129,10 @@ namespace MantaNecromante.MainBattle {
             //Mostrar que o turno mudou para o jogador
             Progress_Bar_Update();
 
-            
+
         }
 
-        void removeAll()
-        {
+        void removeAll() {
 
             Floor.Children.Remove(Turn1);
             Floor.Children.Remove(Turn2);
@@ -158,7 +157,7 @@ namespace MantaNecromante.MainBattle {
                 Infobox.Text = "Player" + " causou " + DmgPlayer + " de dano";
             }
             else {
-                Infobox.Text = "Player usou "+nomeSkill + "("+MpPlayer+" MP)"+" e causou " + DmgPlayer + " de dano";
+                Infobox.Text = "Player usou " + nomeSkill + "(" + MpPlayer + " MP)" + " e causou " + DmgPlayer + " de dano";
             }
 
         }
@@ -168,12 +167,12 @@ namespace MantaNecromante.MainBattle {
 
             Progress_HP_chosen.Value = battleController.Jogador.Hp_atual;
             Progress_MP_chosen.Value = battleController.Jogador.Mp_atual;
-            
+
 
             Progress_HP_Mob.Value = battleController.Inimigo.Hp_atual;
             Progress_MP_Mob.Value = battleController.Inimigo.Mp_atual;
 
-            
+
         }
 
         public void Progress_Bar() {
@@ -181,8 +180,8 @@ namespace MantaNecromante.MainBattle {
 
             Progress_HP_chosen.Minimum = 0;
             Progress_HP_chosen.Maximum = battleController.Jogador.Hp_total;
-            Progress_HP_chosen.Value  = battleController.Jogador.Hp_atual;
-            
+            Progress_HP_chosen.Value = battleController.Jogador.Hp_atual;
+
             // Progess bar dinamica para o Mp do jogador
             Progress_MP_chosen.Minimum = 0;
             Progress_MP_chosen.Maximum = battleController.Jogador.Mp_total;
@@ -197,11 +196,11 @@ namespace MantaNecromante.MainBattle {
             Progress_MP_Mob.Minimum = 0;
             Progress_MP_Mob.Maximum = battleController.Inimigo.Mp_total;
             Progress_MP_Mob.Value = battleController.Inimigo.Mp_atual;
-            
+
         }
 
         private void CoreWindow_KeyDown(CoreWindow sender, KeyEventArgs args) {
-            
+
             if (args.VirtualKey == Windows.System.VirtualKey.Escape) {
 
                 if (!isOptionsMenuOpen) {
@@ -237,7 +236,7 @@ namespace MantaNecromante.MainBattle {
                 }
 
                 isOptionsMenuOpen = !isOptionsMenuOpen;
-            } 
+            }
         }
 
         private void Exit(object sender, RoutedEventArgs e) {
@@ -252,7 +251,7 @@ namespace MantaNecromante.MainBattle {
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e) {
-            battleController = (BattleController) e.Parameter;
+            battleController = (BattleController)e.Parameter;
             this.KeyDown += BattleStage_KeyDown;
             Hero.Source = battleController.Jogador.Sprite_idle_right;
             Foe.Source = battleController.Inimigo.Sprite.Source;
@@ -273,23 +272,23 @@ namespace MantaNecromante.MainBattle {
 
         private void Menu_Click(object sender, RoutedEventArgs e) {
 
-                if (!isOptionsMenuOpen) {
+            if (!isOptionsMenuOpen) {
 
-                    Floor.Children.Add(OptionsMenu);
-                }
-                else {
+                Floor.Children.Add(OptionsMenu);
+            }
+            else {
 
-                    Floor.Children.Remove(OptionsMenu);
-                }
+                Floor.Children.Remove(OptionsMenu);
+            }
 
-                isOptionsMenuOpen ^= false;
-            
+            isOptionsMenuOpen ^= false;
+
         }
 
         private void BotaoAtacar(object sender, RoutedEventArgs e) {
             nomeSkill = ((Button)sender).Content.ToString();
             DmgPlayer = battleController.Inimigo.Hp_atual;
-            battleController.Atacar();   
+            battleController.Atacar();
         }
 
         private void BotaoSkill(object sender, RoutedEventArgs e) {
@@ -306,6 +305,6 @@ namespace MantaNecromante.MainBattle {
             battleController.CastSkill(battleController.Jogador.Skills[Skill]);
 
         }
-       
+
     }
 }

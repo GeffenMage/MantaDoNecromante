@@ -1009,7 +1009,7 @@ namespace MantaNecromante.GameStage
 
             Image i = sender as Image;
             int coordImg = Convert.ToInt16(i.Name.Replace("Slot", ""));
-            
+            chosen.Equipar(chosen.Inventario[coordImg]);
             
             
 
