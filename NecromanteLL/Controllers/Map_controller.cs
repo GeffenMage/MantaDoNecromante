@@ -56,8 +56,8 @@ namespace NecromanteLL {
             itens.Add(new Cota("Cota de Bronze", 20, 20, 10, 10, "ms-appx:///GameAssets/Characters/itens/v2/Armor 2.png"));
             itens.Add(new Luva("Luva de Couro", 10, 20, 0, 10, "ms-appx:///GameAssets/Characters/itens/luva_1.png"));
             itens.Add(new Luva("Luva de Bronze", 20, 30, 20, 10, "ms-appx:///GameAssets/Characters/itens/luva_2.png"));
-            itens.Add(new PocaoHP("Porção de HP", 0, 0, 300, 0, "ms-appx:///GameAssets/Characters/itens/Hp_menor.png"));
-            itens.Add(new PocaoMP("Porção de MP", 0, 0, 0, 300, "ms-appx:///GameAssets/Characters/itens/Mp_menor.png"));
+            //itens.Add(new PocaoHP("Porção de HP", 0, 0, 300, 0, "ms-appx:///GameAssets/Characters/itens/Hp_menor.png"));
+            //itens.Add(new PocaoMP("Porção de MP", 0, 0, 0, 300, "ms-appx:///GameAssets/Characters/itens/Mp_memor.png"));
         }
        
 
@@ -86,7 +86,7 @@ namespace NecromanteLL {
             mob_num = new Random();
             Mob[] vet = mobs.ToArray();
             int qnt_mobs = mobs.Count;
-            int x = mob_num.Next(7, 10);
+            int x = mob_num.Next(0, qnt_mobs);
             Mobs_do_mapa[pos_x, pos_y] = vet[x];
             mobs.RemoveAt(x);
 
