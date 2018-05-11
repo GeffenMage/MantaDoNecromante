@@ -1016,40 +1016,53 @@ namespace MantaNecromante.GameStage
 
         private void TappedImage2(object sender, TappedRoutedEventArgs e) {
             Image i = sender as Image;
+            Itens temp;
             if (i.Name.Contains("sword") == true) {
+                temp = chosen.Mao_dir;
+                chosen.Desequipar(chosen.Mao_dir);
                 i.Source = null;
-                GetItem(chosen.Mao_dir);
-                chosen.Equipar(chosen.Mao_dir);
+                GetItem(temp);
+                
                 
             }
             else if (i.Name.Contains("gloves") == true) {
+                temp = chosen.Maos;
+                chosen.Desequipar(chosen.Maos);
                 i.Source = null;
-                GetItem(chosen.Maos);
-                chosen.Equipar(chosen.Maos);
+                GetItem(temp);
+                
                 
             }
             else if (i.Name.Contains("boot") == true) {
+                temp = chosen.Pes;
+                chosen.Desequipar(chosen.Pes);
                 i.Source = null;
-                GetItem(chosen.Pes);
-                chosen.Equipar(chosen.Pes);
+                GetItem(temp);
+                
                 
             }
             else if (i.Name.Contains("capacete") == true) {
+                temp = chosen.Cabeca;
+                chosen.Desequipar(chosen.Cabeca);
                 i.Source = null;
-                GetItem(chosen.Cabeca);
-                chosen.Equipar(chosen.Cabeca);
+                GetItem(temp);
+                
                 
             }
             else if (i.Name.Contains("pant") == true) {
+                temp = chosen.Inferior;
+                chosen.Desequipar(chosen.Inferior);
                 i.Source = null;
-                GetItem(chosen.Inferior);
-                chosen.Equipar(chosen.Inferior);
+                GetItem(temp);
+               
                 
             }
             else if (i.Name.Contains("cota") == true) {
+                temp = chosen.Torso;
+                chosen.Desequipar(chosen.Torso);
                 i.Source = null;
-                GetItem(chosen.Torso);
-                chosen.Equipar(chosen.Torso);
+                GetItem(temp);
+                
                
             }
         }
@@ -1061,29 +1074,45 @@ namespace MantaNecromante.GameStage
         {
 
             Image i = sender as Image;
+            
             int coordImg = Convert.ToInt16(i.Name.Replace("Slot", ""));
-            chosen.Equipar(chosen.Inventario[coordImg-1]);
+
+            foreach ( Itens j in chosen.Inventario){
+                if (j.Sprite.Source == i.Source) {
+                    chosen.Equipar(j);
+                    break;
+                }
+            }
+
+
+            
 
             // Esse código infelizmente não funciona =(
-            i.Source = null;
+            
 
             if (chosen.Mao_dir != null && sword_equip.Source==null) {
+                i.Source = null;
                 sword_equip.Source = chosen.Mao_dir.Sprite.Source;
 
             }
             if (chosen.Maos != null && gloves_equip.Source==null) {
+                i.Source = null;
                 gloves_equip.Source = chosen.Maos.Sprite.Source;
             }
             if (chosen.Pes != null && boot_equip.Source==null) {
+                i.Source = null;
                 boot_equip.Source = chosen.Pes.Sprite.Source;
             }
             if (chosen.Cabeca != null && capacete_equip.Source==null) {
+                i.Source = null;
                 capacete_equip.Source = chosen.Cabeca.Sprite.Source;
             }
             if (chosen.Torso != null && cota_equip.Source==null) {
+                i.Source = null;
                 cota_equip.Source = chosen.Torso.Sprite.Source;
             }
             if (chosen.Inferior != null && pant_equip.Source==null) {
+                i.Source = null;
                 pant_equip.Source = chosen.Inferior.Sprite.Source;
             }
             
@@ -1124,8 +1153,11 @@ namespace MantaNecromante.GameStage
 
                     if (ImageMatrix[i, j].Source == null) {
 
+                        if (found == null) {
+                            return;
+                        }
+                        
                         ImageMatrix[i, j].Source = found.Sprite.Source;
-                        chosen.Inventario.Add(found);
                         return;
                     }
                 }
